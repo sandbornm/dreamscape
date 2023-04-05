@@ -6,7 +6,7 @@
 #include <linux/fs.h>
 #include <linux/file.h>
 #include <linux/hashtable.h>
-#include <linux/debugfs.h>
+#include <linux/proc_fs.h>
 #include <linux/uaccess.h>
 #include <linux/string.h>
 #include <linux/slab.h>
@@ -16,51 +16,28 @@
 
 static LIST_HEAD(counter_list);
 static int target_pid = -1;
-static struct dentry *debugfs_entry;
+static char target_prog_path[256] = "";
+static struct proc_dir_entry *proc_entry;
 
-static ssize_t target_pid_write(struct file *file, const char __user *user_buf, size_t count, loff_t *ppos)
-{
-    char buf[32];
-    ssize_t buf_size;
-    struct task_struct *task;
-    struct pid *pid_struct;
+// static u32 event_codes[] = {
+//     0x04, // L1 data cache misses
+//     0x03, // Line fills
+//     0x12, // Branch instructions
+//     0x08  // Cache writes
+// };
 
-    buf_size = min(count, (sizeof(buf) - 1));
-    if (copy_from_user(buf, user_buf, buf_size))
-        return -EFAULT;
-
-    buf[buf_size] = 0;
-
-    if (kstrtoint(buf, 10, &target_pid) != 0)
-        return -EINVAL;
-
-    pid_struct = find_get_pid(target_pid);
-    task = get_pid_task(pid_struct, PIDTYPE_PID);
-
-    if (task) {
-        send_sig_info(SIGCONT, SEND_SIG_FORCED, task); // Resume the process
-        put_task_struct(task);
-    } else {
-        return -ESRCH;
-    }
-
-    return count;
-}
-
-static const struct file_operations target_pid_fops = {
-    .write = target_pid_write,
+enum event_code {
+    L1_DATA_CACHE_MISSES = 0x04,
+    LINE_FILLS = 0x03,
+    BRANCH_INSTRUCTIONS = 0x12,
+    CACHE_WRITES = 0x08
 };
 
-static bool is_target_pid(pid_t pid)
-{
-    return pid == target_pid;
-}
-
 static u32 event_codes[] = {
-    0x04, // L1 data cache misses
-    0x03, // Line fills
-    0x12, // Branch instructions
-    0x08  // Cache writes
+    L1_DATA_CACHE_MISSES,
+    LINE_FILLS,
+    BRANCH_INSTRUCTIONS,
+    CACHE_WRITES
 };
 
 struct counter_data {
@@ -68,6 +45,138 @@ struct counter_data {
     u64 counters[4];
     struct list_head list;
 };
+
+
+static pid_t run_program(const char *path)
+{
+    struct subprocess_info *sub_info;
+    pid_t pid;
+
+    sub_info = call_usermodehelper_setup(path, NULL, NULL, GFP_KERNEL, NULL, NULL, NULL);
+    if (!sub_info) {
+        printk(KERN_ERR "Failed to set up call to usermode helper for: %s\n", path);
+        return -ENOMEM;
+    }
+
+    pid = call_usermodehelper_exec(sub_info, UMH_WAIT_PROC);
+    if (pid < 0) {
+        printk(KERN_ERR "Failed to execute usermode helper for: %s\n", path);
+        return pid;
+    }
+
+    return pid;
+}
+
+
+static void write_kinfo_to_file(int pid, const char *prog_name)
+{
+    struct file *file;
+    mm_segment_t old_fs;
+    struct counter_data *entry;
+    char buffer[256];
+    char filename[256];
+
+    snprintf(filename, sizeof(filename), "/tmp/kinfo_output_pid_%d_%s.txt", pid, prog_name);
+
+    file = filp_open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0644);
+    if (IS_ERR(file)) {
+        printk(KERN_ERR "Failed to open file: %s (error%ld)\n", filename, PTR_ERR(file));
+        return;
+    }
+
+
+    old_fs = get_fs();
+    set_fs(KERNEL_DS);
+
+    list_for_each_entry(entry, &counter_list, list) {
+        snprintf(buffer, sizeof(buffer), "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
+            entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
+        file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
+    }
+
+    set_fs(old_fs);
+    filp_close(file, NULL);
+}
+
+int is_target_pid(pid_t pid, const char *prog_path) {
+    struct task_struct *task = pid_task(find_vpid(pid), PIDTYPE_PID);
+    const char *task_comm;
+
+    if (!task)
+        return 0;
+
+    task_comm = kbasename(task->comm);
+
+    if (target_pid > 0 && pid == target_pid)
+        return 1;
+
+    if (target_prog_path[0] != '\0' && strcmp(task_comm, prog_path) == 0)
+        return 1;
+
+    return 0;
+}
+
+
+
+static ssize_t command_handler(struct file *file, const char __user *user_buf, size_t count, loff_t *ppos)
+{
+    char buf[256];
+    ssize_t buf_size;
+    char command[32];
+    int ret;
+
+    buf_size = min(count, (sizeof(buf) - 1));
+    if (copy_from_user(buf, user_buf, buf_size))
+        return -EFAULT;
+
+    buf[buf_size] = 0;
+
+    if (sscanf(buf, "%31s", command) != 1)
+        return -EINVAL;
+
+    if (strcmp(command, "start") == 0) {
+        char path[256];
+        if (sscanf(buf, "start %255s", path) == 1) {
+            target_pid = run_program(path);
+        } else {
+            return -EINVAL;
+        }
+    } else if (strcmp(command, "start_pid") == 0) {
+        int pid;
+        if (sscanf(buf, "start_pid %d", &pid) == 1) {
+            target_pid = pid;
+        } else {
+            return -EINVAL;
+        }
+    } else if (strcmp(command, "stop") == 0) {
+        char prog_name[256];
+        if (sscanf(buf, "stop %255s", prog_name) == 1) {
+            write_kinfo_to_file(target_pid, prog_name);
+        } else {
+            return -EINVAL;
+        }
+        target_pid = -1;
+    } else if (strcmp(command, "stop_pid") == 0) {
+        write_kinfo_to_file(target_pid, "");
+        target_pid = -1;
+    } else {
+        return -EINVAL;
+    }
+
+    return count;
+}
+
+
+
+
+
+static const struct file_operations target_pid_fops = {
+    .write = command_handler
+};
+
+
+
+
 
 
 static void configure_perf_event(struct perf_event_attr *attr, u32 config)
@@ -115,7 +224,7 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
 {
     struct task_struct *task = current;
 
-    if (is_target_pid(task->pid)) {
+    if (is_target_pid(task->pid, target_prog_path)) {
         unsigned long pc = instruction_pointer(regs);
         struct perf_event *events[4];
         struct perf_event_attr attr;
@@ -137,32 +246,6 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
     return 0;
 }
 
-static void write_kinfo_to_file(const char *filename)
-{
-    struct file *file;
-    mm_segment_t old_fs;
-    struct counter_data *entry;
-    char buffer[256];
-
-    file = filp_open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0644);
-    if (IS_ERR(file)) {
-        printk(KERN_ERR "Failed to open file: %s\n", filename);
-        return;
-    }
-
-    old_fs = get_fs();
-    set_fs(KERNEL_DS);
-
-    list_for_each_entry(entry, &counter_list, list) {
-        snprintf(buffer, sizeof(buffer), "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
-            entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
-        file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
-    }
-
-    set_fs(old_fs);
-    filp_close(file, NULL);
-}
-
 static struct kprobe kp = {
     .symbol_name = "finish_task_switch",
     .pre_handler = pre_handler,
@@ -171,13 +254,20 @@ static struct kprobe kp = {
 
 static int __init perf_cache_kprobe_module_init(void)
 {
-    printk(KERN_INFO "Initializing perf_cache_kprobe_module\n");
+    printk(KERN_INFO "Initializing cache_kprobe_monitor\n");
 
     int ret = register_kprobe(&kp);
     if (ret < 0) {
         printk(KERN_ERR "register_kprobe failed, returned %d\n", ret);
         printk(KERN_INFO "Failed to register kprobe for symbol: %s\n", kp.symbol_name);
         return ret;
+    }
+
+    proc_entry = proc_create("cache_kprobe_monitor", 0666, NULL, &target_pid_fops);
+    if (!proc_entry) {
+        printk(KERN_ERR "Failed to create proc file\n");
+        unregister_kprobe(&kp);
+        return -ENOMEM;
     }
 
     printk(KERN_INFO "Registered kprobe at %p\n", kp.addr);
@@ -192,7 +282,7 @@ static void __exit perf_cache_kprobe_module_exit(void)
     unregister_kprobe(&kp);
     printk(KERN_INFO "Unregistered kprobe at %p\n", kp.addr);
 
-    debugfs_remove(debugfs_entry);
+    proc_remove(proc_entry);
 
     struct counter_data *entry, *temp;
     list_for_each_entry_safe(entry, temp, &counter_list, list) {
@@ -201,8 +291,6 @@ static void __exit perf_cache_kprobe_module_exit(void)
         list_del(&entry->list);
         kfree(entry);
     }
-
-    write_kinfo_to_file("/tmp/kinfo_output.txt");
 }
 
 
