@@ -49,6 +49,7 @@ struct counter_data {
 
 static pid_t run_program(const char *path)
 {
+    printk("(run_program) starting %s", path);
     struct subprocess_info *sub_info;
     pid_t pid;
 
@@ -68,13 +69,14 @@ static pid_t run_program(const char *path)
 }
 
 
-static void write_kinfo_to_file(int pid, const char *prog_name)
+static void write_kinfo_to_file(int pid, const char *prog_path)
 {
     struct file *file;
     mm_segment_t old_fs;
     struct counter_data *entry;
     char buffer[256];
     char filename[256];
+    const char *prog_name = kbasename(prog_path); // Extract the basename from the program path
 
     snprintf(filename, sizeof(filename), "/tmp/kinfo_output_pid_%d_%s.txt", pid, prog_name);
 
@@ -83,7 +85,6 @@ static void write_kinfo_to_file(int pid, const char *prog_name)
         printk(KERN_ERR "Failed to open file: %s (error%ld)\n", filename, PTR_ERR(file));
         return;
     }
-
 
     old_fs = get_fs();
     set_fs(KERNEL_DS);
@@ -98,7 +99,9 @@ static void write_kinfo_to_file(int pid, const char *prog_name)
     filp_close(file, NULL);
 }
 
+
 int is_target_pid(pid_t pid, const char *prog_path) {
+    //printk(KERN_INFO "(is_target_pid) called with pid: %d and prog_path: %s\n", pid, prog_path);
     struct task_struct *task = pid_task(find_vpid(pid), PIDTYPE_PID);
     const char *task_comm;
 
@@ -107,11 +110,17 @@ int is_target_pid(pid_t pid, const char *prog_path) {
 
     task_comm = kbasename(task->comm);
 
-    if (target_pid > 0 && pid == target_pid)
-        return 1;
+    // printk(KERN_INFO " (is_target_pid) base name is: %s\n", task_comm);
 
-    if (target_prog_path[0] != '\0' && strcmp(task_comm, prog_path) == 0)
+    if (target_pid > 0 && pid == target_pid) {
+        printk(KERN_INFO " (is_target_pid) target pid hit with value: %d\n", target_pid);
         return 1;
+    }
+
+    if (target_prog_path[0] != '\0' && strcmp(task_comm, prog_path) == 0) {
+        printk(KERN_INFO " (is_target_pid) program name hit with value: %s\n", prog_path);
+        return 1;
+    }
 
     return 0;
 }
@@ -195,6 +204,8 @@ u64 read_perf_counter(struct perf_event *event) {
     u64 value, enabled, running;
     value = perf_event_read_value(event, &enabled, &running);
 
+    printk(KERN_INFO "(read_perf_counter) counter value is: %llu\n", value);
+
     return value;
 }
 
@@ -204,6 +215,7 @@ static void update_counters(unsigned long pc, u64 counter_values[])
 
     list_for_each_entry(entry, &counter_list, list) {
         if (entry->pc == pc) {
+            printk("(update_counters) pc match with value: %llu", pc);
             int i;
             for (i = 0; i < 4; ++i) {
                 entry->counters[i] += counter_values[i];
@@ -226,20 +238,33 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
 
     if (is_target_pid(task->pid, target_prog_path)) {
         unsigned long pc = instruction_pointer(regs);
+        printk(KERN_INFO "target pid match, pc value is %llu", pc);
         struct perf_event *events[4];
-        struct perf_event_attr attr;
         u64 counter_values[64];
         int i;
         for (i = 0; i < 4; ++i) {
+            struct perf_event_attr attr;
             configure_perf_event(&attr, event_codes[i]);
             events[i] = perf_event_create_kernel_counter(&attr, task->pid, NULL, NULL, NULL);
+            printk(KERN_INFO "perf_event_create_kernel_counter return value is %s", events[i]);
+        
+            if (IS_ERR(events[i])) {
+                printk(KERN_ERR "Failed to create perf_event for event_code %d\n", event_codes[i]);
+                return 0;
+            }
+        
         }
 
+        
+
+        printk(KERN_DEBUG "Before perf count read loop\n");
         for (i = 0; i < 4; ++i) {
+            printk(KERN_DEBUG "Event[%d]: %px\n", i, events[i]);
             counter_values[i] = read_perf_counter(events[i]);
+            printk(KERN_DEBUG "counter value at i is %llu", counter_values[i]);
             perf_event_release_kernel(events[i]);
         }
-
+        printk(KERN_INFO "After perf count read loop\n");
         update_counters(pc, counter_values);
     }
 
@@ -252,14 +277,14 @@ static struct kprobe kp = {
 };
 
 
-static int __init perf_cache_kprobe_module_init(void)
+static int __init cache_kprobe_module_init(void)
 {
     printk(KERN_INFO "Initializing cache_kprobe_monitor\n");
 
     int ret = register_kprobe(&kp);
     if (ret < 0) {
         printk(KERN_ERR "register_kprobe failed, returned %d\n", ret);
-        printk(KERN_INFO "Failed to register kprobe for symbol: %s\n", kp.symbol_name);
+        printk(KERN_DEBUG "Failed to register kprobe for symbol: %s\n", kp.symbol_name);
         return ret;
     }
 
@@ -277,7 +302,7 @@ static int __init perf_cache_kprobe_module_init(void)
 }
 
 
-static void __exit perf_cache_kprobe_module_exit(void)
+static void __exit cache_kprobe_module_exit(void)
 {
     unregister_kprobe(&kp);
     printk(KERN_INFO "Unregistered kprobe at %p\n", kp.addr);
@@ -294,8 +319,8 @@ static void __exit perf_cache_kprobe_module_exit(void)
 }
 
 
-module_init(perf_cache_kprobe_module_init);
-module_exit(perf_cache_kprobe_module_exit);
+module_init(cache_kprobe_module_init);
+module_exit(cache_kprobe_module_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("sandbom");
