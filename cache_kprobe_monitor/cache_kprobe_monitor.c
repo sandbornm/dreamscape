@@ -13,36 +13,49 @@
 #include <linux/signal.h>
 #include <linux/cred.h>
 
+#define num_events 13
 
 static LIST_HEAD(counter_list);
 static int target_pid = -1;
 static char target_prog_path[256] = "";
 static struct proc_dir_entry *proc_entry;
 
-// static u32 event_codes[] = {
-//     0x04, // L1 data cache misses
-//     0x03, // Line fills
-//     0x12, // Branch instructions
-//     0x08  // Cache writes
-// };
-
+// https://developer.arm.com/documentation/ddi0500/latest/ p.12-36
 enum event_code {
-    L1_DATA_CACHE_MISSES = 0x04,
-    LINE_FILLS = 0x03,
-    BRANCH_INSTRUCTIONS = 0x12,
-    CACHE_WRITES = 0x08
+    L1I_CACHE_REFILL = 0x01,
+    L1I_TLB_REFILL = 0x02,
+    L1D_CACHE_REFILL = 0x03,
+    L1D_CACHE_ACCESS = 0x04,
+    L1D_TLB_REFILL = 0x05,
+    LD_RETIRED = 0x06,
+    ST_RETIRED = 0x07,
+    INST_RETIRED = 0x08,
+    CPU_CYCLES = 0x11,
+    BR_PRED = 0x12,
+    MEM_ACCESS = 0x13,
+    L1I_CACHE = 0x14,
+    L1D_CACHE_WB = 0x15
 };
 
 static u32 event_codes[] = {
-    L1_DATA_CACHE_MISSES,
-    LINE_FILLS,
-    BRANCH_INSTRUCTIONS,
-    CACHE_WRITES
+    L1I_CACHE_REFILL,
+    L1I_TLB_REFILL,
+    L1D_CACHE_REFILL,
+    L1D_CACHE_ACCESS,
+    L1D_TLB_REFILL,
+    LD_RETIRED,
+    ST_RETIRED,
+    INST_RETIRED,
+    CPU_CYCLES,
+    BR_PRED,
+    MEM_ACCESS,
+    L1I_CACHE,
+    L1D_CACHE_WB
 };
 
 struct counter_data {
     unsigned long pc;
-    u64 counters[4];
+    u64 counters[num_events];
     struct list_head list;
 };
 
@@ -88,11 +101,29 @@ static void write_kinfo_to_file(int pid, const char *prog_name)
     old_fs = get_fs();
     set_fs(KERNEL_DS);
 
+    // list_for_each_entry(entry, &counter_list, list) {
+    //     snprintf(buffer, sizeof(buffer), "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
+    //         entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
+    //     file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
+    // }
+
+    // generalize to num_events
     list_for_each_entry(entry, &counter_list, list) {
-        snprintf(buffer, sizeof(buffer), "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
-            entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
+        int i;
+        char temp_buffer[64];
+
+        snprintf(buffer, sizeof(buffer), "PC: 0x%lx", entry->pc);
         file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
+
+        for (i = 0; i < num_events; ++i) {
+            snprintf(temp_buffer, sizeof(temp_buffer), ", Event %d: %llu", i, entry->counters[i]);
+            file->f_op->write(file, temp_buffer, strlen(temp_buffer), &file->f_pos);
+        }
+
+        snprintf(temp_buffer, sizeof(temp_buffer), "\n");
+        file->f_op->write(file, temp_buffer, strlen(temp_buffer), &file->f_pos);
     }
+
 
     set_fs(old_fs);
     filp_close(file, NULL);
@@ -205,7 +236,7 @@ static void update_counters(unsigned long pc, u64 counter_values[])
     list_for_each_entry(entry, &counter_list, list) {
         if (entry->pc == pc) {
             int i;
-            for (i = 0; i < 4; ++i) {
+            for (i = 0; i < num_events; ++i) {
                 entry->counters[i] += counter_values[i];
             }
             return;
@@ -214,7 +245,7 @@ static void update_counters(unsigned long pc, u64 counter_values[])
 
     entry = kmalloc(sizeof(struct counter_data), GFP_KERNEL);
     entry->pc = pc;
-    memcpy(entry->counters, counter_values, sizeof(u64) * 4);
+    memcpy(entry->counters, counter_values, sizeof(u64) * num_events);
     list_add(&entry->list, &counter_list);
 }
 
@@ -226,16 +257,16 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
 
     if (is_target_pid(task->pid, target_prog_path)) {
         unsigned long pc = instruction_pointer(regs);
-        struct perf_event *events[4];
+        struct perf_event *events[num_events];
         struct perf_event_attr attr;
         u64 counter_values[64];
         int i;
-        for (i = 0; i < 4; ++i) {
+        for (i = 0; i < num_events; ++i) {
             configure_perf_event(&attr, event_codes[i]);
             events[i] = perf_event_create_kernel_counter(&attr, task->pid, NULL, NULL, NULL);
         }
 
-        for (i = 0; i < 4; ++i) {
+        for (i = 0; i < num_events; ++i) {
             counter_values[i] = read_perf_counter(events[i]);
             perf_event_release_kernel(events[i]);
         }
@@ -286,8 +317,8 @@ static void __exit perf_cache_kprobe_module_exit(void)
 
     struct counter_data *entry, *temp;
     list_for_each_entry_safe(entry, temp, &counter_list, list) {
-        printk(KERN_INFO "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
-            entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
+        // printk(KERN_INFO "PC: 0x%lx, L1 misses: %llu, Line fills: %llu, Branches: %llu, Cache writes: %llu\n",
+        //     entry->pc, entry->counters[0], entry->counters[1], entry->counters[2], entry->counters[3]);
         list_del(&entry->list);
         kfree(entry);
     }
