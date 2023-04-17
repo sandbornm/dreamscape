@@ -7,13 +7,13 @@
 pgm_pid=$!
 
 # Monitor the stress process using the kernel module
-echo "start_pid $pgm_pid" | sudo tee /proc/cache_kprobe_monitor
+echo $pgm_pid | sudo tee /proc/hello_switch_pid
 
-# Wait for 5 seconds
-sleep 2
+# # Wait for 5 seconds
+# slee
 
-# Stop the monitoring
-echo "stop_pid" | sudo tee /proc/cache_kprobe_monitor
+# # Stop the monitoring
+# echo "stop_pid" | sudo tee /proc/cache_kprobe_monitor
 
-# Wait for the stress process to finish
-#wait $stress_pid
+# # Wait for the stress process to finish
+# #wait $stress_pid

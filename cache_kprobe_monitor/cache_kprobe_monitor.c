@@ -13,6 +13,11 @@
 #include <linux/signal.h>
 #include <linux/cred.h>
 
+#include <linux/mutex.h>
+
+static DEFINE_MUTEX(target_pid_mutex);
+
+
 #define num_events 13
 
 static LIST_HEAD(counter_list);
@@ -83,16 +88,15 @@ struct counter_data {
 
 static void write_kinfo_to_file(int pid)
 {
-
-    printk(KERN_INFO "(write_kinfo_to_file) Writing kinfo to file for pid %d\n", pid);
-
     struct file *file;
     mm_segment_t old_fs;
     struct counter_data *entry;
     char buffer[256];
     char filename[256];
 
-    snprintf(filename, sizeof(filename), "/tmp/cache_kprobe_monitor_pid_%d.txt", pid); 
+    snprintf(filename, sizeof(filename), "/tmp/cache_kprobe_monitor_pid_%d.txt", pid);
+
+    printk(KERN_INFO "(write_kinfo_to_file) Writing kinfo to %s for pid %d\n", filename, pid); 
 
     file = filp_open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0644);
     if (IS_ERR(file)) {
@@ -100,9 +104,20 @@ static void write_kinfo_to_file(int pid)
         return;
     }
 
+    // if (list_empty(&counter_list)) {
+    //     printk(KERN_WARNING "(write_kinfo_to_file) counter_list is empty, no data to write\n");
+
+    //     filp_close(file, NULL);
+    //     return;
+    // }
+
     // enable access to user-space memory
     old_fs = get_fs();
     set_fs(KERNEL_DS);
+
+    // ensure we start at beginning of file
+    file->f_pos = 0;
+
 
     // takes pointer to structure being iterated over, pointer to head of list, and name of struct list_head field in counter_data struct
     list_for_each_entry(entry, &counter_list, list) {
@@ -110,7 +125,13 @@ static void write_kinfo_to_file(int pid)
         char temp_buffer[64];
 
         snprintf(buffer, sizeof(buffer), "PC: 0x%lx", entry->pc);
-        file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
+
+        // check if file->f_op->write function is null
+        if (file->f_op->write) {
+            file->f_op->write(file, buffer, strlen(buffer), &file->f_pos);
+        } else {
+            printk(KERN_ERR "(write_kinfo_to_file) File operation write is NULL\n");
+        }
 
         for (i = 0; i < num_events; ++i) {
             snprintf(temp_buffer, sizeof(temp_buffer), ", Event %d: %llu", i, entry->counters[i]);
@@ -126,36 +147,39 @@ static void write_kinfo_to_file(int pid)
     filp_close(file, NULL);
 }
 
-int is_target_pid(pid_t pid) {
-//const char *prog_path) {
-    struct task_struct *task = pid_task(find_vpid(pid), PIDTYPE_PID);
-    const char *task_comm;
+// int is_target_pid(pid_t pid) {
+// //const char *prog_path) {
+//     struct task_struct *task = pid_task(find_vpid(pid), PIDTYPE_PID);
+//     const char *task_comm;
 
-    if (!task) {
-        //printk(KERN_INFO "(is_target_pid) no task found!");
-        return 0;
-    }
+//     if (!task) {
+//         //printk(KERN_INFO "(is_target_pid) no task found!");
+//         return 0;
+//     }
 
-    task_comm = kbasename(task->comm);
-    //printk(KERN_INFO "(is_target_pid) task_comm is: %s", task_comm);
+//     task_comm = kbasename(task->comm);
+//     //printk(KERN_INFO "(is_target_pid) task_comm is: %s", task_comm);
 
-    if (target_pid > 0 && pid == target_pid) {
-        printk(KERN_INFO "(is_target_pid) pid match for %d\n", pid);
-        return 1;
-    }
+//     // cast target_pid to pid_t for comparison
+//     mutex_lock(&target_pid_mutex);
+//     if (target_pid > 0 && task->pid == (pid_t)target_pid) {
+//         printk(KERN_INFO "(is_target_pid) pid match for %d\n", task->pid);
+//         return 1;
+//     }
+//     mutex_unlock(&target_pid_mutex);
 
-    // if (target_prog_path[0] != '\0' && strcmp(task_comm, prog_path) == 0)
-    //     return 1;
+//     // if (target_prog_path[0] != '\0' && strcmp(task_comm, prog_path) == 0)
+//     //     return 1;
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
 static ssize_t command_handler(struct file *file, const char __user *user_buf, size_t count, loff_t *ppos)
 {
 
-    printk(KERN_INFO "(command_handler) called on proc write with count: %d\n", count);
+    printk(KERN_INFO "(command_handler) called on proc write with count: %lu\n", (unsigned long)count);
  
     char buf[256];
     ssize_t buf_size;
@@ -187,7 +211,10 @@ static ssize_t command_handler(struct file *file, const char __user *user_buf, s
         printk(KERN_INFO "(command_handler) start_pid command received");
         int pid;
         if (sscanf(buf, "start_pid %d", &pid) == 1) {
+            mutex_lock(&target_pid_mutex);
             target_pid = pid;
+            mutex_unlock(&target_pid_mutex);
+            printk(KERN_INFO "(command_handler) target_pid updated to %d\n", target_pid);
         } else {
             return -EINVAL;
         }
@@ -202,22 +229,23 @@ static ssize_t command_handler(struct file *file, const char __user *user_buf, s
     //     }
     //     target_pid = -1;
     } else if (strcmp(command, "stop_pid") == 0) {
-        printk(KERN_INFO "(command_handler) stop_pid command received");
+        printk(KERN_INFO "(command_handler) stop_pid command received for target %d\n", target_pid);
         write_kinfo_to_file(target_pid);
+        mutex_lock(&target_pid_mutex);
         target_pid = -1;
+        mutex_unlock(&target_pid_mutex);
     } else {
         return -EINVAL;
     }
+
+    printk(KERN_DEBUG "(command_handler) target_pid set to %d\n", target_pid);
 
     return count;
 }
 
 
-
-
-
 static const struct file_operations target_pid_fops = {
-    .write = command_handler
+    .write = command_handler,
 };
 
 
@@ -251,42 +279,50 @@ u64 read_perf_counter(struct perf_event *event) {
     return value;
 }
 
-// static void update_counters(unsigned long pc, u64 counter_values[])
-// {
+static void update_counters(unsigned long pc, u64 counter_values[])
+{
 
-//     printk(KERN_INFO "(update_counters)");
+    printk(KERN_INFO "(update_counters)");
 
-//     struct counter_data *entry;
+    struct counter_data *entry;
 
-//     list_for_each_entry(entry, &counter_list, list) {
-//         if (entry->pc == pc) {
-//             int i;
-//             for (i = 0; i < num_events; ++i) {
-//                 entry->counters[i] += counter_values[i];
-//             }
-//             return;
-//         }
-//     }
+    list_for_each_entry(entry, &counter_list, list) {
+        if (entry->pc == pc) {
+            int i;
+            for (i = 0; i < num_events; ++i) {
+                entry->counters[i] += counter_values[i];
+            }
+            return;
+        }
+    }
 
-//     entry = kmalloc(sizeof(struct counter_data), GFP_KERNEL);
-//     entry->pc = pc;
-//     memcpy(entry->counters, counter_values, sizeof(u64) * num_events);
-//     list_add(&entry->list, &counter_list);
-// }
+    entry = kmalloc(sizeof(struct counter_data), GFP_KERNEL);
+    entry->pc = pc;
+    memcpy(entry->counters, counter_values, sizeof(u64) * num_events);
+    list_add(&entry->list, &counter_list);
+}
 
 
 
 static int pre_handler(struct kprobe *p, struct pt_regs *regs)
 {
     struct task_struct *task = current;
+    pid_t current_pid = task_pid_nr(task); // task->pid;
 
     //printk(KERN_INFO "In pre-handler\n");
 
     // target_prog_path passed to is_target_pid previously
-    if (is_target_pid(task->pid)) {
+    //for_each_process(task) {
 
-        printk(KERN_INFO "(pre_handler) target pid hit on %d\n", task->pid);
-        unsigned long pc = instruction_pointer(regs);
+    mutex_lock(&target_pid_mutex);
+
+    //printk(KERN_DEBUG "(pre_handler) current_pid is %d and target_pid is %d\n", current_pid, target_pid);
+
+    // target_pid > 0 && 
+    if (current_pid == (pid_t)target_pid) {
+
+        printk(KERN_INFO "(pre_handler) target pid hit on %d\n", current_pid);
+        unsigned long pc = regs_return_value(regs); //instruction_pointer(regs);
 
         printk(KERN_INFO "(pre_handler) current pc value: %llu\n", pc);
         struct perf_event *events[num_events];
@@ -297,7 +333,15 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
         printk(KERN_INFO "(pre_handler) configuring perf events...");
         for (i = 0; i < num_events; ++i) {
             configure_perf_event(&attr, event_codes[i]);
-            events[i] = perf_event_create_kernel_counter(&attr, task->pid, NULL, NULL, NULL);
+            struct perf_event * ev = perf_event_create_kernel_counter(&attr, current_pid, NULL, NULL, NULL);
+            
+            // ensure perf event was created 
+            if (IS_ERR(ev)) {
+                printk(KERN_INFO "(pre_handler) Failed to create perf event: %ld\n", PTR_ERR(ev));
+                return PTR_ERR(ev);
+            }
+            events[i] = ev; 
+        
         }
 
         for (i = 0; i < num_events; ++i) {
@@ -305,8 +349,10 @@ static int pre_handler(struct kprobe *p, struct pt_regs *regs)
             perf_event_release_kernel(events[i]);
         }
 
-        //update_counters(pc, counter_values);
+        update_counters(pc, counter_values);
     }
+    mutex_unlock(&target_pid_mutex);
+
 
     return 0;
 }
