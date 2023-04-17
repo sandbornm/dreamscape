@@ -104,10 +104,4 @@ CPU part	: 0xd03
 CPU revision	: 4
 ```
 
-# Module cache_kprobe_monitor
-
-This module implements the following workflow:
-
-1. For a process with known PID that is started in a suspended state
-2.  Write the PID to `/sys/kernel/debug/target_pid` with echo
-3. Resume the suspended process
+View [module commands](./module_commands.md) for instructions on running this module

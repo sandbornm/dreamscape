@@ -302,7 +302,7 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
         program_counter = regs->pc;
 
         printk(KERN_INFO "(sample_perf_counters) current program counter: %llu\n", program_counter);
-        
+
         for (i = 0; i < NUM_EVENTS; i++) {
             new_value = perf_event_read_value(perf_data->events[i], &enabled, &running);
             delta = new_value - perf_data->prev_values[i];
@@ -351,7 +351,7 @@ static void start_monitoring(pid_t pid)
     }
 
     printk(KERN_INFO "Starting the timer for 5 second sampling of counters\n");
-    sample_interval = ktime_set(5, 0); // 5 second interval
+    sample_interval = ktime_set(1, 0); // ktime(second, nanosecond) intervals to collect data
     printk(KERN_INFO "Sample interval set for 5 seconds intervals\n");
 
     printk(KERN_INFO "Initializing the timer\n");
