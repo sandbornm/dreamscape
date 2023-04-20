@@ -11,8 +11,8 @@ int main(void) {
     int fd;
     ssize_t count;
     char buffer[BUF_SIZE];
-    char *filename = "/proc/hello_switch_message";
-    char *output_filename = "/tmp/hello_switch_output.txt";
+    char *filename = "/proc/cache_kmv2_message";
+    char *output_filename = "/tmp/cache_kmv2_message.txt";
     FILE *output_file;
 
     fd = open(filename, O_RDONLY);

@@ -15,17 +15,24 @@
 
 
 static int target_pid = -1;
-
 static struct perf_counter_data *perf_data;
 static struct task_struct *monitored_task = NULL;
+
 static struct hrtimer sample_timer;
 static ktime_t sample_interval;
 
 static struct proc_dir_entry *proc_entry_pid;
 static struct proc_dir_entry *proc_entry_message;
 
-static char message_buffer[512];
-static DEFINE_SPINLOCK(buffer_lock);
+// hold counter values for proc file
+// run utils/read_proc_message before unloading module to get results
+// written to /tmp/cache_kmv2_message.txt
+#define BUFFER_SIZE 8192
+
+static char data_buffer[BUFFER_SIZE];
+static size_t buffer_pos = 0;
+static DEFINE_MUTEX(buffer_mutex);
+
 
 
 
@@ -79,54 +86,6 @@ struct perf_counter_data {
 
 
 
-// static struct perf_counter_data *init_perf_counters(pid_t pid)
-// {
-//     struct perf_counter_data *perf_data;
-//     struct perf_event_attr attr;
-//     int cpu, i;
-
-//     printk(KERN_INFO " (init_perf_counters) Initializing performance counters\n");
-//     perf_data = kzalloc(sizeof(struct perf_counter_data), GFP_KERNEL);
-//     if (!perf_data) {
-//         printk(KERN_ERR "kzalloc failed\n");
-//         return NULL;
-//     }
-//     printk(KERN_INFO "kzalloc succeeded\n");
-
-//     // need to add a for loop for all of the event codes
-
-//     printk(KERN_INFO "creating perf_event_attr\n");
-//     memset(&attr, 0, sizeof(struct perf_event_attr));
-//     attr.type = PERF_TYPE_RAW; // PERF_TYPE_HARDWARE;
-//     attr.size = sizeof(struct perf_event_attr);
-//     attr.config = 0x04; // Replace with the desired event code
-//     attr.exclude_kernel = 1;
-
-//     printk(KERN_INFO "perf_event_attr created\n");
-
-//     printk(KERN_INFO "getting cpu");
-//     cpu = get_cpu();
-//     printk(KERN_INFO "calling perf_event_create_kernel_counter\n");
-
-//     perf_data->event = perf_event_create_kernel_counter(&attr, cpu, NULL, NULL, NULL);
-
-//     printk(KERN_INFO "perf_event_create_kernel_counter returned\n");
-
-//     if (IS_ERR(perf_data->event)) {
-//         kfree(perf_data);
-//         return NULL;
-//     }
-
-//     printk(KERN_INFO "perf_event_create_kernel_counter succeeded\n");
-
-//     printk(KERN_INFO "putting cpu");
-//     put_cpu();
-
-//     perf_data->prev_value = 0;
-
-//     return perf_data;
-// }
-
 static struct perf_counter_data *init_perf_counters(pid_t pid)
 {
     struct perf_counter_data *perf_data;
@@ -179,30 +138,6 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
     return perf_data;
 }
 
-static void write_counters_to_file(u64 *counter_values)
-{
-    printk(KERN_INFO " (write_counters_to_file) Writing counter values to file\n");
-    struct file *file;
-    char buf[1024]; // TODO figure out optimal size buffer
-    int i;
-    loff_t pos = 0;
-
-    file = filp_open("/tmp/perf_counters.txt", O_CREAT | O_WRONLY | O_APPEND, 0644);
-    if (IS_ERR(file)) {
-        printk(KERN_ERR "Error opening /tmp/perf_counters.txt\n");
-        return;
-    }
-
-    for (i = 0; i < NUM_EVENTS; i++) {
-        snprintf(buf, sizeof(buf), "Event %d: %llu\n", event_codes[i], counter_values[i]);
-        kernel_write(file, buf, strlen(buf), &pos);
-    }
-
-    filp_close(file, NULL);
-
-    printk(KERN_INFO " (write_counters_to_file) Finished writing counter values to file\n");
-}
-
 static void cleanup_perf_counters(struct perf_counter_data *perf_data)
 {
     int i;
@@ -225,67 +160,6 @@ static void cleanup_perf_counters(struct perf_counter_data *perf_data)
 }
 
 
-// static void cleanup_perf_counters(struct perf_counter_data *perf_data)
-// {
-//     if (!perf_data) {
-//         return;
-//     }
-
-//     if (perf_data->event) {
-//         perf_event_release_kernel(perf_data->event);
-//     }
-
-//     kfree(perf_data);
-// }
-
-
-
-
-// static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
-// {
-//     u64 enabled, running, new_value, delta;
-
-//     printk(KERN_INFO "(sample_perf_counters) timer callback, Monitoring a task\n");
-
-//     // TODO: add a for loop for all of the event codes and also consider a non null param to perf_event_read_value if the timestamp is important
-
-//     if (monitored_task && pid_alive(monitored_task)) {
-//         printk(KERN_INFO "(sample_perf_counters) Monitored task is alive, reading the counter value\n");
-//         new_value = perf_event_read_value(perf_data->event, &enabled, &running);
-//         printk(KERN_INFO "(sample_perf_counters) read counter value\n");
-//         delta = new_value - perf_data->prev_value;
-//         printk(KERN_INFO "(sample_perf_counters) L1D_CACHE_ACCESS counter value: %llu, delta: %llu\n", new_value, delta);
-//         perf_data->prev_value = new_value;
-//         printk(KERN_INFO "(sample_perf_counters) hrtimer_forward_now\n");
-//         hrtimer_forward_now(timer, sample_interval);
-//         return HRTIMER_RESTART;
-//     } else {
-//         printk(KERN_INFO "Monitored task terminated, stopping the timer\n");
-//         return HRTIMER_NORESTART;
-//     }
-// }
-
-// static void write_counters_to_file(u64 *counter_values)
-// {
-//     struct file *file;
-//     char buf[256];
-//     int i;
-//     loff_t pos = 0;
-
-//     file = filp_open("/tmp/perf_counters.txt", O_CREAT | O_WRONLY | O_APPEND, 0644);
-//     if (IS_ERR(file)) {
-//         printk(KERN_ERR "Error opening /tmp/perf_counters.txt\n");
-//         return;
-//     }
-
-//     for (i = 0; i < NUM_EVENTS; i++) {
-//         snprintf(buf, sizeof(buf), "Event %d: %llu\n", event_codes[i], counter_values[i]);
-//         kernel_write(file, buf, strlen(buf), &pos);
-//     }
-
-//     filp_close(file, NULL);
-// }
-
 // Modify the sample_perf_counters function
 static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
 {
@@ -296,7 +170,7 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
 
     if (monitored_task && pid_alive(monitored_task)) {
 
-        printk(KERN_INFO "(sample_perf_counters) Monitored task is alive, reading the counter values\n");
+        printk(KERN_INFO "(sample_perf_counters) Monitored task is alive (PID: %d), reading the counter values\n", monitored_task->pid);
 
         struct pt_regs *regs = task_pt_regs(monitored_task);
         program_counter = regs->pc;
@@ -310,18 +184,41 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
             counter_values[i] = delta;
             perf_data->prev_values[i] = new_value;
         }
+
+        // Write the counter values to the buffer
+        mutex_lock(&buffer_mutex);
+        int bytes_written = snprintf(data_buffer + buffer_pos, BUFFER_SIZE - buffer_pos,
+                                      "%d,%llu", target_pid, program_counter);
+
+        for (i = 0; i < NUM_EVENTS; i++) {
+            bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, ",%llu", counter_values[i]);
+        }
+        bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, "\n");
+
+        if (bytes_written > 0 && bytes_written < BUFFER_SIZE - buffer_pos) {
+            buffer_pos += bytes_written;
+        } else {
+            printk(KERN_ERR "Buffer overflow or error in writing counter values");
+        }
+
+        mutex_unlock(&buffer_mutex);
+
     // Call the function to write the counter values to a file
         //write_counters_to_file(counter_values);
 
         hrtimer_forward_now(timer, sample_interval);
         return HRTIMER_RESTART;
     } else {
-        printk(KERN_INFO "Monitored task terminated, stopping the timer\n");
+        printk(KERN_INFO "Monitored task terminated (PID: %d), stopping the timer\n", monitored_task->pid);
         return HRTIMER_NORESTART;
     }
 }
 
-
+static enum hrtimer_restart timeout_callback(struct hrtimer *timer) {
+    printk(KERN_INFO "Timeout reached, stopping the performance counter sampling\n");
+    stop_monitoring();
+    return HRTIMER_NORESTART;
+}
 
 static enum hrtimer_restart dummy_callback(struct hrtimer *timer)
 {
@@ -363,10 +260,16 @@ static void start_monitoring(pid_t pid)
     printk(KERN_INFO "Starting the timer\n");
     hrtimer_start(&sample_timer, sample_interval, HRTIMER_MODE_REL);
     printk(KERN_INFO "Timer started\n");
+
+    //timeout_interval = ktime_set(3, 0); // Set the timeout interval to 3 seconds for testing
+    //hrtimer_init(&timeout_timer, CLOCK_MONOTONIC, HRTIMER_MODE_REL);
+    //timeout_timer.function = timeout_callback;
+    //hrtimer_start(&timeout_timer, timeout_interval, HRTIMER_MODE_REL);
 }
 
 static void stop_monitoring(void)
 {
+    //hrtimer_cancel(&timeout_timer);
     hrtimer_cancel(&sample_timer);
     cleanup_perf_counters(perf_data);
     put_task_struct(monitored_task);
@@ -425,6 +328,12 @@ static ssize_t pid_write(struct file *file, const char __user *buffer, size_t co
         return -EINVAL;
     }
     printk(KERN_INFO "PID set to %d\n", target_pid); // Added for debugging
+
+    // stop monitoring of previous task
+    if (monitored_task) {
+        printk(KERN_INFO "Stopping monitoring of previous process (PID: %d)\n", monitored_task->pid);
+        stop_monitoring();
+    }
 
     // begin perf monitoring
     printk(KERN_INFO "beginning perf monitoring\n");
