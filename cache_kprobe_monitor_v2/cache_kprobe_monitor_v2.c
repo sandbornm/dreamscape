@@ -24,6 +24,9 @@ static ktime_t sample_interval;
 static struct proc_dir_entry *proc_entry_pid;
 static struct proc_dir_entry *proc_entry_message;
 
+static char message_buffer[512];
+static DEFINE_SPINLOCK(buffer_lock);
+
 // hold counter values for proc file
 // run utils/read_proc_message before unloading module to get results
 // written to /tmp/cache_kmv2_message.txt
@@ -214,18 +217,14 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
     }
 }
 
-static enum hrtimer_restart timeout_callback(struct hrtimer *timer) {
-    printk(KERN_INFO "Timeout reached, stopping the performance counter sampling\n");
-    stop_monitoring();
-    return HRTIMER_NORESTART;
-}
 
-static enum hrtimer_restart dummy_callback(struct hrtimer *timer)
-{
-    printk(KERN_INFO "Dummy timer callback executed\n");
-    hrtimer_forward_now(timer, sample_interval);
-    return HRTIMER_RESTART;
-}
+
+// static enum hrtimer_restart dummy_callback(struct hrtimer *timer)
+// {
+//     printk(KERN_INFO "Dummy timer callback executed\n");
+//     hrtimer_forward_now(timer, sample_interval);
+//     return HRTIMER_RESTART;
+// }
 
 
 static void start_monitoring(pid_t pid)
@@ -276,7 +275,11 @@ static void stop_monitoring(void)
     monitored_task = NULL;
 }
 
-
+static enum hrtimer_restart timeout_callback(struct hrtimer *timer) {
+    printk(KERN_INFO "Timeout reached, stopping the performance counter sampling\n");
+    stop_monitoring();
+    return HRTIMER_NORESTART;
+}
 
 
 /*
@@ -287,28 +290,29 @@ PID and file handling
 */
 
 
-static int hello_switch(struct kprobe *p, struct pt_regs *regs)
-{
-    struct task_struct *next_task = current;
+// dummy function to test kprobe behavior
+// static int hello_switch(struct kprobe *p, struct pt_regs *regs)
+// {
+//     struct task_struct *next_task = current;
 
-    if (next_task && next_task->pid == target_pid)
-    {
-        //printk(KERN_INFO "hello world %d\n", target_pid);
+//     if (next_task && next_task->pid == target_pid)
+//     {
+//         //printk(KERN_INFO "hello world %d\n", target_pid);
 
-        spin_lock(&buffer_lock);
-        snprintf(message_buffer, sizeof(message_buffer), "hello world %d\n", target_pid);
-        spin_unlock(&buffer_lock);
+//         spin_lock(&buffer_lock);
+//         snprintf(message_buffer, sizeof(message_buffer), "hello world %d\n", target_pid);
+//         spin_unlock(&buffer_lock);
 
-    }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
-static struct kprobe kp = {
-    .symbol_name = "finish_task_switch",
-    .pre_handler = hello_switch,
-};
+// static struct kprobe kp = {
+//     .symbol_name = "finish_task_switch",
+//     .pre_handler = hello_switch,
+// };
 
 
 static ssize_t pid_write(struct file *file, const char __user *buffer, size_t count, loff_t *ppos)
@@ -373,19 +377,19 @@ static int __init cache_kprobe_monitor_v2_init(void)
 
     int ret;
 
-    ret = register_kprobe(&kp);
-    if (ret < 0)
-    {
-        printk(KERN_INFO "register_kprobe failed, returned %d\n", ret);
-        return ret;
-    }
+    // ret = register_kprobe(&kp);
+    // if (ret < 0)
+    // {
+    //     printk(KERN_INFO "register_kprobe failed, returned %d\n", ret);
+    //     return ret;
+    // }
 
     // was hello_switch_pid
     proc_entry_pid = proc_create("cache_kmv2_pid", 0200, NULL, &pid_fops);
     if (!proc_entry_pid)
     {
         printk(KERN_ERR "Error creating proc entry, exiting");
-        unregister_kprobe(&kp);
+        //unregister_kprobe(&kp);
         proc_remove(proc_entry_pid);
         return -ENOMEM;
     }
@@ -395,7 +399,7 @@ static int __init cache_kprobe_monitor_v2_init(void)
     if (!proc_entry_message)
     {
         printk(KERN_ERR "Error creating proc entry for message, exiting");
-        unregister_kprobe(&kp);
+        //unregister_kprobe(&kp);
         proc_remove(proc_entry_message);
         return -ENOMEM;
     }
@@ -412,7 +416,7 @@ static void __exit cache_kprobe_monitor_v2_exit(void)
     stop_monitoring();
     proc_remove(proc_entry_message);
     proc_remove(proc_entry_pid);
-    unregister_kprobe(&kp);
+    //unregister_kprobe(&kp);
     printk(KERN_INFO "unloaded cache_kprobe_monitor_v2 module\n");
 }
 

@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#define BUF_SIZE 512
+#define BUF_SIZE 8192
 
 int main(void) {
     int fd;
