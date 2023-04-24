@@ -11,6 +11,8 @@
 #include <linux/slab.h>
 #include <linux/pid.h>
 
+#include <linux/notifier.h>
+
 #include <linux/hrtimer.h>
 
 
@@ -30,13 +32,11 @@ static DEFINE_SPINLOCK(buffer_lock);
 // hold counter values for proc file
 // run utils/read_proc_message before unloading module to get results
 // written to /tmp/cache_kmv2_message.txt
-#define BUFFER_SIZE 8192
+// #define BUFFER_SIZE 8192
 
-static char data_buffer[BUFFER_SIZE];
-static size_t buffer_pos = 0;
-static DEFINE_MUTEX(buffer_mutex);
-
-
+// static char data_buffer[BUFFER_SIZE];
+// static size_t buffer_pos = 0;
+// static DEFINE_MUTEX(buffer_mutex);
 
 
 /*
@@ -47,6 +47,7 @@ Perf counter handling
 */
 
 
+//https://elixir.bootlin.com/linux/v5.4/source/arch/arm64/include/asm/perf_event.h
 // https://developer.arm.com/documentation/ddi0500/latest/ p.12-36
 enum event_code {
     L1I_CACHE_REFILL = 0x01,
@@ -61,7 +62,15 @@ enum event_code {
     BR_PRED = 0x12,
     MEM_ACCESS = 0x13,
     L1I_CACHE = 0x14,
-    L1D_CACHE_WB = 0x15
+    L1D_CACHE_WB = 0x15,
+    BUS_ACCESS = 0x19,
+    // MEMORY_ERROR = 0x1A,
+    // L1D_CACHE_ALLOCATE = 0x1F,
+    // L1D_TLB = 0x25,
+    // LL_CACHE = 0x32,
+    // LL_CACHE_MISS = 0x33,
+    // LL_CACHE_RD = 0x36,
+    // LL_CACHE_MISS_RD = 0x37,
 };
 
 static u32 event_codes[] = {
@@ -77,7 +86,15 @@ static u32 event_codes[] = {
     BR_PRED,
     MEM_ACCESS,
     L1I_CACHE,
-    L1D_CACHE_WB
+    L1D_CACHE_WB,
+    BUS_ACCESS,
+    // MEMORY_ERROR,
+    // L1D_CACHE_ALLOCATE,
+    // L1D_TLB,
+    // LL_CACHE,
+    // LL_CACHE_MISS,
+    // LL_CACHE_RD,
+    // LL_CACHE_MISS_RD
 };
 
 #define NUM_EVENTS (sizeof(event_codes) / sizeof(event_codes[0]))
@@ -116,6 +133,7 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
         attr.size = sizeof(struct perf_event_attr);
         attr.config = event_codes[i];  // Set the event code
         attr.exclude_kernel = 1;
+        attr.inherit = 0;
 
         printk(KERN_INFO "perf_event_attr created\n");
 
@@ -189,22 +207,22 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
         }
 
         // Write the counter values to the buffer
-        mutex_lock(&buffer_mutex);
-        int bytes_written = snprintf(data_buffer + buffer_pos, BUFFER_SIZE - buffer_pos,
-                                      "%d,%llu", target_pid, program_counter);
+        // mutex_lock(&buffer_mutex);
+        // int bytes_written = snprintf(data_buffer + buffer_pos, BUFFER_SIZE - buffer_pos,
+        //                               "%d,%llu", target_pid, program_counter);
 
-        for (i = 0; i < NUM_EVENTS; i++) {
-            bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, ",%llu", counter_values[i]);
-        }
-        bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, "\n");
+        // for (i = 0; i < NUM_EVENTS; i++) {
+        //     bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, ",%llu", counter_values[i]);
+        // }
+        // bytes_written += snprintf(data_buffer + buffer_pos + bytes_written, BUFFER_SIZE - buffer_pos - bytes_written, "\n");
 
-        if (bytes_written > 0 && bytes_written < BUFFER_SIZE - buffer_pos) {
-            buffer_pos += bytes_written;
-        } else {
-            printk(KERN_ERR "Buffer overflow or error in writing counter values");
-        }
+        // if (bytes_written > 0 && bytes_written < BUFFER_SIZE - buffer_pos) {
+        //     buffer_pos += bytes_written;
+        // } else {
+        //     printk(KERN_ERR "Buffer overflow or error in writing counter values");
+        // }
 
-        mutex_unlock(&buffer_mutex);
+        // mutex_unlock(&buffer_mutex);
 
     // Call the function to write the counter values to a file
         //write_counters_to_file(counter_values);
@@ -217,14 +235,66 @@ static enum hrtimer_restart sample_perf_counters(struct hrtimer *timer)
     }
 }
 
+/*
+
+Kprobe setup: 
+
+*/
+
+static void handle_task_perf_events(struct task_struct *task, bool enable)
+{
+    struct perf_event *event;
+    struct perf_event_context *ctx;
+    int idx;
+
+    rcu_read_lock();
+    for (idx = 0; idx < PERF_NR_CONTEXTS; idx++) {
+        ctx = rcu_dereference(task->perf_event_ctxp[idx]);
+        if (ctx) {
+            mutex_lock(&ctx->mutex);
+            list_for_each_entry(event, &ctx->event_list, event_entry) {
+                if (enable) {
+                    perf_event_enable(event);
+                } else {
+                    perf_event_disable(event);
+                }
+            }
+            mutex_unlock(&ctx->mutex);
+        }
+    }
+    rcu_read_unlock();
+}
 
 
-// static enum hrtimer_restart dummy_callback(struct hrtimer *timer)
-// {
-//     printk(KERN_INFO "Dummy timer callback executed\n");
-//     hrtimer_forward_now(timer, sample_interval);
-//     return HRTIMER_RESTART;
-// }
+
+static int perf_events_handler(struct kretprobe_instance *ri, struct pt_regs *regs)
+{
+    struct task_struct *prev = (struct task_struct *)regs->regs[0];
+    struct task_struct *next = (struct task_struct *)regs->regs[1];
+
+    if (prev->pid == target_pid) {
+        // Pause performance counters for target_pid
+        printk(KERN_INFO "Pausing performance counters for PID %d\n", target_pid);
+        handle_task_perf_events(prev, false);
+    }
+
+    if (next->pid == target_pid) {
+        // Resume performance counters for target_pid
+        printk(KERN_INFO "Resuming performance counters for PID %d\n", target_pid);
+        handle_task_perf_events(next, true);
+    }
+
+    return 0;
+}
+
+static struct kretprobe finish_task_switch_krp = {
+    .handler = perf_events_handler,
+    .entry_handler = NULL,
+    .data_size = 0,
+    .maxactive = 20,
+    .kp.symbol_name = "finish_task_switch",
+};
+
 
 
 static void start_monitoring(pid_t pid)
@@ -290,31 +360,6 @@ PID and file handling
 */
 
 
-// dummy function to test kprobe behavior
-// static int hello_switch(struct kprobe *p, struct pt_regs *regs)
-// {
-//     struct task_struct *next_task = current;
-
-//     if (next_task && next_task->pid == target_pid)
-//     {
-//         //printk(KERN_INFO "hello world %d\n", target_pid);
-
-//         spin_lock(&buffer_lock);
-//         snprintf(message_buffer, sizeof(message_buffer), "hello world %d\n", target_pid);
-//         spin_unlock(&buffer_lock);
-
-//     }
-
-//     return 0;
-// }
-
-
-// static struct kprobe kp = {
-//     .symbol_name = "finish_task_switch",
-//     .pre_handler = hello_switch,
-// };
-
-
 static ssize_t pid_write(struct file *file, const char __user *buffer, size_t count, loff_t *ppos)
 {
     printk(KERN_INFO "Reading PID from proc file\n");
@@ -377,29 +422,26 @@ static int __init cache_kprobe_monitor_v2_init(void)
 
     int ret;
 
-    // ret = register_kprobe(&kp);
-    // if (ret < 0)
-    // {
-    //     printk(KERN_INFO "register_kprobe failed, returned %d\n", ret);
-    //     return ret;
+    // ret = register_kretprobe(&finish_task_switch_krp);
+    // if (ret < 0) {
+    //     printk(KERN_ERR "register_kretprobe failed, returned %d\n", ret);
+    //     return -1;
     // }
+    // printk(KERN_INFO "Planted kretprobe at %pS\n", finish_task_switch_krp.kp.addr);
 
-    // was hello_switch_pid
+
     proc_entry_pid = proc_create("cache_kmv2_pid", 0200, NULL, &pid_fops);
     if (!proc_entry_pid)
     {
         printk(KERN_ERR "Error creating proc entry, exiting");
-        //unregister_kprobe(&kp);
         proc_remove(proc_entry_pid);
         return -ENOMEM;
     }
 
-    // was hello_switch_message
     proc_entry_message = proc_create("cache_kmv2_message", 0400, NULL, &message_fops);
     if (!proc_entry_message)
     {
         printk(KERN_ERR "Error creating proc entry for message, exiting");
-        //unregister_kprobe(&kp);
         proc_remove(proc_entry_message);
         return -ENOMEM;
     }
@@ -416,7 +458,10 @@ static void __exit cache_kprobe_monitor_v2_exit(void)
     stop_monitoring();
     proc_remove(proc_entry_message);
     proc_remove(proc_entry_pid);
-    //unregister_kprobe(&kp);
+
+    //unregister_kretprobe(&finish_task_switch_krp);
+    printk(KERN_INFO "kretprobe at %pS unregistered\n", finish_task_switch_krp.kp.addr);
+
     printk(KERN_INFO "unloaded cache_kprobe_monitor_v2 module\n");
 }
 

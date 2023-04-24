@@ -1,0 +1,3298 @@
+{
+    "1823": [
+        {
+            "timestamp": 633.926693,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 157939
+        },
+        {
+            "timestamp": 633.938097,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 8738
+        },
+        {
+            "timestamp": 633.947621,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 118671
+        },
+        {
+            "timestamp": 633.95905,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2595002
+        },
+        {
+            "timestamp": 634.66709,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 14279
+        },
+        {
+            "timestamp": 634.676262,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1625879
+        },
+        {
+            "timestamp": 634.686873,
+            "event_name": "ST_RETIRED",
+            "counter_value": 672262
+        },
+        {
+            "timestamp": 634.697496,
+            "event_name": "INST_RETIRED",
+            "counter_value": 9069050
+        },
+        {
+            "timestamp": 634.708463,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 25724943
+        },
+        {
+            "timestamp": 634.719916,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 2043137
+        },
+        {
+            "timestamp": 634.73135,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1653715
+        },
+        {
+            "timestamp": 634.743026,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 8056066
+        },
+        {
+            "timestamp": 634.754912,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 90605
+        },
+        {
+            "timestamp": 634.764847,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 500769
+        },
+        {
+            "timestamp": 634.927538,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 254983
+        },
+        {
+            "timestamp": 634.937584,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 13191
+        },
+        {
+            "timestamp": 634.947432,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 183268
+        },
+        {
+            "timestamp": 634.957459,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 3417356
+        },
+        {
+            "timestamp": 634.969513,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 21337
+        },
+        {
+            "timestamp": 634.979426,
+            "event_name": "LD_RETIRED",
+            "counter_value": 2131418
+        },
+        {
+            "timestamp": 634.991592,
+            "event_name": "ST_RETIRED",
+            "counter_value": 890765
+        },
+        {
+            "timestamp": 635.003776,
+            "event_name": "INST_RETIRED",
+            "counter_value": 10030626
+        },
+        {
+            "timestamp": 635.016215,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 36929491
+        },
+        {
+            "timestamp": 635.028896,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 2356453
+        },
+        {
+            "timestamp": 635.041315,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2209266
+        },
+        {
+            "timestamp": 635.05375,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 9810029
+        },
+        {
+            "timestamp": 635.06627,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 157206
+        },
+        {
+            "timestamp": 635.078519,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 690140
+        },
+        {
+            "timestamp": 635.928348,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 305366
+        },
+        {
+            "timestamp": 635.9386,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 15473
+        },
+        {
+            "timestamp": 635.948626,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 208807
+        },
+        {
+            "timestamp": 635.958771,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 3801336
+        },
+        {
+            "timestamp": 635.971064,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 25465
+        },
+        {
+            "timestamp": 635.981128,
+            "event_name": "LD_RETIRED",
+            "counter_value": 2870343
+        },
+        {
+            "timestamp": 635.993629,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1208440
+        },
+        {
+            "timestamp": 636.006162,
+            "event_name": "INST_RETIRED",
+            "counter_value": 12582330
+        },
+        {
+            "timestamp": 636.018877,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 42364248
+        },
+        {
+            "timestamp": 636.03159,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 3120003
+        },
+        {
+            "timestamp": 636.04413,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2864715
+        },
+        {
+            "timestamp": 636.056674,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 12471847
+        },
+        {
+            "timestamp": 636.069391,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 182839
+        },
+        {
+            "timestamp": 636.081726,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 814172
+        },
+        {
+            "timestamp": 636.929997,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 344676
+        },
+        {
+            "timestamp": 636.940787,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 17351
+        },
+        {
+            "timestamp": 636.951341,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 251339
+        },
+        {
+            "timestamp": 636.962037,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 4872620
+        },
+        {
+            "timestamp": 636.975516,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 31301
+        },
+        {
+            "timestamp": 636.98617,
+            "event_name": "LD_RETIRED",
+            "counter_value": 3133037
+        },
+        {
+            "timestamp": 636.999619,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1318612
+        },
+        {
+            "timestamp": 637.013228,
+            "event_name": "INST_RETIRED",
+            "counter_value": 14601998
+        },
+        {
+            "timestamp": 637.027073,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 50568415
+        },
+        {
+            "timestamp": 637.040955,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 3446865
+        },
+        {
+            "timestamp": 637.054669,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3725600
+        },
+        {
+            "timestamp": 637.068381,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 14100162
+        },
+        {
+            "timestamp": 637.082267,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 213950
+        },
+        {
+            "timestamp": 637.095798,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1023721
+        },
+        {
+            "timestamp": 637.928321,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 371960
+        },
+        {
+            "timestamp": 637.938581,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 18470
+        },
+        {
+            "timestamp": 637.948616,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 280919
+        },
+        {
+            "timestamp": 637.958802,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 6017291
+        },
+        {
+            "timestamp": 637.971237,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 43321
+        },
+        {
+            "timestamp": 637.98142,
+            "event_name": "LD_RETIRED",
+            "counter_value": 3661786
+        },
+        {
+            "timestamp": 637.993795,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1462317
+        },
+        {
+            "timestamp": 638.006303,
+            "event_name": "INST_RETIRED",
+            "counter_value": 18228907
+        },
+        {
+            "timestamp": 638.018965,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 51883854
+        },
+        {
+            "timestamp": 638.031734,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 4102899
+        },
+        {
+            "timestamp": 638.044329,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3974045
+        },
+        {
+            "timestamp": 638.056906,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 16725488
+        },
+        {
+            "timestamp": 638.069661,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 220118
+        },
+        {
+            "timestamp": 638.079926,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1222446
+        },
+        {
+            "timestamp": 638.928192,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 422694
+        },
+        {
+            "timestamp": 638.938411,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 20856
+        },
+        {
+            "timestamp": 638.948392,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 310326
+        },
+        {
+            "timestamp": 638.958502,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 6160303
+        },
+        {
+            "timestamp": 638.970643,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 45789
+        },
+        {
+            "timestamp": 638.980653,
+            "event_name": "LD_RETIRED",
+            "counter_value": 3812745
+        },
+        {
+            "timestamp": 638.992947,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1524527
+        },
+        {
+            "timestamp": 639.005202,
+            "event_name": "INST_RETIRED",
+            "counter_value": 18580810
+        },
+        {
+            "timestamp": 639.017651,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 58264790
+        },
+        {
+            "timestamp": 639.030309,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 4170142
+        },
+        {
+            "timestamp": 639.042682,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 4635640
+        },
+        {
+            "timestamp": 639.055144,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 17036140
+        },
+        {
+            "timestamp": 639.067681,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 262210
+        },
+        {
+            "timestamp": 639.079968,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1337852
+        },
+        {
+            "timestamp": 639.92831,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 432297
+        },
+        {
+            "timestamp": 639.938477,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 21192
+        },
+        {
+            "timestamp": 639.948424,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 310937
+        },
+        {
+            "timestamp": 639.958421,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 6171825
+        },
+        {
+            "timestamp": 639.970668,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 45961
+        },
+        {
+            "timestamp": 639.980681,
+            "event_name": "LD_RETIRED",
+            "counter_value": 3876498
+        },
+        {
+            "timestamp": 639.992962,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1550576
+        },
+        {
+            "timestamp": 640.005325,
+            "event_name": "INST_RETIRED",
+            "counter_value": 18619252
+        },
+        {
+            "timestamp": 640.017808,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 58935201
+        },
+        {
+            "timestamp": 640.03047,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 4234482
+        },
+        {
+            "timestamp": 640.042925,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 4644761
+        },
+        {
+            "timestamp": 640.05528,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 17192219
+        },
+        {
+            "timestamp": 640.067929,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 266854
+        },
+        {
+            "timestamp": 640.078204,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1341171
+        },
+        {
+            "timestamp": 640.928133,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 572368
+        },
+        {
+            "timestamp": 640.94032,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 28015
+        },
+        {
+            "timestamp": 640.950304,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 682932
+        },
+        {
+            "timestamp": 640.96252,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 15638150
+        },
+        {
+            "timestamp": 640.975222,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 93218
+        },
+        {
+            "timestamp": 640.985457,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10393413
+        },
+        {
+            "timestamp": 640.998168,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4385946
+        },
+        {
+            "timestamp": 641.010824,
+            "event_name": "INST_RETIRED",
+            "counter_value": 44308022
+        },
+        {
+            "timestamp": 641.023683,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 147711662
+        },
+        {
+            "timestamp": 641.03673,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9797180
+        },
+        {
+            "timestamp": 641.049483,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 18903654
+        },
+        {
+            "timestamp": 641.062411,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 32390406
+        },
+        {
+            "timestamp": 641.075362,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 730440
+        },
+        {
+            "timestamp": 641.087956,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2060483
+        },
+        {
+            "timestamp": 641.928636,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 614549
+        },
+        {
+            "timestamp": 641.938996,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 28147
+        },
+        {
+            "timestamp": 641.94904,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 685580
+        },
+        {
+            "timestamp": 641.959214,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 15836243
+        },
+        {
+            "timestamp": 641.971776,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 98070
+        },
+        {
+            "timestamp": 641.981859,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10632685
+        },
+        {
+            "timestamp": 641.994322,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4471371
+        },
+        {
+            "timestamp": 642.006696,
+            "event_name": "INST_RETIRED",
+            "counter_value": 45052536
+        },
+        {
+            "timestamp": 642.019277,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 147989227
+        },
+        {
+            "timestamp": 642.032022,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10081585
+        },
+        {
+            "timestamp": 642.044672,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 18911611
+        },
+        {
+            "timestamp": 642.057161,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 33619977
+        },
+        {
+            "timestamp": 642.069934,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 734503
+        },
+        {
+            "timestamp": 642.080224,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2083681
+        },
+        {
+            "timestamp": 642.928179,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 615764
+        },
+        {
+            "timestamp": 642.938266,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 28206
+        },
+        {
+            "timestamp": 642.948033,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 703798
+        },
+        {
+            "timestamp": 642.95811,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 16050703
+        },
+        {
+            "timestamp": 642.970318,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 100906
+        },
+        {
+            "timestamp": 642.980381,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10640524
+        },
+        {
+            "timestamp": 642.992544,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4473608
+        },
+        {
+            "timestamp": 643.002714,
+            "event_name": "INST_RETIRED",
+            "counter_value": 45610112
+        },
+        {
+            "timestamp": 643.015061,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 148140788
+        },
+        {
+            "timestamp": 643.027586,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10083356
+        },
+        {
+            "timestamp": 643.039859,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 19026603
+        },
+        {
+            "timestamp": 643.052319,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 33882224
+        },
+        {
+            "timestamp": 643.064753,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 734959
+        },
+        {
+            "timestamp": 643.074814,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2156366
+        },
+        {
+            "timestamp": 643.927933,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 621506
+        },
+        {
+            "timestamp": 643.937973,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 28495
+        },
+        {
+            "timestamp": 643.947801,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 705706
+        },
+        {
+            "timestamp": 643.957725,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 16064615
+        },
+        {
+            "timestamp": 643.969647,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 100913
+        },
+        {
+            "timestamp": 643.979333,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10646071
+        },
+        {
+            "timestamp": 643.991341,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4476246
+        },
+        {
+            "timestamp": 644.001459,
+            "event_name": "INST_RETIRED",
+            "counter_value": 45651274
+        },
+        {
+            "timestamp": 644.013558,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 148940563
+        },
+        {
+            "timestamp": 644.025997,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10090231
+        },
+        {
+            "timestamp": 644.038288,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 19088823
+        },
+        {
+            "timestamp": 644.050636,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 33886007
+        },
+        {
+            "timestamp": 644.062896,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 737398
+        },
+        {
+            "timestamp": 644.073065,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2169753
+        },
+        {
+            "timestamp": 644.927943,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 656036
+        },
+        {
+            "timestamp": 644.938086,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 29408
+        },
+        {
+            "timestamp": 644.947918,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 728237
+        },
+        {
+            "timestamp": 644.957958,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 16229438
+        },
+        {
+            "timestamp": 644.96999,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 104647
+        },
+        {
+            "timestamp": 644.979975,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10770107
+        },
+        {
+            "timestamp": 644.992164,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4542903
+        },
+        {
+            "timestamp": 645.004252,
+            "event_name": "INST_RETIRED",
+            "counter_value": 46122124
+        },
+        {
+            "timestamp": 645.016609,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 151987713
+        },
+        {
+            "timestamp": 645.029305,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10150081
+        },
+        {
+            "timestamp": 645.041782,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 19310296
+        },
+        {
+            "timestamp": 645.05434,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 34432835
+        },
+        {
+            "timestamp": 645.066887,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 751828
+        },
+        {
+            "timestamp": 645.079169,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2227235
+        },
+        {
+            "timestamp": 645.928385,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 876402
+        },
+        {
+            "timestamp": 645.940755,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 39424
+        },
+        {
+            "timestamp": 645.95095,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 810597
+        },
+        {
+            "timestamp": 645.961236,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 17030931
+        },
+        {
+            "timestamp": 645.973872,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 108002
+        },
+        {
+            "timestamp": 645.984119,
+            "event_name": "LD_RETIRED",
+            "counter_value": 11784902
+        },
+        {
+            "timestamp": 645.996819,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4955777
+        },
+        {
+            "timestamp": 646.009418,
+            "event_name": "INST_RETIRED",
+            "counter_value": 48030764
+        },
+        {
+            "timestamp": 646.022187,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 176216247
+        },
+        {
+            "timestamp": 646.035242,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10457877
+        },
+        {
+            "timestamp": 646.048029,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 21674261
+        },
+        {
+            "timestamp": 646.060881,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 35493850
+        },
+        {
+            "timestamp": 646.07373,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 881090
+        },
+        {
+            "timestamp": 646.086309,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2427218
+        },
+        {
+            "timestamp": 646.928524,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 1018326
+        },
+        {
+            "timestamp": 646.941115,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 48475
+        },
+        {
+            "timestamp": 646.951276,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 907173
+        },
+        {
+            "timestamp": 646.961574,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 17961141
+        },
+        {
+            "timestamp": 646.974212,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 118706
+        },
+        {
+            "timestamp": 646.984559,
+            "event_name": "LD_RETIRED",
+            "counter_value": 12223647
+        },
+        {
+            "timestamp": 646.997208,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5248050
+        },
+        {
+            "timestamp": 647.009795,
+            "event_name": "INST_RETIRED",
+            "counter_value": 50137524
+        },
+        {
+            "timestamp": 647.022563,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 199943563
+        },
+        {
+            "timestamp": 647.035622,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10783103
+        },
+        {
+            "timestamp": 647.048384,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 23240861
+        },
+        {
+            "timestamp": 647.061236,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 37228776
+        },
+        {
+            "timestamp": 647.074084,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 983985
+        },
+        {
+            "timestamp": 647.08669,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2819898
+        },
+        {
+            "timestamp": 647.928543,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 1144057
+        },
+        {
+            "timestamp": 647.94111,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 55151
+        },
+        {
+            "timestamp": 647.951248,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 982257
+        },
+        {
+            "timestamp": 647.961536,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 19415061
+        },
+        {
+            "timestamp": 647.974281,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 124964
+        },
+        {
+            "timestamp": 647.984516,
+            "event_name": "LD_RETIRED",
+            "counter_value": 13034331
+        },
+        {
+            "timestamp": 647.997166,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5486490
+        },
+        {
+            "timestamp": 648.00975,
+            "event_name": "INST_RETIRED",
+            "counter_value": 54059191
+        },
+        {
+            "timestamp": 648.022544,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 216289396
+        },
+        {
+            "timestamp": 648.035584,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 11336320
+        },
+        {
+            "timestamp": 648.048353,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 24284109
+        },
+        {
+            "timestamp": 648.061203,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 40117876
+        },
+        {
+            "timestamp": 648.074089,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 1092106
+        },
+        {
+            "timestamp": 648.0868,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 3084127
+        },
+        {
+            "timestamp": 648.928597,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 1642397
+        },
+        {
+            "timestamp": 648.941166,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 70203
+        },
+        {
+            "timestamp": 648.951399,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 1133889
+        },
+        {
+            "timestamp": 648.963936,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 19838988
+        },
+        {
+            "timestamp": 648.976724,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 138631
+        },
+        {
+            "timestamp": 648.987103,
+            "event_name": "LD_RETIRED",
+            "counter_value": 16351295
+        },
+        {
+            "timestamp": 649.000008,
+            "event_name": "ST_RETIRED",
+            "counter_value": 7069546
+        },
+        {
+            "timestamp": 649.012794,
+            "event_name": "INST_RETIRED",
+            "counter_value": 56039912
+        },
+        {
+            "timestamp": 649.025699,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 257173060
+        },
+        {
+            "timestamp": 649.038842,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 13698787
+        },
+        {
+            "timestamp": 649.051817,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 27636875
+        },
+        {
+            "timestamp": 649.064775,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 46372022
+        },
+        {
+            "timestamp": 649.07776,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 1451635
+        },
+        {
+            "timestamp": 649.090576,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 3405829
+        },
+        {
+            "timestamp": 649.928726,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 1790689
+        },
+        {
+            "timestamp": 649.941436,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 75181
+        },
+        {
+            "timestamp": 649.951631,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 1149957
+        },
+        {
+            "timestamp": 649.964235,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 20275039
+        },
+        {
+            "timestamp": 649.977007,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 147649
+        },
+        {
+            "timestamp": 649.98729,
+            "event_name": "LD_RETIRED",
+            "counter_value": 17275404
+        },
+        {
+            "timestamp": 650.000075,
+            "event_name": "ST_RETIRED",
+            "counter_value": 7346584
+        },
+        {
+            "timestamp": 650.012759,
+            "event_name": "INST_RETIRED",
+            "counter_value": 57811614
+        },
+        {
+            "timestamp": 650.02566,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 269157360
+        },
+        {
+            "timestamp": 650.038803,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 14497493
+        },
+        {
+            "timestamp": 650.051665,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 27909637
+        },
+        {
+            "timestamp": 650.064523,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 48855150
+        },
+        {
+            "timestamp": 650.077453,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 1551370
+        },
+        {
+            "timestamp": 650.090124,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 3434582
+        }
+    ],
+    "1968": [
+        {
+            "timestamp": 775.925194,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 48654
+        },
+        {
+            "timestamp": 775.934877,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 2570
+        },
+        {
+            "timestamp": 775.944359,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 76572
+        },
+        {
+            "timestamp": 775.95399,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 223799935
+        },
+        {
+            "timestamp": 775.965781,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 27500
+        },
+        {
+            "timestamp": 775.975431,
+            "event_name": "LD_RETIRED",
+            "counter_value": 138172618
+        },
+        {
+            "timestamp": 775.987261,
+            "event_name": "ST_RETIRED",
+            "counter_value": 55286126
+        },
+        {
+            "timestamp": 775.999039,
+            "event_name": "INST_RETIRED",
+            "counter_value": 670833525
+        },
+        {
+            "timestamp": 776.011092,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 743970812
+        },
+        {
+            "timestamp": 776.023304,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 29180861
+        },
+        {
+            "timestamp": 776.035433,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 205602496
+        },
+        {
+            "timestamp": 776.047858,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 368250610
+        },
+        {
+            "timestamp": 776.060382,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 1882172
+        },
+        {
+            "timestamp": 776.07262,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 8905267
+        },
+        {
+            "timestamp": 776.926646,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 51034
+        },
+        {
+            "timestamp": 776.936723,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 2646
+        },
+        {
+            "timestamp": 776.946471,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 139754
+        },
+        {
+            "timestamp": 776.956629,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 438632437
+        },
+        {
+            "timestamp": 776.969398,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 50413
+        },
+        {
+            "timestamp": 776.979573,
+            "event_name": "LD_RETIRED",
+            "counter_value": 269940328
+        },
+        {
+            "timestamp": 776.992389,
+            "event_name": "ST_RETIRED",
+            "counter_value": 107999574
+        },
+        {
+            "timestamp": 777.005242,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1283628449
+        },
+        {
+            "timestamp": 777.018286,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 1430377210
+        },
+        {
+            "timestamp": 777.031398,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 55556503
+        },
+        {
+            "timestamp": 777.044235,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 390046850
+        },
+        {
+            "timestamp": 777.057267,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 692926777
+        },
+        {
+            "timestamp": 777.070313,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 3543240
+        },
+        {
+            "timestamp": 777.083002,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 16653244
+        },
+        {
+            "timestamp": 777.92674,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 53405
+        },
+        {
+            "timestamp": 777.93682,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 2728
+        },
+        {
+            "timestamp": 777.946586,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 189222
+        },
+        {
+            "timestamp": 777.956775,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 653985600
+        },
+        {
+            "timestamp": 777.969578,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 73350
+        },
+        {
+            "timestamp": 777.97976,
+            "event_name": "LD_RETIRED",
+            "counter_value": 401620474
+        },
+        {
+            "timestamp": 777.992589,
+            "event_name": "ST_RETIRED",
+            "counter_value": 160742624
+        },
+        {
+            "timestamp": 778.005439,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1888708255
+        },
+        {
+            "timestamp": 778.018458,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 2117588173
+        },
+        {
+            "timestamp": 778.03156,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 81887636
+        },
+        {
+            "timestamp": 778.044429,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 572737902
+        },
+        {
+            "timestamp": 778.057464,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 1010724077
+        },
+        {
+            "timestamp": 778.070599,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 5164641
+        },
+        {
+            "timestamp": 778.08326,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 24279410
+        },
+        {
+            "timestamp": 778.926749,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 55785
+        },
+        {
+            "timestamp": 778.936839,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 2817
+        },
+        {
+            "timestamp": 778.946606,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 248234
+        },
+        {
+            "timestamp": 778.95679,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 864753662
+        },
+        {
+            "timestamp": 778.969586,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 96203
+        },
+        {
+            "timestamp": 778.979784,
+            "event_name": "LD_RETIRED",
+            "counter_value": 531182208
+        },
+        {
+            "timestamp": 778.992626,
+            "event_name": "ST_RETIRED",
+            "counter_value": 213174793
+        },
+        {
+            "timestamp": 779.005487,
+            "event_name": "INST_RETIRED",
+            "counter_value": 2490174714
+        },
+        {
+            "timestamp": 779.018501,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 2803895791
+        },
+        {
+            "timestamp": 779.031619,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 108033318
+        },
+        {
+            "timestamp": 779.044565,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 753136211
+        },
+        {
+            "timestamp": 779.057601,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 1328134801
+        },
+        {
+            "timestamp": 779.070712,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 6805995
+        },
+        {
+            "timestamp": 779.083371,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 31960765
+        },
+        {
+            "timestamp": 779.926751,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 58165
+        },
+        {
+            "timestamp": 779.936813,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 2910
+        },
+        {
+            "timestamp": 779.946589,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 311026
+        },
+        {
+            "timestamp": 779.956764,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1076272208
+        },
+        {
+            "timestamp": 779.969648,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 118646
+        },
+        {
+            "timestamp": 779.979943,
+            "event_name": "LD_RETIRED",
+            "counter_value": 660566835
+        },
+        {
+            "timestamp": 779.992788,
+            "event_name": "ST_RETIRED",
+            "counter_value": 264816042
+        },
+        {
+            "timestamp": 780.005633,
+            "event_name": "INST_RETIRED",
+            "counter_value": 3100543106
+        },
+        {
+            "timestamp": 780.018657,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 3491661588
+        },
+        {
+            "timestamp": 780.031788,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 133964113
+        },
+        {
+            "timestamp": 780.044745,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 933672168
+        },
+        {
+            "timestamp": 780.057772,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 1648295623
+        },
+        {
+            "timestamp": 780.07088,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 8457383
+        },
+        {
+            "timestamp": 780.083539,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 39646450
+        },
+        {
+            "timestamp": 780.92673,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 60579
+        },
+        {
+            "timestamp": 780.936784,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3008
+        },
+        {
+            "timestamp": 780.946521,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 371258
+        },
+        {
+            "timestamp": 780.956702,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1287327744
+        },
+        {
+            "timestamp": 780.969561,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 141552
+        },
+        {
+            "timestamp": 780.979855,
+            "event_name": "LD_RETIRED",
+            "counter_value": 789552251
+        },
+        {
+            "timestamp": 780.992693,
+            "event_name": "ST_RETIRED",
+            "counter_value": 316355808
+        },
+        {
+            "timestamp": 781.005532,
+            "event_name": "INST_RETIRED",
+            "counter_value": 3713307504
+        },
+        {
+            "timestamp": 781.018573,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 4174002260
+        },
+        {
+            "timestamp": 781.031699,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 159744442
+        },
+        {
+            "timestamp": 781.044617,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1116081458
+        },
+        {
+            "timestamp": 781.057713,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 1970452063
+        },
+        {
+            "timestamp": 781.07081,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 10105015
+        },
+        {
+            "timestamp": 781.083553,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 47380612
+        },
+        {
+            "timestamp": 781.926711,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 63023
+        },
+        {
+            "timestamp": 781.936768,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3094
+        },
+        {
+            "timestamp": 781.946504,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 436290
+        },
+        {
+            "timestamp": 781.956665,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1500560544
+        },
+        {
+            "timestamp": 781.969522,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 164473
+        },
+        {
+            "timestamp": 781.97979,
+            "event_name": "LD_RETIRED",
+            "counter_value": 920198402
+        },
+        {
+            "timestamp": 781.992605,
+            "event_name": "ST_RETIRED",
+            "counter_value": 368039047
+        },
+        {
+            "timestamp": 782.005452,
+            "event_name": "INST_RETIRED",
+            "counter_value": 4326045946
+        },
+        {
+            "timestamp": 782.018496,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 4850059327
+        },
+        {
+            "timestamp": 782.031608,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 185659555
+        },
+        {
+            "timestamp": 782.044537,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1299681664
+        },
+        {
+            "timestamp": 782.05764,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 2290862835
+        },
+        {
+            "timestamp": 782.070751,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 11752604
+        },
+        {
+            "timestamp": 782.083533,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 54965858
+        },
+        {
+            "timestamp": 782.926726,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 65488
+        },
+        {
+            "timestamp": 782.936783,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3173
+        },
+        {
+            "timestamp": 782.946522,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 503923
+        },
+        {
+            "timestamp": 782.956685,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1715186037
+        },
+        {
+            "timestamp": 782.969549,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 187395
+        },
+        {
+            "timestamp": 782.97981,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1051729216
+        },
+        {
+            "timestamp": 782.992721,
+            "event_name": "ST_RETIRED",
+            "counter_value": 420552981
+        },
+        {
+            "timestamp": 783.00556,
+            "event_name": "INST_RETIRED",
+            "counter_value": 4940099838
+        },
+        {
+            "timestamp": 783.018602,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 5526521205
+        },
+        {
+            "timestamp": 783.031697,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 211977068
+        },
+        {
+            "timestamp": 783.04462,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1483697711
+        },
+        {
+            "timestamp": 783.057726,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 2613608173
+        },
+        {
+            "timestamp": 783.07085,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 13375741
+        },
+        {
+            "timestamp": 783.08363,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 62521378
+        },
+        {
+            "timestamp": 783.926733,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 67782
+        },
+        {
+            "timestamp": 783.936814,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3271
+        },
+        {
+            "timestamp": 783.946554,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 564969
+        },
+        {
+            "timestamp": 783.956712,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1929925301
+        },
+        {
+            "timestamp": 783.969571,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 210654
+        },
+        {
+            "timestamp": 783.979818,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1183323557
+        },
+        {
+            "timestamp": 783.992723,
+            "event_name": "ST_RETIRED",
+            "counter_value": 473173123
+        },
+        {
+            "timestamp": 784.005582,
+            "event_name": "INST_RETIRED",
+            "counter_value": 5544932672
+        },
+        {
+            "timestamp": 784.018617,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 6202076805
+        },
+        {
+            "timestamp": 784.031718,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 238310724
+        },
+        {
+            "timestamp": 784.044632,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1667722051
+        },
+        {
+            "timestamp": 784.057746,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 2931372511
+        },
+        {
+            "timestamp": 784.070867,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 14996056
+        },
+        {
+            "timestamp": 784.083626,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 70079461
+        },
+        {
+            "timestamp": 784.926733,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 69984
+        },
+        {
+            "timestamp": 784.936811,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3378
+        },
+        {
+            "timestamp": 784.946667,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 627348
+        },
+        {
+            "timestamp": 784.956851,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2144638398
+        },
+        {
+            "timestamp": 784.969735,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 233642
+        },
+        {
+            "timestamp": 784.979997,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1315163767
+        },
+        {
+            "timestamp": 784.992903,
+            "event_name": "ST_RETIRED",
+            "counter_value": 525837826
+        },
+        {
+            "timestamp": 785.005755,
+            "event_name": "INST_RETIRED",
+            "counter_value": 6150778848
+        },
+        {
+            "timestamp": 785.018765,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 6888603194
+        },
+        {
+            "timestamp": 785.031857,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 264688377
+        },
+        {
+            "timestamp": 785.044799,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1850133387
+        },
+        {
+            "timestamp": 785.057921,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 3249046236
+        },
+        {
+            "timestamp": 785.071043,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 16619426
+        },
+        {
+            "timestamp": 785.083778,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 77679271
+        },
+        {
+            "timestamp": 785.926751,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 72114
+        },
+        {
+            "timestamp": 785.936838,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3482
+        },
+        {
+            "timestamp": 785.946692,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 682263
+        },
+        {
+            "timestamp": 785.956876,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2356285953
+        },
+        {
+            "timestamp": 785.969756,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 256043
+        },
+        {
+            "timestamp": 785.980043,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1445266435
+        },
+        {
+            "timestamp": 785.992969,
+            "event_name": "ST_RETIRED",
+            "counter_value": 578462891
+        },
+        {
+            "timestamp": 786.005825,
+            "event_name": "INST_RETIRED",
+            "counter_value": 6755263383
+        },
+        {
+            "timestamp": 786.018831,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 7577229288
+        },
+        {
+            "timestamp": 786.031949,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 290914647
+        },
+        {
+            "timestamp": 786.044892,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2031129609
+        },
+        {
+            "timestamp": 786.058014,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 3566710441
+        },
+        {
+            "timestamp": 786.071114,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 18263832
+        },
+        {
+            "timestamp": 786.083852,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 85385757
+        },
+        {
+            "timestamp": 786.926749,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 74523
+        },
+        {
+            "timestamp": 786.936808,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3569
+        },
+        {
+            "timestamp": 786.946556,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 740307
+        },
+        {
+            "timestamp": 786.956744,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2567640857
+        },
+        {
+            "timestamp": 786.969627,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 278777
+        },
+        {
+            "timestamp": 786.97991,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1574375018
+        },
+        {
+            "timestamp": 786.992845,
+            "event_name": "ST_RETIRED",
+            "counter_value": 630074933
+        },
+        {
+            "timestamp": 787.00568,
+            "event_name": "INST_RETIRED",
+            "counter_value": 7363576152
+        },
+        {
+            "timestamp": 787.018699,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 8264362452
+        },
+        {
+            "timestamp": 787.03182,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 316733398
+        },
+        {
+            "timestamp": 787.044769,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2211928646
+        },
+        {
+            "timestamp": 787.057869,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 3887482654
+        },
+        {
+            "timestamp": 787.07097,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 19913146
+        },
+        {
+            "timestamp": 787.083707,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 93067035
+        },
+        {
+            "timestamp": 787.926733,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 77003
+        },
+        {
+            "timestamp": 787.936788,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3652
+        },
+        {
+            "timestamp": 787.946527,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 795997
+        },
+        {
+            "timestamp": 787.956737,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2779473393
+        },
+        {
+            "timestamp": 787.969587,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 301733
+        },
+        {
+            "timestamp": 787.979874,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1703637469
+        },
+        {
+            "timestamp": 787.992803,
+            "event_name": "ST_RETIRED",
+            "counter_value": 681739276
+        },
+        {
+            "timestamp": 788.005634,
+            "event_name": "INST_RETIRED",
+            "counter_value": 7978728565
+        },
+        {
+            "timestamp": 788.018658,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 8947836780
+        },
+        {
+            "timestamp": 788.03178,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 342603694
+        },
+        {
+            "timestamp": 788.044705,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2394857780
+        },
+        {
+            "timestamp": 788.057808,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 4210809818
+        },
+        {
+            "timestamp": 788.0709,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 21567566
+        },
+        {
+            "timestamp": 788.083639,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 100768268
+        },
+        {
+            "timestamp": 788.926741,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 79491
+        },
+        {
+            "timestamp": 788.936793,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3751
+        },
+        {
+            "timestamp": 788.946534,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 845602
+        },
+        {
+            "timestamp": 788.9567,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2993469659
+        },
+        {
+            "timestamp": 788.969553,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 324803
+        },
+        {
+            "timestamp": 788.979823,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1834426419
+        },
+        {
+            "timestamp": 788.992743,
+            "event_name": "ST_RETIRED",
+            "counter_value": 733517506
+        },
+        {
+            "timestamp": 789.005588,
+            "event_name": "INST_RETIRED",
+            "counter_value": 8593542000
+        },
+        {
+            "timestamp": 789.018627,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 9624375970
+        },
+        {
+            "timestamp": 789.031746,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 368554470
+        },
+        {
+            "timestamp": 789.044676,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2579524460
+        },
+        {
+            "timestamp": 789.057785,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 4534179087
+        },
+        {
+            "timestamp": 789.070897,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 23219619
+        },
+        {
+            "timestamp": 789.083675,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 108399259
+        },
+        {
+            "timestamp": 789.92673,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 81773
+        },
+        {
+            "timestamp": 789.936775,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 3838
+        },
+        {
+            "timestamp": 789.94651,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 903567
+        },
+        {
+            "timestamp": 789.956663,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 3208653094
+        },
+        {
+            "timestamp": 789.969506,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 347595
+        },
+        {
+            "timestamp": 789.979766,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1966023376
+        },
+        {
+            "timestamp": 789.992669,
+            "event_name": "ST_RETIRED",
+            "counter_value": 786202090
+        },
+        {
+            "timestamp": 790.005483,
+            "event_name": "INST_RETIRED",
+            "counter_value": 9207513402
+        },
+        {
+            "timestamp": 790.018508,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 10300423470
+        },
+        {
+            "timestamp": 790.031698,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 394845299
+        },
+        {
+            "timestamp": 790.044619,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2764090417
+        },
+        {
+            "timestamp": 790.057717,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 4856046250
+        },
+        {
+            "timestamp": 790.070832,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 24845528
+        },
+        {
+            "timestamp": 790.08359,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 115980053
+        }
+    ],
+    "2091": [
+        {
+            "timestamp": 798.699515,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 112841
+        },
+        {
+            "timestamp": 798.710967,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 4585
+        },
+        {
+            "timestamp": 798.720526,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 61736
+        },
+        {
+            "timestamp": 798.730229,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1082348
+        },
+        {
+            "timestamp": 798.741811,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 14704
+        },
+        {
+            "timestamp": 798.751553,
+            "event_name": "LD_RETIRED",
+            "counter_value": 824478
+        },
+        {
+            "timestamp": 798.763011,
+            "event_name": "ST_RETIRED",
+            "counter_value": 332947
+        },
+        {
+            "timestamp": 798.774555,
+            "event_name": "INST_RETIRED",
+            "counter_value": 3848366
+        },
+        {
+            "timestamp": 798.786375,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 14615380
+        },
+        {
+            "timestamp": 798.798562,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 791559
+        },
+        {
+            "timestamp": 798.810473,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 957132
+        },
+        {
+            "timestamp": 798.822487,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 3266039
+        },
+        {
+            "timestamp": 798.834776,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 64436
+        },
+        {
+            "timestamp": 798.844876,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 327477
+        },
+        {
+            "timestamp": 799.700919,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 148877
+        },
+        {
+            "timestamp": 799.711149,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 10006
+        },
+        {
+            "timestamp": 799.721151,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 111488
+        },
+        {
+            "timestamp": 799.731303,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1541018
+        },
+        {
+            "timestamp": 799.743497,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 16484
+        },
+        {
+            "timestamp": 799.75349,
+            "event_name": "LD_RETIRED",
+            "counter_value": 915424
+        },
+        {
+            "timestamp": 799.763667,
+            "event_name": "ST_RETIRED",
+            "counter_value": 366146
+        },
+        {
+            "timestamp": 799.773761,
+            "event_name": "INST_RETIRED",
+            "counter_value": 4283304
+        },
+        {
+            "timestamp": 799.785847,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 25440823
+        },
+        {
+            "timestamp": 799.798355,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 821121
+        },
+        {
+            "timestamp": 799.810421,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1399661
+        },
+        {
+            "timestamp": 799.822672,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 3507098
+        },
+        {
+            "timestamp": 799.834907,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 116301
+        },
+        {
+            "timestamp": 799.846962,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 504194
+        },
+        {
+            "timestamp": 800.700539,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 225338
+        },
+        {
+            "timestamp": 800.710652,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 13198
+        },
+        {
+            "timestamp": 800.720566,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 153656
+        },
+        {
+            "timestamp": 800.730598,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2066370
+        },
+        {
+            "timestamp": 800.742539,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 18241
+        },
+        {
+            "timestamp": 800.752404,
+            "event_name": "LD_RETIRED",
+            "counter_value": 2331906
+        },
+        {
+            "timestamp": 800.764587,
+            "event_name": "ST_RETIRED",
+            "counter_value": 903270
+        },
+        {
+            "timestamp": 800.776657,
+            "event_name": "INST_RETIRED",
+            "counter_value": 5340972
+        },
+        {
+            "timestamp": 800.789063,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 33014697
+        },
+        {
+            "timestamp": 800.801808,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 2067459
+        },
+        {
+            "timestamp": 800.814458,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1897922
+        },
+        {
+            "timestamp": 800.82704,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 8210713
+        },
+        {
+            "timestamp": 800.839704,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 178286
+        },
+        {
+            "timestamp": 800.852119,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 659512
+        },
+        {
+            "timestamp": 801.701029,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 241342
+        },
+        {
+            "timestamp": 801.711287,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 14106
+        },
+        {
+            "timestamp": 801.721232,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 161248
+        },
+        {
+            "timestamp": 801.731314,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 2173330
+        },
+        {
+            "timestamp": 801.743641,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 22387
+        },
+        {
+            "timestamp": 801.753725,
+            "event_name": "LD_RETIRED",
+            "counter_value": 2758605
+        },
+        {
+            "timestamp": 801.766091,
+            "event_name": "ST_RETIRED",
+            "counter_value": 999214
+        },
+        {
+            "timestamp": 801.776352,
+            "event_name": "INST_RETIRED",
+            "counter_value": 6683043
+        },
+        {
+            "timestamp": 801.788825,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 36149329
+        },
+        {
+            "timestamp": 801.801459,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 2341000
+        },
+        {
+            "timestamp": 801.813946,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2271007
+        },
+        {
+            "timestamp": 801.826412,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 9251193
+        },
+        {
+            "timestamp": 801.838997,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 194418
+        },
+        {
+            "timestamp": 801.851366,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 744051
+        },
+        {
+            "timestamp": 802.700848,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 255743
+        },
+        {
+            "timestamp": 802.71103,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 16191
+        },
+        {
+            "timestamp": 802.720978,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 201797
+        },
+        {
+            "timestamp": 802.731061,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 3379682
+        },
+        {
+            "timestamp": 802.743283,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 25063
+        },
+        {
+            "timestamp": 802.753288,
+            "event_name": "LD_RETIRED",
+            "counter_value": 2776274
+        },
+        {
+            "timestamp": 802.765482,
+            "event_name": "ST_RETIRED",
+            "counter_value": 1087474
+        },
+        {
+            "timestamp": 802.777721,
+            "event_name": "INST_RETIRED",
+            "counter_value": 9272481
+        },
+        {
+            "timestamp": 802.790178,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 45792617
+        },
+        {
+            "timestamp": 802.802942,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 2395024
+        },
+        {
+            "timestamp": 802.815406,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3729418
+        },
+        {
+            "timestamp": 802.828088,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 9573777
+        },
+        {
+            "timestamp": 802.840653,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 213609
+        },
+        {
+            "timestamp": 802.853033,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 910748
+        },
+        {
+            "timestamp": 803.70099,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 297173
+        },
+        {
+            "timestamp": 803.711219,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 16846
+        },
+        {
+            "timestamp": 803.721158,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 211219
+        },
+        {
+            "timestamp": 803.73125,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 17961893
+        },
+        {
+            "timestamp": 803.743862,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 25981
+        },
+        {
+            "timestamp": 803.753862,
+            "event_name": "LD_RETIRED",
+            "counter_value": 6567875
+        },
+        {
+            "timestamp": 803.766302,
+            "event_name": "ST_RETIRED",
+            "counter_value": 2837564
+        },
+        {
+            "timestamp": 803.778876,
+            "event_name": "INST_RETIRED",
+            "counter_value": 43052831
+        },
+        {
+            "timestamp": 803.791638,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 83276389
+        },
+        {
+            "timestamp": 803.804477,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 4466738
+        },
+        {
+            "timestamp": 803.817147,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 14922750
+        },
+        {
+            "timestamp": 803.829984,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 25755391
+        },
+        {
+            "timestamp": 803.842824,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 222331
+        },
+        {
+            "timestamp": 803.853109,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 964691
+        },
+        {
+            "timestamp": 804.700836,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 373853
+        },
+        {
+            "timestamp": 804.711041,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 18002
+        },
+        {
+            "timestamp": 804.720988,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 485279
+        },
+        {
+            "timestamp": 804.733022,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 26653882
+        },
+        {
+            "timestamp": 804.745503,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 29351
+        },
+        {
+            "timestamp": 804.755604,
+            "event_name": "LD_RETIRED",
+            "counter_value": 10769918
+        },
+        {
+            "timestamp": 804.768154,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4392495
+        },
+        {
+            "timestamp": 804.780722,
+            "event_name": "INST_RETIRED",
+            "counter_value": 64767401
+        },
+        {
+            "timestamp": 804.793469,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 124196161
+        },
+        {
+            "timestamp": 804.806401,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 8007541
+        },
+        {
+            "timestamp": 804.819051,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 22268498
+        },
+        {
+            "timestamp": 804.831783,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 42446658
+        },
+        {
+            "timestamp": 804.844634,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 531454
+        },
+        {
+            "timestamp": 804.85711,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1353049
+        },
+        {
+            "timestamp": 805.701159,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 493672
+        },
+        {
+            "timestamp": 805.713638,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 19979
+        },
+        {
+            "timestamp": 805.723851,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 520055
+        },
+        {
+            "timestamp": 805.734242,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 27942513
+        },
+        {
+            "timestamp": 805.74703,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 30830
+        },
+        {
+            "timestamp": 805.757174,
+            "event_name": "LD_RETIRED",
+            "counter_value": 11480435
+        },
+        {
+            "timestamp": 805.769795,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4810684
+        },
+        {
+            "timestamp": 805.782395,
+            "event_name": "INST_RETIRED",
+            "counter_value": 67156740
+        },
+        {
+            "timestamp": 805.795185,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 133671842
+        },
+        {
+            "timestamp": 805.808133,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 8415314
+        },
+        {
+            "timestamp": 805.820802,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 24220423
+        },
+        {
+            "timestamp": 805.833678,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 43808635
+        },
+        {
+            "timestamp": 805.846539,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 572254
+        },
+        {
+            "timestamp": 805.85905,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1419589
+        },
+        {
+            "timestamp": 806.701195,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 536145
+        },
+        {
+            "timestamp": 806.711509,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 23504
+        },
+        {
+            "timestamp": 806.721602,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 543342
+        },
+        {
+            "timestamp": 806.731812,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 28456402
+        },
+        {
+            "timestamp": 806.74423,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 35407
+        },
+        {
+            "timestamp": 806.754345,
+            "event_name": "LD_RETIRED",
+            "counter_value": 12039707
+        },
+        {
+            "timestamp": 806.766833,
+            "event_name": "ST_RETIRED",
+            "counter_value": 4956047
+        },
+        {
+            "timestamp": 806.779326,
+            "event_name": "INST_RETIRED",
+            "counter_value": 69197753
+        },
+        {
+            "timestamp": 806.791989,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 138217549
+        },
+        {
+            "timestamp": 806.804857,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9019008
+        },
+        {
+            "timestamp": 806.817443,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 24417851
+        },
+        {
+            "timestamp": 806.830109,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 46135658
+        },
+        {
+            "timestamp": 806.842879,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 607814
+        },
+        {
+            "timestamp": 806.855265,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1558590
+        },
+        {
+            "timestamp": 807.701032,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 575002
+        },
+        {
+            "timestamp": 807.711266,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 24285
+        },
+        {
+            "timestamp": 807.721212,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 551124
+        },
+        {
+            "timestamp": 807.731303,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 28483559
+        },
+        {
+            "timestamp": 807.743652,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 37061
+        },
+        {
+            "timestamp": 807.75373,
+            "event_name": "LD_RETIRED",
+            "counter_value": 12163387
+        },
+        {
+            "timestamp": 807.766201,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5060906
+        },
+        {
+            "timestamp": 807.778697,
+            "event_name": "INST_RETIRED",
+            "counter_value": 69202321
+        },
+        {
+            "timestamp": 807.791096,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 140297318
+        },
+        {
+            "timestamp": 807.803938,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9058365
+        },
+        {
+            "timestamp": 807.81642,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 24750336
+        },
+        {
+            "timestamp": 807.829096,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 46328640
+        },
+        {
+            "timestamp": 807.841754,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 620004
+        },
+        {
+            "timestamp": 807.854156,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1560269
+        },
+        {
+            "timestamp": 808.701017,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 577548
+        },
+        {
+            "timestamp": 808.711176,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 24411
+        },
+        {
+            "timestamp": 808.721111,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 560964
+        },
+        {
+            "timestamp": 808.731183,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 28809512
+        },
+        {
+            "timestamp": 808.743587,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 39318
+        },
+        {
+            "timestamp": 808.753666,
+            "event_name": "LD_RETIRED",
+            "counter_value": 12225913
+        },
+        {
+            "timestamp": 808.766054,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5065528
+        },
+        {
+            "timestamp": 808.776315,
+            "event_name": "INST_RETIRED",
+            "counter_value": 70183537
+        },
+        {
+            "timestamp": 808.788793,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 142342273
+        },
+        {
+            "timestamp": 808.801518,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9213415
+        },
+        {
+            "timestamp": 808.814008,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 24812203
+        },
+        {
+            "timestamp": 808.826478,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 46992733
+        },
+        {
+            "timestamp": 808.839045,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 621527
+        },
+        {
+            "timestamp": 808.849261,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1621648
+        },
+        {
+            "timestamp": 809.700682,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 615591
+        },
+        {
+            "timestamp": 809.710811,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 26385
+        },
+        {
+            "timestamp": 809.720711,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 576640
+        },
+        {
+            "timestamp": 809.730737,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 29222016
+        },
+        {
+            "timestamp": 809.742782,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 41326
+        },
+        {
+            "timestamp": 809.75268,
+            "event_name": "LD_RETIRED",
+            "counter_value": 12251645
+        },
+        {
+            "timestamp": 809.764832,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5088388
+        },
+        {
+            "timestamp": 809.776936,
+            "event_name": "INST_RETIRED",
+            "counter_value": 70440849
+        },
+        {
+            "timestamp": 809.78929,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 146255612
+        },
+        {
+            "timestamp": 809.801994,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9264410
+        },
+        {
+            "timestamp": 809.814377,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 25235127
+        },
+        {
+            "timestamp": 809.826952,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 47207088
+        },
+        {
+            "timestamp": 809.839506,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 642132
+        },
+        {
+            "timestamp": 809.851787,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1676538
+        },
+        {
+            "timestamp": 810.701004,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 747744
+        },
+        {
+            "timestamp": 810.713333,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 27250
+        },
+        {
+            "timestamp": 810.72334,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 602069
+        },
+        {
+            "timestamp": 810.733623,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 30240507
+        },
+        {
+            "timestamp": 810.746345,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 42694
+        },
+        {
+            "timestamp": 810.756461,
+            "event_name": "LD_RETIRED",
+            "counter_value": 13114829
+        },
+        {
+            "timestamp": 810.769068,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5556767
+        },
+        {
+            "timestamp": 810.781656,
+            "event_name": "INST_RETIRED",
+            "counter_value": 72363012
+        },
+        {
+            "timestamp": 810.794434,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 153942511
+        },
+        {
+            "timestamp": 810.807364,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 9936669
+        },
+        {
+            "timestamp": 810.820047,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 26830956
+        },
+        {
+            "timestamp": 810.832894,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 48990991
+        },
+        {
+            "timestamp": 810.845739,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 681752
+        },
+        {
+            "timestamp": 810.858243,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1727093
+        },
+        {
+            "timestamp": 811.701175,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 791758
+        },
+        {
+            "timestamp": 811.711469,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 28948
+        },
+        {
+            "timestamp": 811.721545,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 628108
+        },
+        {
+            "timestamp": 811.731756,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 30758992
+        },
+        {
+            "timestamp": 811.74417,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 47398
+        },
+        {
+            "timestamp": 811.754278,
+            "event_name": "LD_RETIRED",
+            "counter_value": 13636134
+        },
+        {
+            "timestamp": 811.766772,
+            "event_name": "ST_RETIRED",
+            "counter_value": 5703272
+        },
+        {
+            "timestamp": 811.779267,
+            "event_name": "INST_RETIRED",
+            "counter_value": 74628459
+        },
+        {
+            "timestamp": 811.791929,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 158637765
+        },
+        {
+            "timestamp": 811.804796,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 10464592
+        },
+        {
+            "timestamp": 811.81747,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 27044905
+        },
+        {
+            "timestamp": 811.830158,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 51587818
+        },
+        {
+            "timestamp": 811.84294,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 708942
+        },
+        {
+            "timestamp": 811.855331,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 1847860
+        },
+        {
+            "timestamp": 812.701037,
+            "event_name": "L1I_CACHE_REFILL",
+            "counter_value": 901869
+        },
+        {
+            "timestamp": 812.71339,
+            "event_name": "L1I_TLB_REFILL",
+            "counter_value": 30473
+        },
+        {
+            "timestamp": 812.723505,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 754350
+        },
+        {
+            "timestamp": 812.735978,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 36234919
+        },
+        {
+            "timestamp": 812.748862,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 50648
+        },
+        {
+            "timestamp": 812.759047,
+            "event_name": "LD_RETIRED",
+            "counter_value": 18087615
+        },
+        {
+            "timestamp": 812.77191,
+            "event_name": "ST_RETIRED",
+            "counter_value": 7018505
+        },
+        {
+            "timestamp": 812.784705,
+            "event_name": "INST_RETIRED",
+            "counter_value": 93075838
+        },
+        {
+            "timestamp": 812.797678,
+            "event_name": "UNKNOWN(0x17)",
+            "counter_value": 177702656
+        },
+        {
+            "timestamp": 812.810811,
+            "event_name": "UNKNOWN(0x18)",
+            "counter_value": 14548965
+        },
+        {
+            "timestamp": 812.823771,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 29770171
+        },
+        {
+            "timestamp": 812.836749,
+            "event_name": "UNKNOWN(0x20)",
+            "counter_value": 68227328
+        },
+        {
+            "timestamp": 812.849792,
+            "event_name": "UNKNOWN(0x21)",
+            "counter_value": 839039
+        },
+        {
+            "timestamp": 812.862507,
+            "event_name": "UNKNOWN(0x25)",
+            "counter_value": 2093027
+        }
+    ]
+}

@@ -1,0 +1,1518 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.4.0-1083-raspi (buildd@bos02-arm64-066) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #94-Ubuntu SMP PREEMPT Mon Apr 3 10:06:55 UTC 2023 (Ubuntu 5.4.0-1083.94-raspi 5.4.231)
+[    0.000000] Machine model: Raspberry Pi 3 Model B Plus Rev 1.3
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x0000000037400000, size 64 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 242688
+[    0.000000]   DMA zone: 3792 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 242688 pages, LIFO batch:63
+[    0.000000] percpu: Embedded 32 pages/cpu s92504 r8192 d30376 u131072
+[    0.000000] pcpu-alloc: s92504 r8192 d30376 u131072 alloc=32*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 843419
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 238896
+[    0.000000] Kernel command line:  coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 bcm2708_fb.fbwidth=720 bcm2708_fb.fbheight=480 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  elevator=deadline net.ifnames=0 console=ttyS0,115200 dwc_otg.lpm_enable=0 console=tty1 root=LABEL=writable rootfstype=ext4 rootwait fixrtc quiet splash quiet splash
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 828528K/970752K available (13820K kernel code, 1280K rwdata, 4328K rodata, 4096K init, 1079K bss, 76688K reserved, 65536K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 39471 entries in 155 pages
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000006] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000286] Console: colour dummy device 80x25
+[    0.000314] printk: console [tty1] enabled
+[    0.000376] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.000397] pid_max: default: 32768 minimum: 301
+[    0.001004] LSM: Security Framework initializing
+[    0.001094] Yama: becoming mindful.
+[    0.001284] AppArmor: AppArmor initialized
+[    0.001686] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001717] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001895] *** VALIDATE tmpfs ***
+[    0.002956] *** VALIDATE proc ***
+[    0.003427] cgroup: Disabling memory control group subsystem
+[    0.003708] *** VALIDATE cgroup1 ***
+[    0.003724] *** VALIDATE cgroup2 ***
+[    0.005810] ASID allocator initialised with 32768 entries
+[    0.006089] rcu: Hierarchical SRCU implementation.
+[    0.008864] EFI services will not be available.
+[    0.010157] smp: Bringing up secondary CPUs ...
+[    0.011634] Detected VIPT I-cache on CPU1
+[    0.011702] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.013719] Detected VIPT I-cache on CPU2
+[    0.013770] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.015670] Detected VIPT I-cache on CPU3
+[    0.015715] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.016251] smp: Brought up 1 node, 4 CPUs
+[    0.016265] SMP: Total of 4 processors activated.
+[    0.016280] CPU features: detected: 32-bit EL0 Support
+[    0.016295] CPU features: detected: CRC32 instructions
+[    0.022968] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.022982] CPU: All CPU(s) started at EL2
+[    0.023046] alternatives: patching kernel code
+[    0.025617] devtmpfs: initialized
+[    0.044224] Enabled cp15_barrier support
+[    0.044257] Enabled setend support
+[    0.044874] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.044904] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.048822] pinctrl core: initialized pinctrl subsystem
+[    0.049798] DMI not present or invalid.
+[    0.051259] NET: Registered protocol family 16
+[    0.060799] DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.060839] audit: initializing netlink subsys (disabled)
+[    0.061216] audit: type=2000 audit(0.060:1): state=initialized audit_enabled=0 res=1
+[    0.062153] cpuidle: using governor ladder
+[    0.062212] cpuidle: using governor menu
+[    0.063064] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.063646] Serial: AMBA PL011 UART driver
+[    0.066725] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+[    0.080364] raspberrypi-firmware soc:firmware: Attached to firmware from 2021-11-18 16:18, variant start
+[    0.084380] raspberrypi-firmware soc:firmware: Firmware hash is d9b293558b4cef6aabedcc53c178e7604de90788
+[    0.124945] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.124964] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.124978] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.124992] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.140090] bcm2835-dma 3f007000.dma: DMA legacy API manager, dmachans=0x1
+[    0.143987] iommu: Default domain type: Translated 
+[    0.146714] SCSI subsystem initialized
+[    0.147061] libata version 3.00 loaded.
+[    0.147380] usbcore: registered new interface driver usbfs
+[    0.147445] usbcore: registered new interface driver hub
+[    0.147540] usbcore: registered new device driver usb
+[    0.148004] pps_core: LinuxPPS API ver. 1 registered
+[    0.148016] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.148044] PTP clock support registered
+[    0.148429] EDAC MC: Ver: 3.0.0
+[    0.150360] NetLabel: Initializing
+[    0.150374] NetLabel:  domain hash size = 128
+[    0.150384] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.150494] NetLabel:  unlabeled traffic allowed by default
+[    0.151969] clocksource: Switched to clocksource arch_sys_counter
+[    0.307529] *** VALIDATE bpf ***
+[    0.308064] VFS: Disk quotas dquot_6.6.0
+[    0.308218] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.308409] *** VALIDATE ramfs ***
+[    0.308467] *** VALIDATE hugetlbfs ***
+[    0.309715] AppArmor: AppArmor Filesystem Enabled
+[    0.309993] simple-framebuffer 3eaa9000.framebuffer: framebuffer at 0x3eaa9000, 0x151800 bytes, mapped to 0x(____ptrval____)
+[    0.310013] simple-framebuffer 3eaa9000.framebuffer: format=a8r8g8b8, mode=720x480x32, linelength=2880
+[    0.310750] Console: switching to colour frame buffer device 90x30
+[    0.316585] simple-framebuffer 3eaa9000.framebuffer: fb0: simplefb registered!
+[    0.331362] thermal_sys: Registered thermal governor 'fair_share'
+[    0.331370] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.331385] thermal_sys: Registered thermal governor 'step_wise'
+[    0.331396] thermal_sys: Registered thermal governor 'user_space'
+[    0.331408] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.332398] NET: Registered protocol family 2
+[    0.332749] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.334136] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.334191] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.334336] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.334535] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.334810] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.334865] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.335209] NET: Registered protocol family 1
+[    0.335273] NET: Registered protocol family 44
+[    0.335296] PCI: CLS 0 bytes, default 64
+[    0.335691] Trying to unpack rootfs image as initramfs...
+[    1.420533] Freeing initrd memory: 29732K
+[    1.422451] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[    1.422633] kvm [1]: IPA Size Limit: 40 bits
+[    1.423907] kvm [1]: Hyp mode initialized successfully
+[    1.429143] Initialise system trusted keyrings
+[    1.429230] Key type blacklist registered
+[    1.429592] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.441680] zbud: loaded
+[    1.445310] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.447056] fuse: init (API version 7.31)
+[    1.447267] *** VALIDATE fuse ***
+[    1.447286] *** VALIDATE fuse ***
+[    1.473966] Key type asymmetric registered
+[    1.473980] Asymmetric key parser 'x509' registered
+[    1.474040] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    1.474298] io scheduler mq-deadline registered
+[    1.480019] bcm2708_fb soc:fb: FB found 1 display(s)
+[    1.485408] bcm2708_fb soc:fb: Registered framebuffer for display 0, size 720x480
+[    1.581708] Serial: 8250/16550 driver, 1 ports, IRQ sharing enabled
+[    1.584802] bcm2835-rng 3f104000.rng: hwrng registered
+[    1.585511] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+[    1.586602] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+[    1.716139] loop: module loaded
+[    1.719870] spi-bcm2835 3f204000.spi: could not get clk: -517
+[    1.722665] tun: Universal TUN/TAP device driver, 1.6
+[    1.723246] PPP generic driver version 2.4.2
+[    1.723558] usbcore: registered new interface driver lan78xx
+[    1.723624] usbcore: registered new interface driver smsc95xx
+[    1.723675] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.723735] ehci-pci: EHCI PCI platform driver
+[    1.723800] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.723824] ohci-pci: OHCI PCI platform driver
+[    1.723878] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.724197] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    1.724421] dwc_otg: FIQ enabled
+[    1.724431] dwc_otg: NAK holdoff enabled
+[    1.724442] dwc_otg: FIQ split-transaction FSM enabled
+[    1.724455] Module dwc_common_port init
+[    1.725254] mousedev: PS/2 mouse device common for all mice
+[    1.725816] i2c /dev entries driver
+[    1.729082] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    1.729407] device-mapper: uevent: version 1.0.3
+[    1.729877] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.735048] sdhci: Secure Digital Host Controller Interface driver
+[    1.735054] sdhci: Copyright(c) Pierre Ossman
+[    1.735411] mmc-bcm2835 3f300000.mmcnr: could not get clk, deferring probe
+[    1.735706] sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+[    1.735810] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.737675] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.737886] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.738796] vchiq: vchiq_init_state: slot_zero = (____ptrval____)
+[    1.741764] drop_monitor: Initializing network drop monitor service
+[    1.742565] NET: Registered protocol family 10
+[    1.770515] Segment Routing with IPv6
+[    1.770587] NET: Registered protocol family 17
+[    1.770723] Key type dns_resolver registered
+[    1.771392] registered taskstats version 1
+[    1.771435] Loading compiled-in X.509 certificates
+[    1.774039] Loaded X.509 cert 'Build time autogenerated kernel key: 06296dccb74d00d5449bbf6b3caaa893f9f33d41'
+[    1.776276] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.778483] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.778489] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.778587] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.778650] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.778723] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.778792] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.778857] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.778919] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.778996] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.779067] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.779407] Key type ._fscrypt registered
+[    1.779413] Key type .fscrypt registered
+[    1.806294] cryptd: max_cpu_qlen set to 1000
+[    1.826733] Key type big_key registered
+[    1.855773] Key type encrypted registered
+[    1.855790] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.855819] ima: No TPM chip found, activating TPM-bypass!
+[    1.855858] ima: Allocated hash algorithm: sha1
+[    1.855880] ima: No architecture policies found
+[    1.855999] evm: Initialising EVM extended attributes:
+[    1.856005] evm: security.selinux
+[    1.856009] evm: security.SMACK64
+[    1.856014] evm: security.SMACK64EXEC
+[    1.856018] evm: security.SMACK64TRANSMUTE
+[    1.856022] evm: security.SMACK64MMAP
+[    1.856027] evm: security.apparmor
+[    1.856031] evm: security.ima
+[    1.856036] evm: security.capability
+[    1.856041] evm: HMAC attrs: 0x1
+[    1.862805] uart-pl011 3f201000.serial: cts_event_workaround enabled
+[    1.862878] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 66, base_baud = 0) is a PL011 rev2
+[    1.865261] printk: console [ttyS0] disabled
+[    1.865305] 3f215040.serial: ttyS0 at MMIO 0x0 (irq = 61, base_baud = 50000000) is a 16550
+[    1.871216] printk: console [ttyS0] enabled
+[    1.871730] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    1.874743] mmc-bcm2835 3f300000.mmcnr: mmc_debug:0 mmc_debug2:0
+[    1.874752] mmc-bcm2835 3f300000.mmcnr: DMA channel allocated
+[    1.900419] sdhost: log_buf @ (____ptrval____) (eee93000)
+[    1.919134] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    1.920670] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.922205] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.925003] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    1.949917] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+[    1.951802] of_cfs_init
+[    1.951898] of_cfs_init: OK
+[    1.976091] Freeing unused kernel memory: 4096K
+[    1.983508] Checked W+X mappings: passed, no W+X pages found
+[    1.983518] Run /init as init process
+[    2.006933] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.007173] mmc1: new high speed SDIO card at address 0001
+[    2.009916] mmc0: new high speed SDHC card at address 0001
+[    2.010740] mmcblk0: mmc0:0001 EB1QT 29.8 GiB
+[    2.013128]  mmcblk0: p1 p2
+[    2.622379] usb_phy_generic phy: phy supply vcc not found, using dummy regulator
+[    2.752555] dwc2 3f980000.usb: 3f980000.usb supply vusb_d not found, using dummy regulator
+[    2.752653] dwc2 3f980000.usb: 3f980000.usb supply vusb_a not found, using dummy regulator
+[    2.964133] dwc2 3f980000.usb: EPs: 8, dedicated fifos, 4080 entries in SPRAM
+[    2.964473] dwc2 3f980000.usb: DWC OTG Controller
+[    2.964495] dwc2 3f980000.usb: new USB bus registered, assigned bus number 1
+[    2.964542] dwc2 3f980000.usb: irq 41, io mem 0x3f980000
+[    2.964816] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    2.964823] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.964830] usb usb1: Product: DWC OTG Controller
+[    2.964837] usb usb1: Manufacturer: Linux 5.4.0-1083-raspi dwc2_hsotg
+[    2.964843] usb usb1: SerialNumber: 3f980000.usb
+[    2.965419] hub 1-0:1.0: USB hub found
+[    2.965477] hub 1-0:1.0: 1 port detected
+[    3.263983] usb 1-1: new high-speed USB device number 2 using dwc2
+[    3.472143] usb 1-1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.472151] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.472687] hub 1-1:1.0: USB hub found
+[    3.472759] hub 1-1:1.0: 4 ports detected
+[    3.759974] usb 1-1.1: new high-speed USB device number 3 using dwc2
+[    3.860369] usb 1-1.1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.860377] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.860999] hub 1-1.1:1.0: USB hub found
+[    3.861116] hub 1-1.1:1.0: 3 ports detected
+[    3.939981] usb 1-1.3: new full-speed USB device number 4 using dwc2
+[    4.043546] usb 1-1.3: New USB device found, idVendor=046d, idProduct=c52b, bcdDevice=24.07
+[    4.043553] usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.043560] usb 1-1.3: Product: USB Receiver
+[    4.043566] usb 1-1.3: Manufacturer: Logitech
+[    4.068685] usbcore: registered new interface driver usbhid
+[    4.068699] usbhid: USB HID core driver
+[    4.082599] input: Logitech USB Receiver as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.0/0003:046D:C52B.0001/input/input0
+[    4.140378] hid-generic 0003:046D:C52B.0001: input,hidraw0: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-3f980000.usb-1.3/input0
+[    4.142166] input: Logitech USB Receiver Mouse as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input1
+[    4.142551] input: Logitech USB Receiver Consumer Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input2
+[    4.200209] input: Logitech USB Receiver System Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input3
+[    4.200634] hid-generic 0003:046D:C52B.0002: input,hiddev0,hidraw1: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-3f980000.usb-1.3/input1
+[    4.202210] hid-generic 0003:046D:C52B.0003: hiddev1,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.3/input2
+[    4.355553] logitech-djreceiver 0003:046D:C52B.0003: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.3/input2
+[    4.478016] input: Logitech Unifying Device. Wireless PID:404d Keyboard as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input5
+[    4.478349] input: Logitech Unifying Device. Wireless PID:404d Mouse as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input6
+[    4.478728] input: Logitech Unifying Device. Wireless PID:404d Consumer Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input7
+[    4.478955] input: Logitech Unifying Device. Wireless PID:404d System Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input8
+[    4.479186] hid-generic 0003:046D:404D.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:404d] on usb-3f980000.usb-1.3/input2:1
+[    4.680008] usb 1-1.1.1: new high-speed USB device number 5 using dwc2
+[    4.688937] input: Logitech K400 Plus as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input12
+[    4.689314] logitech-hidpp-device 0003:046D:404D.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech K400 Plus] on usb-3f980000.usb-1.3/input2:1
+[    4.780633] usb 1-1.1.1: New USB device found, idVendor=0424, idProduct=7800, bcdDevice= 3.00
+[    4.780645] usb 1-1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    5.047376] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): No External EEPROM. Setting MAC Speed
+[    5.065506] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): int urb period 64
+[    5.148005] raid6: neonx8   gen()  1633 MB/s
+[    5.191982] random: crng init done
+[    5.195987] raid6: neonx8   xor()  1637 MB/s
+[    5.243959] raid6: neonx4   gen()  1671 MB/s
+[    5.291950] raid6: neonx4   xor()  1627 MB/s
+[    5.339977] raid6: neonx2   gen()  1254 MB/s
+[    5.387972] raid6: neonx2   xor()  1340 MB/s
+[    5.436023] raid6: neonx1   gen()   781 MB/s
+[    5.483962] raid6: neonx1   xor()  1011 MB/s
+[    5.531982] raid6: int64x8  gen()  1298 MB/s
+[    5.579956] raid6: int64x8  xor()   880 MB/s
+[    5.628005] raid6: int64x4  gen()  1098 MB/s
+[    5.675955] raid6: int64x4  xor()   828 MB/s
+[    5.723978] raid6: int64x2  gen()   725 MB/s
+[    5.771963] raid6: int64x2  xor()   682 MB/s
+[    5.820007] raid6: int64x1  gen()   442 MB/s
+[    5.867998] raid6: int64x1  xor()   530 MB/s
+[    5.868004] raid6: using algorithm neonx4 gen() 1671 MB/s
+[    5.868009] raid6: .... xor() 1627 MB/s, rmw enabled
+[    5.868014] raid6: using neon recovery algorithm
+[    5.874776] xor: measuring software checksum speed
+[    5.911951]    8regs     :  2732.000 MB/sec
+[    5.951948]    32regs    :  3133.000 MB/sec
+[    5.991951]    arm64_neon:  2630.000 MB/sec
+[    5.991956] xor: using function: 32regs (3133.000 MB/sec)
+[    5.995316] async_tx: api initialized (async)
+[    6.247391] Btrfs loaded, crc32c=crc32c-generic
+[    7.817072] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    8.895920] systemd[1]: System time before build time, advancing clock.
+[    8.999938] systemd[1]: Inserted module 'autofs4'
+[    9.109018] systemd[1]: systemd 245.4-4ubuntu3.20 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    9.109920] systemd[1]: Detected architecture arm64.
+[    9.204858] systemd[1]: Set hostname to <ubuntu>.
+[   10.747488] systemd[1]: Created slice system-modprobe.slice.
+[   10.749566] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   10.751249] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[   10.752806] systemd[1]: Created slice User and Session Slice.
+[   10.753244] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   10.760966] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   10.761272] systemd[1]: Reached target User and Group Name Lookups.
+[   10.761365] systemd[1]: Reached target Slices.
+[   10.761445] systemd[1]: Reached target Swap.
+[   10.761890] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   10.762471] systemd[1]: Listening on LVM2 poll daemon socket.
+[   10.762804] systemd[1]: Listening on multipathd control socket.
+[   10.763275] systemd[1]: Listening on Syslog Socket.
+[   10.763754] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.764144] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.765118] systemd[1]: Listening on Journal Audit Socket.
+[   10.765633] systemd[1]: Listening on Journal Socket (/dev/log).
+[   10.766257] systemd[1]: Listening on Journal Socket.
+[   10.766984] systemd[1]: Listening on Network Service Netlink Socket.
+[   10.767542] systemd[1]: Listening on udev Control Socket.
+[   10.767923] systemd[1]: Listening on udev Kernel Socket.
+[   10.773631] systemd[1]: Mounting Huge Pages File System...
+[   10.780142] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.787351] systemd[1]: Mounting Kernel Debug File System...
+[   10.794494] systemd[1]: Mounting Kernel Trace File System...
+[   10.802775] systemd[1]: Starting Journal Service...
+[   10.809565] systemd[1]: Starting Set the console keyboard layout...
+[   10.817107] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   10.824718] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   10.831863] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[   10.839476] systemd[1]: Starting Load Kernel Module drm...
+[   10.853592] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   10.862731] systemd[1]: Starting Load Kernel Module pstore_blk...
+[   10.872737] systemd[1]: Starting Load Kernel Module pstore_zone...
+[   10.882268] systemd[1]: Starting Load Kernel Module ramoops...
+[   10.882579] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[   10.885969] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   10.886221] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   10.907481] systemd[1]: Starting Load Kernel Modules...
+[   10.915043] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   10.922666] systemd[1]: Starting udev Coldplug all Devices...
+[   10.930272] systemd[1]: Starting Uncomplicated firewall...
+[   10.939856] systemd[1]: Mounted Huge Pages File System.
+[   10.941082] systemd[1]: Mounted POSIX Message Queue File System.
+[   10.942153] systemd[1]: Mounted Kernel Debug File System.
+[   10.943146] systemd[1]: Mounted Kernel Trace File System.
+[   10.947434] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[   10.951257] systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+[   10.953245] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[   10.956131] systemd[1]: modprobe@efi_pstore.service: Succeeded.
+[   10.957960] systemd[1]: Finished Load Kernel Module efi_pstore.
+[   10.960587] systemd[1]: modprobe@pstore_blk.service: Succeeded.
+[   10.962373] systemd[1]: Finished Load Kernel Module pstore_blk.
+[   10.965189] systemd[1]: modprobe@pstore_zone.service: Succeeded.
+[   10.967062] systemd[1]: Finished Load Kernel Module pstore_zone.
+[   10.996532] systemd[1]: modprobe@drm.service: Succeeded.
+[   10.998503] systemd[1]: Finished Load Kernel Module drm.
+[   11.007435] IPMI message handler: version 39.2
+[   11.011029] systemd[1]: Finished Uncomplicated firewall.
+[   11.018722] ipmi device interface
+[   11.023508] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   11.029869] systemd[1]: modprobe@ramoops.service: Succeeded.
+[   11.031870] systemd[1]: Finished Load Kernel Module ramoops.
+[   11.038027] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   11.044100] systemd[1]: Finished Load Kernel Modules.
+[   11.051320] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[   11.059471] systemd[1]: Mounting FUSE Control File System...
+[   11.067483] systemd[1]: Mounting Kernel Configuration File System...
+[   11.074545] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   11.074829] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   11.080888] systemd[1]: Starting Load/Save Random Seed...
+[   11.087508] systemd[1]: Starting Apply Kernel Variables...
+[   11.094492] systemd[1]: Starting Create System Users...
+[   11.104047] systemd[1]: Mounted FUSE Control File System.
+[   11.106238] systemd[1]: Mounted Kernel Configuration File System.
+[   11.122867] systemd[1]: Started Journal Service.
+[   11.170192] systemd-journald[384]: Received client request to flush runtime journal.
+[   11.247666] systemd-journald[384]: File /var/log/journal/4da98a9427724832b3019a1fecd9df2c/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   12.454021] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.454672] vc_sm_cma: module verification failed: signature and/or required key missing - tainting kernel
+[   12.456174] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+[   12.456205] [vc_sm_connected_init]: start
+[   12.457381] [vc_sm_connected_init]: installed successfully
+[   12.483112] mc: Linux media interface: v0.10
+[   12.563024] videodev: Linux video capture interface: v2.00
+[   12.672611] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.677191] bcm2835_audio bcm2835_audio: card created with 8 channels
+[   12.710620] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.710622] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.742597] bcm2835_isp: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.746760] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.747445] bcm2835-isp bcm2835-isp: bcm2835_isp_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   12.761842] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video13
+[   12.762167] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video14
+[   12.762422] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video15
+[   12.762621] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video16
+[   12.762645] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[   12.762656] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[   12.762665] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[   12.762674] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[   12.762792] bcm2835-isp bcm2835-isp: Loaded V4L2 bcm2835-isp
+[   12.768869] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.774862] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+[   12.774912] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+[   12.777603] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+[   12.777638] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+[   12.782201] : bcm2835_codec_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   12.795104] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+[   12.795141] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+[   12.989204] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   12.990430] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   13.188372] brcmfmac: F1 signature read @0x18000000=0x15264345
+[   13.201186] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   13.220058] usbcore: registered new interface driver brcmfmac
+[   13.546183] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   13.565455] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Nov  1 2021 00:37:25 version 7.45.241 (1a2f2fa CY) FWID 01-703fd60
+[   13.586438] Bluetooth: Core ver 2.22
+[   13.586687] NET: Registered protocol family 31
+[   13.586693] Bluetooth: HCI device and connection manager initialized
+[   13.586714] Bluetooth: HCI socket layer initialized
+[   13.586772] Bluetooth: L2CAP socket layer initialized
+[   13.586913] Bluetooth: SCO socket layer initialized
+[   14.760585] alua: device handler registered
+[   14.766362] emc: device handler registered
+[   14.772143] rdac: device handler registered
+[   16.206016] audit: type=1400 audit(1677761889.307:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=601 comm="apparmor_parser"
+[   16.206048] audit: type=1400 audit(1677761889.307:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=601 comm="apparmor_parser"
+[   16.208858] audit: type=1400 audit(1677761889.311:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=604 comm="apparmor_parser"
+[   16.214389] audit: type=1400 audit(1677761889.315:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=603 comm="apparmor_parser"
+[   16.214457] audit: type=1400 audit(1677761889.315:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=603 comm="apparmor_parser"
+[   16.214501] audit: type=1400 audit(1677761889.315:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=603 comm="apparmor_parser"
+[   16.232501] audit: type=1400 audit(1677761889.335:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=605 comm="apparmor_parser"
+[   16.232522] audit: type=1400 audit(1677761889.335:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=605 comm="apparmor_parser"
+[   16.246603] audit: type=1400 audit(1677761889.347:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=607 comm="apparmor_parser"
+[   16.262537] audit: type=1400 audit(1677761889.363:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=602 comm="apparmor_parser"
+[   17.823694] systemd-journald[384]: Failed to read journal file /var/log/journal/4da98a9427724832b3019a1fecd9df2c/user-1000.journal for rotation, trying to move it out of the way: Device or resource busy
+[   22.394286] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   29.539608] capability: warning: `zerotier-one' uses 32-bit capabilities (legacy support in use)
+[  629.186231] cache_kprobe_monitor_v2: loading out-of-tree module taints kernel.
+[  629.187173] loading cache_kprobe_monitor_v2 module
+[  629.192272] Proc entries created, write PID to /proc/cache_kmv2_pid to start
+[  629.199643] loaded cache_kprobe_monitor_v2 module
+[  632.431224] Reading PID from proc file
+[  632.435243] PID set to 1823
+[  632.438320] beginning perf monitoring
+[  632.442418] Found task for PID 1823
+[  632.446134] Got task struct for PID 1823
+[  632.450435] Initializing performance counters
+[  632.455053]  (init_perf_counters) Initializing multi performance counters
+[  632.462291] kzalloc succeeded
+[  632.465646] creating perf_event_attr for event code 1
+[  632.470971] perf_event_attr created
+[  632.474860] calling perf_event_create_kernel_counter for event code 1
+[  632.481669] perf_event_create_kernel_counter succeeded for event code 1
+[  632.488638] creating perf_event_attr for event code 2
+[  632.494052] perf_event_attr created
+[  632.497803] calling perf_event_create_kernel_counter for event code 2
+[  632.504705] perf_event_create_kernel_counter succeeded for event code 2
+[  632.511749] creating perf_event_attr for event code 3
+[  632.518773] perf_event_attr created
+[  632.524263] calling perf_event_create_kernel_counter for event code 3
+[  632.532860] perf_event_create_kernel_counter succeeded for event code 3
+[  632.541557] creating perf_event_attr for event code 4
+[  632.548641] perf_event_attr created
+[  632.554084] calling perf_event_create_kernel_counter for event code 4
+[  632.562549] perf_event_create_kernel_counter succeeded for event code 4
+[  632.571173] creating perf_event_attr for event code 5
+[  632.578245] perf_event_attr created
+[  632.583485] calling perf_event_create_kernel_counter for event code 5
+[  632.591831] perf_event_create_kernel_counter succeeded for event code 5
+[  632.600385] creating perf_event_attr for event code 6
+[  632.607289] perf_event_attr created
+[  632.612592] calling perf_event_create_kernel_counter for event code 6
+[  632.621116] perf_event_create_kernel_counter succeeded for event code 6
+[  632.629765] creating perf_event_attr for event code 7
+[  632.636895] perf_event_attr created
+[  632.642410] calling perf_event_create_kernel_counter for event code 7
+[  632.651032] perf_event_create_kernel_counter succeeded for event code 7
+[  632.659713] creating perf_event_attr for event code 8
+[  632.666812] perf_event_attr created
+[  632.672309] calling perf_event_create_kernel_counter for event code 8
+[  632.680858] perf_event_create_kernel_counter succeeded for event code 8
+[  632.689585] creating perf_event_attr for event code 17
+[  632.696743] perf_event_attr created
+[  632.702209] calling perf_event_create_kernel_counter for event code 17
+[  632.710806] perf_event_create_kernel_counter succeeded for event code 17
+[  632.719620] creating perf_event_attr for event code 18
+[  632.726752] perf_event_attr created
+[  632.732258] calling perf_event_create_kernel_counter for event code 18
+[  632.740884] perf_event_create_kernel_counter succeeded for event code 18
+[  632.749604] creating perf_event_attr for event code 19
+[  632.756698] perf_event_attr created
+[  632.762478] calling perf_event_create_kernel_counter for event code 19
+[  632.771384] perf_event_create_kernel_counter succeeded for event code 19
+[  632.780272] creating perf_event_attr for event code 20
+[  632.787511] perf_event_attr created
+[  632.793057] calling perf_event_create_kernel_counter for event code 20
+[  632.801885] perf_event_create_kernel_counter succeeded for event code 20
+[  632.810783] creating perf_event_attr for event code 21
+[  632.817968] perf_event_attr created
+[  632.823472] calling perf_event_create_kernel_counter for event code 21
+[  632.832199] perf_event_create_kernel_counter succeeded for event code 21
+[  632.841045] creating perf_event_attr for event code 25
+[  632.848497] perf_event_attr created
+[  632.854188] calling perf_event_create_kernel_counter for event code 25
+[  632.862936] perf_event_create_kernel_counter succeeded for event code 25
+[  632.872144] Starting the timer for 5 second sampling of counters
+[  632.880150] Sample interval set for 5 seconds intervals
+[  632.888213] Initializing the timer
+[  632.893927] Timer initialized
+[  632.899692] Starting the timer
+[  632.905735] Timer started
+[  633.905746] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  633.918014] (sample_perf_counters) current program counter: 187650781575472
+[  633.926693] (sample_perf_counters) event code: 1  ; counter value: 157939, delta: 157939
+[  633.938097] (sample_perf_counters) event code: 2  ; counter value: 8738, delta: 8738
+[  633.947621] (sample_perf_counters) event code: 3  ; counter value: 118671, delta: 118671
+[  633.959050] (sample_perf_counters) event code: 4  ; counter value: 2595002, delta: 2595002
+[  633.970775] ------------[ cut here ]------------
+[  633.977135] WARNING: CPU: 3 PID: 1823 at kernel/smp.c:291 smp_call_function_single+0x1dc/0x208
+[  633.989267] Modules linked in: cache_kprobe_monitor_v2(OE) dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 joydev input_leds bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc snd_bcm2835(CE) videobuf2_dma_contig videobuf2_memops snd_pcm videobuf2_v4l2 videobuf2_common snd_timer raspberrypi_hwmon videodev snd mc vc_sm_cma(CE) uio_pdrv_genirq uio sch_fq_codel ramoops ipmi_devintf ipmi_msghandler reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear hid_logitech_hidpp hid_logitech_dj hid_generic usbhid dwc2 spidev udc_core phy_generic crct10dif_ce aes_neon_bs aes_neon_blk crypto_simd cryptd
+[  634.085440] CPU: 3 PID: 1823 Comm: onebil_memacc Tainted: G         C OE     5.4.0-1083-raspi #94-Ubuntu
+[  634.099048] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[  634.107447] pstate: 20400085 (nzCv daIf +PAN -UAO)
+[  634.114373] pc : smp_call_function_single+0x1dc/0x208
+[  634.121574] lr : perf_event_read+0x12c/0x250
+[  634.127989] sp : ffff80001001bc50
+[  634.133391] x29: ffff80001001bc50 x28: ffff00c2763e88c0 
+[  634.140790] x27: ffffdddef810c5e0 x26: 0000000000000012 
+[  634.148162] x25: ffffdddef810a120 x24: 0000000000000001 
+[  634.155499] x23: ffff80001001bd38 x22: ffffdddf3ac8f768 
+[  634.162785] x21: 0000000000000001 x20: ffff00c243d0da00 
+[  634.170025] x19: ffff80001001bca0 x18: 0000000000000010 
+[  634.177265] x17: ffff800010750cd8 x16: ffffdddf3ac8fcb0 
+[  634.184463] x15: 0000000000000020 x14: 0000000000000b40 
+[  634.191613] x13: 0000000000000001 x12: 00000000ffffffff 
+[  634.198714] x11: ffff00c2759c5190 x10: ffff00c2759c5190 
+[  634.205804] x9 : 00000000ffcccccc x8 : ffffdddf3b1107e8 
+[  634.212854] x7 : 0000000000000221 x6 : 0000000000000008 
+[  634.219854] x5 : 0000000000000001 x4 : 0000000000000000 
+[  634.226773] x3 : 0000000000000001 x2 : 0000000000000000 
+[  634.233632] x1 : 0000000000000080 x0 : 0000000000000000 
+[  634.240430] Call trace:
+[  634.244266]  smp_call_function_single+0x1dc/0x208
+[  634.250363]  perf_event_read+0x12c/0x250
+[  634.255605]  __perf_event_read_value+0x40/0x100
+[  634.261427]  perf_event_read_value+0x34/0x60
+[  634.266945]  sample_perf_counters+0xb0/0x150 [cache_kprobe_monitor_v2]
+[  634.274750]  __hrtimer_run_queues+0x14c/0x3b8
+[  634.280302]  hrtimer_interrupt+0xf0/0x248
+[  634.285463]  arch_timer_handler_phys+0x40/0x50
+[  634.291028]  handle_percpu_devid_irq+0x94/0x2b0
+[  634.296659]  generic_handle_irq+0x38/0x50
+[  634.301736]  __handle_domain_irq+0x70/0xc8
+[  634.306891]  bcm2836_arm_irqchip_handle_irq+0x78/0xf0
+[  634.313032]  el0_irq_naked+0x58/0x64
+[  634.317665] ---[ end trace 57815a8ce72df418 ]---
+[  634.323387] ------------[ cut here ]------------
+[  634.329106] WARNING: CPU: 3 PID: 1823 at kernel/smp.c:300 smp_call_function_single+0x1f8/0x208
+[  634.340062] Modules linked in: cache_kprobe_monitor_v2(OE) dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 joydev input_leds bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc snd_bcm2835(CE) videobuf2_dma_contig videobuf2_memops snd_pcm videobuf2_v4l2 videobuf2_common snd_timer raspberrypi_hwmon videodev snd mc vc_sm_cma(CE) uio_pdrv_genirq uio sch_fq_codel ramoops ipmi_devintf ipmi_msghandler reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear hid_logitech_hidpp hid_logitech_dj hid_generic usbhid dwc2 spidev udc_core phy_generic crct10dif_ce aes_neon_bs aes_neon_blk crypto_simd cryptd
+[  634.431754] CPU: 3 PID: 1823 Comm: onebil_memacc Tainted: G        WC OE     5.4.0-1083-raspi #94-Ubuntu
+[  634.444868] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[  634.453022] pstate: 20400085 (nzCv daIf +PAN -UAO)
+[  634.459678] pc : smp_call_function_single+0x1f8/0x208
+[  634.466612] lr : perf_event_read+0x12c/0x250
+[  634.472742] sp : ffff80001001bc50
+[  634.477866] x29: ffff80001001bc50 x28: ffff00c2763e88c0 
+[  634.485025] x27: ffffdddef810c5e0 x26: 0000000000000012 
+[  634.492214] x25: ffffdddef810a120 x24: 0000000000000001 
+[  634.499383] x23: ffff80001001bd38 x22: ffffdddf3ac8f768 
+[  634.506543] x21: 0000000000000001 x20: ffff00c243d0da00 
+[  634.513682] x19: ffff80001001bca0 x18: 0000000000000010 
+[  634.520814] x17: ffff800010750cd8 x16: ffffdddf3ac8fcb0 
+[  634.527927] x15: 0000000000000020 x14: 0000000000000b40 
+[  634.535033] x13: 0000000000000001 x12: 00000000ffffffff 
+[  634.542114] x11: ffff00c2759c5190 x10: ffff00c2759c5190 
+[  634.549206] x9 : 00000000ffcccccc x8 : ffffdddf3b1107e8 
+[  634.556259] x7 : 0000000000000221 x6 : 0000000000000008 
+[  634.563264] x5 : 0000000000000001 x4 : 0000000000010000 
+[  634.570202] x3 : 0000000000000001 x2 : 0000000000000000 
+[  634.577062] x1 : 0000000000000080 x0 : ffff00c243d0da00 
+[  634.583870] Call trace:
+[  634.587708]  smp_call_function_single+0x1f8/0x208
+[  634.593810]  perf_event_read+0x12c/0x250
+[  634.599072]  __perf_event_read_value+0x40/0x100
+[  634.604913]  perf_event_read_value+0x34/0x60
+[  634.610453]  sample_perf_counters+0xb0/0x150 [cache_kprobe_monitor_v2]
+[  634.618278]  __hrtimer_run_queues+0x14c/0x3b8
+[  634.623845]  hrtimer_interrupt+0xf0/0x248
+[  634.629026]  arch_timer_handler_phys+0x40/0x50
+[  634.634615]  handle_percpu_devid_irq+0x94/0x2b0
+[  634.640268]  generic_handle_irq+0x38/0x50
+[  634.645364]  __handle_domain_irq+0x70/0xc8
+[  634.650542]  bcm2836_arm_irqchip_handle_irq+0x78/0xf0
+[  634.656702]  el0_irq_naked+0x58/0x64
+[  634.661353] ---[ end trace 57815a8ce72df419 ]---
+[  634.667090] (sample_perf_counters) event code: 5  ; counter value: 14279, delta: 14279
+[  634.676262] (sample_perf_counters) event code: 6  ; counter value: 1625879, delta: 1625879
+[  634.686873] (sample_perf_counters) event code: 7  ; counter value: 672262, delta: 672262
+[  634.697496] (sample_perf_counters) event code: 8  ; counter value: 9069050, delta: 9069050
+[  634.708463] (sample_perf_counters) event code: 17  ; counter value: 25724943, delta: 25724943
+[  634.719916] (sample_perf_counters) event code: 18  ; counter value: 2043137, delta: 2043137
+[  634.731350] (sample_perf_counters) event code: 19  ; counter value: 1653715, delta: 1653715
+[  634.743026] (sample_perf_counters) event code: 20  ; counter value: 8056066, delta: 8056066
+[  634.754912] (sample_perf_counters) event code: 21  ; counter value: 90605, delta: 90605
+[  634.764847] (sample_perf_counters) event code: 25  ; counter value: 500769, delta: 500769
+[  634.905754] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  634.918581] (sample_perf_counters) current program counter: 187650781575500
+[  634.927538] (sample_perf_counters) event code: 1  ; counter value: 254983, delta: 97044
+[  634.937584] (sample_perf_counters) event code: 2  ; counter value: 13191, delta: 4453
+[  634.947432] (sample_perf_counters) event code: 3  ; counter value: 183268, delta: 64597
+[  634.957459] (sample_perf_counters) event code: 4  ; counter value: 3417356, delta: 822354
+[  634.969513] (sample_perf_counters) event code: 5  ; counter value: 21337, delta: 7058
+[  634.979426] (sample_perf_counters) event code: 6  ; counter value: 2131418, delta: 505539
+[  634.991592] (sample_perf_counters) event code: 7  ; counter value: 890765, delta: 218503
+[  635.003776] (sample_perf_counters) event code: 8  ; counter value: 10030626, delta: 961576
+[  635.016215] (sample_perf_counters) event code: 17  ; counter value: 36929491, delta: 11204548
+[  635.028896] (sample_perf_counters) event code: 18  ; counter value: 2356453, delta: 313316
+[  635.041315] (sample_perf_counters) event code: 19  ; counter value: 2209266, delta: 555551
+[  635.053750] (sample_perf_counters) event code: 20  ; counter value: 9810029, delta: 1753963
+[  635.066270] (sample_perf_counters) event code: 21  ; counter value: 157206, delta: 66601
+[  635.078519] (sample_perf_counters) event code: 25  ; counter value: 690140, delta: 189371
+[  635.905762] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  635.919050] (sample_perf_counters) current program counter: 187650781575508
+[  635.928348] (sample_perf_counters) event code: 1  ; counter value: 305366, delta: 50383
+[  635.938600] (sample_perf_counters) event code: 2  ; counter value: 15473, delta: 2282
+[  635.948626] (sample_perf_counters) event code: 3  ; counter value: 208807, delta: 25539
+[  635.958771] (sample_perf_counters) event code: 4  ; counter value: 3801336, delta: 383980
+[  635.971064] (sample_perf_counters) event code: 5  ; counter value: 25465, delta: 4128
+[  635.981128] (sample_perf_counters) event code: 6  ; counter value: 2870343, delta: 738925
+[  635.993629] (sample_perf_counters) event code: 7  ; counter value: 1208440, delta: 317675
+[  636.006162] (sample_perf_counters) event code: 8  ; counter value: 12582330, delta: 2551704
+[  636.018877] (sample_perf_counters) event code: 17  ; counter value: 42364248, delta: 5434757
+[  636.031590] (sample_perf_counters) event code: 18  ; counter value: 3120003, delta: 763550
+[  636.044130] (sample_perf_counters) event code: 19  ; counter value: 2864715, delta: 655449
+[  636.056674] (sample_perf_counters) event code: 20  ; counter value: 12471847, delta: 2661818
+[  636.069391] (sample_perf_counters) event code: 21  ; counter value: 182839, delta: 25633
+[  636.081726] (sample_perf_counters) event code: 25  ; counter value: 814172, delta: 124032
+[  636.905771] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  636.920235] (sample_perf_counters) current program counter: 187650781575472
+[  636.929997] (sample_perf_counters) event code: 1  ; counter value: 344676, delta: 39310
+[  636.940787] (sample_perf_counters) event code: 2  ; counter value: 17351, delta: 1878
+[  636.951341] (sample_perf_counters) event code: 3  ; counter value: 251339, delta: 42532
+[  636.962037] (sample_perf_counters) event code: 4  ; counter value: 4872620, delta: 1071284
+[  636.975516] (sample_perf_counters) event code: 5  ; counter value: 31301, delta: 5836
+[  636.986170] (sample_perf_counters) event code: 6  ; counter value: 3133037, delta: 262694
+[  636.999619] (sample_perf_counters) event code: 7  ; counter value: 1318612, delta: 110172
+[  637.013228] (sample_perf_counters) event code: 8  ; counter value: 14601998, delta: 2019668
+[  637.027073] (sample_perf_counters) event code: 17  ; counter value: 50568415, delta: 8204167
+[  637.040955] (sample_perf_counters) event code: 18  ; counter value: 3446865, delta: 326862
+[  637.054669] (sample_perf_counters) event code: 19  ; counter value: 3725600, delta: 860885
+[  637.068381] (sample_perf_counters) event code: 20  ; counter value: 14100162, delta: 1628315
+[  637.082267] (sample_perf_counters) event code: 21  ; counter value: 213950, delta: 31111
+[  637.095798] (sample_perf_counters) event code: 25  ; counter value: 1023721, delta: 209549
+[  637.905779] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  637.919100] (sample_perf_counters) current program counter: 187650781575492
+[  637.928321] (sample_perf_counters) event code: 1  ; counter value: 371960, delta: 27284
+[  637.938581] (sample_perf_counters) event code: 2  ; counter value: 18470, delta: 1119
+[  637.948616] (sample_perf_counters) event code: 3  ; counter value: 280919, delta: 29580
+[  637.958802] (sample_perf_counters) event code: 4  ; counter value: 6017291, delta: 1144671
+[  637.971237] (sample_perf_counters) event code: 5  ; counter value: 43321, delta: 12020
+[  637.981420] (sample_perf_counters) event code: 6  ; counter value: 3661786, delta: 528749
+[  637.993795] (sample_perf_counters) event code: 7  ; counter value: 1462317, delta: 143705
+[  638.006303] (sample_perf_counters) event code: 8  ; counter value: 18228907, delta: 3626909
+[  638.018965] (sample_perf_counters) event code: 17  ; counter value: 51883854, delta: 1315439
+[  638.031734] (sample_perf_counters) event code: 18  ; counter value: 4102899, delta: 656034
+[  638.044329] (sample_perf_counters) event code: 19  ; counter value: 3974045, delta: 248445
+[  638.056906] (sample_perf_counters) event code: 20  ; counter value: 16725488, delta: 2625326
+[  638.069661] (sample_perf_counters) event code: 21  ; counter value: 220118, delta: 6168
+[  638.079926] (sample_perf_counters) event code: 25  ; counter value: 1222446, delta: 198725
+[  638.905789] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  638.919012] (sample_perf_counters) current program counter: 187650781575472
+[  638.928192] (sample_perf_counters) event code: 1  ; counter value: 422694, delta: 50734
+[  638.938411] (sample_perf_counters) event code: 2  ; counter value: 20856, delta: 2386
+[  638.948392] (sample_perf_counters) event code: 3  ; counter value: 310326, delta: 29407
+[  638.958502] (sample_perf_counters) event code: 4  ; counter value: 6160303, delta: 143012
+[  638.970643] (sample_perf_counters) event code: 5  ; counter value: 45789, delta: 2468
+[  638.980653] (sample_perf_counters) event code: 6  ; counter value: 3812745, delta: 150959
+[  638.992947] (sample_perf_counters) event code: 7  ; counter value: 1524527, delta: 62210
+[  639.005202] (sample_perf_counters) event code: 8  ; counter value: 18580810, delta: 351903
+[  639.017651] (sample_perf_counters) event code: 17  ; counter value: 58264790, delta: 6380936
+[  639.030309] (sample_perf_counters) event code: 18  ; counter value: 4170142, delta: 67243
+[  639.042682] (sample_perf_counters) event code: 19  ; counter value: 4635640, delta: 661595
+[  639.055144] (sample_perf_counters) event code: 20  ; counter value: 17036140, delta: 310652
+[  639.067681] (sample_perf_counters) event code: 21  ; counter value: 262210, delta: 42092
+[  639.079968] (sample_perf_counters) event code: 25  ; counter value: 1337852, delta: 115406
+[  639.905796] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  639.919115] (sample_perf_counters) current program counter: 187650781575500
+[  639.928310] (sample_perf_counters) event code: 1  ; counter value: 432297, delta: 9603
+[  639.938477] (sample_perf_counters) event code: 2  ; counter value: 21192, delta: 336
+[  639.948424] (sample_perf_counters) event code: 3  ; counter value: 310937, delta: 611
+[  639.958421] (sample_perf_counters) event code: 4  ; counter value: 6171825, delta: 11522
+[  639.970668] (sample_perf_counters) event code: 5  ; counter value: 45961, delta: 172
+[  639.980681] (sample_perf_counters) event code: 6  ; counter value: 3876498, delta: 63753
+[  639.992962] (sample_perf_counters) event code: 7  ; counter value: 1550576, delta: 26049
+[  640.005325] (sample_perf_counters) event code: 8  ; counter value: 18619252, delta: 38442
+[  640.017808] (sample_perf_counters) event code: 17  ; counter value: 58935201, delta: 670411
+[  640.030470] (sample_perf_counters) event code: 18  ; counter value: 4234482, delta: 64340
+[  640.042925] (sample_perf_counters) event code: 19  ; counter value: 4644761, delta: 9121
+[  640.055280] (sample_perf_counters) event code: 20  ; counter value: 17192219, delta: 156079
+[  640.067929] (sample_perf_counters) event code: 21  ; counter value: 266854, delta: 4644
+[  640.078204] (sample_perf_counters) event code: 25  ; counter value: 1341171, delta: 3319
+[  640.905805] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  640.919001] (sample_perf_counters) current program counter: 187650781575536
+[  640.928133] (sample_perf_counters) event code: 1  ; counter value: 572368, delta: 140071
+[  640.940320] (sample_perf_counters) event code: 2  ; counter value: 28015, delta: 6823
+[  640.950304] (sample_perf_counters) event code: 3  ; counter value: 682932, delta: 371995
+[  640.962520] (sample_perf_counters) event code: 4  ; counter value: 15638150, delta: 9466325
+[  640.975222] (sample_perf_counters) event code: 5  ; counter value: 93218, delta: 47257
+[  640.985457] (sample_perf_counters) event code: 6  ; counter value: 10393413, delta: 6516915
+[  640.998168] (sample_perf_counters) event code: 7  ; counter value: 4385946, delta: 2835370
+[  641.010824] (sample_perf_counters) event code: 8  ; counter value: 44308022, delta: 25688770
+[  641.023683] (sample_perf_counters) event code: 17  ; counter value: 147711662, delta: 88776461
+[  641.036730] (sample_perf_counters) event code: 18  ; counter value: 9797180, delta: 5562698
+[  641.049483] (sample_perf_counters) event code: 19  ; counter value: 18903654, delta: 14258893
+[  641.062411] (sample_perf_counters) event code: 20  ; counter value: 32390406, delta: 15198187
+[  641.075362] (sample_perf_counters) event code: 21  ; counter value: 730440, delta: 463586
+[  641.087956] (sample_perf_counters) event code: 25  ; counter value: 2060483, delta: 719312
+[  641.905812] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  641.919330] (sample_perf_counters) current program counter: 187650781575500
+[  641.928636] (sample_perf_counters) event code: 1  ; counter value: 614549, delta: 42181
+[  641.938996] (sample_perf_counters) event code: 2  ; counter value: 28147, delta: 132
+[  641.949040] (sample_perf_counters) event code: 3  ; counter value: 685580, delta: 2648
+[  641.959214] (sample_perf_counters) event code: 4  ; counter value: 15836243, delta: 198093
+[  641.971776] (sample_perf_counters) event code: 5  ; counter value: 98070, delta: 4852
+[  641.981859] (sample_perf_counters) event code: 6  ; counter value: 10632685, delta: 239272
+[  641.994322] (sample_perf_counters) event code: 7  ; counter value: 4471371, delta: 85425
+[  642.006696] (sample_perf_counters) event code: 8  ; counter value: 45052536, delta: 744514
+[  642.019277] (sample_perf_counters) event code: 17  ; counter value: 147989227, delta: 277565
+[  642.032022] (sample_perf_counters) event code: 18  ; counter value: 10081585, delta: 284405
+[  642.044672] (sample_perf_counters) event code: 19  ; counter value: 18911611, delta: 7957
+[  642.057161] (sample_perf_counters) event code: 20  ; counter value: 33619977, delta: 1229571
+[  642.069934] (sample_perf_counters) event code: 21  ; counter value: 734503, delta: 4063
+[  642.080224] (sample_perf_counters) event code: 25  ; counter value: 2083681, delta: 23198
+[  642.905820] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  642.919034] (sample_perf_counters) current program counter: 187650781575468
+[  642.928179] (sample_perf_counters) event code: 1  ; counter value: 615764, delta: 1215
+[  642.938266] (sample_perf_counters) event code: 2  ; counter value: 28206, delta: 59
+[  642.948033] (sample_perf_counters) event code: 3  ; counter value: 703798, delta: 18218
+[  642.958110] (sample_perf_counters) event code: 4  ; counter value: 16050703, delta: 214460
+[  642.970318] (sample_perf_counters) event code: 5  ; counter value: 100906, delta: 2836
+[  642.980381] (sample_perf_counters) event code: 6  ; counter value: 10640524, delta: 7839
+[  642.992544] (sample_perf_counters) event code: 7  ; counter value: 4473608, delta: 2237
+[  643.002714] (sample_perf_counters) event code: 8  ; counter value: 45610112, delta: 557576
+[  643.015061] (sample_perf_counters) event code: 17  ; counter value: 148140788, delta: 151561
+[  643.027586] (sample_perf_counters) event code: 18  ; counter value: 10083356, delta: 1771
+[  643.039859] (sample_perf_counters) event code: 19  ; counter value: 19026603, delta: 114992
+[  643.052319] (sample_perf_counters) event code: 20  ; counter value: 33882224, delta: 262247
+[  643.064753] (sample_perf_counters) event code: 21  ; counter value: 734959, delta: 456
+[  643.074814] (sample_perf_counters) event code: 25  ; counter value: 2156366, delta: 72685
+[  643.905828] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  643.918820] (sample_perf_counters) current program counter: 187650781575500
+[  643.927933] (sample_perf_counters) event code: 1  ; counter value: 621506, delta: 5742
+[  643.937973] (sample_perf_counters) event code: 2  ; counter value: 28495, delta: 289
+[  643.947801] (sample_perf_counters) event code: 3  ; counter value: 705706, delta: 1908
+[  643.957725] (sample_perf_counters) event code: 4  ; counter value: 16064615, delta: 13912
+[  643.969647] (sample_perf_counters) event code: 5  ; counter value: 100913, delta: 7
+[  643.979333] (sample_perf_counters) event code: 6  ; counter value: 10646071, delta: 5547
+[  643.991341] (sample_perf_counters) event code: 7  ; counter value: 4476246, delta: 2638
+[  644.001459] (sample_perf_counters) event code: 8  ; counter value: 45651274, delta: 41162
+[  644.013558] (sample_perf_counters) event code: 17  ; counter value: 148940563, delta: 799775
+[  644.025997] (sample_perf_counters) event code: 18  ; counter value: 10090231, delta: 6875
+[  644.038288] (sample_perf_counters) event code: 19  ; counter value: 19088823, delta: 62220
+[  644.050636] (sample_perf_counters) event code: 20  ; counter value: 33886007, delta: 3783
+[  644.062896] (sample_perf_counters) event code: 21  ; counter value: 737398, delta: 2439
+[  644.073065] (sample_perf_counters) event code: 25  ; counter value: 2169753, delta: 13387
+[  644.905839] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  644.918835] (sample_perf_counters) current program counter: 187650781575480
+[  644.927943] (sample_perf_counters) event code: 1  ; counter value: 656036, delta: 34530
+[  644.938086] (sample_perf_counters) event code: 2  ; counter value: 29408, delta: 913
+[  644.947918] (sample_perf_counters) event code: 3  ; counter value: 728237, delta: 22531
+[  644.957958] (sample_perf_counters) event code: 4  ; counter value: 16229438, delta: 164823
+[  644.969990] (sample_perf_counters) event code: 5  ; counter value: 104647, delta: 3734
+[  644.979975] (sample_perf_counters) event code: 6  ; counter value: 10770107, delta: 124036
+[  644.992164] (sample_perf_counters) event code: 7  ; counter value: 4542903, delta: 66657
+[  645.004252] (sample_perf_counters) event code: 8  ; counter value: 46122124, delta: 470850
+[  645.016609] (sample_perf_counters) event code: 17  ; counter value: 151987713, delta: 3047150
+[  645.029305] (sample_perf_counters) event code: 18  ; counter value: 10150081, delta: 59850
+[  645.041782] (sample_perf_counters) event code: 19  ; counter value: 19310296, delta: 221473
+[  645.054340] (sample_perf_counters) event code: 20  ; counter value: 34432835, delta: 546828
+[  645.066887] (sample_perf_counters) event code: 21  ; counter value: 751828, delta: 14430
+[  645.079169] (sample_perf_counters) event code: 25  ; counter value: 2227235, delta: 57482
+[  645.905844] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  645.919165] (sample_perf_counters) current program counter: 187650781575480
+[  645.928385] (sample_perf_counters) event code: 1  ; counter value: 876402, delta: 220366
+[  645.940755] (sample_perf_counters) event code: 2  ; counter value: 39424, delta: 10016
+[  645.950950] (sample_perf_counters) event code: 3  ; counter value: 810597, delta: 82360
+[  645.961236] (sample_perf_counters) event code: 4  ; counter value: 17030931, delta: 801493
+[  645.973872] (sample_perf_counters) event code: 5  ; counter value: 108002, delta: 3355
+[  645.984119] (sample_perf_counters) event code: 6  ; counter value: 11784902, delta: 1014795
+[  645.996819] (sample_perf_counters) event code: 7  ; counter value: 4955777, delta: 412874
+[  646.009418] (sample_perf_counters) event code: 8  ; counter value: 48030764, delta: 1908640
+[  646.022187] (sample_perf_counters) event code: 17  ; counter value: 176216247, delta: 24228534
+[  646.035242] (sample_perf_counters) event code: 18  ; counter value: 10457877, delta: 307796
+[  646.048029] (sample_perf_counters) event code: 19  ; counter value: 21674261, delta: 2363965
+[  646.060881] (sample_perf_counters) event code: 20  ; counter value: 35493850, delta: 1061015
+[  646.073730] (sample_perf_counters) event code: 21  ; counter value: 881090, delta: 129262
+[  646.086309] (sample_perf_counters) event code: 25  ; counter value: 2427218, delta: 199983
+[  646.905851] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  646.919277] (sample_perf_counters) current program counter: 187650781575516
+[  646.928524] (sample_perf_counters) event code: 1  ; counter value: 1018326, delta: 141924
+[  646.941115] (sample_perf_counters) event code: 2  ; counter value: 48475, delta: 9051
+[  646.951276] (sample_perf_counters) event code: 3  ; counter value: 907173, delta: 96576
+[  646.961574] (sample_perf_counters) event code: 4  ; counter value: 17961141, delta: 930210
+[  646.974212] (sample_perf_counters) event code: 5  ; counter value: 118706, delta: 10704
+[  646.984559] (sample_perf_counters) event code: 6  ; counter value: 12223647, delta: 438745
+[  646.997208] (sample_perf_counters) event code: 7  ; counter value: 5248050, delta: 292273
+[  647.009795] (sample_perf_counters) event code: 8  ; counter value: 50137524, delta: 2106760
+[  647.022563] (sample_perf_counters) event code: 17  ; counter value: 199943563, delta: 23727316
+[  647.035622] (sample_perf_counters) event code: 18  ; counter value: 10783103, delta: 325226
+[  647.048384] (sample_perf_counters) event code: 19  ; counter value: 23240861, delta: 1566600
+[  647.061236] (sample_perf_counters) event code: 20  ; counter value: 37228776, delta: 1734926
+[  647.074084] (sample_perf_counters) event code: 21  ; counter value: 983985, delta: 102895
+[  647.086690] (sample_perf_counters) event code: 25  ; counter value: 2819898, delta: 392680
+[  647.905859] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  647.919289] (sample_perf_counters) current program counter: 187650781575488
+[  647.928543] (sample_perf_counters) event code: 1  ; counter value: 1144057, delta: 125731
+[  647.941110] (sample_perf_counters) event code: 2  ; counter value: 55151, delta: 6676
+[  647.951248] (sample_perf_counters) event code: 3  ; counter value: 982257, delta: 75084
+[  647.961536] (sample_perf_counters) event code: 4  ; counter value: 19415061, delta: 1453920
+[  647.974281] (sample_perf_counters) event code: 5  ; counter value: 124964, delta: 6258
+[  647.984516] (sample_perf_counters) event code: 6  ; counter value: 13034331, delta: 810684
+[  647.997166] (sample_perf_counters) event code: 7  ; counter value: 5486490, delta: 238440
+[  648.009750] (sample_perf_counters) event code: 8  ; counter value: 54059191, delta: 3921667
+[  648.022544] (sample_perf_counters) event code: 17  ; counter value: 216289396, delta: 16345833
+[  648.035584] (sample_perf_counters) event code: 18  ; counter value: 11336320, delta: 553217
+[  648.048353] (sample_perf_counters) event code: 19  ; counter value: 24284109, delta: 1043248
+[  648.061203] (sample_perf_counters) event code: 20  ; counter value: 40117876, delta: 2889100
+[  648.074089] (sample_perf_counters) event code: 21  ; counter value: 1092106, delta: 108121
+[  648.086800] (sample_perf_counters) event code: 25  ; counter value: 3084127, delta: 264229
+[  648.905870] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  648.919337] (sample_perf_counters) current program counter: 187650781575492
+[  648.928597] (sample_perf_counters) event code: 1  ; counter value: 1642397, delta: 498340
+[  648.941166] (sample_perf_counters) event code: 2  ; counter value: 70203, delta: 15052
+[  648.951399] (sample_perf_counters) event code: 3  ; counter value: 1133889, delta: 151632
+[  648.963936] (sample_perf_counters) event code: 4  ; counter value: 19838988, delta: 423927
+[  648.976724] (sample_perf_counters) event code: 5  ; counter value: 138631, delta: 13667
+[  648.987103] (sample_perf_counters) event code: 6  ; counter value: 16351295, delta: 3316964
+[  649.000008] (sample_perf_counters) event code: 7  ; counter value: 7069546, delta: 1583056
+[  649.012794] (sample_perf_counters) event code: 8  ; counter value: 56039912, delta: 1980721
+[  649.025699] (sample_perf_counters) event code: 17  ; counter value: 257173060, delta: 40883664
+[  649.038842] (sample_perf_counters) event code: 18  ; counter value: 13698787, delta: 2362467
+[  649.051817] (sample_perf_counters) event code: 19  ; counter value: 27636875, delta: 3352766
+[  649.064775] (sample_perf_counters) event code: 20  ; counter value: 46372022, delta: 6254146
+[  649.077760] (sample_perf_counters) event code: 21  ; counter value: 1451635, delta: 359529
+[  649.090576] (sample_perf_counters) event code: 25  ; counter value: 3405829, delta: 321702
+[  649.905874] (sample_perf_counters) Monitored task is alive (PID: 1823), reading the counter values
+[  649.919419] (sample_perf_counters) current program counter: 187650781575472
+[  649.928726] (sample_perf_counters) event code: 1  ; counter value: 1790689, delta: 148292
+[  649.941436] (sample_perf_counters) event code: 2  ; counter value: 75181, delta: 4978
+[  649.951631] (sample_perf_counters) event code: 3  ; counter value: 1149957, delta: 16068
+[  649.964235] (sample_perf_counters) event code: 4  ; counter value: 20275039, delta: 436051
+[  649.977007] (sample_perf_counters) event code: 5  ; counter value: 147649, delta: 9018
+[  649.987290] (sample_perf_counters) event code: 6  ; counter value: 17275404, delta: 924109
+[  650.000075] (sample_perf_counters) event code: 7  ; counter value: 7346584, delta: 277038
+[  650.012759] (sample_perf_counters) event code: 8  ; counter value: 57811614, delta: 1771702
+[  650.025660] (sample_perf_counters) event code: 17  ; counter value: 269157360, delta: 11984300
+[  650.038803] (sample_perf_counters) event code: 18  ; counter value: 14497493, delta: 798706
+[  650.051665] (sample_perf_counters) event code: 19  ; counter value: 27909637, delta: 272762
+[  650.064523] (sample_perf_counters) event code: 20  ; counter value: 48855150, delta: 2483128
+[  650.077453] (sample_perf_counters) event code: 21  ; counter value: 1551370, delta: 99735
+[  650.090124] (sample_perf_counters) event code: 25  ; counter value: 3434582, delta: 28753
+[  650.905887] Monitored task terminated (PID: 1823), stopping the timer
+[  774.370750] Reading PID from proc file
+[  774.377044] PID set to 1968
+[  774.382856] Stopping monitoring of previous process (PID: 1823)
+[  774.391366]  (cleanup_perf_counters) Cleaning up multi performance counters
+[  774.401659]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[  774.412002] beginning perf monitoring
+[  774.418794] Found task for PID 1968
+[  774.424677] Got task struct for PID 1968
+[  774.430993] Initializing performance counters
+[  774.437731]  (init_perf_counters) Initializing multi performance counters
+[  774.447026] kzalloc succeeded
+[  774.453103] creating perf_event_attr for event code 1
+[  774.460497] perf_event_attr created
+[  774.466256] calling perf_event_create_kernel_counter for event code 1
+[  774.475071] perf_event_create_kernel_counter succeeded for event code 1
+[  774.484139] creating perf_event_attr for event code 2
+[  774.491607] perf_event_attr created
+[  774.497280] calling perf_event_create_kernel_counter for event code 2
+[  774.505915] perf_event_create_kernel_counter succeeded for event code 2
+[  774.514795] creating perf_event_attr for event code 3
+[  774.521964] perf_event_attr created
+[  774.527504] calling perf_event_create_kernel_counter for event code 3
+[  774.536161] perf_event_create_kernel_counter succeeded for event code 3
+[  774.544815] creating perf_event_attr for event code 4
+[  774.551917] perf_event_attr created
+[  774.557355] calling perf_event_create_kernel_counter for event code 4
+[  774.565928] perf_event_create_kernel_counter succeeded for event code 4
+[  774.574541] creating perf_event_attr for event code 5
+[  774.581522] perf_event_attr created
+[  774.586930] calling perf_event_create_kernel_counter for event code 5
+[  774.595357] perf_event_create_kernel_counter succeeded for event code 5
+[  774.603961] creating perf_event_attr for event code 6
+[  774.610889] perf_event_attr created
+[  774.616285] calling perf_event_create_kernel_counter for event code 6
+[  774.624727] perf_event_create_kernel_counter succeeded for event code 6
+[  774.633366] creating perf_event_attr for event code 7
+[  774.640346] perf_event_attr created
+[  774.645792] calling perf_event_create_kernel_counter for event code 7
+[  774.654307] perf_event_create_kernel_counter succeeded for event code 7
+[  774.662890] creating perf_event_attr for event code 8
+[  774.670034] perf_event_attr created
+[  774.675549] calling perf_event_create_kernel_counter for event code 8
+[  774.684211] perf_event_create_kernel_counter succeeded for event code 8
+[  774.692941] creating perf_event_attr for event code 17
+[  774.700179] perf_event_attr created
+[  774.705720] calling perf_event_create_kernel_counter for event code 17
+[  774.714541] perf_event_create_kernel_counter succeeded for event code 17
+[  774.723670] creating perf_event_attr for event code 18
+[  774.730943] perf_event_attr created
+[  774.736450] calling perf_event_create_kernel_counter for event code 18
+[  774.745190] perf_event_create_kernel_counter succeeded for event code 18
+[  774.754028] creating perf_event_attr for event code 19
+[  774.761200] perf_event_attr created
+[  774.766719] calling perf_event_create_kernel_counter for event code 19
+[  774.775370] perf_event_create_kernel_counter succeeded for event code 19
+[  774.784174] creating perf_event_attr for event code 20
+[  774.791357] perf_event_attr created
+[  774.796890] calling perf_event_create_kernel_counter for event code 20
+[  774.805543] perf_event_create_kernel_counter succeeded for event code 20
+[  774.814368] creating perf_event_attr for event code 21
+[  774.821553] perf_event_attr created
+[  774.827072] calling perf_event_create_kernel_counter for event code 21
+[  774.835704] perf_event_create_kernel_counter succeeded for event code 21
+[  774.844354] creating perf_event_attr for event code 25
+[  774.851418] perf_event_attr created
+[  774.856766] calling perf_event_create_kernel_counter for event code 25
+[  774.865340] perf_event_create_kernel_counter succeeded for event code 25
+[  774.874121] Starting the timer for 5 second sampling of counters
+[  774.882125] Sample interval set for 5 seconds intervals
+[  774.889252] Initializing the timer
+[  774.894565] Timer initialized
+[  774.899304] Starting the timer
+[  774.904177] Timer started
+[  775.904185] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  775.916480] (sample_perf_counters) current program counter: 187650182674756
+[  775.925194] (sample_perf_counters) event code: 1  ; counter value: 48654, delta: 48654
+[  775.934877] (sample_perf_counters) event code: 2  ; counter value: 2570, delta: 2570
+[  775.944359] (sample_perf_counters) event code: 3  ; counter value: 76572, delta: 76572
+[  775.953990] (sample_perf_counters) event code: 4  ; counter value: 223799935, delta: 223799935
+[  775.965781] (sample_perf_counters) event code: 5  ; counter value: 27500, delta: 27500
+[  775.975431] (sample_perf_counters) event code: 6  ; counter value: 138172618, delta: 138172618
+[  775.987261] (sample_perf_counters) event code: 7  ; counter value: 55286126, delta: 55286126
+[  775.999039] (sample_perf_counters) event code: 8  ; counter value: 670833525, delta: 670833525
+[  776.011092] (sample_perf_counters) event code: 17  ; counter value: 743970812, delta: 743970812
+[  776.023304] (sample_perf_counters) event code: 18  ; counter value: 29180861, delta: 29180861
+[  776.035433] (sample_perf_counters) event code: 19  ; counter value: 205602496, delta: 205602496
+[  776.047858] (sample_perf_counters) event code: 20  ; counter value: 368250610, delta: 368250610
+[  776.060382] (sample_perf_counters) event code: 21  ; counter value: 1882172, delta: 1882172
+[  776.072620] (sample_perf_counters) event code: 25  ; counter value: 8905267, delta: 8905267
+[  776.904188] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  776.917449] (sample_perf_counters) current program counter: 187650182674744
+[  776.926646] (sample_perf_counters) event code: 1  ; counter value: 51034, delta: 2380
+[  776.936723] (sample_perf_counters) event code: 2  ; counter value: 2646, delta: 76
+[  776.946471] (sample_perf_counters) event code: 3  ; counter value: 139754, delta: 63182
+[  776.956629] (sample_perf_counters) event code: 4  ; counter value: 438632437, delta: 214832502
+[  776.969398] (sample_perf_counters) event code: 5  ; counter value: 50413, delta: 22913
+[  776.979573] (sample_perf_counters) event code: 6  ; counter value: 269940328, delta: 131767710
+[  776.992389] (sample_perf_counters) event code: 7  ; counter value: 107999574, delta: 52713448
+[  777.005242] (sample_perf_counters) event code: 8  ; counter value: 1283628449, delta: 612794924
+[  777.018286] (sample_perf_counters) event code: 17  ; counter value: 1430377210, delta: 686406398
+[  777.031398] (sample_perf_counters) event code: 18  ; counter value: 55556503, delta: 26375642
+[  777.044235] (sample_perf_counters) event code: 19  ; counter value: 390046850, delta: 184444354
+[  777.057267] (sample_perf_counters) event code: 20  ; counter value: 692926777, delta: 324676167
+[  777.070313] (sample_perf_counters) event code: 21  ; counter value: 3543240, delta: 1661068
+[  777.083002] (sample_perf_counters) event code: 25  ; counter value: 16653244, delta: 7747977
+[  777.904191] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  777.917517] (sample_perf_counters) current program counter: 187650182674800
+[  777.926740] (sample_perf_counters) event code: 1  ; counter value: 53405, delta: 2371
+[  777.936820] (sample_perf_counters) event code: 2  ; counter value: 2728, delta: 82
+[  777.946586] (sample_perf_counters) event code: 3  ; counter value: 189222, delta: 49468
+[  777.956775] (sample_perf_counters) event code: 4  ; counter value: 653985600, delta: 215353163
+[  777.969578] (sample_perf_counters) event code: 5  ; counter value: 73350, delta: 22937
+[  777.979760] (sample_perf_counters) event code: 6  ; counter value: 401620474, delta: 131680146
+[  777.992589] (sample_perf_counters) event code: 7  ; counter value: 160742624, delta: 52743050
+[  778.005439] (sample_perf_counters) event code: 8  ; counter value: 1888708255, delta: 605079806
+[  778.018458] (sample_perf_counters) event code: 17  ; counter value: 2117588173, delta: 687210963
+[  778.031560] (sample_perf_counters) event code: 18  ; counter value: 81887636, delta: 26331133
+[  778.044429] (sample_perf_counters) event code: 19  ; counter value: 572737902, delta: 182691052
+[  778.057464] (sample_perf_counters) event code: 20  ; counter value: 1010724077, delta: 317797300
+[  778.070599] (sample_perf_counters) event code: 21  ; counter value: 5164641, delta: 1621401
+[  778.083260] (sample_perf_counters) event code: 25  ; counter value: 24279410, delta: 7626166
+[  778.904194] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  778.917524] (sample_perf_counters) current program counter: 187650182674772
+[  778.926749] (sample_perf_counters) event code: 1  ; counter value: 55785, delta: 2380
+[  778.936839] (sample_perf_counters) event code: 2  ; counter value: 2817, delta: 89
+[  778.946606] (sample_perf_counters) event code: 3  ; counter value: 248234, delta: 59012
+[  778.956790] (sample_perf_counters) event code: 4  ; counter value: 864753662, delta: 210768062
+[  778.969586] (sample_perf_counters) event code: 5  ; counter value: 96203, delta: 22853
+[  778.979784] (sample_perf_counters) event code: 6  ; counter value: 531182208, delta: 129561734
+[  778.992626] (sample_perf_counters) event code: 7  ; counter value: 213174793, delta: 52432169
+[  779.005487] (sample_perf_counters) event code: 8  ; counter value: 2490174714, delta: 601466459
+[  779.018501] (sample_perf_counters) event code: 17  ; counter value: 2803895791, delta: 686307618
+[  779.031619] (sample_perf_counters) event code: 18  ; counter value: 108033318, delta: 26145682
+[  779.044565] (sample_perf_counters) event code: 19  ; counter value: 753136211, delta: 180398309
+[  779.057601] (sample_perf_counters) event code: 20  ; counter value: 1328134801, delta: 317410724
+[  779.070712] (sample_perf_counters) event code: 21  ; counter value: 6805995, delta: 1641354
+[  779.083371] (sample_perf_counters) event code: 25  ; counter value: 31960765, delta: 7681355
+[  779.904195] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  779.917528] (sample_perf_counters) current program counter: 187650182674804
+[  779.926751] (sample_perf_counters) event code: 1  ; counter value: 58165, delta: 2380
+[  779.936813] (sample_perf_counters) event code: 2  ; counter value: 2910, delta: 93
+[  779.946589] (sample_perf_counters) event code: 3  ; counter value: 311026, delta: 62792
+[  779.956764] (sample_perf_counters) event code: 4  ; counter value: 1076272208, delta: 211518546
+[  779.969648] (sample_perf_counters) event code: 5  ; counter value: 118646, delta: 22443
+[  779.979943] (sample_perf_counters) event code: 6  ; counter value: 660566835, delta: 129384627
+[  779.992788] (sample_perf_counters) event code: 7  ; counter value: 264816042, delta: 51641249
+[  780.005633] (sample_perf_counters) event code: 8  ; counter value: 3100543106, delta: 610368392
+[  780.018657] (sample_perf_counters) event code: 17  ; counter value: 3491661588, delta: 687765797
+[  780.031788] (sample_perf_counters) event code: 18  ; counter value: 133964113, delta: 25930795
+[  780.044745] (sample_perf_counters) event code: 19  ; counter value: 933672168, delta: 180535957
+[  780.057772] (sample_perf_counters) event code: 20  ; counter value: 1648295623, delta: 320160822
+[  780.070880] (sample_perf_counters) event code: 21  ; counter value: 8457383, delta: 1651388
+[  780.083539] (sample_perf_counters) event code: 25  ; counter value: 39646450, delta: 7685685
+[  780.904200] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  780.917532] (sample_perf_counters) current program counter: 187650182674764
+[  780.926730] (sample_perf_counters) event code: 1  ; counter value: 60579, delta: 2414
+[  780.936784] (sample_perf_counters) event code: 2  ; counter value: 3008, delta: 98
+[  780.946521] (sample_perf_counters) event code: 3  ; counter value: 371258, delta: 60232
+[  780.956702] (sample_perf_counters) event code: 4  ; counter value: 1287327744, delta: 211055536
+[  780.969561] (sample_perf_counters) event code: 5  ; counter value: 141552, delta: 22906
+[  780.979855] (sample_perf_counters) event code: 6  ; counter value: 789552251, delta: 128985416
+[  780.992693] (sample_perf_counters) event code: 7  ; counter value: 316355808, delta: 51539766
+[  781.005532] (sample_perf_counters) event code: 8  ; counter value: 3713307504, delta: 612764398
+[  781.018573] (sample_perf_counters) event code: 17  ; counter value: 4174002260, delta: 682340672
+[  781.031699] (sample_perf_counters) event code: 18  ; counter value: 159744442, delta: 25780329
+[  781.044617] (sample_perf_counters) event code: 19  ; counter value: 1116081458, delta: 182409290
+[  781.057713] (sample_perf_counters) event code: 20  ; counter value: 1970452063, delta: 322156440
+[  781.070810] (sample_perf_counters) event code: 21  ; counter value: 10105015, delta: 1647632
+[  781.083553] (sample_perf_counters) event code: 25  ; counter value: 47380612, delta: 7734162
+[  781.904205] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  781.917530] (sample_perf_counters) current program counter: 187650182674752
+[  781.926711] (sample_perf_counters) event code: 1  ; counter value: 63023, delta: 2444
+[  781.936768] (sample_perf_counters) event code: 2  ; counter value: 3094, delta: 86
+[  781.946504] (sample_perf_counters) event code: 3  ; counter value: 436290, delta: 65032
+[  781.956665] (sample_perf_counters) event code: 4  ; counter value: 1500560544, delta: 213232800
+[  781.969522] (sample_perf_counters) event code: 5  ; counter value: 164473, delta: 22921
+[  781.979790] (sample_perf_counters) event code: 6  ; counter value: 920198402, delta: 130646151
+[  781.992605] (sample_perf_counters) event code: 7  ; counter value: 368039047, delta: 51683239
+[  782.005452] (sample_perf_counters) event code: 8  ; counter value: 4326045946, delta: 612738442
+[  782.018496] (sample_perf_counters) event code: 17  ; counter value: 4850059327, delta: 676057067
+[  782.031608] (sample_perf_counters) event code: 18  ; counter value: 185659555, delta: 25915113
+[  782.044537] (sample_perf_counters) event code: 19  ; counter value: 1299681664, delta: 183600206
+[  782.057640] (sample_perf_counters) event code: 20  ; counter value: 2290862835, delta: 320410772
+[  782.070751] (sample_perf_counters) event code: 21  ; counter value: 11752604, delta: 1647589
+[  782.083533] (sample_perf_counters) event code: 25  ; counter value: 54965858, delta: 7585246
+[  782.904204] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  782.917530] (sample_perf_counters) current program counter: 187650182674784
+[  782.926726] (sample_perf_counters) event code: 1  ; counter value: 65488, delta: 2465
+[  782.936783] (sample_perf_counters) event code: 2  ; counter value: 3173, delta: 79
+[  782.946522] (sample_perf_counters) event code: 3  ; counter value: 503923, delta: 67633
+[  782.956685] (sample_perf_counters) event code: 4  ; counter value: 1715186037, delta: 214625493
+[  782.969549] (sample_perf_counters) event code: 5  ; counter value: 187395, delta: 22922
+[  782.979810] (sample_perf_counters) event code: 6  ; counter value: 1051729216, delta: 131530814
+[  782.992721] (sample_perf_counters) event code: 7  ; counter value: 420552981, delta: 52513934
+[  783.005560] (sample_perf_counters) event code: 8  ; counter value: 4940099838, delta: 614053892
+[  783.018602] (sample_perf_counters) event code: 17  ; counter value: 5526521205, delta: 676461878
+[  783.031697] (sample_perf_counters) event code: 18  ; counter value: 211977068, delta: 26317513
+[  783.044620] (sample_perf_counters) event code: 19  ; counter value: 1483697711, delta: 184016047
+[  783.057726] (sample_perf_counters) event code: 20  ; counter value: 2613608173, delta: 322745338
+[  783.070850] (sample_perf_counters) event code: 21  ; counter value: 13375741, delta: 1623137
+[  783.083630] (sample_perf_counters) event code: 25  ; counter value: 62521378, delta: 7555520
+[  783.904208] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  783.917531] (sample_perf_counters) current program counter: 187650182674732
+[  783.926733] (sample_perf_counters) event code: 1  ; counter value: 67782, delta: 2294
+[  783.936814] (sample_perf_counters) event code: 2  ; counter value: 3271, delta: 98
+[  783.946554] (sample_perf_counters) event code: 3  ; counter value: 564969, delta: 61046
+[  783.956712] (sample_perf_counters) event code: 4  ; counter value: 1929925301, delta: 214739264
+[  783.969571] (sample_perf_counters) event code: 5  ; counter value: 210654, delta: 23259
+[  783.979818] (sample_perf_counters) event code: 6  ; counter value: 1183323557, delta: 131594341
+[  783.992723] (sample_perf_counters) event code: 7  ; counter value: 473173123, delta: 52620142
+[  784.005582] (sample_perf_counters) event code: 8  ; counter value: 5544932672, delta: 604832834
+[  784.018617] (sample_perf_counters) event code: 17  ; counter value: 6202076805, delta: 675555600
+[  784.031718] (sample_perf_counters) event code: 18  ; counter value: 238310724, delta: 26333656
+[  784.044632] (sample_perf_counters) event code: 19  ; counter value: 1667722051, delta: 184024340
+[  784.057746] (sample_perf_counters) event code: 20  ; counter value: 2931372511, delta: 317764338
+[  784.070867] (sample_perf_counters) event code: 21  ; counter value: 14996056, delta: 1620315
+[  784.083626] (sample_perf_counters) event code: 25  ; counter value: 70079461, delta: 7558083
+[  784.904208] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  784.917518] (sample_perf_counters) current program counter: 187650182674756
+[  784.926733] (sample_perf_counters) event code: 1  ; counter value: 69984, delta: 2202
+[  784.936811] (sample_perf_counters) event code: 2  ; counter value: 3378, delta: 107
+[  784.946667] (sample_perf_counters) event code: 3  ; counter value: 627348, delta: 62379
+[  784.956851] (sample_perf_counters) event code: 4  ; counter value: 2144638398, delta: 214713097
+[  784.969735] (sample_perf_counters) event code: 5  ; counter value: 233642, delta: 22988
+[  784.979997] (sample_perf_counters) event code: 6  ; counter value: 1315163767, delta: 131840210
+[  784.992903] (sample_perf_counters) event code: 7  ; counter value: 525837826, delta: 52664703
+[  785.005755] (sample_perf_counters) event code: 8  ; counter value: 6150778848, delta: 605846176
+[  785.018765] (sample_perf_counters) event code: 17  ; counter value: 6888603194, delta: 686526389
+[  785.031857] (sample_perf_counters) event code: 18  ; counter value: 264688377, delta: 26377653
+[  785.044799] (sample_perf_counters) event code: 19  ; counter value: 1850133387, delta: 182411336
+[  785.057921] (sample_perf_counters) event code: 20  ; counter value: 3249046236, delta: 317673725
+[  785.071043] (sample_perf_counters) event code: 21  ; counter value: 16619426, delta: 1623370
+[  785.083778] (sample_perf_counters) event code: 25  ; counter value: 77679271, delta: 7599810
+[  785.904210] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  785.917528] (sample_perf_counters) current program counter: 187650182674732
+[  785.926751] (sample_perf_counters) event code: 1  ; counter value: 72114, delta: 2130
+[  785.936838] (sample_perf_counters) event code: 2  ; counter value: 3482, delta: 104
+[  785.946692] (sample_perf_counters) event code: 3  ; counter value: 682263, delta: 54915
+[  785.956876] (sample_perf_counters) event code: 4  ; counter value: 2356285953, delta: 211647555
+[  785.969756] (sample_perf_counters) event code: 5  ; counter value: 256043, delta: 22401
+[  785.980043] (sample_perf_counters) event code: 6  ; counter value: 1445266435, delta: 130102668
+[  785.992969] (sample_perf_counters) event code: 7  ; counter value: 578462891, delta: 52625065
+[  786.005825] (sample_perf_counters) event code: 8  ; counter value: 6755263383, delta: 604484535
+[  786.018831] (sample_perf_counters) event code: 17  ; counter value: 7577229288, delta: 688626094
+[  786.031949] (sample_perf_counters) event code: 18  ; counter value: 290914647, delta: 26226270
+[  786.044892] (sample_perf_counters) event code: 19  ; counter value: 2031129609, delta: 180996222
+[  786.058014] (sample_perf_counters) event code: 20  ; counter value: 3566710441, delta: 317664205
+[  786.071114] (sample_perf_counters) event code: 21  ; counter value: 18263832, delta: 1644406
+[  786.083852] (sample_perf_counters) event code: 25  ; counter value: 85385757, delta: 7706486
+[  786.904214] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  786.917528] (sample_perf_counters) current program counter: 187650182674772
+[  786.926749] (sample_perf_counters) event code: 1  ; counter value: 74523, delta: 2409
+[  786.936808] (sample_perf_counters) event code: 2  ; counter value: 3569, delta: 87
+[  786.946556] (sample_perf_counters) event code: 3  ; counter value: 740307, delta: 58044
+[  786.956744] (sample_perf_counters) event code: 4  ; counter value: 2567640857, delta: 211354904
+[  786.969627] (sample_perf_counters) event code: 5  ; counter value: 278777, delta: 22734
+[  786.979910] (sample_perf_counters) event code: 6  ; counter value: 1574375018, delta: 129108583
+[  786.992845] (sample_perf_counters) event code: 7  ; counter value: 630074933, delta: 51612042
+[  787.005680] (sample_perf_counters) event code: 8  ; counter value: 7363576152, delta: 608312769
+[  787.018699] (sample_perf_counters) event code: 17  ; counter value: 8264362452, delta: 687133164
+[  787.031820] (sample_perf_counters) event code: 18  ; counter value: 316733398, delta: 25818751
+[  787.044769] (sample_perf_counters) event code: 19  ; counter value: 2211928646, delta: 180799037
+[  787.057869] (sample_perf_counters) event code: 20  ; counter value: 3887482654, delta: 320772213
+[  787.070970] (sample_perf_counters) event code: 21  ; counter value: 19913146, delta: 1649314
+[  787.083707] (sample_perf_counters) event code: 25  ; counter value: 93067035, delta: 7681278
+[  787.904216] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  787.917532] (sample_perf_counters) current program counter: 187650182674752
+[  787.926733] (sample_perf_counters) event code: 1  ; counter value: 77003, delta: 2480
+[  787.936788] (sample_perf_counters) event code: 2  ; counter value: 3652, delta: 83
+[  787.946527] (sample_perf_counters) event code: 3  ; counter value: 795997, delta: 55690
+[  787.956737] (sample_perf_counters) event code: 4  ; counter value: 2779473393, delta: 211832536
+[  787.969587] (sample_perf_counters) event code: 5  ; counter value: 301733, delta: 22956
+[  787.979874] (sample_perf_counters) event code: 6  ; counter value: 1703637469, delta: 129262451
+[  787.992803] (sample_perf_counters) event code: 7  ; counter value: 681739276, delta: 51664343
+[  788.005634] (sample_perf_counters) event code: 8  ; counter value: 7978728565, delta: 615152413
+[  788.018658] (sample_perf_counters) event code: 17  ; counter value: 8947836780, delta: 683474328
+[  788.031780] (sample_perf_counters) event code: 18  ; counter value: 342603694, delta: 25870296
+[  788.044705] (sample_perf_counters) event code: 19  ; counter value: 2394857780, delta: 182929134
+[  788.057808] (sample_perf_counters) event code: 20  ; counter value: 4210809818, delta: 323327164
+[  788.070900] (sample_perf_counters) event code: 21  ; counter value: 21567566, delta: 1654420
+[  788.083639] (sample_perf_counters) event code: 25  ; counter value: 100768268, delta: 7701233
+[  788.904217] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  788.917538] (sample_perf_counters) current program counter: 187650182674768
+[  788.926741] (sample_perf_counters) event code: 1  ; counter value: 79491, delta: 2488
+[  788.936793] (sample_perf_counters) event code: 2  ; counter value: 3751, delta: 99
+[  788.946534] (sample_perf_counters) event code: 3  ; counter value: 845602, delta: 49605
+[  788.956700] (sample_perf_counters) event code: 4  ; counter value: 2993469659, delta: 213996266
+[  788.969553] (sample_perf_counters) event code: 5  ; counter value: 324803, delta: 23070
+[  788.979823] (sample_perf_counters) event code: 6  ; counter value: 1834426419, delta: 130788950
+[  788.992743] (sample_perf_counters) event code: 7  ; counter value: 733517506, delta: 51778230
+[  789.005588] (sample_perf_counters) event code: 8  ; counter value: 8593542000, delta: 614813435
+[  789.018627] (sample_perf_counters) event code: 17  ; counter value: 9624375970, delta: 676539190
+[  789.031746] (sample_perf_counters) event code: 18  ; counter value: 368554470, delta: 25950776
+[  789.044676] (sample_perf_counters) event code: 19  ; counter value: 2579524460, delta: 184666680
+[  789.057785] (sample_perf_counters) event code: 20  ; counter value: 4534179087, delta: 323369269
+[  789.070897] (sample_perf_counters) event code: 21  ; counter value: 23219619, delta: 1652053
+[  789.083675] (sample_perf_counters) event code: 25  ; counter value: 108399259, delta: 7630991
+[  789.904221] (sample_perf_counters) Monitored task is alive (PID: 1968), reading the counter values
+[  789.917534] (sample_perf_counters) current program counter: 187650182674764
+[  789.926730] (sample_perf_counters) event code: 1  ; counter value: 81773, delta: 2282
+[  789.936775] (sample_perf_counters) event code: 2  ; counter value: 3838, delta: 87
+[  789.946510] (sample_perf_counters) event code: 3  ; counter value: 903567, delta: 57965
+[  789.956663] (sample_perf_counters) event code: 4  ; counter value: 3208653094, delta: 215183435
+[  789.969506] (sample_perf_counters) event code: 5  ; counter value: 347595, delta: 22792
+[  789.979766] (sample_perf_counters) event code: 6  ; counter value: 1966023376, delta: 131596957
+[  789.992669] (sample_perf_counters) event code: 7  ; counter value: 786202090, delta: 52684584
+[  790.005483] (sample_perf_counters) event code: 8  ; counter value: 9207513402, delta: 613971402
+[  790.018508] (sample_perf_counters) event code: 17  ; counter value: 10300423470, delta: 676047500
+[  790.031698] (sample_perf_counters) event code: 18  ; counter value: 394845299, delta: 26290829
+[  790.044619] (sample_perf_counters) event code: 19  ; counter value: 2764090417, delta: 184565957
+[  790.057717] (sample_perf_counters) event code: 20  ; counter value: 4856046250, delta: 321867163
+[  790.070832] (sample_perf_counters) event code: 21  ; counter value: 24845528, delta: 1625909
+[  790.083590] (sample_perf_counters) event code: 25  ; counter value: 115980053, delta: 7580794
+[  790.904229] Monitored task terminated (PID: 1968), stopping the timer
+[  797.146878] Reading PID from proc file
+[  797.152940] PID set to 2091
+[  797.158237] Stopping monitoring of previous process (PID: 1968)
+[  797.166584]  (cleanup_perf_counters) Cleaning up multi performance counters
+[  797.176185]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[  797.186409] beginning perf monitoring
+[  797.192399] Found task for PID 2091
+[  797.198291] Got task struct for PID 2091
+[  797.204663] Initializing performance counters
+[  797.211321]  (init_perf_counters) Initializing multi performance counters
+[  797.220507] kzalloc succeeded
+[  797.225808] creating perf_event_attr for event code 1
+[  797.233114] perf_event_attr created
+[  797.238819] calling perf_event_create_kernel_counter for event code 1
+[  797.247571] perf_event_create_kernel_counter succeeded for event code 1
+[  797.256390] creating perf_event_attr for event code 2
+[  797.263630] perf_event_attr created
+[  797.269235] calling perf_event_create_kernel_counter for event code 2
+[  797.277960] perf_event_create_kernel_counter succeeded for event code 2
+[  797.286789] creating perf_event_attr for event code 3
+[  797.293931] perf_event_attr created
+[  797.299609] calling perf_event_create_kernel_counter for event code 3
+[  797.308152] perf_event_create_kernel_counter succeeded for event code 3
+[  797.316897] creating perf_event_attr for event code 4
+[  797.323924] perf_event_attr created
+[  797.329370] calling perf_event_create_kernel_counter for event code 4
+[  797.337841] perf_event_create_kernel_counter succeeded for event code 4
+[  797.346309] creating perf_event_attr for event code 5
+[  797.353301] perf_event_attr created
+[  797.358662] calling perf_event_create_kernel_counter for event code 5
+[  797.367124] perf_event_create_kernel_counter succeeded for event code 5
+[  797.375754] creating perf_event_attr for event code 6
+[  797.382666] perf_event_attr created
+[  797.388031] calling perf_event_create_kernel_counter for event code 6
+[  797.396539] perf_event_create_kernel_counter succeeded for event code 6
+[  797.405217] creating perf_event_attr for event code 7
+[  797.412247] perf_event_attr created
+[  797.417645] calling perf_event_create_kernel_counter for event code 7
+[  797.426201] perf_event_create_kernel_counter succeeded for event code 7
+[  797.434842] creating perf_event_attr for event code 8
+[  797.441815] perf_event_attr created
+[  797.447251] calling perf_event_create_kernel_counter for event code 8
+[  797.455834] perf_event_create_kernel_counter succeeded for event code 8
+[  797.464495] creating perf_event_attr for event code 17
+[  797.471854] perf_event_attr created
+[  797.477505] calling perf_event_create_kernel_counter for event code 17
+[  797.486232] perf_event_create_kernel_counter succeeded for event code 17
+[  797.495153] creating perf_event_attr for event code 18
+[  797.502437] perf_event_attr created
+[  797.508140] calling perf_event_create_kernel_counter for event code 18
+[  797.517011] perf_event_create_kernel_counter succeeded for event code 18
+[  797.526005] creating perf_event_attr for event code 19
+[  797.533371] perf_event_attr created
+[  797.538952] calling perf_event_create_kernel_counter for event code 19
+[  797.547700] perf_event_create_kernel_counter succeeded for event code 19
+[  797.556602] creating perf_event_attr for event code 20
+[  797.563905] perf_event_attr created
+[  797.569506] calling perf_event_create_kernel_counter for event code 20
+[  797.578372] perf_event_create_kernel_counter succeeded for event code 20
+[  797.587198] creating perf_event_attr for event code 21
+[  797.594391] perf_event_attr created
+[  797.599940] calling perf_event_create_kernel_counter for event code 21
+[  797.608586] perf_event_create_kernel_counter succeeded for event code 21
+[  797.617469] creating perf_event_attr for event code 25
+[  797.624642] perf_event_attr created
+[  797.630178] calling perf_event_create_kernel_counter for event code 25
+[  797.638855] perf_event_create_kernel_counter succeeded for event code 25
+[  797.647944] Starting the timer for 5 second sampling of counters
+[  797.656003] Sample interval set for 5 seconds intervals
+[  797.663353] Initializing the timer
+[  797.668711] Timer initialized
+[  797.673554] Starting the timer
+[  797.678457] Timer started
+[  798.678466] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  798.690770] (sample_perf_counters) current program counter: 187650298116448
+[  798.699515] (sample_perf_counters) event code: 1  ; counter value: 112841, delta: 112841
+[  798.710967] (sample_perf_counters) event code: 2  ; counter value: 4585, delta: 4585
+[  798.720526] (sample_perf_counters) event code: 3  ; counter value: 61736, delta: 61736
+[  798.730229] (sample_perf_counters) event code: 4  ; counter value: 1082348, delta: 1082348
+[  798.741811] (sample_perf_counters) event code: 5  ; counter value: 14704, delta: 14704
+[  798.751553] (sample_perf_counters) event code: 6  ; counter value: 824478, delta: 824478
+[  798.763011] (sample_perf_counters) event code: 7  ; counter value: 332947, delta: 332947
+[  798.774555] (sample_perf_counters) event code: 8  ; counter value: 3848366, delta: 3848366
+[  798.786375] (sample_perf_counters) event code: 17  ; counter value: 14615380, delta: 14615380
+[  798.798562] (sample_perf_counters) event code: 18  ; counter value: 791559, delta: 791559
+[  798.810473] (sample_perf_counters) event code: 19  ; counter value: 957132, delta: 957132
+[  798.822487] (sample_perf_counters) event code: 20  ; counter value: 3266039, delta: 3266039
+[  798.834776] (sample_perf_counters) event code: 21  ; counter value: 64436, delta: 64436
+[  798.844876] (sample_perf_counters) event code: 25  ; counter value: 327477, delta: 327477
+[  799.678470] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  799.691706] (sample_perf_counters) current program counter: 187650298116416
+[  799.700919] (sample_perf_counters) event code: 1  ; counter value: 148877, delta: 36036
+[  799.711149] (sample_perf_counters) event code: 2  ; counter value: 10006, delta: 5421
+[  799.721151] (sample_perf_counters) event code: 3  ; counter value: 111488, delta: 49752
+[  799.731303] (sample_perf_counters) event code: 4  ; counter value: 1541018, delta: 458670
+[  799.743497] (sample_perf_counters) event code: 5  ; counter value: 16484, delta: 1780
+[  799.753490] (sample_perf_counters) event code: 6  ; counter value: 915424, delta: 90946
+[  799.763667] (sample_perf_counters) event code: 7  ; counter value: 366146, delta: 33199
+[  799.773761] (sample_perf_counters) event code: 8  ; counter value: 4283304, delta: 434938
+[  799.785847] (sample_perf_counters) event code: 17  ; counter value: 25440823, delta: 10825443
+[  799.798355] (sample_perf_counters) event code: 18  ; counter value: 821121, delta: 29562
+[  799.810421] (sample_perf_counters) event code: 19  ; counter value: 1399661, delta: 442529
+[  799.822672] (sample_perf_counters) event code: 20  ; counter value: 3507098, delta: 241059
+[  799.834907] (sample_perf_counters) event code: 21  ; counter value: 116301, delta: 51865
+[  799.846962] (sample_perf_counters) event code: 25  ; counter value: 504194, delta: 176717
+[  800.678469] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  800.691454] (sample_perf_counters) current program counter: 187650298116456
+[  800.700539] (sample_perf_counters) event code: 1  ; counter value: 225338, delta: 76461
+[  800.710652] (sample_perf_counters) event code: 2  ; counter value: 13198, delta: 3192
+[  800.720566] (sample_perf_counters) event code: 3  ; counter value: 153656, delta: 42168
+[  800.730598] (sample_perf_counters) event code: 4  ; counter value: 2066370, delta: 525352
+[  800.742539] (sample_perf_counters) event code: 5  ; counter value: 18241, delta: 1757
+[  800.752404] (sample_perf_counters) event code: 6  ; counter value: 2331906, delta: 1416482
+[  800.764587] (sample_perf_counters) event code: 7  ; counter value: 903270, delta: 537124
+[  800.776657] (sample_perf_counters) event code: 8  ; counter value: 5340972, delta: 1057668
+[  800.789063] (sample_perf_counters) event code: 17  ; counter value: 33014697, delta: 7573874
+[  800.801808] (sample_perf_counters) event code: 18  ; counter value: 2067459, delta: 1246338
+[  800.814458] (sample_perf_counters) event code: 19  ; counter value: 1897922, delta: 498261
+[  800.827040] (sample_perf_counters) event code: 20  ; counter value: 8210713, delta: 4703615
+[  800.839704] (sample_perf_counters) event code: 21  ; counter value: 178286, delta: 61985
+[  800.852119] (sample_perf_counters) event code: 25  ; counter value: 659512, delta: 155318
+[  801.678471] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  801.691802] (sample_perf_counters) current program counter: 187650298116428
+[  801.701029] (sample_perf_counters) event code: 1  ; counter value: 241342, delta: 16004
+[  801.711287] (sample_perf_counters) event code: 2  ; counter value: 14106, delta: 908
+[  801.721232] (sample_perf_counters) event code: 3  ; counter value: 161248, delta: 7592
+[  801.731314] (sample_perf_counters) event code: 4  ; counter value: 2173330, delta: 106960
+[  801.743641] (sample_perf_counters) event code: 5  ; counter value: 22387, delta: 4146
+[  801.753725] (sample_perf_counters) event code: 6  ; counter value: 2758605, delta: 426699
+[  801.766091] (sample_perf_counters) event code: 7  ; counter value: 999214, delta: 95944
+[  801.776352] (sample_perf_counters) event code: 8  ; counter value: 6683043, delta: 1342071
+[  801.788825] (sample_perf_counters) event code: 17  ; counter value: 36149329, delta: 3134632
+[  801.801459] (sample_perf_counters) event code: 18  ; counter value: 2341000, delta: 273541
+[  801.813946] (sample_perf_counters) event code: 19  ; counter value: 2271007, delta: 373085
+[  801.826412] (sample_perf_counters) event code: 20  ; counter value: 9251193, delta: 1040480
+[  801.838997] (sample_perf_counters) event code: 21  ; counter value: 194418, delta: 16132
+[  801.851366] (sample_perf_counters) event code: 25  ; counter value: 744051, delta: 84539
+[  802.678475] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  802.691683] (sample_perf_counters) current program counter: 187650298116436
+[  802.700848] (sample_perf_counters) event code: 1  ; counter value: 255743, delta: 14401
+[  802.711030] (sample_perf_counters) event code: 2  ; counter value: 16191, delta: 2085
+[  802.720978] (sample_perf_counters) event code: 3  ; counter value: 201797, delta: 40549
+[  802.731061] (sample_perf_counters) event code: 4  ; counter value: 3379682, delta: 1206352
+[  802.743283] (sample_perf_counters) event code: 5  ; counter value: 25063, delta: 2676
+[  802.753288] (sample_perf_counters) event code: 6  ; counter value: 2776274, delta: 17669
+[  802.765482] (sample_perf_counters) event code: 7  ; counter value: 1087474, delta: 88260
+[  802.777721] (sample_perf_counters) event code: 8  ; counter value: 9272481, delta: 2589438
+[  802.790178] (sample_perf_counters) event code: 17  ; counter value: 45792617, delta: 9643288
+[  802.802942] (sample_perf_counters) event code: 18  ; counter value: 2395024, delta: 54024
+[  802.815406] (sample_perf_counters) event code: 19  ; counter value: 3729418, delta: 1458411
+[  802.828088] (sample_perf_counters) event code: 20  ; counter value: 9573777, delta: 322584
+[  802.840653] (sample_perf_counters) event code: 21  ; counter value: 213609, delta: 19191
+[  802.853033] (sample_perf_counters) event code: 25  ; counter value: 910748, delta: 166697
+[  803.678476] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  803.691791] (sample_perf_counters) current program counter: 187650298116428
+[  803.700990] (sample_perf_counters) event code: 1  ; counter value: 297173, delta: 41430
+[  803.711219] (sample_perf_counters) event code: 2  ; counter value: 16846, delta: 655
+[  803.721158] (sample_perf_counters) event code: 3  ; counter value: 211219, delta: 9422
+[  803.731250] (sample_perf_counters) event code: 4  ; counter value: 17961893, delta: 14582211
+[  803.743862] (sample_perf_counters) event code: 5  ; counter value: 25981, delta: 918
+[  803.753862] (sample_perf_counters) event code: 6  ; counter value: 6567875, delta: 3791601
+[  803.766302] (sample_perf_counters) event code: 7  ; counter value: 2837564, delta: 1750090
+[  803.778876] (sample_perf_counters) event code: 8  ; counter value: 43052831, delta: 33780350
+[  803.791638] (sample_perf_counters) event code: 17  ; counter value: 83276389, delta: 37483772
+[  803.804477] (sample_perf_counters) event code: 18  ; counter value: 4466738, delta: 2071714
+[  803.817147] (sample_perf_counters) event code: 19  ; counter value: 14922750, delta: 11193332
+[  803.829984] (sample_perf_counters) event code: 20  ; counter value: 25755391, delta: 16181614
+[  803.842824] (sample_perf_counters) event code: 21  ; counter value: 222331, delta: 8722
+[  803.853109] (sample_perf_counters) event code: 25  ; counter value: 964691, delta: 53943
+[  804.678477] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  804.691677] (sample_perf_counters) current program counter: 187650298116420
+[  804.700836] (sample_perf_counters) event code: 1  ; counter value: 373853, delta: 76680
+[  804.711041] (sample_perf_counters) event code: 2  ; counter value: 18002, delta: 1156
+[  804.720988] (sample_perf_counters) event code: 3  ; counter value: 485279, delta: 274060
+[  804.733022] (sample_perf_counters) event code: 4  ; counter value: 26653882, delta: 8691989
+[  804.745503] (sample_perf_counters) event code: 5  ; counter value: 29351, delta: 3370
+[  804.755604] (sample_perf_counters) event code: 6  ; counter value: 10769918, delta: 4202043
+[  804.768154] (sample_perf_counters) event code: 7  ; counter value: 4392495, delta: 1554931
+[  804.780722] (sample_perf_counters) event code: 8  ; counter value: 64767401, delta: 21714570
+[  804.793469] (sample_perf_counters) event code: 17  ; counter value: 124196161, delta: 40919772
+[  804.806401] (sample_perf_counters) event code: 18  ; counter value: 8007541, delta: 3540803
+[  804.819051] (sample_perf_counters) event code: 19  ; counter value: 22268498, delta: 7345748
+[  804.831783] (sample_perf_counters) event code: 20  ; counter value: 42446658, delta: 16691267
+[  804.844634] (sample_perf_counters) event code: 21  ; counter value: 531454, delta: 309123
+[  804.857110] (sample_perf_counters) event code: 25  ; counter value: 1353049, delta: 388358
+[  805.678480] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  805.691915] (sample_perf_counters) current program counter: 187650298116456
+[  805.701159] (sample_perf_counters) event code: 1  ; counter value: 493672, delta: 119819
+[  805.713638] (sample_perf_counters) event code: 2  ; counter value: 19979, delta: 1977
+[  805.723851] (sample_perf_counters) event code: 3  ; counter value: 520055, delta: 34776
+[  805.734242] (sample_perf_counters) event code: 4  ; counter value: 27942513, delta: 1288631
+[  805.747030] (sample_perf_counters) event code: 5  ; counter value: 30830, delta: 1479
+[  805.757174] (sample_perf_counters) event code: 6  ; counter value: 11480435, delta: 710517
+[  805.769795] (sample_perf_counters) event code: 7  ; counter value: 4810684, delta: 418189
+[  805.782395] (sample_perf_counters) event code: 8  ; counter value: 67156740, delta: 2389339
+[  805.795185] (sample_perf_counters) event code: 17  ; counter value: 133671842, delta: 9475681
+[  805.808133] (sample_perf_counters) event code: 18  ; counter value: 8415314, delta: 407773
+[  805.820802] (sample_perf_counters) event code: 19  ; counter value: 24220423, delta: 1951925
+[  805.833678] (sample_perf_counters) event code: 20  ; counter value: 43808635, delta: 1361977
+[  805.846539] (sample_perf_counters) event code: 21  ; counter value: 572254, delta: 40800
+[  805.859050] (sample_perf_counters) event code: 25  ; counter value: 1419589, delta: 66540
+[  806.678482] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  806.691916] (sample_perf_counters) current program counter: 187650298116408
+[  806.701195] (sample_perf_counters) event code: 1  ; counter value: 536145, delta: 42473
+[  806.711509] (sample_perf_counters) event code: 2  ; counter value: 23504, delta: 3525
+[  806.721602] (sample_perf_counters) event code: 3  ; counter value: 543342, delta: 23287
+[  806.731812] (sample_perf_counters) event code: 4  ; counter value: 28456402, delta: 513889
+[  806.744230] (sample_perf_counters) event code: 5  ; counter value: 35407, delta: 4577
+[  806.754345] (sample_perf_counters) event code: 6  ; counter value: 12039707, delta: 559272
+[  806.766833] (sample_perf_counters) event code: 7  ; counter value: 4956047, delta: 145363
+[  806.779326] (sample_perf_counters) event code: 8  ; counter value: 69197753, delta: 2041013
+[  806.791989] (sample_perf_counters) event code: 17  ; counter value: 138217549, delta: 4545707
+[  806.804857] (sample_perf_counters) event code: 18  ; counter value: 9019008, delta: 603694
+[  806.817443] (sample_perf_counters) event code: 19  ; counter value: 24417851, delta: 197428
+[  806.830109] (sample_perf_counters) event code: 20  ; counter value: 46135658, delta: 2327023
+[  806.842879] (sample_perf_counters) event code: 21  ; counter value: 607814, delta: 35560
+[  806.855265] (sample_perf_counters) event code: 25  ; counter value: 1558590, delta: 139001
+[  807.678484] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  807.691832] (sample_perf_counters) current program counter: 187650298116464
+[  807.701032] (sample_perf_counters) event code: 1  ; counter value: 575002, delta: 38857
+[  807.711266] (sample_perf_counters) event code: 2  ; counter value: 24285, delta: 781
+[  807.721212] (sample_perf_counters) event code: 3  ; counter value: 551124, delta: 7782
+[  807.731303] (sample_perf_counters) event code: 4  ; counter value: 28483559, delta: 27157
+[  807.743652] (sample_perf_counters) event code: 5  ; counter value: 37061, delta: 1654
+[  807.753730] (sample_perf_counters) event code: 6  ; counter value: 12163387, delta: 123680
+[  807.766201] (sample_perf_counters) event code: 7  ; counter value: 5060906, delta: 104859
+[  807.778697] (sample_perf_counters) event code: 8  ; counter value: 69202321, delta: 4568
+[  807.791096] (sample_perf_counters) event code: 17  ; counter value: 140297318, delta: 2079769
+[  807.803938] (sample_perf_counters) event code: 18  ; counter value: 9058365, delta: 39357
+[  807.816420] (sample_perf_counters) event code: 19  ; counter value: 24750336, delta: 332485
+[  807.829096] (sample_perf_counters) event code: 20  ; counter value: 46328640, delta: 192982
+[  807.841754] (sample_perf_counters) event code: 21  ; counter value: 620004, delta: 12190
+[  807.854156] (sample_perf_counters) event code: 25  ; counter value: 1560269, delta: 1679
+[  808.678486] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  808.691809] (sample_perf_counters) current program counter: 187650298116416
+[  808.701017] (sample_perf_counters) event code: 1  ; counter value: 577548, delta: 2546
+[  808.711176] (sample_perf_counters) event code: 2  ; counter value: 24411, delta: 126
+[  808.721111] (sample_perf_counters) event code: 3  ; counter value: 560964, delta: 9840
+[  808.731183] (sample_perf_counters) event code: 4  ; counter value: 28809512, delta: 325953
+[  808.743587] (sample_perf_counters) event code: 5  ; counter value: 39318, delta: 2257
+[  808.753666] (sample_perf_counters) event code: 6  ; counter value: 12225913, delta: 62526
+[  808.766054] (sample_perf_counters) event code: 7  ; counter value: 5065528, delta: 4622
+[  808.776315] (sample_perf_counters) event code: 8  ; counter value: 70183537, delta: 981216
+[  808.788793] (sample_perf_counters) event code: 17  ; counter value: 142342273, delta: 2044955
+[  808.801518] (sample_perf_counters) event code: 18  ; counter value: 9213415, delta: 155050
+[  808.814008] (sample_perf_counters) event code: 19  ; counter value: 24812203, delta: 61867
+[  808.826478] (sample_perf_counters) event code: 20  ; counter value: 46992733, delta: 664093
+[  808.839045] (sample_perf_counters) event code: 21  ; counter value: 621527, delta: 1523
+[  808.849261] (sample_perf_counters) event code: 25  ; counter value: 1621648, delta: 61379
+[  809.678488] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  809.691592] (sample_perf_counters) current program counter: 187650298116448
+[  809.700682] (sample_perf_counters) event code: 1  ; counter value: 615591, delta: 38043
+[  809.710811] (sample_perf_counters) event code: 2  ; counter value: 26385, delta: 1974
+[  809.720711] (sample_perf_counters) event code: 3  ; counter value: 576640, delta: 15676
+[  809.730737] (sample_perf_counters) event code: 4  ; counter value: 29222016, delta: 412504
+[  809.742782] (sample_perf_counters) event code: 5  ; counter value: 41326, delta: 2008
+[  809.752680] (sample_perf_counters) event code: 6  ; counter value: 12251645, delta: 25732
+[  809.764832] (sample_perf_counters) event code: 7  ; counter value: 5088388, delta: 22860
+[  809.776936] (sample_perf_counters) event code: 8  ; counter value: 70440849, delta: 257312
+[  809.789290] (sample_perf_counters) event code: 17  ; counter value: 146255612, delta: 3913339
+[  809.801994] (sample_perf_counters) event code: 18  ; counter value: 9264410, delta: 50995
+[  809.814377] (sample_perf_counters) event code: 19  ; counter value: 25235127, delta: 422924
+[  809.826952] (sample_perf_counters) event code: 20  ; counter value: 47207088, delta: 214355
+[  809.839506] (sample_perf_counters) event code: 21  ; counter value: 642132, delta: 20605
+[  809.851787] (sample_perf_counters) event code: 25  ; counter value: 1676538, delta: 54890
+[  810.678490] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  810.691805] (sample_perf_counters) current program counter: 187650298116428
+[  810.701004] (sample_perf_counters) event code: 1  ; counter value: 747744, delta: 132153
+[  810.713333] (sample_perf_counters) event code: 2  ; counter value: 27250, delta: 865
+[  810.723340] (sample_perf_counters) event code: 3  ; counter value: 602069, delta: 25429
+[  810.733623] (sample_perf_counters) event code: 4  ; counter value: 30240507, delta: 1018491
+[  810.746345] (sample_perf_counters) event code: 5  ; counter value: 42694, delta: 1368
+[  810.756461] (sample_perf_counters) event code: 6  ; counter value: 13114829, delta: 863184
+[  810.769068] (sample_perf_counters) event code: 7  ; counter value: 5556767, delta: 468379
+[  810.781656] (sample_perf_counters) event code: 8  ; counter value: 72363012, delta: 1922163
+[  810.794434] (sample_perf_counters) event code: 17  ; counter value: 153942511, delta: 7686899
+[  810.807364] (sample_perf_counters) event code: 18  ; counter value: 9936669, delta: 672259
+[  810.820047] (sample_perf_counters) event code: 19  ; counter value: 26830956, delta: 1595829
+[  810.832894] (sample_perf_counters) event code: 20  ; counter value: 48990991, delta: 1783903
+[  810.845739] (sample_perf_counters) event code: 21  ; counter value: 681752, delta: 39620
+[  810.858243] (sample_perf_counters) event code: 25  ; counter value: 1727093, delta: 50555
+[  811.678491] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  811.691905] (sample_perf_counters) current program counter: 187650298116436
+[  811.701175] (sample_perf_counters) event code: 1  ; counter value: 791758, delta: 44014
+[  811.711469] (sample_perf_counters) event code: 2  ; counter value: 28948, delta: 1698
+[  811.721545] (sample_perf_counters) event code: 3  ; counter value: 628108, delta: 26039
+[  811.731756] (sample_perf_counters) event code: 4  ; counter value: 30758992, delta: 518485
+[  811.744170] (sample_perf_counters) event code: 5  ; counter value: 47398, delta: 4704
+[  811.754278] (sample_perf_counters) event code: 6  ; counter value: 13636134, delta: 521305
+[  811.766772] (sample_perf_counters) event code: 7  ; counter value: 5703272, delta: 146505
+[  811.779267] (sample_perf_counters) event code: 8  ; counter value: 74628459, delta: 2265447
+[  811.791929] (sample_perf_counters) event code: 17  ; counter value: 158637765, delta: 4695254
+[  811.804796] (sample_perf_counters) event code: 18  ; counter value: 10464592, delta: 527923
+[  811.817470] (sample_perf_counters) event code: 19  ; counter value: 27044905, delta: 213949
+[  811.830158] (sample_perf_counters) event code: 20  ; counter value: 51587818, delta: 2596827
+[  811.842940] (sample_perf_counters) event code: 21  ; counter value: 708942, delta: 27190
+[  811.855331] (sample_perf_counters) event code: 25  ; counter value: 1847860, delta: 120767
+[  812.678496] (sample_perf_counters) Monitored task is alive (PID: 2091), reading the counter values
+[  812.691831] (sample_perf_counters) current program counter: 187650298116436
+[  812.701037] (sample_perf_counters) event code: 1  ; counter value: 901869, delta: 110111
+[  812.713390] (sample_perf_counters) event code: 2  ; counter value: 30473, delta: 1525
+[  812.723505] (sample_perf_counters) event code: 3  ; counter value: 754350, delta: 126242
+[  812.735978] (sample_perf_counters) event code: 4  ; counter value: 36234919, delta: 5475927
+[  812.748862] (sample_perf_counters) event code: 5  ; counter value: 50648, delta: 3250
+[  812.759047] (sample_perf_counters) event code: 6  ; counter value: 18087615, delta: 4451481
+[  812.771910] (sample_perf_counters) event code: 7  ; counter value: 7018505, delta: 1315233
+[  812.784705] (sample_perf_counters) event code: 8  ; counter value: 93075838, delta: 18447379
+[  812.797678] (sample_perf_counters) event code: 17  ; counter value: 177702656, delta: 19064891
+[  812.810811] (sample_perf_counters) event code: 18  ; counter value: 14548965, delta: 4084373
+[  812.823771] (sample_perf_counters) event code: 19  ; counter value: 29770171, delta: 2725266
+[  812.836749] (sample_perf_counters) event code: 20  ; counter value: 68227328, delta: 16639510
+[  812.849792] (sample_perf_counters) event code: 21  ; counter value: 839039, delta: 130097
+[  812.862507] (sample_perf_counters) event code: 25  ; counter value: 2093027, delta: 245167
+[  813.678501] Monitored task terminated (PID: 2091), stopping the timer
