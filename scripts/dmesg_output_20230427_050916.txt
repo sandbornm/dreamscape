@@ -1,0 +1,855 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.4.0-1083-raspi (buildd@bos02-arm64-066) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #94-Ubuntu SMP PREEMPT Mon Apr 3 10:06:55 UTC 2023 (Ubuntu 5.4.0-1083.94-raspi 5.4.231)
+[    0.000000] Machine model: Raspberry Pi 3 Model B Plus Rev 1.3
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x0000000037400000, size 64 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 242688
+[    0.000000]   DMA zone: 3792 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 242688 pages, LIFO batch:63
+[    0.000000] percpu: Embedded 32 pages/cpu s92504 r8192 d30376 u131072
+[    0.000000] pcpu-alloc: s92504 r8192 d30376 u131072 alloc=32*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 843419
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 238896
+[    0.000000] Kernel command line:  coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 bcm2708_fb.fbwidth=720 bcm2708_fb.fbheight=480 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  elevator=deadline net.ifnames=0 console=ttyS0,115200 dwc_otg.lpm_enable=0 console=tty1 root=LABEL=writable rootfstype=ext4 rootwait fixrtc quiet splash quiet splash
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 828524K/970752K available (13820K kernel code, 1280K rwdata, 4328K rodata, 4096K init, 1079K bss, 76692K reserved, 65536K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 39471 entries in 155 pages
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000007] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000282] Console: colour dummy device 80x25
+[    0.000310] printk: console [tty1] enabled
+[    0.000371] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.000394] pid_max: default: 32768 minimum: 301
+[    0.001001] LSM: Security Framework initializing
+[    0.001092] Yama: becoming mindful.
+[    0.001279] AppArmor: AppArmor initialized
+[    0.001679] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001710] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001892] *** VALIDATE tmpfs ***
+[    0.002948] *** VALIDATE proc ***
+[    0.003418] cgroup: Disabling memory control group subsystem
+[    0.003706] *** VALIDATE cgroup1 ***
+[    0.003722] *** VALIDATE cgroup2 ***
+[    0.005808] ASID allocator initialised with 32768 entries
+[    0.006082] rcu: Hierarchical SRCU implementation.
+[    0.008840] EFI services will not be available.
+[    0.010137] smp: Bringing up secondary CPUs ...
+[    0.011608] Detected VIPT I-cache on CPU1
+[    0.011675] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.013664] Detected VIPT I-cache on CPU2
+[    0.013714] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.015601] Detected VIPT I-cache on CPU3
+[    0.015647] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.016180] smp: Brought up 1 node, 4 CPUs
+[    0.016195] SMP: Total of 4 processors activated.
+[    0.016209] CPU features: detected: 32-bit EL0 Support
+[    0.016224] CPU features: detected: CRC32 instructions
+[    0.022761] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.022775] CPU: All CPU(s) started at EL2
+[    0.022838] alternatives: patching kernel code
+[    0.025399] devtmpfs: initialized
+[    0.043955] Enabled cp15_barrier support
+[    0.043988] Enabled setend support
+[    0.044660] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.044690] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.048560] pinctrl core: initialized pinctrl subsystem
+[    0.049535] DMI not present or invalid.
+[    0.050986] NET: Registered protocol family 16
+[    0.060504] DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.060543] audit: initializing netlink subsys (disabled)
+[    0.060917] audit: type=2000 audit(0.060:1): state=initialized audit_enabled=0 res=1
+[    0.061863] cpuidle: using governor ladder
+[    0.061924] cpuidle: using governor menu
+[    0.062776] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.063361] Serial: AMBA PL011 UART driver
+[    0.066460] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+[    0.080400] raspberrypi-firmware soc:firmware: Attached to firmware from 2021-11-18 16:18, variant start
+[    0.084415] raspberrypi-firmware soc:firmware: Firmware hash is d9b293558b4cef6aabedcc53c178e7604de90788
+[    0.125056] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.125075] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.125089] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.125103] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.139917] bcm2835-dma 3f007000.dma: DMA legacy API manager, dmachans=0x1
+[    0.143731] iommu: Default domain type: Translated 
+[    0.146136] SCSI subsystem initialized
+[    0.146563] libata version 3.00 loaded.
+[    0.146945] usbcore: registered new interface driver usbfs
+[    0.147009] usbcore: registered new interface driver hub
+[    0.147079] usbcore: registered new device driver usb
+[    0.147576] pps_core: LinuxPPS API ver. 1 registered
+[    0.147588] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.147618] PTP clock support registered
+[    0.147993] EDAC MC: Ver: 3.0.0
+[    0.149968] NetLabel: Initializing
+[    0.149982] NetLabel:  domain hash size = 128
+[    0.149992] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.150102] NetLabel:  unlabeled traffic allowed by default
+[    0.151568] clocksource: Switched to clocksource arch_sys_counter
+[    0.307277] *** VALIDATE bpf ***
+[    0.307842] VFS: Disk quotas dquot_6.6.0
+[    0.307996] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.308190] *** VALIDATE ramfs ***
+[    0.308249] *** VALIDATE hugetlbfs ***
+[    0.309404] AppArmor: AppArmor Filesystem Enabled
+[    0.309682] simple-framebuffer 3eaa9000.framebuffer: framebuffer at 0x3eaa9000, 0x151800 bytes, mapped to 0x(____ptrval____)
+[    0.309702] simple-framebuffer 3eaa9000.framebuffer: format=a8r8g8b8, mode=720x480x32, linelength=2880
+[    0.310568] Console: switching to colour frame buffer device 90x30
+[    0.316419] simple-framebuffer 3eaa9000.framebuffer: fb0: simplefb registered!
+[    0.331302] thermal_sys: Registered thermal governor 'fair_share'
+[    0.331312] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.331326] thermal_sys: Registered thermal governor 'step_wise'
+[    0.331337] thermal_sys: Registered thermal governor 'user_space'
+[    0.331348] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.332321] NET: Registered protocol family 2
+[    0.332690] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.334108] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.334164] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.334284] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.334482] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.334737] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.334793] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.335114] NET: Registered protocol family 1
+[    0.335182] NET: Registered protocol family 44
+[    0.335205] PCI: CLS 0 bytes, default 64
+[    0.335659] Trying to unpack rootfs image as initramfs...
+[    1.420264] Freeing initrd memory: 29732K
+[    1.422247] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[    1.422429] kvm [1]: IPA Size Limit: 40 bits
+[    1.423768] kvm [1]: Hyp mode initialized successfully
+[    1.428950] Initialise system trusted keyrings
+[    1.429070] Key type blacklist registered
+[    1.429468] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.441577] zbud: loaded
+[    1.445177] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.447083] fuse: init (API version 7.31)
+[    1.447267] *** VALIDATE fuse ***
+[    1.447286] *** VALIDATE fuse ***
+[    1.475265] Key type asymmetric registered
+[    1.475280] Asymmetric key parser 'x509' registered
+[    1.475344] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    1.475654] io scheduler mq-deadline registered
+[    1.481247] bcm2708_fb soc:fb: FB found 1 display(s)
+[    1.486616] bcm2708_fb soc:fb: Registered framebuffer for display 0, size 720x480
+[    1.581547] Serial: 8250/16550 driver, 1 ports, IRQ sharing enabled
+[    1.584690] bcm2835-rng 3f104000.rng: hwrng registered
+[    1.585395] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+[    1.586447] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+[    1.715766] loop: module loaded
+[    1.719462] spi-bcm2835 3f204000.spi: could not get clk: -517
+[    1.722210] tun: Universal TUN/TAP device driver, 1.6
+[    1.722847] PPP generic driver version 2.4.2
+[    1.723159] usbcore: registered new interface driver lan78xx
+[    1.723225] usbcore: registered new interface driver smsc95xx
+[    1.723275] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.723311] ehci-pci: EHCI PCI platform driver
+[    1.723375] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.723399] ohci-pci: OHCI PCI platform driver
+[    1.723453] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.723702] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    1.723924] dwc_otg: FIQ enabled
+[    1.723935] dwc_otg: NAK holdoff enabled
+[    1.723945] dwc_otg: FIQ split-transaction FSM enabled
+[    1.723958] Module dwc_common_port init
+[    1.724713] mousedev: PS/2 mouse device common for all mice
+[    1.725299] i2c /dev entries driver
+[    1.728554] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    1.728872] device-mapper: uevent: version 1.0.3
+[    1.729359] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.734627] sdhci: Secure Digital Host Controller Interface driver
+[    1.734634] sdhci: Copyright(c) Pierre Ossman
+[    1.734970] mmc-bcm2835 3f300000.mmcnr: could not get clk, deferring probe
+[    1.735270] sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+[    1.735374] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.737207] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.737417] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.738298] vchiq: vchiq_init_state: slot_zero = (____ptrval____)
+[    1.741276] drop_monitor: Initializing network drop monitor service
+[    1.742044] NET: Registered protocol family 10
+[    1.769932] Segment Routing with IPv6
+[    1.770019] NET: Registered protocol family 17
+[    1.770172] Key type dns_resolver registered
+[    1.770802] registered taskstats version 1
+[    1.770846] Loading compiled-in X.509 certificates
+[    1.773433] Loaded X.509 cert 'Build time autogenerated kernel key: 06296dccb74d00d5449bbf6b3caaa893f9f33d41'
+[    1.775724] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.777946] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.777951] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.778021] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.778085] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.778157] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.778237] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.778296] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.778356] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.778427] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.778491] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.778857] Key type ._fscrypt registered
+[    1.778863] Key type .fscrypt registered
+[    1.805863] cryptd: max_cpu_qlen set to 1000
+[    1.826408] Key type big_key registered
+[    1.855712] Key type encrypted registered
+[    1.855728] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.855760] ima: No TPM chip found, activating TPM-bypass!
+[    1.855800] ima: Allocated hash algorithm: sha1
+[    1.855823] ima: No architecture policies found
+[    1.855864] evm: Initialising EVM extended attributes:
+[    1.855869] evm: security.selinux
+[    1.855873] evm: security.SMACK64
+[    1.855878] evm: security.SMACK64EXEC
+[    1.855882] evm: security.SMACK64TRANSMUTE
+[    1.855887] evm: security.SMACK64MMAP
+[    1.855891] evm: security.apparmor
+[    1.855895] evm: security.ima
+[    1.855900] evm: security.capability
+[    1.855904] evm: HMAC attrs: 0x1
+[    1.862676] uart-pl011 3f201000.serial: cts_event_workaround enabled
+[    1.862749] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 66, base_baud = 0) is a PL011 rev2
+[    1.865005] printk: console [ttyS0] disabled
+[    1.865049] 3f215040.serial: ttyS0 at MMIO 0x0 (irq = 61, base_baud = 50000000) is a 16550
+[    1.870981] printk: console [ttyS0] enabled
+[    1.871473] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    1.874511] mmc-bcm2835 3f300000.mmcnr: mmc_debug:0 mmc_debug2:0
+[    1.874520] mmc-bcm2835 3f300000.mmcnr: DMA channel allocated
+[    1.900280] sdhost: log_buf @ (____ptrval____) (eefaf000)
+[    1.918008] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    1.919555] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.921092] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.923879] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    1.948998] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+[    1.950945] of_cfs_init
+[    1.951057] of_cfs_init: OK
+[    1.975153] Freeing unused kernel memory: 4096K
+[    1.982627] Checked W+X mappings: passed, no W+X pages found
+[    1.982637] Run /init as init process
+[    2.003247] mmc1: new high speed SDIO card at address 0001
+[    2.006194] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.009149] mmc0: new high speed SDHC card at address 0001
+[    2.009990] mmcblk0: mmc0:0001 EB1QT 29.8 GiB
+[    2.012300]  mmcblk0: p1 p2
+[    2.618062] usb_phy_generic phy: phy supply vcc not found, using dummy regulator
+[    2.783122] dwc2 3f980000.usb: 3f980000.usb supply vusb_d not found, using dummy regulator
+[    2.783226] dwc2 3f980000.usb: 3f980000.usb supply vusb_a not found, using dummy regulator
+[    2.995684] dwc2 3f980000.usb: EPs: 8, dedicated fifos, 4080 entries in SPRAM
+[    2.996074] dwc2 3f980000.usb: DWC OTG Controller
+[    2.996100] dwc2 3f980000.usb: new USB bus registered, assigned bus number 1
+[    2.996146] dwc2 3f980000.usb: irq 41, io mem 0x3f980000
+[    2.996397] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    2.996405] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.996412] usb usb1: Product: DWC OTG Controller
+[    2.996418] usb usb1: Manufacturer: Linux 5.4.0-1083-raspi dwc2_hsotg
+[    2.996424] usb usb1: SerialNumber: 3f980000.usb
+[    2.996993] hub 1-0:1.0: USB hub found
+[    2.997038] hub 1-0:1.0: 1 port detected
+[    3.295580] usb 1-1: new high-speed USB device number 2 using dwc2
+[    3.503740] usb 1-1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.503747] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.504314] hub 1-1:1.0: USB hub found
+[    3.504386] hub 1-1:1.0: 4 ports detected
+[    3.791575] usb 1-1.1: new high-speed USB device number 3 using dwc2
+[    3.891969] usb 1-1.1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.891977] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.892580] hub 1-1.1:1.0: USB hub found
+[    3.892718] hub 1-1.1:1.0: 3 ports detected
+[    3.971579] usb 1-1.3: new full-speed USB device number 4 using dwc2
+[    4.074990] usb 1-1.3: New USB device found, idVendor=046d, idProduct=c52b, bcdDevice=24.07
+[    4.074998] usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    4.075004] usb 1-1.3: Product: USB Receiver
+[    4.075011] usb 1-1.3: Manufacturer: Logitech
+[    4.100463] usbcore: registered new interface driver usbhid
+[    4.100471] usbhid: USB HID core driver
+[    4.114245] input: Logitech USB Receiver as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.0/0003:046D:C52B.0001/input/input0
+[    4.171958] hid-generic 0003:046D:C52B.0001: input,hidraw0: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-3f980000.usb-1.3/input0
+[    4.173799] input: Logitech USB Receiver Mouse as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input1
+[    4.174204] input: Logitech USB Receiver Consumer Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input2
+[    4.231819] input: Logitech USB Receiver System Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:046D:C52B.0002/input/input3
+[    4.232203] hid-generic 0003:046D:C52B.0002: input,hiddev0,hidraw1: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-3f980000.usb-1.3/input1
+[    4.233733] hid-generic 0003:046D:C52B.0003: hiddev1,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.3/input2
+[    4.387111] logitech-djreceiver 0003:046D:C52B.0003: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.3/input2
+[    4.509576] input: Logitech Unifying Device. Wireless PID:404d Keyboard as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input5
+[    4.509884] input: Logitech Unifying Device. Wireless PID:404d Mouse as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input6
+[    4.510237] input: Logitech Unifying Device. Wireless PID:404d Consumer Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input7
+[    4.510471] input: Logitech Unifying Device. Wireless PID:404d System Control as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input8
+[    4.510696] hid-generic 0003:046D:404D.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:404d] on usb-3f980000.usb-1.3/input2:1
+[    4.707578] usb 1-1.1.1: new high-speed USB device number 5 using dwc2
+[    4.736533] input: Logitech K400 Plus as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0003/0003:046D:404D.0004/input/input12
+[    4.736937] logitech-hidpp-device 0003:046D:404D.0004: input,hidraw1: USB HID v1.11 Keyboard [Logitech K400 Plus] on usb-3f980000.usb-1.3/input2:1
+[    4.808236] usb 1-1.1.1: New USB device found, idVendor=0424, idProduct=7800, bcdDevice= 3.00
+[    4.808248] usb 1-1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    5.075226] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): No External EEPROM. Setting MAC Speed
+[    5.093328] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): int urb period 64
+[    5.187701] raid6: neonx8   gen()  1590 MB/s
+[    5.235559] raid6: neonx8   xor()  1638 MB/s
+[    5.239574] random: crng init done
+[    5.283578] raid6: neonx4   gen()  1637 MB/s
+[    5.331564] raid6: neonx4   xor()  1627 MB/s
+[    5.379599] raid6: neonx2   gen()  1184 MB/s
+[    5.427580] raid6: neonx2   xor()  1340 MB/s
+[    5.475566] raid6: neonx1   gen()   716 MB/s
+[    5.523572] raid6: neonx1   xor()  1012 MB/s
+[    5.571550] raid6: int64x8  gen()  1279 MB/s
+[    5.619558] raid6: int64x8  xor()   878 MB/s
+[    5.667586] raid6: int64x4  gen()  1066 MB/s
+[    5.715551] raid6: int64x4  xor()   830 MB/s
+[    5.763624] raid6: int64x2  gen()   682 MB/s
+[    5.811557] raid6: int64x2  xor()   684 MB/s
+[    5.859715] raid6: int64x1  gen()   408 MB/s
+[    5.907605] raid6: int64x1  xor()   530 MB/s
+[    5.907610] raid6: using algorithm neonx4 gen() 1637 MB/s
+[    5.907615] raid6: .... xor() 1627 MB/s, rmw enabled
+[    5.907620] raid6: using neon recovery algorithm
+[    5.914379] xor: measuring software checksum speed
+[    5.951551]    8regs     :  2732.000 MB/sec
+[    5.991546]    32regs    :  3132.000 MB/sec
+[    6.031549]    arm64_neon:  2629.000 MB/sec
+[    6.031554] xor: using function: 32regs (3132.000 MB/sec)
+[    6.034925] async_tx: api initialized (async)
+[    6.287527] Btrfs loaded, crc32c=crc32c-generic
+[    7.266801] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    8.356144] systemd[1]: System time before build time, advancing clock.
+[    8.460111] systemd[1]: Inserted module 'autofs4'
+[    8.569100] systemd[1]: systemd 245.4-4ubuntu3.20 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    8.570044] systemd[1]: Detected architecture arm64.
+[    8.666758] systemd[1]: Set hostname to <ubuntu>.
+[   10.209116] systemd[1]: Created slice system-modprobe.slice.
+[   10.211217] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   10.213007] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[   10.214514] systemd[1]: Created slice User and Session Slice.
+[   10.214941] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   10.222833] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   10.223134] systemd[1]: Reached target User and Group Name Lookups.
+[   10.223235] systemd[1]: Reached target Slices.
+[   10.223308] systemd[1]: Reached target Swap.
+[   10.223842] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   10.224402] systemd[1]: Listening on LVM2 poll daemon socket.
+[   10.224749] systemd[1]: Listening on multipathd control socket.
+[   10.225302] systemd[1]: Listening on Syslog Socket.
+[   10.225774] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.226038] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.226996] systemd[1]: Listening on Journal Audit Socket.
+[   10.227500] systemd[1]: Listening on Journal Socket (/dev/log).
+[   10.228218] systemd[1]: Listening on Journal Socket.
+[   10.228955] systemd[1]: Listening on Network Service Netlink Socket.
+[   10.229488] systemd[1]: Listening on udev Control Socket.
+[   10.229885] systemd[1]: Listening on udev Kernel Socket.
+[   10.235506] systemd[1]: Mounting Huge Pages File System...
+[   10.241970] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.249118] systemd[1]: Mounting Kernel Debug File System...
+[   10.256013] systemd[1]: Mounting Kernel Trace File System...
+[   10.264355] systemd[1]: Starting Journal Service...
+[   10.271013] systemd[1]: Starting Set the console keyboard layout...
+[   10.278299] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   10.285867] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   10.293721] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[   10.301021] systemd[1]: Starting Load Kernel Module drm...
+[   10.310593] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   10.325087] systemd[1]: Starting Load Kernel Module pstore_blk...
+[   10.332450] systemd[1]: Starting Load Kernel Module pstore_zone...
+[   10.344452] systemd[1]: Starting Load Kernel Module ramoops...
+[   10.344873] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[   10.348133] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   10.348361] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   10.438299] systemd[1]: Starting Load Kernel Modules...
+[   10.445085] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   10.455322] systemd[1]: Starting udev Coldplug all Devices...
+[   10.463151] systemd[1]: Starting Uncomplicated firewall...
+[   10.473387] systemd[1]: Mounted Huge Pages File System.
+[   10.474980] systemd[1]: Mounted POSIX Message Queue File System.
+[   10.476864] systemd[1]: Mounted Kernel Debug File System.
+[   10.478492] systemd[1]: Mounted Kernel Trace File System.
+[   10.483793] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[   10.487109] systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+[   10.489251] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[   10.492871] systemd[1]: modprobe@drm.service: Succeeded.
+[   10.494989] systemd[1]: Finished Load Kernel Module drm.
+[   10.497914] systemd[1]: modprobe@efi_pstore.service: Succeeded.
+[   10.501014] systemd[1]: Finished Load Kernel Module efi_pstore.
+[   10.506280] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[   10.510627] systemd[1]: modprobe@pstore_blk.service: Succeeded.
+[   10.512612] systemd[1]: Finished Load Kernel Module pstore_blk.
+[   10.515330] systemd[1]: modprobe@pstore_zone.service: Succeeded.
+[   10.517426] systemd[1]: Finished Load Kernel Module pstore_zone.
+[   10.524385] systemd[1]: modprobe@ramoops.service: Succeeded.
+[   10.526303] systemd[1]: Finished Load Kernel Module ramoops.
+[   10.530951] IPMI message handler: version 39.2
+[   10.532550] systemd[1]: Finished Uncomplicated firewall.
+[   10.532908] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   10.542297] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   10.545668] ipmi device interface
+[   10.546849] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   10.547078] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   10.553898] systemd[1]: Starting Load/Save Random Seed...
+[   10.560261] systemd[1]: Starting Create System Users...
+[   10.566724] systemd[1]: Finished Load Kernel Modules.
+[   10.576104] systemd[1]: Mounting FUSE Control File System...
+[   10.582863] systemd[1]: Mounting Kernel Configuration File System...
+[   10.593659] systemd[1]: Starting Apply Kernel Variables...
+[   10.594603] systemd[1]: Started Journal Service.
+[   10.656579] systemd-journald[384]: Received client request to flush runtime journal.
+[   10.715038] systemd-journald[384]: File /var/log/journal/4da98a9427724832b3019a1fecd9df2c/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   11.927959] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.928724] vc_sm_cma: module verification failed: signature and/or required key missing - tainting kernel
+[   11.930192] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+[   11.930207] [vc_sm_connected_init]: start
+[   11.940055] [vc_sm_connected_init]: installed successfully
+[   11.957510] mc: Linux media interface: v0.10
+[   12.008720] videodev: Linux video capture interface: v2.00
+[   12.091627] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.096643] bcm2835_audio bcm2835_audio: card created with 8 channels
+[   12.194025] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.197339] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.258730] bcm2835_isp: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.262709] bcm2835-isp bcm2835-isp: bcm2835_isp_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   12.276809] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video13
+[   12.277328] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video14
+[   12.277770] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video15
+[   12.278139] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video16
+[   12.278174] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[   12.278192] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[   12.278215] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[   12.278225] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[   12.278415] bcm2835-isp bcm2835-isp: Loaded V4L2 bcm2835-isp
+[   12.279143] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.282492] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+[   12.290319] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+[   12.290362] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+[   12.292504] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+[   12.292535] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+[   12.295286] : bcm2835_codec_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   12.320358] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+[   12.320393] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+[   12.576319] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   12.577654] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   12.823880] brcmfmac: F1 signature read @0x18000000=0x15264345
+[   12.837954] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   12.858530] usbcore: registered new interface driver brcmfmac
+[   13.192192] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   13.219393] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Nov  1 2021 00:37:25 version 7.45.241 (1a2f2fa CY) FWID 01-703fd60
+[   13.267482] Bluetooth: Core ver 2.22
+[   13.267720] NET: Registered protocol family 31
+[   13.267730] Bluetooth: HCI device and connection manager initialized
+[   13.267758] Bluetooth: HCI socket layer initialized
+[   13.267769] Bluetooth: L2CAP socket layer initialized
+[   13.267794] Bluetooth: SCO socket layer initialized
+[   14.292583] alua: device handler registered
+[   14.298496] emc: device handler registered
+[   14.304496] rdac: device handler registered
+[   15.811081] audit: type=1400 audit(1677761889.447:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=608 comm="apparmor_parser"
+[   15.812463] audit: type=1400 audit(1677761889.451:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=605 comm="apparmor_parser"
+[   15.812491] audit: type=1400 audit(1677761889.451:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=605 comm="apparmor_parser"
+[   15.830154] audit: type=1400 audit(1677761889.467:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=607 comm="apparmor_parser"
+[   15.830192] audit: type=1400 audit(1677761889.467:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=607 comm="apparmor_parser"
+[   15.830208] audit: type=1400 audit(1677761889.467:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=607 comm="apparmor_parser"
+[   15.845878] audit: type=1400 audit(1677761889.483:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=609 comm="apparmor_parser"
+[   15.846530] audit: type=1400 audit(1677761889.483:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=609 comm="apparmor_parser"
+[   15.866870] audit: type=1400 audit(1677761889.503:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=611 comm="apparmor_parser"
+[   15.874459] audit: type=1400 audit(1677761889.511:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=606 comm="apparmor_parser"
+[   22.228570] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   29.598714] capability: warning: `zerotier-one' uses 32-bit capabilities (legacy support in use)
+[ 4553.216742] cache_kprobe_monitor_v2: loading out-of-tree module taints kernel.
+[ 4553.218656] loading cache_kprobe_monitor_v2 module
+[ 4553.223734] Proc entries created, write PID to /proc/cache_kmv2_pid to start
+[ 4553.231150] loaded cache_kprobe_monitor_v2 module
+[ 4553.296337] Reading PID from proc file
+[ 4553.300354] PID set to 4225
+[ 4553.303964] beginning perf monitoring
+[ 4553.307940] Found task for PID 4225
+[ 4553.311898] Got task struct for PID 4225
+[ 4553.316104] Initializing performance counters
+[ 4553.320837] (init_perf_counters) kzalloc succeeded
+[ 4553.326471] (init_perf_counters) creating perf counters
+[ 4553.332304] Starting the timer for 5 second sampling of counters
+[ 4553.338663] Sample interval set for 5 seconds intervals
+[ 4553.344333] Initializing the timer
+[ 4553.348664] Timer initialized
+[ 4553.351966] Starting the timer
+[ 4553.355365] Timer started
+[ 4554.355384] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4554.364612] (sample_perf_counters) current program counter: 187650397116720
+[ 4554.373293] (sample_perf_counters) event code: 1  ; counter value: 190767, delta: 190767
+[ 4554.384720] (sample_perf_counters) event code: 2  ; counter value: 5938, delta: 5938
+[ 4554.394252] (sample_perf_counters) event code: 3  ; counter value: 81352, delta: 81352
+[ 4554.403917] ------------[ cut here ]------------
+[ 4554.410190] WARNING: CPU: 1 PID: 4244 at kernel/smp.c:291 smp_call_function_single+0x1dc/0x208
+[ 4554.422023] Modules linked in: cache_kprobe_monitor_v2(OE) dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 joydev input_leds bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc videobuf2_dma_contig videobuf2_memops snd_bcm2835(CE) videobuf2_v4l2 raspberrypi_hwmon snd_pcm videobuf2_common snd_timer videodev snd mc vc_sm_cma(CE) uio_pdrv_genirq uio sch_fq_codel ipmi_devintf ipmi_msghandler ramoops reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear hid_logitech_hidpp hid_logitech_dj hid_generic usbhid dwc2 udc_core spidev phy_generic crct10dif_ce aes_neon_bs aes_neon_blk crypto_simd cryptd
+[ 4554.516347] CPU: 1 PID: 4244 Comm: sh Tainted: G         C OE     5.4.0-1083-raspi #94-Ubuntu
+[ 4554.528868] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[ 4554.537251] pstate: 20400085 (nzCv daIf +PAN -UAO)
+[ 4554.544121] pc : smp_call_function_single+0x1dc/0x208
+[ 4554.551242] lr : perf_event_read+0x12c/0x250
+[ 4554.557556] sp : ffff80001000bc50
+[ 4554.562896] x29: ffff80001000bc50 x28: ffff622af63a78c0 
+[ 4554.570294] x27: ffffac8b2eeee5e0 x26: 0000000000000011 
+[ 4554.577706] x25: ffffac8b2eeec120 x24: 0000000000000001 
+[ 4554.585062] x23: ffff80001000bd38 x22: ffffac8b3fa8f768 
+[ 4554.592376] x21: 0000000000000001 x20: ffff622af1533c00 
+[ 4554.599640] x19: ffff80001000bca0 x18: 0000000000000010 
+[ 4554.606896] x17: ffff800010750cd8 x16: ffffac8b3fa8fcb0 
+[ 4554.614103] x15: 0000000000000020 x14: 0000000000000b40 
+[ 4554.621273] x13: 0000000000000001 x12: 00000000ffffffff 
+[ 4554.628435] x11: ffff622af53a3350 x10: ffff622af53a3350 
+[ 4554.635552] x9 : 00000000ffcccccc x8 : ffffac8b3ff107e8 
+[ 4554.642644] x7 : 00000000000001e5 x6 : 0000000000000008 
+[ 4554.649682] x5 : 0000000000000007 x4 : 0000000000000000 
+[ 4554.656658] x3 : 0000000000000001 x2 : 0000000000000000 
+[ 4554.663566] x1 : 0000000000000080 x0 : 0000000000000000 
+[ 4554.670402] Call trace:
+[ 4554.674272]  smp_call_function_single+0x1dc/0x208
+[ 4554.680402]  perf_event_read+0x12c/0x250
+[ 4554.685691]  __perf_event_read_value+0x40/0x100
+[ 4554.691557]  perf_event_read_value+0x34/0x60
+[ 4554.697115]  sample_perf_counters+0xb0/0x150 [cache_kprobe_monitor_v2]
+[ 4554.704966]  __hrtimer_run_queues+0x14c/0x3b8
+[ 4554.710560]  hrtimer_interrupt+0xf0/0x248
+[ 4554.715764]  arch_timer_handler_phys+0x40/0x50
+[ 4554.721371]  handle_percpu_devid_irq+0x94/0x2b0
+[ 4554.727041]  generic_handle_irq+0x38/0x50
+[ 4554.732175]  __handle_domain_irq+0x70/0xc8
+[ 4554.737364]  bcm2836_arm_irqchip_handle_irq+0x78/0xf0
+[ 4554.743540]  el1_irq+0x108/0x200
+[ 4554.747842]  dquot_file_open+0x0/0x60
+[ 4554.752596]  do_dentry_open+0x11c/0x390
+[ 4554.757522]  vfs_open+0x3c/0x48
+[ 4554.761748]  do_last+0x17c/0x8c8
+[ 4554.766041]  path_openat+0x88/0x260
+[ 4554.770603]  do_filp_open+0x88/0x110
+[ 4554.775252]  do_open_execat+0x88/0x290
+[ 4554.780078]  __do_execve_file.isra.0+0x6b4/0x7f0
+[ 4554.785796]  __arm64_sys_execve+0x4c/0x60
+[ 4554.790906]  el0_svc_common.constprop.0+0x84/0x230
+[ 4554.796815]  el0_svc_handler+0x38/0xa0
+[ 4554.801648]  el0_svc+0x10/0x140
+[ 4554.805849] ---[ end trace fdbaa7355aa1261c ]---
+[ 4554.811598] ------------[ cut here ]------------
+[ 4554.817365] WARNING: CPU: 1 PID: 4244 at kernel/smp.c:300 smp_call_function_single+0x1f8/0x208
+[ 4554.828400] Modules linked in: cache_kprobe_monitor_v2(OE) dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 joydev input_leds bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc videobuf2_dma_contig videobuf2_memops snd_bcm2835(CE) videobuf2_v4l2 raspberrypi_hwmon snd_pcm videobuf2_common snd_timer videodev snd mc vc_sm_cma(CE) uio_pdrv_genirq uio sch_fq_codel ipmi_devintf ipmi_msghandler ramoops reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear hid_logitech_hidpp hid_logitech_dj hid_generic usbhid dwc2 udc_core spidev phy_generic crct10dif_ce aes_neon_bs aes_neon_blk crypto_simd cryptd
+[ 4554.919836] CPU: 1 PID: 4244 Comm: sh Tainted: G        WC OE     5.4.0-1083-raspi #94-Ubuntu
+[ 4554.931772] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[ 4554.939864] pstate: 20400085 (nzCv daIf +PAN -UAO)
+[ 4554.946445] pc : smp_call_function_single+0x1f8/0x208
+[ 4554.953304] lr : perf_event_read+0x12c/0x250
+[ 4554.959368] sp : ffff80001000bc50
+[ 4554.964458] x29: ffff80001000bc50 x28: ffff622af63a78c0 
+[ 4554.971604] x27: ffffac8b2eeee5e0 x26: 0000000000000011 
+[ 4554.978759] x25: ffffac8b2eeec120 x24: 0000000000000001 
+[ 4554.985892] x23: ffff80001000bd38 x22: ffffac8b3fa8f768 
+[ 4554.993038] x21: 0000000000000001 x20: ffff622af1533c00 
+[ 4555.000167] x19: ffff80001000bca0 x18: 0000000000000010 
+[ 4555.007308] x17: ffff800010750cd8 x16: ffffac8b3fa8fcb0 
+[ 4555.014442] x15: 0000000000000020 x14: 0000000000000b40 
+[ 4555.021589] x13: 0000000000000001 x12: 00000000ffffffff 
+[ 4555.028722] x11: ffff622af53a3350 x10: ffff622af53a3350 
+[ 4555.035843] x9 : 00000000ffcccccc x8 : ffffac8b3ff107e8 
+[ 4555.042939] x7 : 00000000000001e5 x6 : 0000000000000008 
+[ 4555.049981] x5 : 0000000000000007 x4 : 0000000000010000 
+[ 4555.056963] x3 : 0000000000000001 x2 : 0000000000000000 
+[ 4555.063874] x1 : 0000000000000080 x0 : ffff622af1533c00 
+[ 4555.070731] Call trace:
+[ 4555.074614]  smp_call_function_single+0x1f8/0x208
+[ 4555.080765]  perf_event_read+0x12c/0x250
+[ 4555.086071]  __perf_event_read_value+0x40/0x100
+[ 4555.091959]  perf_event_read_value+0x34/0x60
+[ 4555.097537]  sample_perf_counters+0xb0/0x150 [cache_kprobe_monitor_v2]
+[ 4555.105406]  __hrtimer_run_queues+0x14c/0x3b8
+[ 4555.111024]  hrtimer_interrupt+0xf0/0x248
+[ 4555.116245]  arch_timer_handler_phys+0x40/0x50
+[ 4555.121871]  handle_percpu_devid_irq+0x94/0x2b0
+[ 4555.127557]  generic_handle_irq+0x38/0x50
+[ 4555.132703]  __handle_domain_irq+0x70/0xc8
+[ 4555.137916]  bcm2836_arm_irqchip_handle_irq+0x78/0xf0
+[ 4555.144106]  el1_irq+0x108/0x200
+[ 4555.148429]  dquot_file_open+0x0/0x60
+[ 4555.153204]  do_dentry_open+0x11c/0x390
+[ 4555.158153]  vfs_open+0x3c/0x48
+[ 4555.162404]  do_last+0x17c/0x8c8
+[ 4555.166721]  path_openat+0x88/0x260
+[ 4555.171309]  do_filp_open+0x88/0x110
+[ 4555.175979]  do_open_execat+0x88/0x290
+[ 4555.180823]  __do_execve_file.isra.0+0x6b4/0x7f0
+[ 4555.186559]  __arm64_sys_execve+0x4c/0x60
+[ 4555.191686]  el0_svc_common.constprop.0+0x84/0x230
+[ 4555.197612]  el0_svc_handler+0x38/0xa0
+[ 4555.202468]  el0_svc+0x10/0x140
+[ 4555.206690] ---[ end trace fdbaa7355aa1261d ]---
+[ 4555.212458] (sample_perf_counters) event code: 4  ; counter value: 1850115, delta: 1850115
+[ 4555.223164] (sample_perf_counters) event code: 5  ; counter value: 4898, delta: 4898
+[ 4555.232298] (sample_perf_counters) event code: 6  ; counter value: 870062, delta: 870062
+[ 4555.242962] (sample_perf_counters) event code: 7  ; counter value: 436568, delta: 436568
+[ 4555.253790] (sample_perf_counters) event code: 8  ; counter value: 4169882, delta: 4169882
+[ 4555.264895] (sample_perf_counters) event code: 17  ; counter value: 13403292, delta: 13403292
+[ 4555.276419] (sample_perf_counters) event code: 18  ; counter value: 999715, delta: 999715
+[ 4555.287740] (sample_perf_counters) event code: 19  ; counter value: 1629278, delta: 1629278
+[ 4555.299414] (sample_perf_counters) event code: 20  ; counter value: 4206347, delta: 4206347
+[ 4555.311250] (sample_perf_counters) event code: 21  ; counter value: 100523, delta: 100523
+[ 4555.323100] (sample_perf_counters) event code: 25  ; counter value: 399612, delta: 399612
+[ 4555.355395] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4555.368780] (sample_perf_counters) current program counter: 187650397116784
+[ 4555.378050] (sample_perf_counters) event code: 1  ; counter value: 226477, delta: 35710
+[ 4555.388328] (sample_perf_counters) event code: 2  ; counter value: 5938, delta: 0
+[ 4555.398024] (sample_perf_counters) event code: 3  ; counter value: 81352, delta: 0
+[ 4555.407795] (sample_perf_counters) event code: 4  ; counter value: 1850115, delta: 0
+[ 4555.417741] (sample_perf_counters) event code: 5  ; counter value: 5019, delta: 121
+[ 4555.427585] (sample_perf_counters) event code: 6  ; counter value: 1004945, delta: 134883
+[ 4555.439837] (sample_perf_counters) event code: 7  ; counter value: 577956, delta: 141388
+[ 4555.452059] (sample_perf_counters) event code: 8  ; counter value: 6975928, delta: 2806046
+[ 4555.464519] (sample_perf_counters) event code: 17  ; counter value: 26000842, delta: 12597550
+[ 4555.477262] (sample_perf_counters) event code: 18  ; counter value: 1868271, delta: 868556
+[ 4555.489726] (sample_perf_counters) event code: 19  ; counter value: 3205696, delta: 1576418
+[ 4555.502288] (sample_perf_counters) event code: 20  ; counter value: 7305573, delta: 3099226
+[ 4555.514857] (sample_perf_counters) event code: 21  ; counter value: 157737, delta: 57214
+[ 4555.527151] (sample_perf_counters) event code: 25  ; counter value: 537707, delta: 138095
+[ 4556.355384] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4556.368592] (sample_perf_counters) current program counter: 187650397116740
+[ 4556.377730] (sample_perf_counters) event code: 1  ; counter value: 457016, delta: 230539
+[ 4556.389970] (sample_perf_counters) event code: 2  ; counter value: 10356, delta: 4418
+[ 4556.400014] (sample_perf_counters) event code: 3  ; counter value: 241210, delta: 159858
+[ 4556.412339] (sample_perf_counters) event code: 4  ; counter value: 5495333, delta: 3645218
+[ 4556.425056] (sample_perf_counters) event code: 5  ; counter value: 15775, delta: 10756
+[ 4556.435364] (sample_perf_counters) event code: 6  ; counter value: 2439859, delta: 1434914
+[ 4556.448177] (sample_perf_counters) event code: 7  ; counter value: 1156756, delta: 578800
+[ 4556.460900] (sample_perf_counters) event code: 8  ; counter value: 12977068, delta: 6001140
+[ 4556.473799] (sample_perf_counters) event code: 17  ; counter value: 48602132, delta: 22601290
+[ 4556.486870] (sample_perf_counters) event code: 18  ; counter value: 3510304, delta: 1642033
+[ 4556.499768] (sample_perf_counters) event code: 19  ; counter value: 7030406, delta: 3824710
+[ 4556.512654] (sample_perf_counters) event code: 20  ; counter value: 18161535, delta: 10855962
+[ 4556.525716] (sample_perf_counters) event code: 21  ; counter value: 408646, delta: 250909
+[ 4556.538424] (sample_perf_counters) event code: 25  ; counter value: 959936, delta: 422229
+[ 4557.355390] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4557.368939] (sample_perf_counters) current program counter: 187650397116768
+[ 4557.378276] (sample_perf_counters) event code: 1  ; counter value: 468464, delta: 11448
+[ 4557.388670] (sample_perf_counters) event code: 2  ; counter value: 10707, delta: 351
+[ 4557.398728] (sample_perf_counters) event code: 3  ; counter value: 243746, delta: 2536
+[ 4557.408912] (sample_perf_counters) event code: 4  ; counter value: 5537367, delta: 42034
+[ 4557.421305] (sample_perf_counters) event code: 5  ; counter value: 16244, delta: 469
+[ 4557.431304] (sample_perf_counters) event code: 6  ; counter value: 2491212, delta: 51353
+[ 4557.443580] (sample_perf_counters) event code: 7  ; counter value: 1212798, delta: 56042
+[ 4557.455972] (sample_perf_counters) event code: 8  ; counter value: 13890640, delta: 913572
+[ 4557.468538] (sample_perf_counters) event code: 17  ; counter value: 52572766, delta: 3970634
+[ 4557.481282] (sample_perf_counters) event code: 18  ; counter value: 3788687, delta: 278383
+[ 4557.493862] (sample_perf_counters) event code: 19  ; counter value: 7478251, delta: 447845
+[ 4557.506455] (sample_perf_counters) event code: 20  ; counter value: 19179974, delta: 1018439
+[ 4557.519230] (sample_perf_counters) event code: 21  ; counter value: 427372, delta: 18726
+[ 4557.531644] (sample_perf_counters) event code: 25  ; counter value: 998354, delta: 38418
+[ 4558.355396] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4558.368726] (sample_perf_counters) current program counter: 187650397116732
+[ 4558.377921] (sample_perf_counters) event code: 1  ; counter value: 491131, delta: 22667
+[ 4558.388154] (sample_perf_counters) event code: 2  ; counter value: 11335, delta: 628
+[ 4558.398069] (sample_perf_counters) event code: 3  ; counter value: 253291, delta: 9545
+[ 4558.408137] (sample_perf_counters) event code: 4  ; counter value: 5599829, delta: 62462
+[ 4558.420389] (sample_perf_counters) event code: 5  ; counter value: 16327, delta: 83
+[ 4558.430314] (sample_perf_counters) event code: 6  ; counter value: 2496121, delta: 4909
+[ 4558.440548] (sample_perf_counters) event code: 7  ; counter value: 1214871, delta: 2073
+[ 4558.450724] (sample_perf_counters) event code: 8  ; counter value: 13951868, delta: 61228
+[ 4558.463001] (sample_perf_counters) event code: 17  ; counter value: 52921898, delta: 349132
+[ 4558.475444] (sample_perf_counters) event code: 18  ; counter value: 3799604, delta: 10917
+[ 4558.487728] (sample_perf_counters) event code: 19  ; counter value: 7491977, delta: 13726
+[ 4558.499981] (sample_perf_counters) event code: 20  ; counter value: 19645411, delta: 465437
+[ 4558.512417] (sample_perf_counters) event code: 21  ; counter value: 438750, delta: 11378
+[ 4558.524575] (sample_perf_counters) event code: 25  ; counter value: 1027683, delta: 29329
+[ 4559.355398] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4559.368507] (sample_perf_counters) current program counter: 187650397116748
+[ 4559.377615] (sample_perf_counters) event code: 1  ; counter value: 502874, delta: 11743
+[ 4559.387760] (sample_perf_counters) event code: 2  ; counter value: 11733, delta: 398
+[ 4559.397588] (sample_perf_counters) event code: 3  ; counter value: 262242, delta: 8951
+[ 4559.407547] (sample_perf_counters) event code: 4  ; counter value: 5925566, delta: 325737
+[ 4559.419492] (sample_perf_counters) event code: 5  ; counter value: 18016, delta: 1689
+[ 4559.429383] (sample_perf_counters) event code: 6  ; counter value: 2778640, delta: 282519
+[ 4559.441489] (sample_perf_counters) event code: 7  ; counter value: 1371571, delta: 156700
+[ 4559.453654] (sample_perf_counters) event code: 8  ; counter value: 15107321, delta: 1155453
+[ 4559.466178] (sample_perf_counters) event code: 17  ; counter value: 56851950, delta: 3930052
+[ 4559.478924] (sample_perf_counters) event code: 18  ; counter value: 4145204, delta: 345600
+[ 4559.491508] (sample_perf_counters) event code: 19  ; counter value: 8005970, delta: 513993
+[ 4559.504089] (sample_perf_counters) event code: 20  ; counter value: 20577411, delta: 932000
+[ 4559.516754] (sample_perf_counters) event code: 21  ; counter value: 454566, delta: 15816
+[ 4559.529154] (sample_perf_counters) event code: 25  ; counter value: 1070270, delta: 42587
+[ 4560.355405] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4560.368850] (sample_perf_counters) current program counter: 187650397116740
+[ 4560.378073] (sample_perf_counters) event code: 1  ; counter value: 508140, delta: 5266
+[ 4560.388224] (sample_perf_counters) event code: 2  ; counter value: 12002, delta: 269
+[ 4560.398153] (sample_perf_counters) event code: 3  ; counter value: 272376, delta: 10134
+[ 4560.408310] (sample_perf_counters) event code: 4  ; counter value: 6220568, delta: 295002
+[ 4560.420643] (sample_perf_counters) event code: 5  ; counter value: 18964, delta: 948
+[ 4560.430643] (sample_perf_counters) event code: 6  ; counter value: 2947677, delta: 169037
+[ 4560.443021] (sample_perf_counters) event code: 7  ; counter value: 1465486, delta: 93915
+[ 4560.455416] (sample_perf_counters) event code: 8  ; counter value: 16518845, delta: 1411524
+[ 4560.468079] (sample_perf_counters) event code: 17  ; counter value: 61024360, delta: 4172410
+[ 4560.480847] (sample_perf_counters) event code: 18  ; counter value: 4344241, delta: 199037
+[ 4560.493437] (sample_perf_counters) event code: 19  ; counter value: 8337826, delta: 331856
+[ 4560.506035] (sample_perf_counters) event code: 20  ; counter value: 21310423, delta: 733012
+[ 4560.518714] (sample_perf_counters) event code: 21  ; counter value: 469441, delta: 14875
+[ 4560.531125] (sample_perf_counters) event code: 25  ; counter value: 1110547, delta: 40277
+[ 4561.355408] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4561.368739] (sample_perf_counters) current program counter: 187650397116764
+[ 4561.377929] (sample_perf_counters) event code: 1  ; counter value: 557179, delta: 49039
+[ 4561.388160] (sample_perf_counters) event code: 2  ; counter value: 14542, delta: 2540
+[ 4561.398164] (sample_perf_counters) event code: 3  ; counter value: 292101, delta: 19725
+[ 4561.408344] (sample_perf_counters) event code: 4  ; counter value: 6549149, delta: 328581
+[ 4561.420694] (sample_perf_counters) event code: 5  ; counter value: 20865, delta: 1901
+[ 4561.430801] (sample_perf_counters) event code: 6  ; counter value: 3037149, delta: 89472
+[ 4561.443121] (sample_perf_counters) event code: 7  ; counter value: 1486881, delta: 21395
+[ 4561.455536] (sample_perf_counters) event code: 8  ; counter value: 16784597, delta: 265752
+[ 4561.468133] (sample_perf_counters) event code: 17  ; counter value: 62120871, delta: 1096511
+[ 4561.480918] (sample_perf_counters) event code: 18  ; counter value: 4359395, delta: 15154
+[ 4561.493410] (sample_perf_counters) event code: 19  ; counter value: 8612585, delta: 274759
+[ 4561.505988] (sample_perf_counters) event code: 20  ; counter value: 21962160, delta: 651737
+[ 4561.518655] (sample_perf_counters) event code: 21  ; counter value: 488034, delta: 18593
+[ 4561.531041] (sample_perf_counters) event code: 25  ; counter value: 1191636, delta: 81089
+[ 4562.355413] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4562.368749] (sample_perf_counters) current program counter: 187650397116736
+[ 4562.377979] (sample_perf_counters) event code: 1  ; counter value: 558319, delta: 1140
+[ 4562.388147] (sample_perf_counters) event code: 2  ; counter value: 14610, delta: 68
+[ 4562.398006] (sample_perf_counters) event code: 3  ; counter value: 292519, delta: 418
+[ 4562.407989] (sample_perf_counters) event code: 4  ; counter value: 6549149, delta: 0
+[ 4562.417883] (sample_perf_counters) event code: 5  ; counter value: 21321, delta: 456
+[ 4562.427769] (sample_perf_counters) event code: 6  ; counter value: 3173806, delta: 136657
+[ 4562.440037] (sample_perf_counters) event code: 7  ; counter value: 1552569, delta: 65688
+[ 4562.452270] (sample_perf_counters) event code: 8  ; counter value: 17383023, delta: 598426
+[ 4562.464734] (sample_perf_counters) event code: 17  ; counter value: 63819055, delta: 1698184
+[ 4562.477372] (sample_perf_counters) event code: 18  ; counter value: 4479248, delta: 119853
+[ 4562.489839] (sample_perf_counters) event code: 19  ; counter value: 8855032, delta: 242447
+[ 4562.502320] (sample_perf_counters) event code: 20  ; counter value: 22133187, delta: 171027
+[ 4562.514901] (sample_perf_counters) event code: 21  ; counter value: 488966, delta: 932
+[ 4562.525045] (sample_perf_counters) event code: 25  ; counter value: 1198136, delta: 6500
+[ 4563.355417] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4563.368529] (sample_perf_counters) current program counter: 187650397116748
+[ 4563.377626] (sample_perf_counters) event code: 1  ; counter value: 600381, delta: 42062
+[ 4563.387755] (sample_perf_counters) event code: 2  ; counter value: 17328, delta: 2718
+[ 4563.397652] (sample_perf_counters) event code: 3  ; counter value: 336077, delta: 43558
+[ 4563.407673] (sample_perf_counters) event code: 4  ; counter value: 7468761, delta: 919612
+[ 4563.419603] (sample_perf_counters) event code: 5  ; counter value: 25551, delta: 4230
+[ 4563.429481] (sample_perf_counters) event code: 6  ; counter value: 3497086, delta: 323280
+[ 4563.441596] (sample_perf_counters) event code: 7  ; counter value: 1634672, delta: 82103
+[ 4563.453863] (sample_perf_counters) event code: 8  ; counter value: 17559011, delta: 175988
+[ 4563.466354] (sample_perf_counters) event code: 17  ; counter value: 66252099, delta: 2433044
+[ 4563.479027] (sample_perf_counters) event code: 18  ; counter value: 4506470, delta: 27222
+[ 4563.491430] (sample_perf_counters) event code: 19  ; counter value: 9102786, delta: 247754
+[ 4563.503929] (sample_perf_counters) event code: 20  ; counter value: 22636783, delta: 503596
+[ 4563.516502] (sample_perf_counters) event code: 21  ; counter value: 507011, delta: 18045
+[ 4563.528822] (sample_perf_counters) event code: 25  ; counter value: 1325908, delta: 127772
+[ 4564.355421] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4564.368724] (sample_perf_counters) current program counter: 187650397116784
+[ 4564.377884] (sample_perf_counters) event code: 1  ; counter value: 624107, delta: 23726
+[ 4564.388090] (sample_perf_counters) event code: 2  ; counter value: 17507, delta: 179
+[ 4564.397997] (sample_perf_counters) event code: 3  ; counter value: 346856, delta: 10779
+[ 4564.408143] (sample_perf_counters) event code: 4  ; counter value: 32768904, delta: 25300143
+[ 4564.420723] (sample_perf_counters) event code: 5  ; counter value: 29016, delta: 3465
+[ 4564.430794] (sample_perf_counters) event code: 6  ; counter value: 20339920, delta: 16842834
+[ 4564.443421] (sample_perf_counters) event code: 7  ; counter value: 7883039, delta: 6248367
+[ 4564.455980] (sample_perf_counters) event code: 8  ; counter value: 75420173, delta: 57861162
+[ 4564.468710] (sample_perf_counters) event code: 17  ; counter value: 143300456, delta: 77048357
+[ 4564.481604] (sample_perf_counters) event code: 18  ; counter value: 7996386, delta: 3489916
+[ 4564.494235] (sample_perf_counters) event code: 19  ; counter value: 32879661, delta: 23776875
+[ 4564.507039] (sample_perf_counters) event code: 20  ; counter value: 59378060, delta: 36741277
+[ 4564.519850] (sample_perf_counters) event code: 21  ; counter value: 730745, delta: 223734
+[ 4564.532291] (sample_perf_counters) event code: 25  ; counter value: 2283378, delta: 957470
+[ 4565.355431] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4565.368799] (sample_perf_counters) current program counter: 187650397116720
+[ 4565.378037] (sample_perf_counters) event code: 1  ; counter value: 625801, delta: 1694
+[ 4565.388190] (sample_perf_counters) event code: 2  ; counter value: 17561, delta: 54
+[ 4565.398000] (sample_perf_counters) event code: 3  ; counter value: 385621, delta: 38765
+[ 4565.408139] (sample_perf_counters) event code: 4  ; counter value: 176625542, delta: 143856638
+[ 4565.420873] (sample_perf_counters) event code: 5  ; counter value: 47504, delta: 18488
+[ 4565.431014] (sample_perf_counters) event code: 6  ; counter value: 125353952, delta: 105014032
+[ 4565.443800] (sample_perf_counters) event code: 7  ; counter value: 50379737, delta: 42496698
+[ 4565.456519] (sample_perf_counters) event code: 8  ; counter value: 504920128, delta: 429499955
+[ 4565.469412] (sample_perf_counters) event code: 17  ; counter value: 705593038, delta: 562292582
+[ 4565.482383] (sample_perf_counters) event code: 18  ; counter value: 33360837, delta: 25364451
+[ 4565.495202] (sample_perf_counters) event code: 19  ; counter value: 209919486, delta: 177039825
+[ 4565.508199] (sample_perf_counters) event code: 20  ; counter value: 324822606, delta: 265444546
+[ 4565.521188] (sample_perf_counters) event code: 21  ; counter value: 2287484, delta: 1556739
+[ 4565.533816] (sample_perf_counters) event code: 25  ; counter value: 8444207, delta: 6160829
+[ 4566.355431] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4566.368722] (sample_perf_counters) current program counter: 187650397116776
+[ 4566.377882] (sample_perf_counters) event code: 1  ; counter value: 627120, delta: 1319
+[ 4566.387991] (sample_perf_counters) event code: 2  ; counter value: 17627, delta: 66
+[ 4566.397787] (sample_perf_counters) event code: 3  ; counter value: 426202, delta: 40581
+[ 4566.407913] (sample_perf_counters) event code: 4  ; counter value: 330081764, delta: 153456222
+[ 4566.420669] (sample_perf_counters) event code: 5  ; counter value: 66762, delta: 19258
+[ 4566.430823] (sample_perf_counters) event code: 6  ; counter value: 232769862, delta: 107415910
+[ 4566.443621] (sample_perf_counters) event code: 7  ; counter value: 92827420, delta: 42447683
+[ 4566.456347] (sample_perf_counters) event code: 8  ; counter value: 924533775, delta: 419613647
+[ 4566.469247] (sample_perf_counters) event code: 17  ; counter value: 1251327342, delta: 545734304
+[ 4566.482324] (sample_perf_counters) event code: 18  ; counter value: 57487563, delta: 24126726
+[ 4566.495137] (sample_perf_counters) event code: 19  ; counter value: 377183371, delta: 167263885
+[ 4566.508118] (sample_perf_counters) event code: 20  ; counter value: 578959378, delta: 254136772
+[ 4566.521098] (sample_perf_counters) event code: 21  ; counter value: 3799625, delta: 1512141
+[ 4566.533714] (sample_perf_counters) event code: 25  ; counter value: 14541154, delta: 6096947
+[ 4567.355437] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4567.368719] (sample_perf_counters) current program counter: 187650397116768
+[ 4567.377902] (sample_perf_counters) event code: 1  ; counter value: 628208, delta: 1088
+[ 4567.388027] (sample_perf_counters) event code: 2  ; counter value: 17682, delta: 55
+[ 4567.397835] (sample_perf_counters) event code: 3  ; counter value: 462358, delta: 36156
+[ 4567.407978] (sample_perf_counters) event code: 4  ; counter value: 473712897, delta: 143631133
+[ 4567.420706] (sample_perf_counters) event code: 5  ; counter value: 84837, delta: 18075
+[ 4567.430851] (sample_perf_counters) event code: 6  ; counter value: 335278901, delta: 102509039
+[ 4567.443638] (sample_perf_counters) event code: 7  ; counter value: 134302029, delta: 41474609
+[ 4567.456438] (sample_perf_counters) event code: 8  ; counter value: 1343767931, delta: 419234156
+[ 4567.469406] (sample_perf_counters) event code: 17  ; counter value: 1801822174, delta: 550494832
+[ 4567.482470] (sample_perf_counters) event code: 18  ; counter value: 82320122, delta: 24832559
+[ 4567.495273] (sample_perf_counters) event code: 19  ; counter value: 552700123, delta: 175516752
+[ 4567.508251] (sample_perf_counters) event code: 20  ; counter value: 849155373, delta: 270195995
+[ 4567.521233] (sample_perf_counters) event code: 21  ; counter value: 5388217, delta: 1588592
+[ 4567.533860] (sample_perf_counters) event code: 25  ; counter value: 20827210, delta: 6286056
+[ 4568.355439] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4568.368725] (sample_perf_counters) current program counter: 187650397116768
+[ 4568.377886] (sample_perf_counters) event code: 1  ; counter value: 629652, delta: 1444
+[ 4568.387995] (sample_perf_counters) event code: 2  ; counter value: 17740, delta: 58
+[ 4568.397794] (sample_perf_counters) event code: 3  ; counter value: 503316, delta: 40958
+[ 4568.407922] (sample_perf_counters) event code: 4  ; counter value: 623304334, delta: 149591437
+[ 4568.420642] (sample_perf_counters) event code: 5  ; counter value: 104028, delta: 19191
+[ 4568.430869] (sample_perf_counters) event code: 6  ; counter value: 444313481, delta: 109034580
+[ 4568.443664] (sample_perf_counters) event code: 7  ; counter value: 177529143, delta: 43227114
+[ 4568.456471] (sample_perf_counters) event code: 8  ; counter value: 1771419359, delta: 427651428
+[ 4568.469449] (sample_perf_counters) event code: 17  ; counter value: 2356766663, delta: 554944489
+[ 4568.482519] (sample_perf_counters) event code: 18  ; counter value: 106851083, delta: 24530961
+[ 4568.495414] (sample_perf_counters) event code: 19  ; counter value: 722591698, delta: 169891575
+[ 4568.508398] (sample_perf_counters) event code: 20  ; counter value: 1105019923, delta: 255864550
+[ 4568.521470] (sample_perf_counters) event code: 21  ; counter value: 6883571, delta: 1495354
+[ 4568.534090] (sample_perf_counters) event code: 25  ; counter value: 26787498, delta: 5960288
+[ 4569.355445] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4569.368739] (sample_perf_counters) current program counter: 187650397116740
+[ 4569.377927] (sample_perf_counters) event code: 1  ; counter value: 631502, delta: 1850
+[ 4569.388055] (sample_perf_counters) event code: 2  ; counter value: 17796, delta: 56
+[ 4569.397869] (sample_perf_counters) event code: 3  ; counter value: 548012, delta: 44696
+[ 4569.408015] (sample_perf_counters) event code: 4  ; counter value: 767661380, delta: 144357046
+[ 4569.420758] (sample_perf_counters) event code: 5  ; counter value: 122221, delta: 18193
+[ 4569.430997] (sample_perf_counters) event code: 6  ; counter value: 546054727, delta: 101741246
+[ 4569.443791] (sample_perf_counters) event code: 7  ; counter value: 218253691, delta: 40724548
+[ 4569.456593] (sample_perf_counters) event code: 8  ; counter value: 2183218103, delta: 411798744
+[ 4569.469567] (sample_perf_counters) event code: 17  ; counter value: 2899762065, delta: 542995402
+[ 4569.482633] (sample_perf_counters) event code: 18  ; counter value: 131332372, delta: 24481289
+[ 4569.495528] (sample_perf_counters) event code: 19  ; counter value: 895680172, delta: 173088474
+[ 4569.508511] (sample_perf_counters) event code: 20  ; counter value: 1369967600, delta: 264947677
+[ 4569.521570] (sample_perf_counters) event code: 21  ; counter value: 8464339, delta: 1580768
+[ 4569.534201] (sample_perf_counters) event code: 25  ; counter value: 33115776, delta: 6328278
+[ 4570.355455] (sample_perf_counters) Monitored task is alive (PID: 4225), reading the counter values
+[ 4570.368835] (sample_perf_counters) current program counter: 187650397116768
+[ 4570.378052] (sample_perf_counters) event code: 1  ; counter value: 632678, delta: 1176
+[ 4570.388177] (sample_perf_counters) event code: 2  ; counter value: 17862, delta: 66
+[ 4570.397983] (sample_perf_counters) event code: 3  ; counter value: 588045, delta: 40033
+[ 4570.408117] (sample_perf_counters) event code: 4  ; counter value: 917416411, delta: 149755031
+[ 4570.420852] (sample_perf_counters) event code: 5  ; counter value: 141396, delta: 19175
+[ 4570.431087] (sample_perf_counters) event code: 6  ; counter value: 655339311, delta: 109284584
+[ 4570.443899] (sample_perf_counters) event code: 7  ; counter value: 261602366, delta: 43348675
+[ 4570.456712] (sample_perf_counters) event code: 8  ; counter value: 2612354881, delta: 429136778
+[ 4570.469710] (sample_perf_counters) event code: 17  ; counter value: 3455679867, delta: 555917802
+[ 4570.482806] (sample_perf_counters) event code: 18  ; counter value: 155962314, delta: 24629942
+[ 4570.495725] (sample_perf_counters) event code: 19  ; counter value: 1066448174, delta: 170768002
+[ 4570.508818] (sample_perf_counters) event code: 20  ; counter value: 1627807751, delta: 257840151
+[ 4570.521897] (sample_perf_counters) event code: 21  ; counter value: 9965613, delta: 1501274
+[ 4570.534528] (sample_perf_counters) event code: 25  ; counter value: 39101694, delta: 5985918
+[ 4571.355461] Monitored task terminated (PID: 4225), stopping the timer

@@ -66,6 +66,7 @@ def parse_dmesg(filename):
             pid_data[pid].append(event_info)
 
     json_filename = os.path.splitext(filename)[0] + '.json'
+    print(f"writing {json_filename}")
     with open(json_filename, 'w') as json_file:
         json.dump(pid_data, json_file, indent=4)
 

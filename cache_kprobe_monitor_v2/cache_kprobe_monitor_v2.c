@@ -113,7 +113,7 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
     int cpu;
     size_t i;
 
-    printk(KERN_INFO " (init_perf_counters) Initializing multi performance counters\n");
+    //printk(KERN_INFO " (init_perf_counters) Initializing multi performance counters\n");
 
     // Allocate memory for the perf_counter_data array
     perf_data = kzalloc(NUM_EVENTS * sizeof(struct perf_counter_data), GFP_KERNEL);
@@ -121,11 +121,12 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
         printk(KERN_ERR "kzalloc failed\n");
         return NULL;
     }
-    printk(KERN_INFO "kzalloc succeeded\n");
+    printk(KERN_INFO "(init_perf_counters) kzalloc succeeded\n");
 
     cpu = get_cpu();
+    printk(KERN_INFO "(init_perf_counters) creating perf counters\n");
     for (i = 0; i < NUM_EVENTS; ++i) {
-        printk(KERN_INFO "creating perf_event_attr for event code %u\n", event_codes[i]);
+        //printk(KERN_INFO "creating perf_event_attr for event code %u\n", event_codes[i]);
 
         // Initialize the perf_event_attr structure for the current event code
         memset(&attr, 0, sizeof(struct perf_event_attr));
@@ -135,9 +136,9 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
         attr.exclude_kernel = 1;
         attr.inherit = 0;
 
-        printk(KERN_INFO "perf_event_attr created\n");
+        //printk(KERN_INFO "perf_event_attr created\n");
 
-        printk(KERN_INFO "calling perf_event_create_kernel_counter for event code %u\n", event_codes[i]);
+       //printk(KERN_INFO "calling perf_event_create_kernel_counter for event code %u\n", event_codes[i]);
         perf_data->events[i] = perf_event_create_kernel_counter(&attr, cpu, NULL, NULL, NULL);
 
         if (IS_ERR(perf_data->events[i])) {
@@ -151,7 +152,7 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
             return NULL;
         }
 
-        printk(KERN_INFO "perf_event_create_kernel_counter succeeded for event code %u\n", event_codes[i]);
+        //printk(KERN_INFO "perf_event_create_kernel_counter succeeded for event code %u\n", event_codes[i]);
         perf_data->prev_values[i] = 0;
     }
     put_cpu();
@@ -177,7 +178,7 @@ static void cleanup_perf_counters(struct perf_counter_data *perf_data)
 
     kfree(perf_data);
 
-    printk(KERN_INFO " (cleanup_perf_counters) Finished cleaning up multi performance counters\n");
+    //printk(KERN_INFO " (cleanup_perf_counters) Finished cleaning up multi performance counters\n");
 }
 
 
@@ -287,13 +288,13 @@ static int perf_events_handler(struct kretprobe_instance *ri, struct pt_regs *re
     return 0;
 }
 
-static struct kretprobe finish_task_switch_krp = {
-    .handler = perf_events_handler,
-    .entry_handler = NULL,
-    .data_size = 0,
-    .maxactive = 20,
-    .kp.symbol_name = "finish_task_switch",
-};
+// static struct kretprobe finish_task_switch_krp = {
+//     .handler = perf_events_handler,
+//     .entry_handler = NULL,
+//     .data_size = 0,
+//     .maxactive = 20,
+//     .kp.symbol_name = "finish_task_switch",
+// };
 
 
 
@@ -460,7 +461,7 @@ static void __exit cache_kprobe_monitor_v2_exit(void)
     proc_remove(proc_entry_pid);
 
     //unregister_kretprobe(&finish_task_switch_krp);
-    printk(KERN_INFO "kretprobe at %pS unregistered\n", finish_task_switch_krp.kp.addr);
+    //printk(KERN_INFO "kretprobe at %pS unregistered\n", finish_task_switch_krp.kp.addr);
 
     printk(KERN_INFO "unloaded cache_kprobe_monitor_v2 module\n");
 }
