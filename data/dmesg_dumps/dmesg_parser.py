@@ -34,7 +34,7 @@ def parse_dmesg(filename):
         data = file.read()
 
     pid_data = defaultdict(list)
-
+    prev_counter_values = defaultdict(int)
     program_counter = None
 
     for line in data.split('\n'):
@@ -57,10 +57,14 @@ def parse_dmesg(filename):
             event_name = event_code_map[event_code]
             counter_value = int(event_code_counter_match.group(2))
 
+            delta = counter_value - prev_counter_values[event_code]
+            prev_counter_values[event_code] = counter_value
+
             event_info = {
                 "timestamp": timestamp,
                 "event_name": event_name,
                 "counter_value": counter_value,
+                "delta": delta,
                 "program_counter": program_counter
             }
             pid_data[pid].append(event_info)
