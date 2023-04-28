@@ -397,16 +397,16 @@ static const struct file_operations pid_fops = {
 };
 
 
-static ssize_t message_read(struct file *file, char __user *buffer, size_t count, loff_t *ppos)
-{
-    ssize_t len;
+// static ssize_t message_read(struct file *file, char __user *buffer, size_t count, loff_t *ppos)
+// {
+//     ssize_t len;
 
-    spin_lock(&buffer_lock);
-    len = simple_read_from_buffer(buffer, count, ppos, message_buffer, strlen(message_buffer));
-    spin_unlock(&buffer_lock);
+//     spin_lock(&buffer_lock);
+//     len = simple_read_from_buffer(buffer, count, ppos, message_buffer, strlen(message_buffer));
+//     spin_unlock(&buffer_lock);
 
-    return len;
-}
+//     return len;
+// }
 
 static const struct file_operations message_fops = {
     .read = message_read,
