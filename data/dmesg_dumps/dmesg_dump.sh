@@ -1,6 +1,6 @@
 #!/bin/bash
 timestamp=$(date +"%Y%m%d_%H%M%S")
-output_file="./dmesg_output_${timestamp}.txt"
+output_file="/home/ubuntu/dreamscape/data/dmesg_dumps/dmesg_output_${timestamp}.txt"
 
 echo "Dumping dmesg to ${output_file}"
 dmesg > "${output_file}"

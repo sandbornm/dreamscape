@@ -1,0 +1,1333 @@
+[  899.916417] (finish_task_switch_handler) event code: 17  ; counter value: 9292371860, delta: 21485416
+[  899.916427] (finish_task_switch_handler) event code: 18  ; counter value: 414666757, delta: 959168
+[  899.916437] (finish_task_switch_handler) event code: 19  ; counter value: 2900114224, delta: 6681689
+[  899.916446] (finish_task_switch_handler) event code: 20  ; counter value: 4435396090, delta: 10186042
+[  899.916450] (finish_task_switch_handler) event code: 21  ; counter value: 25998080, delta: 74874
+[  899.916453] (finish_task_switch_handler) event code: 25  ; counter value: 108782361, delta: 380829
+[  899.960338] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  899.960347] (finish_task_switch_handler) current program counter: 187650295503164
+[  899.960350] (finish_task_switch_handler) target pid is prev
+[  899.960357] (finish_task_switch_handler) event code: 1  ; counter value: 63653, delta: 47
+[  899.960360] (finish_task_switch_handler) event code: 2  ; counter value: 2063, delta: 4
+[  899.960374] (finish_task_switch_handler) event code: 3  ; counter value: 767304, delta: 2677
+[  899.960385] (finish_task_switch_handler) event code: 4  ; counter value: 2491135138, delta: 6780778
+[  899.960394] (finish_task_switch_handler) event code: 5  ; counter value: 318560, delta: 648
+[  899.960404] (finish_task_switch_handler) event code: 6  ; counter value: 1778891957, delta: 3581674
+[  899.960414] (finish_task_switch_handler) event code: 7  ; counter value: 711218229, delta: 1412675
+[  899.960424] (finish_task_switch_handler) event code: 8  ; counter value: 7114064154, delta: 14102967
+[  899.960434] (finish_task_switch_handler) event code: 17  ; counter value: 9313430383, delta: 21058523
+[  899.960437] (finish_task_switch_handler) event code: 18  ; counter value: 415852340, delta: 1185583
+[  899.960441] (finish_task_switch_handler) event code: 19  ; counter value: 2910082869, delta: 9968645
+[  899.960445] (finish_task_switch_handler) event code: 20  ; counter value: 4453138951, delta: 17742861
+[  899.960448] (finish_task_switch_handler) event code: 21  ; counter value: 26103279, delta: 105199
+[  899.960452] (finish_task_switch_handler) event code: 25  ; counter value: 109218003, delta: 435642
+[  899.980314] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  899.980323] (finish_task_switch_handler) current program counter: 187650295503164
+[  899.980326] (finish_task_switch_handler) target pid is prev
+[  899.980333] (finish_task_switch_handler) event code: 1  ; counter value: 63653, delta: 0
+[  899.980337] (finish_task_switch_handler) event code: 2  ; counter value: 2063, delta: 0
+[  899.980341] (finish_task_switch_handler) event code: 3  ; counter value: 767899, delta: 595
+[  899.980344] (finish_task_switch_handler) event code: 4  ; counter value: 2494390141, delta: 3255003
+[  899.980348] (finish_task_switch_handler) event code: 5  ; counter value: 319204, delta: 644
+[  899.980352] (finish_task_switch_handler) event code: 6  ; counter value: 1783555091, delta: 4663134
+[  899.980355] (finish_task_switch_handler) event code: 7  ; counter value: 713563388, delta: 2345159
+[  899.980374] (finish_task_switch_handler) event code: 8  ; counter value: 7137515780, delta: 23451626
+[  899.980384] (finish_task_switch_handler) event code: 17  ; counter value: 9339812100, delta: 26381717
+[  899.980394] (finish_task_switch_handler) event code: 18  ; counter value: 416793431, delta: 941091
+[  899.980404] (finish_task_switch_handler) event code: 19  ; counter value: 2915035920, delta: 4953051
+[  899.980414] (finish_task_switch_handler) event code: 20  ; counter value: 4458174154, delta: 5035203
+[  899.980423] (finish_task_switch_handler) event code: 21  ; counter value: 26118297, delta: 15018
+[  899.980433] (finish_task_switch_handler) event code: 25  ; counter value: 109218003, delta: 0
+[  900.012380] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.012388] (finish_task_switch_handler) current program counter: 187650295503168
+[  900.012391] (finish_task_switch_handler) target pid is prev
+[  900.012398] (finish_task_switch_handler) event code: 1  ; counter value: 63709, delta: 56
+[  900.012412] (finish_task_switch_handler) event code: 2  ; counter value: 2065, delta: 2
+[  900.012422] (finish_task_switch_handler) event code: 3  ; counter value: 769732, delta: 1833
+[  900.012432] (finish_task_switch_handler) event code: 4  ; counter value: 2499484296, delta: 5094155
+[  900.012442] (finish_task_switch_handler) event code: 5  ; counter value: 319627, delta: 423
+[  900.012451] (finish_task_switch_handler) event code: 6  ; counter value: 1784778737, delta: 1223646
+[  900.012461] (finish_task_switch_handler) event code: 7  ; counter value: 713563388, delta: 0
+[  900.012465] (finish_task_switch_handler) event code: 8  ; counter value: 7142150685, delta: 4634905
+[  900.012468] (finish_task_switch_handler) event code: 17  ; counter value: 9350158269, delta: 10346169
+[  900.012472] (finish_task_switch_handler) event code: 18  ; counter value: 417495709, delta: 702278
+[  900.012476] (finish_task_switch_handler) event code: 19  ; counter value: 2921582156, delta: 6546236
+[  900.012480] (finish_task_switch_handler) event code: 20  ; counter value: 4470752297, delta: 12578143
+[  900.012483] (finish_task_switch_handler) event code: 21  ; counter value: 26207177, delta: 88880
+[  900.012487] (finish_task_switch_handler) event code: 25  ; counter value: 109654145, delta: 436142
+[  900.032318] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.032327] (finish_task_switch_handler) current program counter: 187650295503216
+[  900.032329] (finish_task_switch_handler) target pid is prev
+[  900.032336] (finish_task_switch_handler) event code: 1  ; counter value: 63709, delta: 0
+[  900.032340] (finish_task_switch_handler) event code: 2  ; counter value: 2065, delta: 0
+[  900.032344] (finish_task_switch_handler) event code: 3  ; counter value: 770974, delta: 1242
+[  900.032348] (finish_task_switch_handler) event code: 4  ; counter value: 2504414594, delta: 4930298
+[  900.032353] (finish_task_switch_handler) event code: 5  ; counter value: 320487, delta: 860
+[  900.032356] (finish_task_switch_handler) event code: 6  ; counter value: 1790737299, delta: 5958562
+[  900.032370] (finish_task_switch_handler) event code: 7  ; counter value: 715946817, delta: 2383429
+[  900.032380] (finish_task_switch_handler) event code: 8  ; counter value: 7161466346, delta: 19315661
+[  900.032390] (finish_task_switch_handler) event code: 17  ; counter value: 9371722450, delta: 21564181
+[  900.032400] (finish_task_switch_handler) event code: 18  ; counter value: 418222820, delta: 727111
+[  900.032410] (finish_task_switch_handler) event code: 19  ; counter value: 2924993849, delta: 3411693
+[  900.032420] (finish_task_switch_handler) event code: 20  ; counter value: 4473355822, delta: 2603525
+[  900.032429] (finish_task_switch_handler) event code: 21  ; counter value: 26207177, delta: 0
+[  900.032433] (finish_task_switch_handler) event code: 25  ; counter value: 109654145, delta: 0
+[  900.076347] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.076355] (finish_task_switch_handler) current program counter: 187650295503216
+[  900.076357] (finish_task_switch_handler) target pid is prev
+[  900.076364] (finish_task_switch_handler) event code: 1  ; counter value: 63749, delta: 40
+[  900.076368] (finish_task_switch_handler) event code: 2  ; counter value: 2067, delta: 2
+[  900.076371] (finish_task_switch_handler) event code: 3  ; counter value: 774320, delta: 3346
+[  900.076385] (finish_task_switch_handler) event code: 4  ; counter value: 2512802845, delta: 8388251
+[  900.076395] (finish_task_switch_handler) event code: 5  ; counter value: 321352, delta: 865
+[  900.076405] (finish_task_switch_handler) event code: 6  ; counter value: 1794386303, delta: 3649004
+[  900.076415] (finish_task_switch_handler) event code: 7  ; counter value: 717385252, delta: 1438435
+[  900.076425] (finish_task_switch_handler) event code: 8  ; counter value: 7175703336, delta: 14236990
+[  900.076434] (finish_task_switch_handler) event code: 17  ; counter value: 9393127839, delta: 21405389
+[  900.076444] (finish_task_switch_handler) event code: 18  ; counter value: 419177869, delta: 955049
+[  900.076448] (finish_task_switch_handler) event code: 19  ; counter value: 2933378302, delta: 8384453
+[  900.076451] (finish_task_switch_handler) event code: 20  ; counter value: 4488762659, delta: 15406837
+[  900.076456] (finish_task_switch_handler) event code: 21  ; counter value: 26311891, delta: 104714
+[  900.076459] (finish_task_switch_handler) event code: 25  ; counter value: 110094954, delta: 440809
+[  900.098297] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.098305] (finish_task_switch_handler) current program counter: 187650295503200
+[  900.098308] (finish_task_switch_handler) target pid is prev
+[  900.098331] (finish_task_switch_handler) event code: 1  ; counter value: 63756, delta: 7
+[  900.098336] (finish_task_switch_handler) event code: 2  ; counter value: 2067, delta: 0
+[  900.098340] (finish_task_switch_handler) event code: 3  ; counter value: 774320, delta: 0
+[  900.098344] (finish_task_switch_handler) event code: 4  ; counter value: 2514431218, delta: 1628373
+[  900.098348] (finish_task_switch_handler) event code: 5  ; counter value: 321752, delta: 400
+[  900.098352] (finish_task_switch_handler) event code: 6  ; counter value: 1797854992, delta: 3468689
+[  900.098356] (finish_task_switch_handler) event code: 7  ; counter value: 719260416, delta: 1875164
+[  900.098359] (finish_task_switch_handler) event code: 8  ; counter value: 7199322235, delta: 23618899
+[  900.098370] (finish_task_switch_handler) event code: 17  ; counter value: 9422323286, delta: 29195447
+[  900.098380] (finish_task_switch_handler) event code: 18  ; counter value: 420478924, delta: 1301055
+[  900.098392] (finish_task_switch_handler) event code: 19  ; counter value: 2940856922, delta: 7478620
+[  900.098403] (finish_task_switch_handler) event code: 20  ; counter value: 4497672235, delta: 8909576
+[  900.098413] (finish_task_switch_handler) event code: 21  ; counter value: 26349972, delta: 38081
+[  900.098423] (finish_task_switch_handler) event code: 25  ; counter value: 110187402, delta: 92448
+[  900.117503] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.117512] (finish_task_switch_handler) current program counter: 187650295503160
+[  900.117515] (finish_task_switch_handler) target pid is prev
+[  900.117538] (finish_task_switch_handler) event code: 1  ; counter value: 63848, delta: 92
+[  900.117550] (finish_task_switch_handler) event code: 2  ; counter value: 2083, delta: 16
+[  900.117561] (finish_task_switch_handler) event code: 3  ; counter value: 775092, delta: 772
+[  900.117571] (finish_task_switch_handler) event code: 4  ; counter value: 2516600514, delta: 2169296
+[  900.117583] (finish_task_switch_handler) event code: 5  ; counter value: 321824, delta: 72
+[  900.117587] (finish_task_switch_handler) event code: 6  ; counter value: 1797854992, delta: 0
+[  900.117591] (finish_task_switch_handler) event code: 7  ; counter value: 719260416, delta: 0
+[  900.117595] (finish_task_switch_handler) event code: 8  ; counter value: 7199322235, delta: 0
+[  900.117599] (finish_task_switch_handler) event code: 17  ; counter value: 9424787151, delta: 2463865
+[  900.117603] (finish_task_switch_handler) event code: 18  ; counter value: 420829293, delta: 350369
+[  900.117607] (finish_task_switch_handler) event code: 19  ; counter value: 2944966386, delta: 4109464
+[  900.117611] (finish_task_switch_handler) event code: 20  ; counter value: 4506525426, delta: 8853191
+[  900.117615] (finish_task_switch_handler) event code: 21  ; counter value: 26417315, delta: 67343
+[  900.117626] (finish_task_switch_handler) event code: 25  ; counter value: 110489924, delta: 302522
+[  900.152334] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.152343] (finish_task_switch_handler) current program counter: 187650295503220
+[  900.152346] (finish_task_switch_handler) target pid is prev
+[  900.152363] (finish_task_switch_handler) event code: 1  ; counter value: 63865, delta: 17
+[  900.152367] (finish_task_switch_handler) event code: 2  ; counter value: 2084, delta: 1
+[  900.152370] (finish_task_switch_handler) event code: 3  ; counter value: 776611, delta: 1519
+[  900.152374] (finish_task_switch_handler) event code: 4  ; counter value: 2524365008, delta: 7764494
+[  900.152378] (finish_task_switch_handler) event code: 5  ; counter value: 323037, delta: 1213
+[  900.152381] (finish_task_switch_handler) event code: 6  ; counter value: 1805029203, delta: 7174211
+[  900.152385] (finish_task_switch_handler) event code: 7  ; counter value: 722154991, delta: 2894575
+[  900.152389] (finish_task_switch_handler) event code: 8  ; counter value: 7228176096, delta: 28853861
+[  900.152399] (finish_task_switch_handler) event code: 17  ; counter value: 9457221527, delta: 32434376
+[  900.152409] (finish_task_switch_handler) event code: 18  ; counter value: 422033186, delta: 1203893
+[  900.152419] (finish_task_switch_handler) event code: 19  ; counter value: 2951711468, delta: 6745082
+[  900.152429] (finish_task_switch_handler) event code: 20  ; counter value: 4514171684, delta: 7646258
+[  900.152439] (finish_task_switch_handler) event code: 21  ; counter value: 26447494, delta: 30179
+[  900.152448] (finish_task_switch_handler) event code: 25  ; counter value: 110591580, delta: 101656
+[  900.194200] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.194209] (finish_task_switch_handler) current program counter: 187650295503160
+[  900.194212] (finish_task_switch_handler) target pid is prev
+[  900.194220] (finish_task_switch_handler) event code: 1  ; counter value: 63928, delta: 63
+[  900.194224] (finish_task_switch_handler) event code: 2  ; counter value: 2086, delta: 2
+[  900.194228] (finish_task_switch_handler) event code: 3  ; counter value: 779530, delta: 2919
+[  900.194232] (finish_task_switch_handler) event code: 4  ; counter value: 2534567567, delta: 10202559
+[  900.194246] (finish_task_switch_handler) event code: 5  ; counter value: 324236, delta: 1199
+[  900.194256] (finish_task_switch_handler) event code: 6  ; counter value: 1810475639, delta: 5446436
+[  900.194267] (finish_task_switch_handler) event code: 7  ; counter value: 723843439, delta: 1688448
+[  900.194277] (finish_task_switch_handler) event code: 8  ; counter value: 7240237897, delta: 12061801
+[  900.194288] (finish_task_switch_handler) event code: 17  ; counter value: 9475789432, delta: 18567905
+[  900.194298] (finish_task_switch_handler) event code: 18  ; counter value: 422862949, delta: 829763
+[  900.194308] (finish_task_switch_handler) event code: 19  ; counter value: 2957491342, delta: 5779874
+[  900.194312] (finish_task_switch_handler) event code: 20  ; counter value: 4524167192, delta: 9995508
+[  900.194316] (finish_task_switch_handler) event code: 21  ; counter value: 26522266, delta: 74772
+[  900.194320] (finish_task_switch_handler) event code: 25  ; counter value: 110968277, delta: 376697
+[  900.204346] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.204354] (finish_task_switch_handler) current program counter: 187650295503188
+[  900.204356] (finish_task_switch_handler) target pid is prev
+[  900.204363] (finish_task_switch_handler) event code: 1  ; counter value: 63928, delta: 0
+[  900.204367] (finish_task_switch_handler) event code: 2  ; counter value: 2086, delta: 0
+[  900.204371] (finish_task_switch_handler) event code: 3  ; counter value: 779530, delta: 0
+[  900.204374] (finish_task_switch_handler) event code: 4  ; counter value: 2534567567, delta: 0
+[  900.204378] (finish_task_switch_handler) event code: 5  ; counter value: 324350, delta: 114
+[  900.204381] (finish_task_switch_handler) event code: 6  ; counter value: 1812261591, delta: 1785952
+[  900.204385] (finish_task_switch_handler) event code: 7  ; counter value: 725035536, delta: 1192097
+[  900.204401] (finish_task_switch_handler) event code: 8  ; counter value: 7252158890, delta: 11920993
+[  900.204412] (finish_task_switch_handler) event code: 17  ; counter value: 9489117356, delta: 13327924
+[  900.204422] (finish_task_switch_handler) event code: 18  ; counter value: 423459023, delta: 596074
+[  900.204431] (finish_task_switch_handler) event code: 19  ; counter value: 2961663681, delta: 4172339
+[  900.204441] (finish_task_switch_handler) event code: 20  ; counter value: 4529266740, delta: 5099548
+[  900.204451] (finish_task_switch_handler) event code: 21  ; counter value: 26537242, delta: 14976
+[  900.204460] (finish_task_switch_handler) event code: 25  ; counter value: 110968277, delta: 0
+[  900.236331] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.236339] (finish_task_switch_handler) current program counter: 187650295503216
+[  900.236342] (finish_task_switch_handler) target pid is prev
+[  900.236348] (finish_task_switch_handler) event code: 1  ; counter value: 63963, delta: 35
+[  900.236363] (finish_task_switch_handler) event code: 2  ; counter value: 2088, delta: 2
+[  900.236373] (finish_task_switch_handler) event code: 3  ; counter value: 782770, delta: 3240
+[  900.236383] (finish_task_switch_handler) event code: 4  ; counter value: 2539647562, delta: 5079995
+[  900.236392] (finish_task_switch_handler) event code: 5  ; counter value: 324790, delta: 440
+[  900.236402] (finish_task_switch_handler) event code: 6  ; counter value: 1813480119, delta: 1218528
+[  900.236412] (finish_task_switch_handler) event code: 7  ; counter value: 725035536, delta: 0
+[  900.236415] (finish_task_switch_handler) event code: 8  ; counter value: 7256687091, delta: 4528201
+[  900.236419] (finish_task_switch_handler) event code: 17  ; counter value: 9499416165, delta: 10298809
+[  900.236422] (finish_task_switch_handler) event code: 18  ; counter value: 424146171, delta: 687148
+[  900.236428] (finish_task_switch_handler) event code: 19  ; counter value: 2968165317, delta: 6501636
+[  900.236431] (finish_task_switch_handler) event code: 20  ; counter value: 4541620073, delta: 12353333
+[  900.236435] (finish_task_switch_handler) event code: 21  ; counter value: 26625294, delta: 88052
+[  900.236439] (finish_task_switch_handler) event code: 25  ; counter value: 111400918, delta: 432641
+[  900.244354] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.244370] (finish_task_switch_handler) current program counter: 187650295503160
+[  900.244373] (finish_task_switch_handler) target pid is prev
+[  900.244383] (finish_task_switch_handler) event code: 1  ; counter value: 63963, delta: 0
+[  900.244387] (finish_task_switch_handler) event code: 2  ; counter value: 2090, delta: 2
+[  900.244391] (finish_task_switch_handler) event code: 3  ; counter value: 783410, delta: 640
+[  900.244413] (finish_task_switch_handler) event code: 4  ; counter value: 2542987029, delta: 3339467
+[  900.244424] (finish_task_switch_handler) event code: 5  ; counter value: 325197, delta: 407
+[  900.244434] (finish_task_switch_handler) event code: 6  ; counter value: 1815865453, delta: 2385334
+[  900.244444] (finish_task_switch_handler) event code: 7  ; counter value: 725989669, delta: 954133
+[  900.244454] (finish_task_switch_handler) event code: 8  ; counter value: 7261530038, delta: 4842947
+[  900.244465] (finish_task_switch_handler) event code: 17  ; counter value: 9504818320, delta: 5402155
+[  900.244474] (finish_task_switch_handler) event code: 18  ; counter value: 424146171, delta: 0
+[  900.244478] (finish_task_switch_handler) event code: 19  ; counter value: 2968165317, delta: 0
+[  900.244482] (finish_task_switch_handler) event code: 20  ; counter value: 4541620073, delta: 0
+[  900.244486] (finish_task_switch_handler) event code: 21  ; counter value: 26625294, delta: 0
+[  900.244490] (finish_task_switch_handler) event code: 25  ; counter value: 111400918, delta: 0
+[  900.248604] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.248613] (finish_task_switch_handler) current program counter: 187650295503220
+[  900.248615] (finish_task_switch_handler) target pid is prev
+[  900.248623] (finish_task_switch_handler) event code: 1  ; counter value: 63963, delta: 0
+[  900.248628] (finish_task_switch_handler) event code: 2  ; counter value: 2090, delta: 0
+[  900.248631] (finish_task_switch_handler) event code: 3  ; counter value: 783410, delta: 0
+[  900.248637] (finish_task_switch_handler) event code: 4  ; counter value: 2544568910, delta: 1581881
+[  900.248658] (finish_task_switch_handler) event code: 5  ; counter value: 325448, delta: 251
+[  900.248669] (finish_task_switch_handler) event code: 6  ; counter value: 1817004539, delta: 1139086
+[  900.248680] (finish_task_switch_handler) event code: 7  ; counter value: 726446957, delta: 457288
+[  900.248691] (finish_task_switch_handler) event code: 8  ; counter value: 7266093010, delta: 4562972
+[  900.248704] (finish_task_switch_handler) event code: 17  ; counter value: 9510073826, delta: 5255506
+[  900.248714] (finish_task_switch_handler) event code: 18  ; counter value: 424380626, delta: 234455
+[  900.248724] (finish_task_switch_handler) event code: 19  ; counter value: 2968183093, delta: 17776
+[  900.248729] (finish_task_switch_handler) event code: 20  ; counter value: 4541620073, delta: 0
+[  900.248733] (finish_task_switch_handler) event code: 21  ; counter value: 26625294, delta: 0
+[  900.248737] (finish_task_switch_handler) event code: 25  ; counter value: 111400918, delta: 0
+[  900.253634] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.253647] (finish_task_switch_handler) current program counter: 187650295503152
+[  900.253650] (finish_task_switch_handler) target pid is prev
+[  900.253660] (finish_task_switch_handler) event code: 1  ; counter value: 63963, delta: 0
+[  900.253665] (finish_task_switch_handler) event code: 2  ; counter value: 2090, delta: 0
+[  900.253669] (finish_task_switch_handler) event code: 3  ; counter value: 783410, delta: 0
+[  900.253674] (finish_task_switch_handler) event code: 4  ; counter value: 2544568910, delta: 0
+[  900.253679] (finish_task_switch_handler) event code: 5  ; counter value: 325656, delta: 208
+[  900.253708] (finish_task_switch_handler) event code: 6  ; counter value: 1818411551, delta: 1407012
+[  900.253720] (finish_task_switch_handler) event code: 7  ; counter value: 727009857, delta: 562900
+[  900.253731] (finish_task_switch_handler) event code: 8  ; counter value: 7271721306, delta: 5628296
+[  900.253742] (finish_task_switch_handler) event code: 17  ; counter value: 9516422333, delta: 6348507
+[  900.253753] (finish_task_switch_handler) event code: 18  ; counter value: 424662385, delta: 281759
+[  900.253764] (finish_task_switch_handler) event code: 19  ; counter value: 2970153124, delta: 1970031
+[  900.253776] (finish_task_switch_handler) event code: 20  ; counter value: 4542345131, delta: 725058
+[  900.253781] (finish_task_switch_handler) event code: 21  ; counter value: 26625294, delta: 0
+[  900.253785] (finish_task_switch_handler) event code: 25  ; counter value: 111400918, delta: 0
+[  900.288333] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.288341] (finish_task_switch_handler) current program counter: 187650295503184
+[  900.288344] (finish_task_switch_handler) target pid is prev
+[  900.288361] (finish_task_switch_handler) event code: 1  ; counter value: 64006, delta: 43
+[  900.288371] (finish_task_switch_handler) event code: 2  ; counter value: 2091, delta: 1
+[  900.288381] (finish_task_switch_handler) event code: 3  ; counter value: 784835, delta: 1425
+[  900.288391] (finish_task_switch_handler) event code: 4  ; counter value: 2547966212, delta: 3397302
+[  900.288401] (finish_task_switch_handler) event code: 5  ; counter value: 325872, delta: 216
+[  900.288411] (finish_task_switch_handler) event code: 6  ; counter value: 1819153993, delta: 742442
+[  900.288415] (finish_task_switch_handler) event code: 7  ; counter value: 727783441, delta: 773584
+[  900.288418] (finish_task_switch_handler) event code: 8  ; counter value: 7284045270, delta: 12323964
+[  900.288422] (finish_task_switch_handler) event code: 17  ; counter value: 9535333300, delta: 18910967
+[  900.288426] (finish_task_switch_handler) event code: 18  ; counter value: 425741495, delta: 1079110
+[  900.288429] (finish_task_switch_handler) event code: 19  ; counter value: 2979345407, delta: 9192283
+[  900.288433] (finish_task_switch_handler) event code: 20  ; counter value: 4559113532, delta: 16768401
+[  900.288437] (finish_task_switch_handler) event code: 21  ; counter value: 26728580, delta: 103286
+[  900.288440] (finish_task_switch_handler) event code: 25  ; counter value: 111837961, delta: 437043
+[  900.341366] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.341375] (finish_task_switch_handler) current program counter: 187650295503168
+[  900.341377] (finish_task_switch_handler) target pid is prev
+[  900.341398] (finish_task_switch_handler) event code: 1  ; counter value: 64054, delta: 48
+[  900.341409] (finish_task_switch_handler) event code: 2  ; counter value: 2093, delta: 2
+[  900.341420] (finish_task_switch_handler) event code: 3  ; counter value: 786714, delta: 1879
+[  900.341430] (finish_task_switch_handler) event code: 4  ; counter value: 2556770686, delta: 8804474
+[  900.341440] (finish_task_switch_handler) event code: 5  ; counter value: 327028, delta: 1156
+[  900.341444] (finish_task_switch_handler) event code: 6  ; counter value: 1826339042, delta: 7185049
+[  900.341448] (finish_task_switch_handler) event code: 7  ; counter value: 730675127, delta: 2891686
+[  900.341452] (finish_task_switch_handler) event code: 8  ; counter value: 7313058944, delta: 29013674
+[  900.341456] (finish_task_switch_handler) event code: 17  ; counter value: 9573264302, delta: 37931002
+[  900.341460] (finish_task_switch_handler) event code: 18  ; counter value: 427443875, delta: 1702380
+[  900.341463] (finish_task_switch_handler) event code: 19  ; counter value: 2991267414, delta: 11922007
+[  900.341467] (finish_task_switch_handler) event code: 20  ; counter value: 4577254047, delta: 18140515
+[  900.341471] (finish_task_switch_handler) event code: 21  ; counter value: 26835515, delta: 106935
+[  900.341481] (finish_task_switch_handler) event code: 25  ; counter value: 112226529, delta: 388568
+[  900.373169] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.373177] (finish_task_switch_handler) current program counter: 187650295503172
+[  900.373179] (finish_task_switch_handler) target pid is prev
+[  900.373186] (finish_task_switch_handler) event code: 1  ; counter value: 64068, delta: 14
+[  900.373190] (finish_task_switch_handler) event code: 2  ; counter value: 2093, delta: 0
+[  900.373194] (finish_task_switch_handler) event code: 3  ; counter value: 788798, delta: 2084
+[  900.373198] (finish_task_switch_handler) event code: 4  ; counter value: 2564647238, delta: 7876552
+[  900.373202] (finish_task_switch_handler) event code: 5  ; counter value: 328225, delta: 1197
+[  900.373205] (finish_task_switch_handler) event code: 6  ; counter value: 1833536767, delta: 7197725
+[  900.373209] (finish_task_switch_handler) event code: 7  ; counter value: 733568690, delta: 2893563
+[  900.373225] (finish_task_switch_handler) event code: 8  ; counter value: 7338287218, delta: 25228274
+[  900.373235] (finish_task_switch_handler) event code: 17  ; counter value: 9601474069, delta: 28209767
+[  900.373245] (finish_task_switch_handler) event code: 18  ; counter value: 428463170, delta: 1019295
+[  900.373255] (finish_task_switch_handler) event code: 19  ; counter value: 2996708118, delta: 5440704
+[  900.373265] (finish_task_switch_handler) event code: 20  ; counter value: 4582998281, delta: 5744234
+[  900.373275] (finish_task_switch_handler) event code: 21  ; counter value: 26853925, delta: 18410
+[  900.373285] (finish_task_switch_handler) event code: 25  ; counter value: 112282844, delta: 56315
+[  900.395878] systemd-journald[384]: /dev/kmsg buffer overrun, some messages lost.
+[  900.525128] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.525135] (finish_task_switch_handler) current program counter: 187650295503148
+[  900.525138] (finish_task_switch_handler) target pid is prev
+[  900.525145] (finish_task_switch_handler) event code: 1  ; counter value: 64200, delta: 132
+[  900.525149] (finish_task_switch_handler) event code: 2  ; counter value: 2101, delta: 8
+[  900.525153] (finish_task_switch_handler) event code: 3  ; counter value: 796068, delta: 7270
+[  900.525172] (finish_task_switch_handler) event code: 4  ; counter value: 2593455951, delta: 28808713
+[  900.525183] (finish_task_switch_handler) event code: 5  ; counter value: 331677, delta: 3452
+[  900.525193] (finish_task_switch_handler) event code: 6  ; counter value: 1851683539, delta: 18146772
+[  900.525204] (finish_task_switch_handler) event code: 7  ; counter value: 740350840, delta: 6782150
+[  900.525215] (finish_task_switch_handler) event code: 8  ; counter value: 7405152726, delta: 66865508
+[  900.525228] (finish_task_switch_handler) event code: 17  ; counter value: 9692542777, delta: 91068708
+[  900.525238] (finish_task_switch_handler) event code: 18  ; counter value: 432532093, delta: 4068923
+[  900.525242] (finish_task_switch_handler) event code: 19  ; counter value: 3026611744, delta: 29903626
+[  900.525246] (finish_task_switch_handler) event code: 20  ; counter value: 4631754317, delta: 48756036
+[  900.525250] (finish_task_switch_handler) event code: 21  ; counter value: 27152347, delta: 298422
+[  900.525254] (finish_task_switch_handler) event code: 25  ; counter value: 113596704, delta: 1313860
+[  900.600339] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.600348] (finish_task_switch_handler) current program counter: 187650295503188
+[  900.600351] (finish_task_switch_handler) target pid is prev
+[  900.600368] (finish_task_switch_handler) event code: 1  ; counter value: 64242, delta: 42
+[  900.600372] (finish_task_switch_handler) event code: 2  ; counter value: 2107, delta: 6
+[  900.600376] (finish_task_switch_handler) event code: 3  ; counter value: 798811, delta: 2743
+[  900.600379] (finish_task_switch_handler) event code: 4  ; counter value: 2604841145, delta: 11385194
+[  900.600383] (finish_task_switch_handler) event code: 5  ; counter value: 333368, delta: 1691
+[  900.600387] (finish_task_switch_handler) event code: 6  ; counter value: 1862211263, delta: 10527724
+[  900.600390] (finish_task_switch_handler) event code: 7  ; counter value: 745026358, delta: 4675518
+[  900.600394] (finish_task_switch_handler) event code: 8  ; counter value: 7456752192, delta: 51599466
+[  900.600404] (finish_task_switch_handler) event code: 17  ; counter value: 9755816875, delta: 63274098
+[  900.600414] (finish_task_switch_handler) event code: 18  ; counter value: 435349575, delta: 2817482
+[  900.600424] (finish_task_switch_handler) event code: 19  ; counter value: 3045120282, delta: 18508538
+[  900.600433] (finish_task_switch_handler) event code: 20  ; counter value: 4657813095, delta: 26058778
+[  900.600443] (finish_task_switch_handler) event code: 21  ; counter value: 27288146, delta: 135799
+[  900.600453] (finish_task_switch_handler) event code: 25  ; counter value: 114098740, delta: 502036
+[  900.633787] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.633795] (finish_task_switch_handler) current program counter: 187650295503208
+[  900.633798] (finish_task_switch_handler) target pid is prev
+[  900.633806] (finish_task_switch_handler) event code: 1  ; counter value: 64280, delta: 38
+[  900.633810] (finish_task_switch_handler) event code: 2  ; counter value: 2109, delta: 2
+[  900.633828] (finish_task_switch_handler) event code: 3  ; counter value: 801438, delta: 2627
+[  900.633840] (finish_task_switch_handler) event code: 4  ; counter value: 2612208220, delta: 7367075
+[  900.633851] (finish_task_switch_handler) event code: 5  ; counter value: 334113, delta: 745
+[  900.633862] (finish_task_switch_handler) event code: 6  ; counter value: 1865034207, delta: 2822944
+[  900.633872] (finish_task_switch_handler) event code: 7  ; counter value: 745669903, delta: 643545
+[  900.633883] (finish_task_switch_handler) event code: 8  ; counter value: 7458511506, delta: 1759314
+[  900.633893] (finish_task_switch_handler) event code: 17  ; counter value: 9762974689, delta: 7157814
+[  900.633898] (finish_task_switch_handler) event code: 18  ; counter value: 435815162, delta: 465587
+[  900.633903] (finish_task_switch_handler) event code: 19  ; counter value: 3050062776, delta: 4942494
+[  900.633907] (finish_task_switch_handler) event code: 20  ; counter value: 4667959331, delta: 10146236
+[  900.633911] (finish_task_switch_handler) event code: 21  ; counter value: 27362861, delta: 74715
+[  900.633915] (finish_task_switch_handler) event code: 25  ; counter value: 114475753, delta: 377013
+[  900.656375] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.656383] (finish_task_switch_handler) current program counter: 187650295503172
+[  900.656385] (finish_task_switch_handler) target pid is prev
+[  900.656402] (finish_task_switch_handler) event code: 1  ; counter value: 64280, delta: 0
+[  900.656406] (finish_task_switch_handler) event code: 2  ; counter value: 2109, delta: 0
+[  900.656409] (finish_task_switch_handler) event code: 3  ; counter value: 801630, delta: 192
+[  900.656413] (finish_task_switch_handler) event code: 4  ; counter value: 2614838075, delta: 2629855
+[  900.656417] (finish_task_switch_handler) event code: 5  ; counter value: 334676, delta: 563
+[  900.656420] (finish_task_switch_handler) event code: 6  ; counter value: 1869267361, delta: 4233154
+[  900.656424] (finish_task_switch_handler) event code: 7  ; counter value: 747850274, delta: 2180371
+[  900.656428] (finish_task_switch_handler) event code: 8  ; counter value: 7485100135, delta: 26588629
+[  900.656438] (finish_task_switch_handler) event code: 17  ; counter value: 9792838662, delta: 29863973
+[  900.656448] (finish_task_switch_handler) event code: 18  ; counter value: 437002894, delta: 1187732
+[  900.656458] (finish_task_switch_handler) event code: 19  ; counter value: 3056738914, delta: 6676138
+[  900.656467] (finish_task_switch_handler) event code: 20  ; counter value: 4675551144, delta: 7591813
+[  900.656477] (finish_task_switch_handler) event code: 21  ; counter value: 27393167, delta: 30306
+[  900.656487] (finish_task_switch_handler) event code: 25  ; counter value: 114536846, delta: 61093
+[  900.692338] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.692346] (finish_task_switch_handler) current program counter: 187650295503172
+[  900.692349] (finish_task_switch_handler) target pid is prev
+[  900.692355] (finish_task_switch_handler) event code: 1  ; counter value: 64311, delta: 31
+[  900.692359] (finish_task_switch_handler) event code: 2  ; counter value: 2112, delta: 3
+[  900.692363] (finish_task_switch_handler) event code: 3  ; counter value: 804970, delta: 3340
+[  900.692378] (finish_task_switch_handler) event code: 4  ; counter value: 2623243630, delta: 8405555
+[  900.692389] (finish_task_switch_handler) event code: 5  ; counter value: 335529, delta: 853
+[  900.692399] (finish_task_switch_handler) event code: 6  ; counter value: 1872896687, delta: 3629326
+[  900.692408] (finish_task_switch_handler) event code: 7  ; counter value: 748827878, delta: 977604
+[  900.692418] (finish_task_switch_handler) event code: 8  ; counter value: 7490004851, delta: 4904716
+[  900.692428] (finish_task_switch_handler) event code: 17  ; counter value: 9803453799, delta: 10615137
+[  900.692437] (finish_task_switch_handler) event code: 18  ; counter value: 437473678, delta: 470784
+[  900.692441] (finish_task_switch_handler) event code: 19  ; counter value: 3061729955, delta: 4991041
+[  900.692445] (finish_task_switch_handler) event code: 20  ; counter value: 4685822122, delta: 10270978
+[  900.692448] (finish_task_switch_handler) event code: 21  ; counter value: 27467634, delta: 74467
+[  900.692452] (finish_task_switch_handler) event code: 25  ; counter value: 114921744, delta: 384898
+[  900.767751] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.767759] (finish_task_switch_handler) current program counter: 187650295503188
+[  900.767762] (finish_task_switch_handler) target pid is prev
+[  900.767769] (finish_task_switch_handler) event code: 1  ; counter value: 64350, delta: 39
+[  900.767774] (finish_task_switch_handler) event code: 2  ; counter value: 2116, delta: 4
+[  900.767778] (finish_task_switch_handler) event code: 3  ; counter value: 808005, delta: 3035
+[  900.767782] (finish_task_switch_handler) event code: 4  ; counter value: 2635016688, delta: 11773058
+[  900.767786] (finish_task_switch_handler) event code: 5  ; counter value: 337270, delta: 1741
+[  900.767790] (finish_task_switch_handler) event code: 6  ; counter value: 1883665277, delta: 10768590
+[  900.767794] (finish_task_switch_handler) event code: 7  ; counter value: 753603774, delta: 4775896
+[  900.767811] (finish_task_switch_handler) event code: 8  ; counter value: 7541934755, delta: 51929904
+[  900.767823] (finish_task_switch_handler) event code: 17  ; counter value: 9867201216, delta: 63747417
+[  900.767834] (finish_task_switch_handler) event code: 18  ; counter value: 440308069, delta: 2834391
+[  900.767844] (finish_task_switch_handler) event code: 19  ; counter value: 3079962374, delta: 18232419
+[  900.767855] (finish_task_switch_handler) event code: 20  ; counter value: 4711215057, delta: 25392935
+[  900.767865] (finish_task_switch_handler) event code: 21  ; counter value: 27601443, delta: 133809
+[  900.767876] (finish_task_switch_handler) event code: 25  ; counter value: 115412361, delta: 490617
+[  900.778038] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.778049] (finish_task_switch_handler) current program counter: 187650295503184
+[  900.778052] (finish_task_switch_handler) target pid is prev
+[  900.778076] (finish_task_switch_handler) event code: 1  ; counter value: 64370, delta: 20
+[  900.778088] (finish_task_switch_handler) event code: 2  ; counter value: 2116, delta: 0
+[  900.778092] (finish_task_switch_handler) event code: 3  ; counter value: 808005, delta: 0
+[  900.778096] (finish_task_switch_handler) event code: 4  ; counter value: 2635016688, delta: 0
+[  900.778100] (finish_task_switch_handler) event code: 5  ; counter value: 337270, delta: 0
+[  900.778104] (finish_task_switch_handler) event code: 6  ; counter value: 1883665277, delta: 0
+[  900.778108] (finish_task_switch_handler) event code: 7  ; counter value: 753603774, delta: 0
+[  900.778113] (finish_task_switch_handler) event code: 8  ; counter value: 7542342975, delta: 408220
+[  900.778118] (finish_task_switch_handler) event code: 17  ; counter value: 9873028027, delta: 5826811
+[  900.778122] (finish_task_switch_handler) event code: 18  ; counter value: 440812175, delta: 504106
+[  900.778133] (finish_task_switch_handler) event code: 19  ; counter value: 3084146148, delta: 4183774
+[  900.778145] (finish_task_switch_handler) event code: 20  ; counter value: 4717602490, delta: 6387433
+[  900.778156] (finish_task_switch_handler) event code: 21  ; counter value: 27638910, delta: 37467
+[  900.778167] (finish_task_switch_handler) event code: 25  ; counter value: 115572094, delta: 159733
+[  900.788337] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.788346] (finish_task_switch_handler) current program counter: 187650295503200
+[  900.788349] (finish_task_switch_handler) target pid is prev
+[  900.788366] (finish_task_switch_handler) event code: 1  ; counter value: 64391, delta: 21
+[  900.788377] (finish_task_switch_handler) event code: 2  ; counter value: 2117, delta: 1
+[  900.788387] (finish_task_switch_handler) event code: 3  ; counter value: 808704, delta: 699
+[  900.788396] (finish_task_switch_handler) event code: 4  ; counter value: 2636695562, delta: 1678874
+[  900.788407] (finish_task_switch_handler) event code: 5  ; counter value: 337270, delta: 0
+[  900.788411] (finish_task_switch_handler) event code: 6  ; counter value: 1883665277, delta: 0
+[  900.788414] (finish_task_switch_handler) event code: 7  ; counter value: 753603774, delta: 0
+[  900.788418] (finish_task_switch_handler) event code: 8  ; counter value: 7542342975, delta: 0
+[  900.788421] (finish_task_switch_handler) event code: 17  ; counter value: 9873028027, delta: 0
+[  900.788425] (finish_task_switch_handler) event code: 18  ; counter value: 440812175, delta: 0
+[  900.788429] (finish_task_switch_handler) event code: 19  ; counter value: 3085002905, delta: 856757
+[  900.788432] (finish_task_switch_handler) event code: 20  ; counter value: 4721532379, delta: 3929889
+[  900.788436] (finish_task_switch_handler) event code: 21  ; counter value: 27676513, delta: 37603
+[  900.788446] (finish_task_switch_handler) event code: 25  ; counter value: 115736290, delta: 164196
+[  900.812330] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.812338] (finish_task_switch_handler) current program counter: 187650295503168
+[  900.812341] (finish_task_switch_handler) target pid is prev
+[  900.812349] (finish_task_switch_handler) event code: 1  ; counter value: 64416, delta: 25
+[  900.812352] (finish_task_switch_handler) event code: 2  ; counter value: 2118, delta: 1
+[  900.812356] (finish_task_switch_handler) event code: 3  ; counter value: 810538, delta: 1834
+[  900.812360] (finish_task_switch_handler) event code: 4  ; counter value: 2644910074, delta: 8214512
+[  900.812363] (finish_task_switch_handler) event code: 5  ; counter value: 338541, delta: 1271
+[  900.812382] (finish_task_switch_handler) event code: 6  ; counter value: 1889595234, delta: 5929957
+[  900.812392] (finish_task_switch_handler) event code: 7  ; counter value: 755513245, delta: 1909471
+[  900.812402] (finish_task_switch_handler) event code: 8  ; counter value: 7556609169, delta: 14266194
+[  900.812411] (finish_task_switch_handler) event code: 17  ; counter value: 9889051456, delta: 16023429
+[  900.812421] (finish_task_switch_handler) event code: 18  ; counter value: 441284293, delta: 472118
+[  900.812431] (finish_task_switch_handler) event code: 19  ; counter value: 3086639999, delta: 1637094
+[  900.812440] (finish_task_switch_handler) event code: 20  ; counter value: 4721532379, delta: 0
+[  900.812444] (finish_task_switch_handler) event code: 21  ; counter value: 27676513, delta: 0
+[  900.812448] (finish_task_switch_handler) event code: 25  ; counter value: 115796690, delta: 60400
+[  900.832338] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.832345] (finish_task_switch_handler) current program counter: 187650295503220
+[  900.832348] (finish_task_switch_handler) target pid is prev
+[  900.832366] (finish_task_switch_handler) event code: 1  ; counter value: 64428, delta: 12
+[  900.832376] (finish_task_switch_handler) event code: 2  ; counter value: 2118, delta: 0
+[  900.832380] (finish_task_switch_handler) event code: 3  ; counter value: 810538, delta: 0
+[  900.832383] (finish_task_switch_handler) event code: 4  ; counter value: 2644910074, delta: 0
+[  900.832388] (finish_task_switch_handler) event code: 5  ; counter value: 338541, delta: 0
+[  900.832392] (finish_task_switch_handler) event code: 6  ; counter value: 1890745136, delta: 1149902
+[  900.832395] (finish_task_switch_handler) event code: 7  ; counter value: 756450603, delta: 937358
+[  900.832399] (finish_task_switch_handler) event code: 8  ; counter value: 7570780626, delta: 14171457
+[  900.832402] (finish_task_switch_handler) event code: 17  ; counter value: 9910289091, delta: 21237635
+[  900.832406] (finish_task_switch_handler) event code: 18  ; counter value: 442476043, delta: 1191750
+[  900.832416] (finish_task_switch_handler) event code: 19  ; counter value: 3094981911, delta: 8341912
+[  900.832426] (finish_task_switch_handler) event code: 20  ; counter value: 4734235777, delta: 12703398
+[  900.832436] (finish_task_switch_handler) event code: 21  ; counter value: 27736810, delta: 60297
+[  900.832445] (finish_task_switch_handler) event code: 25  ; counter value: 115988470, delta: 191780
+[  900.862798] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.862806] (finish_task_switch_handler) current program counter: 187650295503216
+[  900.862809] (finish_task_switch_handler) target pid is prev
+[  900.862817] (finish_task_switch_handler) event code: 1  ; counter value: 64470, delta: 42
+[  900.862822] (finish_task_switch_handler) event code: 2  ; counter value: 2120, delta: 2
+[  900.862826] (finish_task_switch_handler) event code: 3  ; counter value: 814042, delta: 3504
+[  900.862852] (finish_task_switch_handler) event code: 4  ; counter value: 2654300519, delta: 9390445
+[  900.862863] (finish_task_switch_handler) event code: 5  ; counter value: 339516, delta: 975
+[  900.862874] (finish_task_switch_handler) event code: 6  ; counter value: 1895103057, delta: 4357921
+[  900.862885] (finish_task_switch_handler) event code: 7  ; counter value: 757705713, delta: 1255110
+[  900.862896] (finish_task_switch_handler) event code: 8  ; counter value: 7578511704, delta: 7731078
+[  900.862906] (finish_task_switch_handler) event code: 17  ; counter value: 9918998792, delta: 8709701
+[  900.862917] (finish_task_switch_handler) event code: 18  ; counter value: 442625233, delta: 149190
+[  900.862921] (finish_task_switch_handler) event code: 19  ; counter value: 3096603584, delta: 1621673
+[  900.862925] (finish_task_switch_handler) event code: 20  ; counter value: 4739301627, delta: 5065850
+[  900.862929] (finish_task_switch_handler) event code: 21  ; counter value: 27781460, delta: 44650
+[  900.862933] (finish_task_switch_handler) event code: 25  ; counter value: 116239017, delta: 250547
+[  900.883788] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.883796] (finish_task_switch_handler) current program counter: 187650295503216
+[  900.883799] (finish_task_switch_handler) target pid is prev
+[  900.883822] (finish_task_switch_handler) event code: 1  ; counter value: 64476, delta: 6
+[  900.883826] (finish_task_switch_handler) event code: 2  ; counter value: 2120, delta: 0
+[  900.883831] (finish_task_switch_handler) event code: 3  ; counter value: 814042, delta: 0
+[  900.883835] (finish_task_switch_handler) event code: 4  ; counter value: 2654852182, delta: 551663
+[  900.883838] (finish_task_switch_handler) event code: 5  ; counter value: 339801, delta: 285
+[  900.883842] (finish_task_switch_handler) event code: 6  ; counter value: 1897884485, delta: 2781428
+[  900.883846] (finish_task_switch_handler) event code: 7  ; counter value: 759305860, delta: 1600147
+[  900.883850] (finish_task_switch_handler) event code: 8  ; counter value: 7599374557, delta: 20862853
+[  900.883861] (finish_task_switch_handler) event code: 17  ; counter value: 9947052855, delta: 28054063
+[  900.883871] (finish_task_switch_handler) event code: 18  ; counter value: 443881484, delta: 1256251
+[  900.883882] (finish_task_switch_handler) event code: 19  ; counter value: 3104845313, delta: 8241729
+[  900.883892] (finish_task_switch_handler) event code: 20  ; counter value: 4749095001, delta: 9793374
+[  900.883903] (finish_task_switch_handler) event code: 21  ; counter value: 27825351, delta: 43891
+[  900.883913] (finish_task_switch_handler) event code: 25  ; counter value: 116355760, delta: 116743
+[  900.924325] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.924334] (finish_task_switch_handler) current program counter: 187650295503164
+[  900.924336] (finish_task_switch_handler) target pid is prev
+[  900.924343] (finish_task_switch_handler) event code: 1  ; counter value: 64528, delta: 52
+[  900.924347] (finish_task_switch_handler) event code: 2  ; counter value: 2124, delta: 4
+[  900.924351] (finish_task_switch_handler) event code: 3  ; counter value: 816883, delta: 2841
+[  900.924355] (finish_task_switch_handler) event code: 4  ; counter value: 2664967510, delta: 10115328
+[  900.924358] (finish_task_switch_handler) event code: 5  ; counter value: 341108, delta: 1307
+[  900.924372] (finish_task_switch_handler) event code: 6  ; counter value: 1903945853, delta: 6061368
+[  900.924383] (finish_task_switch_handler) event code: 7  ; counter value: 761244891, delta: 1939031
+[  900.924392] (finish_task_switch_handler) event code: 8  ; counter value: 7613996607, delta: 14622050
+[  900.924402] (finish_task_switch_handler) event code: 17  ; counter value: 9963758690, delta: 16705835
+[  900.924411] (finish_task_switch_handler) event code: 18  ; counter value: 444627474, delta: 745990
+[  900.924421] (finish_task_switch_handler) event code: 19  ; counter value: 3109993891, delta: 5148578
+[  900.924431] (finish_task_switch_handler) event code: 20  ; counter value: 4756998402, delta: 7903401
+[  900.924435] (finish_task_switch_handler) event code: 21  ; counter value: 27885715, delta: 60364
+[  900.924438] (finish_task_switch_handler) event code: 25  ; counter value: 116678016, delta: 322256
+[  900.925743] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  900.925747] (finish_task_switch_handler) current program counter: 187650295503168
+[  900.925752] (finish_task_switch_handler) target pid is prev
+[  900.925759] (finish_task_switch_handler) event code: 1  ; counter value: 64528, delta: 0
+[  900.925764] (finish_task_switch_handler) event code: 2  ; counter value: 2124, delta: 0
+[  900.925769] (finish_task_switch_handler) event code: 3  ; counter value: 816883, delta: 0
+[  900.925774] (finish_task_switch_handler) event code: 4  ; counter value: 2664967510, delta: 0
+[  900.925779] (finish_task_switch_handler) event code: 5  ; counter value: 341108, delta: 0
+[  900.925792] (finish_task_switch_handler) event code: 6  ; counter value: 1904315779, delta: 369926
+[  900.925805] (finish_task_switch_handler) event code: 7  ; counter value: 761392861, delta: 147970
+[  900.925815] (finish_task_switch_handler) event code: 8  ; counter value: 7615476314, delta: 1479707
+[  900.925827] (finish_task_switch_handler) event code: 17  ; counter value: 9965406815, delta: 1648125
+[  900.925838] (finish_task_switch_handler) event code: 18  ; counter value: 444701462, delta: 73988
+[  900.925848] (finish_task_switch_handler) event code: 19  ; counter value: 3110511787, delta: 517896
+[  900.925861] (finish_task_switch_handler) event code: 20  ; counter value: 4757812298, delta: 813896
+[  900.925866] (finish_task_switch_handler) event code: 21  ; counter value: 27885715, delta: 0
+[  900.925871] (finish_task_switch_handler) event code: 25  ; counter value: 116678016, delta: 0
+[  901.020346] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.020354] (finish_task_switch_handler) current program counter: 187650295503152
+[  901.020357] (finish_task_switch_handler) target pid is prev
+[  901.020364] (finish_task_switch_handler) event code: 1  ; counter value: 64626, delta: 98
+[  901.020378] (finish_task_switch_handler) event code: 2  ; counter value: 2127, delta: 3
+[  901.020388] (finish_task_switch_handler) event code: 3  ; counter value: 821088, delta: 4205
+[  901.020398] (finish_task_switch_handler) event code: 4  ; counter value: 2680208597, delta: 15241087
+[  901.020408] (finish_task_switch_handler) event code: 5  ; counter value: 342810, delta: 1702
+[  901.020417] (finish_task_switch_handler) event code: 6  ; counter value: 1913534827, delta: 9219048
+[  901.020427] (finish_task_switch_handler) event code: 7  ; counter value: 765061874, delta: 3669013
+[  901.020431] (finish_task_switch_handler) event code: 8  ; counter value: 7656963200, delta: 41486886
+[  901.020434] (finish_task_switch_handler) event code: 17  ; counter value: 10022453247, delta: 57046432
+[  901.020438] (finish_task_switch_handler) event code: 18  ; counter value: 447492905, delta: 2791443
+[  901.020442] (finish_task_switch_handler) event code: 19  ; counter value: 3131773428, delta: 21261641
+[  901.020446] (finish_task_switch_handler) event code: 20  ; counter value: 4792958204, delta: 35145906
+[  901.020450] (finish_task_switch_handler) event code: 21  ; counter value: 28097237, delta: 211522
+[  901.020453] (finish_task_switch_handler) event code: 25  ; counter value: 117554948, delta: 876932
+[  901.040818] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.040826] (finish_task_switch_handler) current program counter: 187650295503188
+[  901.040829] (finish_task_switch_handler) target pid is prev
+[  901.040837] (finish_task_switch_handler) event code: 1  ; counter value: 64626, delta: 0
+[  901.040841] (finish_task_switch_handler) event code: 2  ; counter value: 2127, delta: 0
+[  901.040845] (finish_task_switch_handler) event code: 3  ; counter value: 821851, delta: 763
+[  901.040849] (finish_task_switch_handler) event code: 4  ; counter value: 2685145683, delta: 4937086
+[  901.040853] (finish_task_switch_handler) event code: 5  ; counter value: 343652, delta: 842
+[  901.040856] (finish_task_switch_handler) event code: 6  ; counter value: 1919470613, delta: 5935786
+[  901.040874] (finish_task_switch_handler) event code: 7  ; counter value: 767480342, delta: 2418468
+[  901.040884] (finish_task_switch_handler) event code: 8  ; counter value: 7676536442, delta: 19573242
+[  901.040895] (finish_task_switch_handler) event code: 17  ; counter value: 10044384858, delta: 21931611
+[  901.040905] (finish_task_switch_handler) event code: 18  ; counter value: 448238694, delta: 745789
+[  901.040915] (finish_task_switch_handler) event code: 19  ; counter value: 3135300968, delta: 3527540
+[  901.040925] (finish_task_switch_handler) event code: 20  ; counter value: 4795770445, delta: 2812241
+[  901.040934] (finish_task_switch_handler) event code: 21  ; counter value: 28098626, delta: 1389
+[  901.040938] (finish_task_switch_handler) event code: 25  ; counter value: 117554948, delta: 0
+[  901.072342] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.072350] (finish_task_switch_handler) current program counter: 187650295503208
+[  901.072352] (finish_task_switch_handler) target pid is prev
+[  901.072369] (finish_task_switch_handler) event code: 1  ; counter value: 64663, delta: 37
+[  901.072379] (finish_task_switch_handler) event code: 2  ; counter value: 2131, delta: 4
+[  901.072389] (finish_task_switch_handler) event code: 3  ; counter value: 823037, delta: 1186
+[  901.072399] (finish_task_switch_handler) event code: 4  ; counter value: 2688552293, delta: 3406610
+[  901.072409] (finish_task_switch_handler) event code: 5  ; counter value: 343885, delta: 233
+[  901.072419] (finish_task_switch_handler) event code: 6  ; counter value: 1919470613, delta: 0
+[  901.072422] (finish_task_switch_handler) event code: 7  ; counter value: 767881491, delta: 401149
+[  901.072426] (finish_task_switch_handler) event code: 8  ; counter value: 7685166309, delta: 8629867
+[  901.072430] (finish_task_switch_handler) event code: 17  ; counter value: 10059386257, delta: 15001399
+[  901.072433] (finish_task_switch_handler) event code: 18  ; counter value: 449145332, delta: 906638
+[  901.072437] (finish_task_switch_handler) event code: 19  ; counter value: 3143360108, delta: 8059140
+[  901.072441] (finish_task_switch_handler) event code: 20  ; counter value: 4810701019, delta: 14930574
+[  901.072444] (finish_task_switch_handler) event code: 21  ; counter value: 28201357, delta: 102731
+[  901.072448] (finish_task_switch_handler) event code: 25  ; counter value: 117995428, delta: 440480
+[  901.093768] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.093775] (finish_task_switch_handler) current program counter: 187650295503188
+[  901.093778] (finish_task_switch_handler) target pid is prev
+[  901.093786] (finish_task_switch_handler) event code: 1  ; counter value: 64673, delta: 10
+[  901.093790] (finish_task_switch_handler) event code: 2  ; counter value: 2131, delta: 0
+[  901.093794] (finish_task_switch_handler) event code: 3  ; counter value: 824951, delta: 1914
+[  901.093798] (finish_task_switch_handler) event code: 4  ; counter value: 2695156847, delta: 6604554
+[  901.093802] (finish_task_switch_handler) event code: 5  ; counter value: 344924, delta: 1039
+[  901.093819] (finish_task_switch_handler) event code: 6  ; counter value: 1925805689, delta: 6335076
+[  901.093831] (finish_task_switch_handler) event code: 7  ; counter value: 769950563, delta: 2069072
+[  901.093841] (finish_task_switch_handler) event code: 8  ; counter value: 7701127966, delta: 15961657
+[  901.093851] (finish_task_switch_handler) event code: 17  ; counter value: 10077375338, delta: 17989081
+[  901.093862] (finish_task_switch_handler) event code: 18  ; counter value: 449712680, delta: 567348
+[  901.093872] (finish_task_switch_handler) event code: 19  ; counter value: 3145624660, delta: 2264552
+[  901.093882] (finish_task_switch_handler) event code: 20  ; counter value: 4811606037, delta: 905018
+[  901.093886] (finish_task_switch_handler) event code: 21  ; counter value: 28201357, delta: 0
+[  901.093890] (finish_task_switch_handler) event code: 25  ; counter value: 117995428, delta: 0
+[  901.128351] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.128359] (finish_task_switch_handler) current program counter: 187650295503220
+[  901.128362] (finish_task_switch_handler) target pid is prev
+[  901.128380] (finish_task_switch_handler) event code: 1  ; counter value: 64715, delta: 42
+[  901.128391] (finish_task_switch_handler) event code: 2  ; counter value: 2134, delta: 3
+[  901.128401] (finish_task_switch_handler) event code: 3  ; counter value: 826725, delta: 1774
+[  901.128411] (finish_task_switch_handler) event code: 4  ; counter value: 2698505076, delta: 3348229
+[  901.128420] (finish_task_switch_handler) event code: 5  ; counter value: 345135, delta: 211
+[  901.128430] (finish_task_switch_handler) event code: 6  ; counter value: 1926526796, delta: 721107
+[  901.128434] (finish_task_switch_handler) event code: 7  ; counter value: 770704955, delta: 754392
+[  901.128437] (finish_task_switch_handler) event code: 8  ; counter value: 7713500968, delta: 12373002
+[  901.128441] (finish_task_switch_handler) event code: 17  ; counter value: 10096683311, delta: 19307973
+[  901.128445] (finish_task_switch_handler) event code: 18  ; counter value: 450817972, delta: 1105292
+[  901.128449] (finish_task_switch_handler) event code: 19  ; counter value: 3155062698, delta: 9438038
+[  901.128452] (finish_task_switch_handler) event code: 20  ; counter value: 4828557414, delta: 16951377
+[  901.128456] (finish_task_switch_handler) event code: 21  ; counter value: 28306427, delta: 105070
+[  901.128459] (finish_task_switch_handler) event code: 25  ; counter value: 118438720, delta: 443292
+[  901.164343] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.164350] (finish_task_switch_handler) current program counter: 187650295503208
+[  901.164353] (finish_task_switch_handler) target pid is prev
+[  901.164370] (finish_task_switch_handler) event code: 1  ; counter value: 64728, delta: 13
+[  901.164374] (finish_task_switch_handler) event code: 2  ; counter value: 2134, delta: 0
+[  901.164378] (finish_task_switch_handler) event code: 3  ; counter value: 828210, delta: 1485
+[  901.164381] (finish_task_switch_handler) event code: 4  ; counter value: 2705149164, delta: 6644088
+[  901.164385] (finish_task_switch_handler) event code: 5  ; counter value: 346176, delta: 1041
+[  901.164389] (finish_task_switch_handler) event code: 6  ; counter value: 1933664798, delta: 7138002
+[  901.164392] (finish_task_switch_handler) event code: 7  ; counter value: 773580597, delta: 2875642
+[  901.164396] (finish_task_switch_handler) event code: 8  ; counter value: 7742379014, delta: 28878046
+[  901.164399] (finish_task_switch_handler) event code: 17  ; counter value: 10134599981, delta: 37916670
+[  901.164410] (finish_task_switch_handler) event code: 18  ; counter value: 452265837, delta: 1447865
+[  901.164420] (finish_task_switch_handler) event code: 19  ; counter value: 3163507123, delta: 8444425
+[  901.164429] (finish_task_switch_handler) event code: 20  ; counter value: 4839045717, delta: 10488303
+[  901.164439] (finish_task_switch_handler) event code: 21  ; counter value: 28352029, delta: 45602
+[  901.164449] (finish_task_switch_handler) event code: 25  ; counter value: 118562531, delta: 123811
+[  901.208346] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.208354] (finish_task_switch_handler) current program counter: 187650295503216
+[  901.208356] (finish_task_switch_handler) target pid is prev
+[  901.208363] (finish_task_switch_handler) event code: 1  ; counter value: 64760, delta: 32
+[  901.208367] (finish_task_switch_handler) event code: 2  ; counter value: 2136, delta: 2
+[  901.208371] (finish_task_switch_handler) event code: 3  ; counter value: 830518, delta: 2308
+[  901.208374] (finish_task_switch_handler) event code: 4  ; counter value: 2715280156, delta: 10130992
+[  901.208378] (finish_task_switch_handler) event code: 5  ; counter value: 347476, delta: 1300
+[  901.208382] (finish_task_switch_handler) event code: 6  ; counter value: 1940890828, delta: 7226030
+[  901.208395] (finish_task_switch_handler) event code: 7  ; counter value: 775983029, delta: 2402432
+[  901.208406] (finish_task_switch_handler) event code: 8  ; counter value: 7761719055, delta: 19340041
+[  901.208416] (finish_task_switch_handler) event code: 17  ; counter value: 10156280077, delta: 21680096
+[  901.208425] (finish_task_switch_handler) event code: 18  ; counter value: 453218537, delta: 952700
+[  901.208435] (finish_task_switch_handler) event code: 19  ; counter value: 3170164077, delta: 6656954
+[  901.208445] (finish_task_switch_handler) event code: 20  ; counter value: 4849140722, delta: 10095005
+[  901.208455] (finish_task_switch_handler) event code: 21  ; counter value: 28411805, delta: 59776
+[  901.208458] (finish_task_switch_handler) event code: 25  ; counter value: 118876985, delta: 314454
+[  901.242373] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.242381] (finish_task_switch_handler) current program counter: 187650295503152
+[  901.242385] (finish_task_switch_handler) target pid is prev
+[  901.242404] (finish_task_switch_handler) event code: 1  ; counter value: 64797, delta: 37
+[  901.242416] (finish_task_switch_handler) event code: 2  ; counter value: 2137, delta: 1
+[  901.242426] (finish_task_switch_handler) event code: 3  ; counter value: 831943, delta: 1425
+[  901.242436] (finish_task_switch_handler) event code: 4  ; counter value: 2719538639, delta: 4258483
+[  901.242448] (finish_task_switch_handler) event code: 5  ; counter value: 347800, delta: 324
+[  901.242458] (finish_task_switch_handler) event code: 6  ; counter value: 1941507648, delta: 616820
+[  901.242463] (finish_task_switch_handler) event code: 7  ; counter value: 776449852, delta: 466823
+[  901.242466] (finish_task_switch_handler) event code: 8  ; counter value: 7771085398, delta: 9366343
+[  901.242471] (finish_task_switch_handler) event code: 17  ; counter value: 10172039100, delta: 15759023
+[  901.242475] (finish_task_switch_handler) event code: 18  ; counter value: 454166717, delta: 948180
+[  901.242479] (finish_task_switch_handler) event code: 19  ; counter value: 3178513866, delta: 8349789
+[  901.242483] (finish_task_switch_handler) event code: 20  ; counter value: 4864512738, delta: 15372016
+[  901.242486] (finish_task_switch_handler) event code: 21  ; counter value: 28517162, delta: 105357
+[  901.242490] (finish_task_switch_handler) event code: 25  ; counter value: 119320526, delta: 443541
+[  901.253739] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.253748] (finish_task_switch_handler) current program counter: 187650295503188
+[  901.253751] (finish_task_switch_handler) target pid is prev
+[  901.253763] (finish_task_switch_handler) event code: 1  ; counter value: 64807, delta: 10
+[  901.253767] (finish_task_switch_handler) event code: 2  ; counter value: 2137, delta: 0
+[  901.253771] (finish_task_switch_handler) event code: 3  ; counter value: 832974, delta: 1031
+[  901.253791] (finish_task_switch_handler) event code: 4  ; counter value: 2724070882, delta: 4532243
+[  901.253803] (finish_task_switch_handler) event code: 5  ; counter value: 348402, delta: 602
+[  901.253814] (finish_task_switch_handler) event code: 6  ; counter value: 1944744819, delta: 3237171
+[  901.253826] (finish_task_switch_handler) event code: 7  ; counter value: 777536449, delta: 1086597
+[  901.253837] (finish_task_switch_handler) event code: 8  ; counter value: 7777339905, delta: 6254507
+[  901.253847] (finish_task_switch_handler) event code: 17  ; counter value: 10179068783, delta: 7029683
+[  901.253858] (finish_task_switch_handler) event code: 18  ; counter value: 454240360, delta: 73643
+[  901.253862] (finish_task_switch_handler) event code: 19  ; counter value: 3178513866, delta: 0
+[  901.253866] (finish_task_switch_handler) event code: 20  ; counter value: 4864512738, delta: 0
+[  901.253870] (finish_task_switch_handler) event code: 21  ; counter value: 28517162, delta: 0
+[  901.253874] (finish_task_switch_handler) event code: 25  ; counter value: 119320526, delta: 0
+[  901.284366] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.284374] (finish_task_switch_handler) current program counter: 187650295503160
+[  901.284376] (finish_task_switch_handler) target pid is prev
+[  901.284395] (finish_task_switch_handler) event code: 1  ; counter value: 64825, delta: 18
+[  901.284405] (finish_task_switch_handler) event code: 2  ; counter value: 2138, delta: 1
+[  901.284415] (finish_task_switch_handler) event code: 3  ; counter value: 832974, delta: 0
+[  901.284419] (finish_task_switch_handler) event code: 4  ; counter value: 2725078969, delta: 1008087
+[  901.284423] (finish_task_switch_handler) event code: 5  ; counter value: 348758, delta: 356
+[  901.284427] (finish_task_switch_handler) event code: 6  ; counter value: 1947838866, delta: 3094047
+[  901.284430] (finish_task_switch_handler) event code: 7  ; counter value: 779258694, delta: 1722245
+[  901.284434] (finish_task_switch_handler) event code: 8  ; counter value: 7799432767, delta: 22092862
+[  901.284437] (finish_task_switch_handler) event code: 17  ; counter value: 10209183566, delta: 30114783
+[  901.284441] (finish_task_switch_handler) event code: 18  ; counter value: 455826192, delta: 1585832
+[  901.284445] (finish_task_switch_handler) event code: 19  ; counter value: 3190295776, delta: 11781910
+[  901.284454] (finish_task_switch_handler) event code: 20  ; counter value: 4879815220, delta: 15302482
+[  901.284464] (finish_task_switch_handler) event code: 21  ; counter value: 28593609, delta: 76447
+[  901.284474] (finish_task_switch_handler) event code: 25  ; counter value: 119572805, delta: 252279
+[  901.294540] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.294548] (finish_task_switch_handler) current program counter: 187650295503200
+[  901.294550] (finish_task_switch_handler) target pid is prev
+[  901.294574] (finish_task_switch_handler) event code: 1  ; counter value: 64842, delta: 17
+[  901.294586] (finish_task_switch_handler) event code: 2  ; counter value: 2138, delta: 0
+[  901.294597] (finish_task_switch_handler) event code: 3  ; counter value: 834064, delta: 1090
+[  901.294608] (finish_task_switch_handler) event code: 4  ; counter value: 2727643645, delta: 2564676
+[  901.294619] (finish_task_switch_handler) event code: 5  ; counter value: 348875, delta: 117
+[  901.294623] (finish_task_switch_handler) event code: 6  ; counter value: 1947838866, delta: 0
+[  901.294629] (finish_task_switch_handler) event code: 7  ; counter value: 779258694, delta: 0
+[  901.294633] (finish_task_switch_handler) event code: 8  ; counter value: 7799432767, delta: 0
+[  901.294637] (finish_task_switch_handler) event code: 17  ; counter value: 10209183566, delta: 0
+[  901.294641] (finish_task_switch_handler) event code: 18  ; counter value: 455826192, delta: 0
+[  901.294645] (finish_task_switch_handler) event code: 19  ; counter value: 3190295776, delta: 0
+[  901.294649] (finish_task_switch_handler) event code: 20  ; counter value: 4882225000, delta: 2409780
+[  901.294654] (finish_task_switch_handler) event code: 21  ; counter value: 28623137, delta: 29528
+[  901.294664] (finish_task_switch_handler) event code: 25  ; counter value: 119731863, delta: 159058
+[  901.315223] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.315231] (finish_task_switch_handler) current program counter: 187650295503216
+[  901.315234] (finish_task_switch_handler) target pid is prev
+[  901.315242] (finish_task_switch_handler) event code: 1  ; counter value: 64855, delta: 13
+[  901.315246] (finish_task_switch_handler) event code: 2  ; counter value: 2139, delta: 1
+[  901.315250] (finish_task_switch_handler) event code: 3  ; counter value: 836005, delta: 1941
+[  901.315254] (finish_task_switch_handler) event code: 4  ; counter value: 2734960492, delta: 7316847
+[  901.315270] (finish_task_switch_handler) event code: 5  ; counter value: 349946, delta: 1071
+[  901.315282] (finish_task_switch_handler) event code: 6  ; counter value: 1953472497, delta: 5633631
+[  901.315293] (finish_task_switch_handler) event code: 7  ; counter value: 781046992, delta: 1788298
+[  901.315303] (finish_task_switch_handler) event code: 8  ; counter value: 7812544112, delta: 13111345
+[  901.315314] (finish_task_switch_handler) event code: 17  ; counter value: 10223986112, delta: 14802546
+[  901.315325] (finish_task_switch_handler) event code: 18  ; counter value: 456237065, delta: 410873
+[  901.315335] (finish_task_switch_handler) event code: 19  ; counter value: 3191529723, delta: 1233947
+[  901.315339] (finish_task_switch_handler) event code: 20  ; counter value: 4882225000, delta: 0
+[  901.315344] (finish_task_switch_handler) event code: 21  ; counter value: 28623137, delta: 0
+[  901.315348] (finish_task_switch_handler) event code: 25  ; counter value: 119757401, delta: 25538
+[  901.372365] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.372373] (finish_task_switch_handler) current program counter: 187650295503200
+[  901.372375] (finish_task_switch_handler) target pid is prev
+[  901.372382] (finish_task_switch_handler) event code: 1  ; counter value: 64885, delta: 30
+[  901.372386] (finish_task_switch_handler) event code: 2  ; counter value: 2142, delta: 3
+[  901.372390] (finish_task_switch_handler) event code: 3  ; counter value: 838022, delta: 2017
+[  901.372393] (finish_task_switch_handler) event code: 4  ; counter value: 2745197319, delta: 10236827
+[  901.372397] (finish_task_switch_handler) event code: 5  ; counter value: 351301, delta: 1355
+[  901.372410] (finish_task_switch_handler) event code: 6  ; counter value: 1961010379, delta: 7537882
+[  901.372421] (finish_task_switch_handler) event code: 7  ; counter value: 784056514, delta: 3009522
+[  901.372431] (finish_task_switch_handler) event code: 8  ; counter value: 7842601538, delta: 30057426
+[  901.372440] (finish_task_switch_handler) event code: 17  ; counter value: 10263037906, delta: 39051794
+[  901.372450] (finish_task_switch_handler) event code: 18  ; counter value: 457978551, delta: 1741486
+[  901.372460] (finish_task_switch_handler) event code: 19  ; counter value: 3203697016, delta: 12167293
+[  901.372469] (finish_task_switch_handler) event code: 20  ; counter value: 4900231023, delta: 18006023
+[  901.372473] (finish_task_switch_handler) event code: 21  ; counter value: 28729109, delta: 105972
+[  901.372477] (finish_task_switch_handler) event code: 25  ; counter value: 120199296, delta: 441895
+[  901.376366] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.376375] (finish_task_switch_handler) current program counter: 187650295503152
+[  901.376379] (finish_task_switch_handler) target pid is prev
+[  901.376387] (finish_task_switch_handler) event code: 1  ; counter value: 64885, delta: 0
+[  901.376393] (finish_task_switch_handler) event code: 2  ; counter value: 2142, delta: 0
+[  901.376401] (finish_task_switch_handler) event code: 3  ; counter value: 838022, delta: 0
+[  901.376406] (finish_task_switch_handler) event code: 4  ; counter value: 2745197319, delta: 0
+[  901.376411] (finish_task_switch_handler) event code: 5  ; counter value: 351301, delta: 0
+[  901.376416] (finish_task_switch_handler) event code: 6  ; counter value: 1962157788, delta: 1147409
+[  901.376435] (finish_task_switch_handler) event code: 7  ; counter value: 784515478, delta: 458964
+[  901.376447] (finish_task_switch_handler) event code: 8  ; counter value: 7847191185, delta: 4589647
+[  901.376458] (finish_task_switch_handler) event code: 17  ; counter value: 10268151233, delta: 5113327
+[  901.376470] (finish_task_switch_handler) event code: 18  ; counter value: 458208042, delta: 229491
+[  901.376480] (finish_task_switch_handler) event code: 19  ; counter value: 3205303389, delta: 1606373
+[  901.376494] (finish_task_switch_handler) event code: 20  ; counter value: 4902694900, delta: 2463877
+[  901.376504] (finish_task_switch_handler) event code: 21  ; counter value: 28729109, delta: 0
+[  901.376507] (finish_task_switch_handler) event code: 25  ; counter value: 120199296, delta: 0
+[  901.427301] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.427309] (finish_task_switch_handler) current program counter: 187650295503148
+[  901.427311] (finish_task_switch_handler) target pid is prev
+[  901.427320] (finish_task_switch_handler) event code: 1  ; counter value: 64927, delta: 42
+[  901.427324] (finish_task_switch_handler) event code: 2  ; counter value: 2144, delta: 2
+[  901.427330] (finish_task_switch_handler) event code: 3  ; counter value: 842215, delta: 4193
+[  901.427334] (finish_task_switch_handler) event code: 4  ; counter value: 2755111215, delta: 9913896
+[  901.427355] (finish_task_switch_handler) event code: 5  ; counter value: 352527, delta: 1226
+[  901.427366] (finish_task_switch_handler) event code: 6  ; counter value: 1967747826, delta: 5590038
+[  901.427377] (finish_task_switch_handler) event code: 7  ; counter value: 786722675, delta: 2207197
+[  901.427388] (finish_task_switch_handler) event code: 8  ; counter value: 7868934739, delta: 21743554
+[  901.427399] (finish_task_switch_handler) event code: 17  ; counter value: 10298404471, delta: 30253238
+[  901.427410] (finish_task_switch_handler) event code: 18  ; counter value: 459531956, delta: 1323914
+[  901.427421] (finish_task_switch_handler) event code: 19  ; counter value: 3214632773, delta: 9329384
+[  901.427425] (finish_task_switch_handler) event code: 20  ; counter value: 4917556149, delta: 14861249
+[  901.427430] (finish_task_switch_handler) event code: 21  ; counter value: 28830893, delta: 101784
+[  901.427434] (finish_task_switch_handler) event code: 25  ; counter value: 120655204, delta: 455908
+[  901.480332] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.480341] (finish_task_switch_handler) current program counter: 187650295503200
+[  901.480344] (finish_task_switch_handler) target pid is prev
+[  901.480350] (finish_task_switch_handler) event code: 1  ; counter value: 64967, delta: 40
+[  901.480354] (finish_task_switch_handler) event code: 2  ; counter value: 2146, delta: 2
+[  901.480358] (finish_task_switch_handler) event code: 3  ; counter value: 847719, delta: 5504
+[  901.480362] (finish_task_switch_handler) event code: 4  ; counter value: 2765172817, delta: 10061602
+[  901.480375] (finish_task_switch_handler) event code: 5  ; counter value: 353660, delta: 1133
+[  901.480386] (finish_task_switch_handler) event code: 6  ; counter value: 1974026497, delta: 6278671
+[  901.480395] (finish_task_switch_handler) event code: 7  ; counter value: 789210236, delta: 2487561
+[  901.480405] (finish_task_switch_handler) event code: 8  ; counter value: 7893690767, delta: 24756028
+[  901.480415] (finish_task_switch_handler) event code: 17  ; counter value: 10331516781, delta: 33112310
+[  901.480425] (finish_task_switch_handler) event code: 18  ; counter value: 461004958, delta: 1473002
+[  901.480435] (finish_task_switch_handler) event code: 19  ; counter value: 3224932054, delta: 10299281
+[  901.480438] (finish_task_switch_handler) event code: 20  ; counter value: 4935417220, delta: 17861071
+[  901.480442] (finish_task_switch_handler) event code: 21  ; counter value: 28934697, delta: 103804
+[  901.480445] (finish_task_switch_handler) event code: 25  ; counter value: 121105150, delta: 449946
+[  901.500339] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.500346] (finish_task_switch_handler) current program counter: 187650295503200
+[  901.500349] (finish_task_switch_handler) target pid is prev
+[  901.500367] (finish_task_switch_handler) event code: 1  ; counter value: 64970, delta: 3
+[  901.500371] (finish_task_switch_handler) event code: 2  ; counter value: 2146, delta: 0
+[  901.500375] (finish_task_switch_handler) event code: 3  ; counter value: 847719, delta: 0
+[  901.500379] (finish_task_switch_handler) event code: 4  ; counter value: 2765172817, delta: 0
+[  901.500383] (finish_task_switch_handler) event code: 5  ; counter value: 353865, delta: 205
+[  901.500386] (finish_task_switch_handler) event code: 6  ; counter value: 1976366370, delta: 2339873
+[  901.500390] (finish_task_switch_handler) event code: 7  ; counter value: 790629992, delta: 1419756
+[  901.500394] (finish_task_switch_handler) event code: 8  ; counter value: 7912707474, delta: 19016707
+[  901.500397] (finish_task_switch_handler) event code: 17  ; counter value: 10358221668, delta: 26704887
+[  901.500408] (finish_task_switch_handler) event code: 18  ; counter value: 462197713, delta: 1192755
+[  901.500418] (finish_task_switch_handler) event code: 19  ; counter value: 3233280996, delta: 8348942
+[  901.500428] (finish_task_switch_handler) event code: 20  ; counter value: 4945783095, delta: 10365875
+[  901.500438] (finish_task_switch_handler) event code: 21  ; counter value: 28980095, delta: 45398
+[  901.500448] (finish_task_switch_handler) event code: 25  ; counter value: 121232282, delta: 127132
+[  901.544344] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.544351] (finish_task_switch_handler) current program counter: 187650295503164
+[  901.544354] (finish_task_switch_handler) target pid is prev
+[  901.544361] (finish_task_switch_handler) event code: 1  ; counter value: 65008, delta: 38
+[  901.544365] (finish_task_switch_handler) event code: 2  ; counter value: 2148, delta: 2
+[  901.544368] (finish_task_switch_handler) event code: 3  ; counter value: 850064, delta: 2345
+[  901.544372] (finish_task_switch_handler) event code: 4  ; counter value: 2775332298, delta: 10159481
+[  901.544376] (finish_task_switch_handler) event code: 5  ; counter value: 355164, delta: 1299
+[  901.544379] (finish_task_switch_handler) event code: 6  ; counter value: 1983636265, delta: 7269895
+[  901.544393] (finish_task_switch_handler) event code: 7  ; counter value: 793055139, delta: 2425147
+[  901.544403] (finish_task_switch_handler) event code: 8  ; counter value: 7932154440, delta: 19446966
+[  901.544413] (finish_task_switch_handler) event code: 17  ; counter value: 10379995161, delta: 21773493
+[  901.544422] (finish_task_switch_handler) event code: 18  ; counter value: 463159411, delta: 961698
+[  901.544432] (finish_task_switch_handler) event code: 19  ; counter value: 3239976748, delta: 6695752
+[  901.544442] (finish_task_switch_handler) event code: 20  ; counter value: 4955976040, delta: 10192945
+[  901.544451] (finish_task_switch_handler) event code: 21  ; counter value: 29039803, delta: 59708
+[  901.544455] (finish_task_switch_handler) event code: 25  ; counter value: 121549215, delta: 316933
+[  901.568349] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.568357] (finish_task_switch_handler) current program counter: 187650295503196
+[  901.568360] (finish_task_switch_handler) target pid is prev
+[  901.568377] (finish_task_switch_handler) event code: 1  ; counter value: 65035, delta: 27
+[  901.568388] (finish_task_switch_handler) event code: 2  ; counter value: 2149, delta: 1
+[  901.568398] (finish_task_switch_handler) event code: 3  ; counter value: 850383, delta: 319
+[  901.568407] (finish_task_switch_handler) event code: 4  ; counter value: 2775332298, delta: 0
+[  901.568411] (finish_task_switch_handler) event code: 5  ; counter value: 355164, delta: 0
+[  901.568415] (finish_task_switch_handler) event code: 6  ; counter value: 1983636265, delta: 0
+[  901.568419] (finish_task_switch_handler) event code: 7  ; counter value: 793522851, delta: 467712
+[  901.568422] (finish_task_switch_handler) event code: 8  ; counter value: 7941605743, delta: 9451303
+[  901.568427] (finish_task_switch_handler) event code: 17  ; counter value: 10395810279, delta: 15815118
+[  901.568431] (finish_task_switch_handler) event code: 18  ; counter value: 464111255, delta: 951844
+[  901.568434] (finish_task_switch_handler) event code: 19  ; counter value: 3248346338, delta: 8369590
+[  901.568438] (finish_task_switch_handler) event code: 20  ; counter value: 4971356404, delta: 15380364
+[  901.568448] (finish_task_switch_handler) event code: 21  ; counter value: 29130150, delta: 90347
+[  901.568457] (finish_task_switch_handler) event code: 25  ; counter value: 121867602, delta: 318387
+[  901.612343] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.612351] (finish_task_switch_handler) current program counter: 187650295503184
+[  901.612353] (finish_task_switch_handler) target pid is prev
+[  901.612370] (finish_task_switch_handler) event code: 1  ; counter value: 65056, delta: 21
+[  901.612374] (finish_task_switch_handler) event code: 2  ; counter value: 2152, delta: 3
+[  901.612378] (finish_task_switch_handler) event code: 3  ; counter value: 852095, delta: 1712
+[  901.612381] (finish_task_switch_handler) event code: 4  ; counter value: 2785426684, delta: 10094386
+[  901.612385] (finish_task_switch_handler) event code: 5  ; counter value: 356465, delta: 1301
+[  901.612389] (finish_task_switch_handler) event code: 6  ; counter value: 1990871306, delta: 7235041
+[  901.612392] (finish_task_switch_handler) event code: 7  ; counter value: 796419940, delta: 2897089
+[  901.612396] (finish_task_switch_handler) event code: 8  ; counter value: 7970624119, delta: 29018376
+[  901.612400] (finish_task_switch_handler) event code: 17  ; counter value: 10433713370, delta: 37903091
+[  901.612410] (finish_task_switch_handler) event code: 18  ; counter value: 465560038, delta: 1448783
+[  901.612420] (finish_task_switch_handler) event code: 19  ; counter value: 3256802428, delta: 8456090
+[  901.612430] (finish_task_switch_handler) event code: 20  ; counter value: 4981831311, delta: 10474907
+[  901.612439] (finish_task_switch_handler) event code: 21  ; counter value: 29190665, delta: 60515
+[  901.612449] (finish_task_switch_handler) event code: 25  ; counter value: 122114310, delta: 246708
+[  901.622437] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.622447] (finish_task_switch_handler) current program counter: 187650295503164
+[  901.622450] (finish_task_switch_handler) target pid is prev
+[  901.622473] (finish_task_switch_handler) event code: 1  ; counter value: 65069, delta: 13
+[  901.622484] (finish_task_switch_handler) event code: 2  ; counter value: 2154, delta: 2
+[  901.622496] (finish_task_switch_handler) event code: 3  ; counter value: 852264, delta: 169
+[  901.622500] (finish_task_switch_handler) event code: 4  ; counter value: 2785426684, delta: 0
+[  901.622504] (finish_task_switch_handler) event code: 5  ; counter value: 356465, delta: 0
+[  901.622508] (finish_task_switch_handler) event code: 6  ; counter value: 1990871306, delta: 0
+[  901.622513] (finish_task_switch_handler) event code: 7  ; counter value: 796419940, delta: 0
+[  901.622517] (finish_task_switch_handler) event code: 8  ; counter value: 7970624119, delta: 0
+[  901.622521] (finish_task_switch_handler) event code: 17  ; counter value: 10433713370, delta: 0
+[  901.622525] (finish_task_switch_handler) event code: 18  ; counter value: 465791868, delta: 231830
+[  901.622529] (finish_task_switch_handler) event code: 19  ; counter value: 3260105672, delta: 3303244
+[  901.622540] (finish_task_switch_handler) event code: 20  ; counter value: 4988273230, delta: 6441919
+[  901.622551] (finish_task_switch_handler) event code: 21  ; counter value: 29228225, delta: 37560
+[  901.622562] (finish_task_switch_handler) event code: 25  ; counter value: 122272480, delta: 158170
+[  901.624450] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.624458] (finish_task_switch_handler) current program counter: 187650295503172
+[  901.624461] (finish_task_switch_handler) target pid is prev
+[  901.624485] (finish_task_switch_handler) event code: 1  ; counter value: 65073, delta: 4
+[  901.624497] (finish_task_switch_handler) event code: 2  ; counter value: 2154, delta: 0
+[  901.624508] (finish_task_switch_handler) event code: 3  ; counter value: 852403, delta: 139
+[  901.624518] (finish_task_switch_handler) event code: 4  ; counter value: 2785426684, delta: 0
+[  901.624522] (finish_task_switch_handler) event code: 5  ; counter value: 356465, delta: 0
+[  901.624526] (finish_task_switch_handler) event code: 6  ; counter value: 1990871306, delta: 0
+[  901.624530] (finish_task_switch_handler) event code: 7  ; counter value: 796419940, delta: 0
+[  901.624534] (finish_task_switch_handler) event code: 8  ; counter value: 7970624119, delta: 0
+[  901.624538] (finish_task_switch_handler) event code: 17  ; counter value: 10433713370, delta: 0
+[  901.624541] (finish_task_switch_handler) event code: 18  ; counter value: 465791868, delta: 0
+[  901.624545] (finish_task_switch_handler) event code: 19  ; counter value: 3260105672, delta: 0
+[  901.624549] (finish_task_switch_handler) event code: 20  ; counter value: 4989278868, delta: 1005638
+[  901.624559] (finish_task_switch_handler) event code: 21  ; counter value: 29234491, delta: 6266
+[  901.624570] (finish_task_switch_handler) event code: 25  ; counter value: 122299400, delta: 26920
+[  901.656347] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.656354] (finish_task_switch_handler) current program counter: 187650295503168
+[  901.656357] (finish_task_switch_handler) target pid is prev
+[  901.656364] (finish_task_switch_handler) event code: 1  ; counter value: 65095, delta: 22
+[  901.656368] (finish_task_switch_handler) event code: 2  ; counter value: 2156, delta: 2
+[  901.656372] (finish_task_switch_handler) event code: 3  ; counter value: 854615, delta: 2212
+[  901.656375] (finish_task_switch_handler) event code: 4  ; counter value: 2795287825, delta: 9861141
+[  901.656379] (finish_task_switch_handler) event code: 5  ; counter value: 357759, delta: 1294
+[  901.656383] (finish_task_switch_handler) event code: 6  ; counter value: 1998087865, delta: 7216559
+[  901.656396] (finish_task_switch_handler) event code: 7  ; counter value: 798820899, delta: 2400959
+[  901.656406] (finish_task_switch_handler) event code: 8  ; counter value: 7989934492, delta: 19310373
+[  901.656416] (finish_task_switch_handler) event code: 17  ; counter value: 10455384747, delta: 21671377
+[  901.656426] (finish_task_switch_handler) event code: 18  ; counter value: 466516296, delta: 724428
+[  901.656436] (finish_task_switch_handler) event code: 19  ; counter value: 3263508961, delta: 3403289
+[  901.656445] (finish_task_switch_handler) event code: 20  ; counter value: 4991869194, delta: 2590326
+[  901.656455] (finish_task_switch_handler) event code: 21  ; counter value: 29248337, delta: 13846
+[  901.656459] (finish_task_switch_handler) event code: 25  ; counter value: 122423912, delta: 124512
+[  901.692348] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.692357] (finish_task_switch_handler) current program counter: 187650295503220
+[  901.692360] (finish_task_switch_handler) target pid is prev
+[  901.692367] (finish_task_switch_handler) event code: 1  ; counter value: 65130, delta: 35
+[  901.692381] (finish_task_switch_handler) event code: 2  ; counter value: 2160, delta: 4
+[  901.692391] (finish_task_switch_handler) event code: 3  ; counter value: 857601, delta: 2986
+[  901.692401] (finish_task_switch_handler) event code: 4  ; counter value: 2800433857, delta: 5146032
+[  901.692411] (finish_task_switch_handler) event code: 5  ; counter value: 358181, delta: 422
+[  901.692421] (finish_task_switch_handler) event code: 6  ; counter value: 1999318737, delta: 1230872
+[  901.692430] (finish_task_switch_handler) event code: 7  ; counter value: 799287460, delta: 466561
+[  901.692434] (finish_task_switch_handler) event code: 8  ; counter value: 7999326580, delta: 9392088
+[  901.692438] (finish_task_switch_handler) event code: 17  ; counter value: 10471303257, delta: 15918510
+[  901.692441] (finish_task_switch_handler) event code: 18  ; counter value: 467469970, delta: 953674
+[  901.692445] (finish_task_switch_handler) event code: 19  ; counter value: 3271894246, delta: 8385285
+[  901.692449] (finish_task_switch_handler) event code: 20  ; counter value: 5007229457, delta: 15360263
+[  901.692452] (finish_task_switch_handler) event code: 21  ; counter value: 29353470, delta: 105133
+[  901.692456] (finish_task_switch_handler) event code: 25  ; counter value: 122863974, delta: 440062
+[  901.744330] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.744338] (finish_task_switch_handler) current program counter: 187650295503172
+[  901.744340] (finish_task_switch_handler) target pid is prev
+[  901.744359] (finish_task_switch_handler) event code: 1  ; counter value: 65159, delta: 29
+[  901.744369] (finish_task_switch_handler) event code: 2  ; counter value: 2160, delta: 0
+[  901.744380] (finish_task_switch_handler) event code: 3  ; counter value: 860068, delta: 2467
+[  901.744389] (finish_task_switch_handler) event code: 4  ; counter value: 2808855869, delta: 8422012
+[  901.744399] (finish_task_switch_handler) event code: 5  ; counter value: 359253, delta: 1072
+[  901.744409] (finish_task_switch_handler) event code: 6  ; counter value: 2005252322, delta: 5933585
+[  901.744412] (finish_task_switch_handler) event code: 7  ; counter value: 802146918, delta: 2859458
+[  901.744416] (finish_task_switch_handler) event code: 8  ; counter value: 8028120369, delta: 28793789
+[  901.744420] (finish_task_switch_handler) event code: 17  ; counter value: 10508932965, delta: 37629708
+[  901.744424] (finish_task_switch_handler) event code: 18  ; counter value: 469161190, delta: 1691220
+[  901.744428] (finish_task_switch_handler) event code: 19  ; counter value: 3283748759, delta: 11854513
+[  901.744431] (finish_task_switch_handler) event code: 20  ; counter value: 5025223303, delta: 17993846
+[  901.744435] (finish_task_switch_handler) event code: 21  ; counter value: 29460419, delta: 106949
+[  901.744438] (finish_task_switch_handler) event code: 25  ; counter value: 123298174, delta: 434200
+[  901.792352] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.792360] (finish_task_switch_handler) current program counter: 187650295503152
+[  901.792362] (finish_task_switch_handler) target pid is prev
+[  901.792380] (finish_task_switch_handler) event code: 1  ; counter value: 65190, delta: 31
+[  901.792390] (finish_task_switch_handler) event code: 2  ; counter value: 2164, delta: 4
+[  901.792401] (finish_task_switch_handler) event code: 3  ; counter value: 861829, delta: 1761
+[  901.792410] (finish_task_switch_handler) event code: 4  ; counter value: 2815446514, delta: 6590645
+[  901.792414] (finish_task_switch_handler) event code: 5  ; counter value: 360319, delta: 1066
+[  901.792418] (finish_task_switch_handler) event code: 6  ; counter value: 2012364854, delta: 7112532
+[  901.792422] (finish_task_switch_handler) event code: 7  ; counter value: 805002325, delta: 2855407
+[  901.792425] (finish_task_switch_handler) event code: 8  ; counter value: 8056778158, delta: 28657789
+[  901.792429] (finish_task_switch_handler) event code: 17  ; counter value: 10546783675, delta: 37850710
+[  901.792433] (finish_task_switch_handler) event code: 18  ; counter value: 470847330, delta: 1686140
+[  901.792436] (finish_task_switch_handler) event code: 19  ; counter value: 3295631092, delta: 11882333
+[  901.792440] (finish_task_switch_handler) event code: 20  ; counter value: 5043370278, delta: 18146975
+[  901.792450] (finish_task_switch_handler) event code: 21  ; counter value: 29552086, delta: 91667
+[  901.792460] (finish_task_switch_handler) event code: 25  ; counter value: 123609816, delta: 311642
+[  901.816355] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.816363] (finish_task_switch_handler) current program counter: 187650295503184
+[  901.816366] (finish_task_switch_handler) target pid is prev
+[  901.816372] (finish_task_switch_handler) event code: 1  ; counter value: 65206, delta: 16
+[  901.816376] (finish_task_switch_handler) event code: 2  ; counter value: 2164, delta: 0
+[  901.816380] (finish_task_switch_handler) event code: 3  ; counter value: 863993, delta: 2164
+[  901.816383] (finish_task_switch_handler) event code: 4  ; counter value: 2825470032, delta: 10023518
+[  901.816397] (finish_task_switch_handler) event code: 5  ; counter value: 361380, delta: 1061
+[  901.816407] (finish_task_switch_handler) event code: 6  ; counter value: 2017185878, delta: 4821024
+[  901.816417] (finish_task_switch_handler) event code: 7  ; counter value: 806452208, delta: 1449883
+[  901.816427] (finish_task_switch_handler) event code: 8  ; counter value: 8066438631, delta: 9660473
+[  901.816437] (finish_task_switch_handler) event code: 17  ; counter value: 10557611567, delta: 10827892
+[  901.816446] (finish_task_switch_handler) event code: 18  ; counter value: 471088536, delta: 241206
+[  901.816456] (finish_task_switch_handler) event code: 19  ; counter value: 3295631092, delta: 0
+[  901.816460] (finish_task_switch_handler) event code: 20  ; counter value: 5043370278, delta: 0
+[  901.816463] (finish_task_switch_handler) event code: 21  ; counter value: 29566732, delta: 14646
+[  901.816467] (finish_task_switch_handler) event code: 25  ; counter value: 123732705, delta: 122889
+[  901.824360] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.824369] (finish_task_switch_handler) current program counter: 187650295503168
+[  901.824371] (finish_task_switch_handler) target pid is prev
+[  901.824378] (finish_task_switch_handler) event code: 1  ; counter value: 65206, delta: 0
+[  901.824382] (finish_task_switch_handler) event code: 2  ; counter value: 2164, delta: 0
+[  901.824386] (finish_task_switch_handler) event code: 3  ; counter value: 863993, delta: 0
+[  901.824390] (finish_task_switch_handler) event code: 4  ; counter value: 2825470032, delta: 0
+[  901.824393] (finish_task_switch_handler) event code: 5  ; counter value: 361581, delta: 201
+[  901.824397] (finish_task_switch_handler) event code: 6  ; counter value: 2019544289, delta: 2358411
+[  901.824411] (finish_task_switch_handler) event code: 7  ; counter value: 807395573, delta: 943365
+[  901.824421] (finish_task_switch_handler) event code: 8  ; counter value: 8075872300, delta: 9433669
+[  901.824431] (finish_task_switch_handler) event code: 17  ; counter value: 10568146631, delta: 10535064
+[  901.824441] (finish_task_switch_handler) event code: 18  ; counter value: 471560236, delta: 471700
+[  901.824451] (finish_task_switch_handler) event code: 19  ; counter value: 3298932868, delta: 3301776
+[  901.824460] (finish_task_switch_handler) event code: 20  ; counter value: 5045986271, delta: 2615993
+[  901.824470] (finish_task_switch_handler) event code: 21  ; counter value: 29566732, delta: 0
+[  901.824474] (finish_task_switch_handler) event code: 25  ; counter value: 123732705, delta: 0
+[  901.848352] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.848360] (finish_task_switch_handler) current program counter: 187650295503196
+[  901.848363] (finish_task_switch_handler) target pid is prev
+[  901.848379] (finish_task_switch_handler) event code: 1  ; counter value: 65218, delta: 12
+[  901.848390] (finish_task_switch_handler) event code: 2  ; counter value: 2164, delta: 0
+[  901.848400] (finish_task_switch_handler) event code: 3  ; counter value: 864345, delta: 352
+[  901.848409] (finish_task_switch_handler) event code: 4  ; counter value: 2825470032, delta: 0
+[  901.848413] (finish_task_switch_handler) event code: 5  ; counter value: 361581, delta: 0
+[  901.848417] (finish_task_switch_handler) event code: 6  ; counter value: 2019544289, delta: 0
+[  901.848420] (finish_task_switch_handler) event code: 7  ; counter value: 807852962, delta: 457389
+[  901.848424] (finish_task_switch_handler) event code: 8  ; counter value: 8085218498, delta: 9346198
+[  901.848428] (finish_task_switch_handler) event code: 17  ; counter value: 10584082819, delta: 15936188
+[  901.848432] (finish_task_switch_handler) event code: 18  ; counter value: 472513554, delta: 953318
+[  901.848435] (finish_task_switch_handler) event code: 19  ; counter value: 3307281636, delta: 8348768
+[  901.848439] (finish_task_switch_handler) event code: 20  ; counter value: 5061297293, delta: 15311022
+[  901.848449] (finish_task_switch_handler) event code: 21  ; counter value: 29656827, delta: 90095
+[  901.848459] (finish_task_switch_handler) event code: 25  ; counter value: 124055565, delta: 322860
+[  901.872348] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.872356] (finish_task_switch_handler) current program counter: 187650295503180
+[  901.872359] (finish_task_switch_handler) target pid is prev
+[  901.872365] (finish_task_switch_handler) event code: 1  ; counter value: 65235, delta: 17
+[  901.872369] (finish_task_switch_handler) event code: 2  ; counter value: 2166, delta: 2
+[  901.872373] (finish_task_switch_handler) event code: 3  ; counter value: 866281, delta: 1936
+[  901.872376] (finish_task_switch_handler) event code: 4  ; counter value: 2835547476, delta: 10077444
+[  901.872390] (finish_task_switch_handler) event code: 5  ; counter value: 362629, delta: 1048
+[  901.872400] (finish_task_switch_handler) event code: 6  ; counter value: 2024400113, delta: 4855824
+[  901.872410] (finish_task_switch_handler) event code: 7  ; counter value: 809314275, delta: 1461313
+[  901.872420] (finish_task_switch_handler) event code: 8  ; counter value: 8094945893, delta: 9727395
+[  901.872429] (finish_task_switch_handler) event code: 17  ; counter value: 10594979388, delta: 10896569
+[  901.872439] (finish_task_switch_handler) event code: 18  ; counter value: 472755512, delta: 241958
+[  901.872449] (finish_task_switch_handler) event code: 19  ; counter value: 3307281636, delta: 0
+[  901.872453] (finish_task_switch_handler) event code: 20  ; counter value: 5061297293, delta: 0
+[  901.872456] (finish_task_switch_handler) event code: 21  ; counter value: 29671458, delta: 14631
+[  901.872460] (finish_task_switch_handler) event code: 25  ; counter value: 124180565, delta: 125000
+[  901.916339] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.916346] (finish_task_switch_handler) current program counter: 187650295503216
+[  901.916349] (finish_task_switch_handler) target pid is prev
+[  901.916355] (finish_task_switch_handler) event code: 1  ; counter value: 65270, delta: 35
+[  901.916371] (finish_task_switch_handler) event code: 2  ; counter value: 2169, delta: 3
+[  901.916381] (finish_task_switch_handler) event code: 3  ; counter value: 867992, delta: 1711
+[  901.916391] (finish_task_switch_handler) event code: 4  ; counter value: 2840658754, delta: 5111278
+[  901.916401] (finish_task_switch_handler) event code: 5  ; counter value: 363260, delta: 631
+[  901.916411] (finish_task_switch_handler) event code: 6  ; counter value: 2027944506, delta: 3544393
+[  901.916421] (finish_task_switch_handler) event code: 7  ; counter value: 810718789, delta: 1404514
+[  901.916424] (finish_task_switch_handler) event code: 8  ; counter value: 8113706352, delta: 18760459
+[  901.916428] (finish_task_switch_handler) event code: 17  ; counter value: 10621698561, delta: 26719173
+[  901.916432] (finish_task_switch_handler) event code: 18  ; counter value: 474180707, delta: 1425195
+[  901.916436] (finish_task_switch_handler) event code: 19  ; counter value: 3318963102, delta: 11681466
+[  901.916439] (finish_task_switch_handler) event code: 20  ; counter value: 5079274847, delta: 17977554
+[  901.916443] (finish_task_switch_handler) event code: 21  ; counter value: 29777404, delta: 105946
+[  901.916447] (finish_task_switch_handler) event code: 25  ; counter value: 124622962, delta: 442397
+[  901.938166] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.938175] (finish_task_switch_handler) current program counter: 187650295503148
+[  901.938177] (finish_task_switch_handler) target pid is prev
+[  901.938185] (finish_task_switch_handler) event code: 1  ; counter value: 65270, delta: 0
+[  901.938189] (finish_task_switch_handler) event code: 2  ; counter value: 2169, delta: 0
+[  901.938193] (finish_task_switch_handler) event code: 3  ; counter value: 868754, delta: 762
+[  901.938197] (finish_task_switch_handler) event code: 4  ; counter value: 2845666389, delta: 5007635
+[  901.938200] (finish_task_switch_handler) event code: 5  ; counter value: 364094, delta: 834
+[  901.938204] (finish_task_switch_handler) event code: 6  ; counter value: 2033912433, delta: 5967927
+[  901.938218] (finish_task_switch_handler) event code: 7  ; counter value: 813328572, delta: 2609783
+[  901.938229] (finish_task_switch_handler) event code: 8  ; counter value: 8135109977, delta: 21403625
+[  901.938239] (finish_task_switch_handler) event code: 17  ; counter value: 10645611094, delta: 23912533
+[  901.938249] (finish_task_switch_handler) event code: 18  ; counter value: 475011614, delta: 830907
+[  901.938259] (finish_task_switch_handler) event code: 19  ; counter value: 3323089708, delta: 4126606
+[  901.938269] (finish_task_switch_handler) event code: 20  ; counter value: 5083070998, delta: 3796151
+[  901.938280] (finish_task_switch_handler) event code: 21  ; counter value: 29784382, delta: 6978
+[  901.938284] (finish_task_switch_handler) event code: 25  ; counter value: 124622962, delta: 0
+[  901.980344] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  901.980352] (finish_task_switch_handler) current program counter: 187650295503148
+[  901.980354] (finish_task_switch_handler) target pid is prev
+[  901.980361] (finish_task_switch_handler) event code: 1  ; counter value: 65302, delta: 32
+[  901.980365] (finish_task_switch_handler) event code: 2  ; counter value: 2171, delta: 2
+[  901.980368] (finish_task_switch_handler) event code: 3  ; counter value: 872573, delta: 3819
+[  901.980382] (finish_task_switch_handler) event code: 4  ; counter value: 2854147909, delta: 8481520
+[  901.980392] (finish_task_switch_handler) event code: 5  ; counter value: 364950, delta: 856
+[  901.980402] (finish_task_switch_handler) event code: 6  ; counter value: 2037542184, delta: 3629751
+[  901.980412] (finish_task_switch_handler) event code: 7  ; counter value: 814533102, delta: 1204530
+[  901.980422] (finish_task_switch_handler) event code: 8  ; counter value: 8147188805, delta: 12078828
+[  901.980432] (finish_task_switch_handler) event code: 17  ; counter value: 10664532755, delta: 18921661
+[  901.980442] (finish_task_switch_handler) event code: 18  ; counter value: 475857745, delta: 846131
+[  901.980445] (finish_task_switch_handler) event code: 19  ; counter value: 3330714548, delta: 7624840
+[  901.980449] (finish_task_switch_handler) event code: 20  ; counter value: 5097220313, delta: 14149315
+[  901.980453] (finish_task_switch_handler) event code: 21  ; counter value: 29882691, delta: 98309
+[  901.980458] (finish_task_switch_handler) event code: 25  ; counter value: 125070274, delta: 447312
+[  902.001739] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.001748] (finish_task_switch_handler) current program counter: 187650295503172
+[  902.001751] (finish_task_switch_handler) target pid is prev
+[  902.001770] (finish_task_switch_handler) event code: 1  ; counter value: 65312, delta: 10
+[  902.001774] (finish_task_switch_handler) event code: 2  ; counter value: 2171, delta: 0
+[  902.001778] (finish_task_switch_handler) event code: 3  ; counter value: 872573, delta: 0
+[  902.001782] (finish_task_switch_handler) event code: 4  ; counter value: 2855778219, delta: 1630310
+[  902.001786] (finish_task_switch_handler) event code: 5  ; counter value: 365364, delta: 414
+[  902.001789] (finish_task_switch_handler) event code: 6  ; counter value: 2041121772, delta: 3579588
+[  902.001793] (finish_task_switch_handler) event code: 7  ; counter value: 816434689, delta: 1901587
+[  902.001797] (finish_task_switch_handler) event code: 8  ; counter value: 8170923687, delta: 23734882
+[  902.001809] (finish_task_switch_handler) event code: 17  ; counter value: 10692954631, delta: 28421876
+[  902.001819] (finish_task_switch_handler) event code: 18  ; counter value: 477124358, delta: 1266613
+[  902.001830] (finish_task_switch_handler) event code: 19  ; counter value: 3337950189, delta: 7235641
+[  902.001841] (finish_task_switch_handler) event code: 20  ; counter value: 5105761823, delta: 8541510
+[  902.001851] (finish_task_switch_handler) event code: 21  ; counter value: 29917209, delta: 34518
+[  902.001862] (finish_task_switch_handler) event code: 25  ; counter value: 125151750, delta: 81476
+[  902.056351] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.056359] (finish_task_switch_handler) current program counter: 187650295503168
+[  902.056362] (finish_task_switch_handler) target pid is prev
+[  902.056379] (finish_task_switch_handler) event code: 1  ; counter value: 65362, delta: 50
+[  902.056383] (finish_task_switch_handler) event code: 2  ; counter value: 2173, delta: 2
+[  902.056386] (finish_task_switch_handler) event code: 3  ; counter value: 874841, delta: 2268
+[  902.056390] (finish_task_switch_handler) event code: 4  ; counter value: 2865990626, delta: 10212407
+[  902.056394] (finish_task_switch_handler) event code: 5  ; counter value: 366665, delta: 1301
+[  902.056398] (finish_task_switch_handler) event code: 6  ; counter value: 2048391568, delta: 7269796
+[  902.056402] (finish_task_switch_handler) event code: 7  ; counter value: 819351608, delta: 2916919
+[  902.056406] (finish_task_switch_handler) event code: 8  ; counter value: 8200112238, delta: 29188551
+[  902.056417] (finish_task_switch_handler) event code: 17  ; counter value: 10728791827, delta: 35837196
+[  902.056426] (finish_task_switch_handler) event code: 18  ; counter value: 478721878, delta: 1597520
+[  902.056436] (finish_task_switch_handler) event code: 19  ; counter value: 3349115011, delta: 11164822
+[  902.056446] (finish_task_switch_handler) event code: 20  ; counter value: 5122720307, delta: 16958484
+[  902.056455] (finish_task_switch_handler) event code: 21  ; counter value: 30016965, delta: 99756
+[  902.056465] (finish_task_switch_handler) event code: 25  ; counter value: 125569648, delta: 417898
+[  902.253833] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.253841] (finish_task_switch_handler) current program counter: 187650295503200
+[  902.253844] (finish_task_switch_handler) target pid is prev
+[  902.253851] (finish_task_switch_handler) event code: 1  ; counter value: 65527, delta: 165
+[  902.253866] (finish_task_switch_handler) event code: 2  ; counter value: 2208, delta: 35
+[  902.253876] (finish_task_switch_handler) event code: 3  ; counter value: 887502, delta: 12661
+[  902.253887] (finish_task_switch_handler) event code: 4  ; counter value: 2901445721, delta: 35455095
+[  902.253897] (finish_task_switch_handler) event code: 5  ; counter value: 370939, delta: 4274
+[  902.253907] (finish_task_switch_handler) event code: 6  ; counter value: 2071161390, delta: 22769822
+[  902.253918] (finish_task_switch_handler) event code: 7  ; counter value: 827944956, delta: 8593348
+[  902.253921] (finish_task_switch_handler) event code: 8  ; counter value: 8283856274, delta: 83744036
+[  902.253925] (finish_task_switch_handler) event code: 17  ; counter value: 10845179055, delta: 116387228
+[  902.253929] (finish_task_switch_handler) event code: 18  ; counter value: 484100407, delta: 5378529
+[  902.253934] (finish_task_switch_handler) event code: 19  ; counter value: 3388567441, delta: 39452430
+[  902.253937] (finish_task_switch_handler) event code: 20  ; counter value: 5185947361, delta: 63227054
+[  902.253941] (finish_task_switch_handler) event code: 21  ; counter value: 30401640, delta: 384675
+[  902.253945] (finish_task_switch_handler) event code: 25  ; counter value: 127309800, delta: 1740152
+[  902.272341] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.272350] (finish_task_switch_handler) current program counter: 187650295503148
+[  902.272352] (finish_task_switch_handler) target pid is prev
+[  902.272359] (finish_task_switch_handler) event code: 1  ; counter value: 65527, delta: 0
+[  902.272363] (finish_task_switch_handler) event code: 2  ; counter value: 2209, delta: 1
+[  902.272367] (finish_task_switch_handler) event code: 3  ; counter value: 888755, delta: 1253
+[  902.272371] (finish_task_switch_handler) event code: 4  ; counter value: 2905691295, delta: 4245574
+[  902.272374] (finish_task_switch_handler) event code: 5  ; counter value: 371718, delta: 779
+[  902.272378] (finish_task_switch_handler) event code: 6  ; counter value: 2076613808, delta: 5452418
+[  902.272392] (finish_task_switch_handler) event code: 7  ; counter value: 830125928, delta: 2180972
+[  902.272402] (finish_task_switch_handler) event code: 8  ; counter value: 8302905203, delta: 19048929
+[  902.272412] (finish_task_switch_handler) event code: 17  ; counter value: 10866588332, delta: 21409277
+[  902.272422] (finish_task_switch_handler) event code: 18  ; counter value: 484824003, delta: 723596
+[  902.272431] (finish_task_switch_handler) event code: 19  ; counter value: 3391955257, delta: 3387816
+[  902.272441] (finish_task_switch_handler) event code: 20  ; counter value: 5188502575, delta: 2555214
+[  902.272451] (finish_task_switch_handler) event code: 21  ; counter value: 30401640, delta: 0
+[  902.272454] (finish_task_switch_handler) event code: 25  ; counter value: 127309800, delta: 0
+[  902.288921] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.288929] (finish_task_switch_handler) current program counter: 187650295503180
+[  902.288932] (finish_task_switch_handler) target pid is prev
+[  902.288950] (finish_task_switch_handler) event code: 1  ; counter value: 65537, delta: 10
+[  902.288962] (finish_task_switch_handler) event code: 2  ; counter value: 2209, delta: 0
+[  902.288966] (finish_task_switch_handler) event code: 3  ; counter value: 888755, delta: 0
+[  902.288970] (finish_task_switch_handler) event code: 4  ; counter value: 2905691295, delta: 0
+[  902.288974] (finish_task_switch_handler) event code: 5  ; counter value: 371718, delta: 0
+[  902.288977] (finish_task_switch_handler) event code: 6  ; counter value: 2076613808, delta: 0
+[  902.288981] (finish_task_switch_handler) event code: 7  ; counter value: 830589082, delta: 463154
+[  902.288985] (finish_task_switch_handler) event code: 8  ; counter value: 8312265450, delta: 9360247
+[  902.288989] (finish_task_switch_handler) event code: 17  ; counter value: 10882497973, delta: 15909641
+[  902.288992] (finish_task_switch_handler) event code: 18  ; counter value: 485775444, delta: 951441
+[  902.289002] (finish_task_switch_handler) event code: 19  ; counter value: 3398816530, delta: 6861273
+[  902.289013] (finish_task_switch_handler) event code: 20  ; counter value: 5198984079, delta: 10481504
+[  902.289023] (finish_task_switch_handler) event code: 21  ; counter value: 30463134, delta: 61494
+[  902.289033] (finish_task_switch_handler) event code: 25  ; counter value: 127511578, delta: 201778
+[  902.311414] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.311422] (finish_task_switch_handler) current program counter: 187650295503172
+[  902.311424] (finish_task_switch_handler) target pid is prev
+[  902.311432] (finish_task_switch_handler) event code: 1  ; counter value: 65573, delta: 36
+[  902.311449] (finish_task_switch_handler) event code: 2  ; counter value: 2212, delta: 3
+[  902.311462] (finish_task_switch_handler) event code: 3  ; counter value: 890616, delta: 1861
+[  902.311472] (finish_task_switch_handler) event code: 4  ; counter value: 2911945555, delta: 6254260
+[  902.311483] (finish_task_switch_handler) event code: 5  ; counter value: 372325, delta: 607
+[  902.311493] (finish_task_switch_handler) event code: 6  ; counter value: 2078734933, delta: 2121125
+[  902.311504] (finish_task_switch_handler) event code: 7  ; counter value: 830954288, delta: 365206
+[  902.311508] (finish_task_switch_handler) event code: 8  ; counter value: 8312265450, delta: 0
+[  902.311512] (finish_task_switch_handler) event code: 17  ; counter value: 10882497973, delta: 0
+[  902.311516] (finish_task_switch_handler) event code: 18  ; counter value: 485775444, delta: 0
+[  902.311520] (finish_task_switch_handler) event code: 19  ; counter value: 3400175659, delta: 1359129
+[  902.311524] (finish_task_switch_handler) event code: 20  ; counter value: 5203670544, delta: 4686465
+[  902.311528] (finish_task_switch_handler) event code: 21  ; counter value: 30505079, delta: 41945
+[  902.311532] (finish_task_switch_handler) event code: 25  ; counter value: 127753377, delta: 241799
+[  902.364336] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.364344] (finish_task_switch_handler) current program counter: 187650295503208
+[  902.364347] (finish_task_switch_handler) target pid is prev
+[  902.364354] (finish_task_switch_handler) event code: 1  ; counter value: 65619, delta: 46
+[  902.364368] (finish_task_switch_handler) event code: 2  ; counter value: 2215, delta: 3
+[  902.364378] (finish_task_switch_handler) event code: 3  ; counter value: 892590, delta: 1974
+[  902.364388] (finish_task_switch_handler) event code: 4  ; counter value: 2920566173, delta: 8620618
+[  902.364398] (finish_task_switch_handler) event code: 5  ; counter value: 373436, delta: 1111
+[  902.364408] (finish_task_switch_handler) event code: 6  ; counter value: 2084828458, delta: 6093525
+[  902.364417] (finish_task_switch_handler) event code: 7  ; counter value: 833388392, delta: 2434104
+[  902.364421] (finish_task_switch_handler) event code: 8  ; counter value: 8340629814, delta: 28364364
+[  902.364425] (finish_task_switch_handler) event code: 17  ; counter value: 10919829548, delta: 37331575
+[  902.364428] (finish_task_switch_handler) event code: 18  ; counter value: 487440086, delta: 1664642
+[  902.364432] (finish_task_switch_handler) event code: 19  ; counter value: 3411894030, delta: 11718371
+[  902.364436] (finish_task_switch_handler) event code: 20  ; counter value: 5221576084, delta: 17905540
+[  902.364439] (finish_task_switch_handler) event code: 21  ; counter value: 30610784, delta: 105705
+[  902.364443] (finish_task_switch_handler) event code: 25  ; counter value: 128189923, delta: 436546
+[  902.460338] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.460346] (finish_task_switch_handler) current program counter: 187650295503164
+[  902.460348] (finish_task_switch_handler) target pid is prev
+[  902.460367] (finish_task_switch_handler) event code: 1  ; counter value: 65673, delta: 54
+[  902.460378] (finish_task_switch_handler) event code: 2  ; counter value: 2219, delta: 4
+[  902.460388] (finish_task_switch_handler) event code: 3  ; counter value: 895581, delta: 2991
+[  902.460391] (finish_task_switch_handler) event code: 4  ; counter value: 2935753824, delta: 15187651
+[  902.460395] (finish_task_switch_handler) event code: 5  ; counter value: 375624, delta: 2188
+[  902.460399] (finish_task_switch_handler) event code: 6  ; counter value: 2098083337, delta: 13254879
+[  902.460402] (finish_task_switch_handler) event code: 7  ; counter value: 839176897, delta: 5788505
+[  902.460406] (finish_task_switch_handler) event code: 8  ; counter value: 8398402788, delta: 57772974
+[  902.460410] (finish_task_switch_handler) event code: 17  ; counter value: 10995362010, delta: 75532462
+[  902.460413] (finish_task_switch_handler) event code: 18  ; counter value: 490813342, delta: 3373256
+[  902.460417] (finish_task_switch_handler) event code: 19  ; counter value: 3435544618, delta: 23650588
+[  902.460427] (finish_task_switch_handler) event code: 20  ; counter value: 5254866552, delta: 33290468
+[  902.460437] (finish_task_switch_handler) event code: 21  ; counter value: 30792483, delta: 181699
+[  902.460446] (finish_task_switch_handler) event code: 25  ; counter value: 128877784, delta: 687861
+[  902.556355] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.556363] (finish_task_switch_handler) current program counter: 187650295503152
+[  902.556365] (finish_task_switch_handler) target pid is prev
+[  902.556372] (finish_task_switch_handler) event code: 1  ; counter value: 65739, delta: 66
+[  902.556376] (finish_task_switch_handler) event code: 2  ; counter value: 2223, delta: 4
+[  902.556380] (finish_task_switch_handler) event code: 3  ; counter value: 903095, delta: 7514
+[  902.556383] (finish_task_switch_handler) event code: 4  ; counter value: 2955926369, delta: 20172545
+[  902.556387] (finish_task_switch_handler) event code: 5  ; counter value: 378219, delta: 2595
+[  902.556391] (finish_task_switch_handler) event code: 6  ; counter value: 2112536101, delta: 14452764
+[  902.556394] (finish_task_switch_handler) event code: 7  ; counter value: 844940243, delta: 5763346
+[  902.556408] (finish_task_switch_handler) event code: 8  ; counter value: 8451264057, delta: 52861269
+[  902.556419] (finish_task_switch_handler) event code: 17  ; counter value: 11059941965, delta: 64579955
+[  902.556429] (finish_task_switch_handler) event code: 18  ; counter value: 493461466, delta: 2648124
+[  902.556439] (finish_task_switch_handler) event code: 19  ; counter value: 3452358596, delta: 16813978
+[  902.556449] (finish_task_switch_handler) event code: 20  ; counter value: 5280165876, delta: 25299324
+[  902.556458] (finish_task_switch_handler) event code: 21  ; counter value: 30940838, delta: 148355
+[  902.556468] (finish_task_switch_handler) event code: 25  ; counter value: 129499651, delta: 621867
+[  902.597622] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.597629] (finish_task_switch_handler) current program counter: 187650295503216
+[  902.597633] (finish_task_switch_handler) target pid is prev
+[  902.597640] (finish_task_switch_handler) event code: 1  ; counter value: 65786, delta: 47
+[  902.597644] (finish_task_switch_handler) event code: 2  ; counter value: 2228, delta: 5
+[  902.597648] (finish_task_switch_handler) event code: 3  ; counter value: 906941, delta: 3846
+[  902.597662] (finish_task_switch_handler) event code: 4  ; counter value: 2964917678, delta: 8991309
+[  902.597672] (finish_task_switch_handler) event code: 5  ; counter value: 379145, delta: 926
+[  902.597682] (finish_task_switch_handler) event code: 6  ; counter value: 2116544798, delta: 4008697
+[  902.597693] (finish_task_switch_handler) event code: 7  ; counter value: 846060947, delta: 1120704
+[  902.597703] (finish_task_switch_handler) event code: 8  ; counter value: 8462274066, delta: 11010009
+[  902.597714] (finish_task_switch_handler) event code: 17  ; counter value: 11077323627, delta: 17381662
+[  902.597725] (finish_task_switch_handler) event code: 18  ; counter value: 494232507, delta: 771041
+[  902.597729] (finish_task_switch_handler) event code: 19  ; counter value: 3458895495, delta: 6536899
+[  902.597732] (finish_task_switch_handler) event code: 20  ; counter value: 5292738165, delta: 12572289
+[  902.597736] (finish_task_switch_handler) event code: 21  ; counter value: 31029440, delta: 88602
+[  902.597740] (finish_task_switch_handler) event code: 25  ; counter value: 129937731, delta: 438080
+[  902.672357] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.672365] (finish_task_switch_handler) current program counter: 187650295503164
+[  902.672368] (finish_task_switch_handler) target pid is prev
+[  902.672387] (finish_task_switch_handler) event code: 1  ; counter value: 65836, delta: 50
+[  902.672390] (finish_task_switch_handler) event code: 2  ; counter value: 2232, delta: 4
+[  902.672394] (finish_task_switch_handler) event code: 3  ; counter value: 911695, delta: 4754
+[  902.672398] (finish_task_switch_handler) event code: 4  ; counter value: 2976082436, delta: 11164758
+[  902.672401] (finish_task_switch_handler) event code: 5  ; counter value: 380771, delta: 1626
+[  902.672405] (finish_task_switch_handler) event code: 6  ; counter value: 2126986096, delta: 10441298
+[  902.672409] (finish_task_switch_handler) event code: 7  ; counter value: 850697358, delta: 4636411
+[  902.672412] (finish_task_switch_handler) event code: 8  ; counter value: 8513497623, delta: 51223557
+[  902.672422] (finish_task_switch_handler) event code: 17  ; counter value: 11140166398, delta: 62842771
+[  902.672432] (finish_task_switch_handler) event code: 18  ; counter value: 497041302, delta: 2808795
+[  902.672442] (finish_task_switch_handler) event code: 19  ; counter value: 3477454757, delta: 18559262
+[  902.672452] (finish_task_switch_handler) event code: 20  ; counter value: 5318653122, delta: 25914957
+[  902.672461] (finish_task_switch_handler) event code: 21  ; counter value: 31165006, delta: 135566
+[  902.672471] (finish_task_switch_handler) event code: 25  ; counter value: 130428495, delta: 490764
+[  902.682948] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.682956] (finish_task_switch_handler) current program counter: 187650295503160
+[  902.682959] (finish_task_switch_handler) target pid is prev
+[  902.682981] (finish_task_switch_handler) event code: 1  ; counter value: 65856, delta: 20
+[  902.682992] (finish_task_switch_handler) event code: 2  ; counter value: 2232, delta: 0
+[  902.682997] (finish_task_switch_handler) event code: 3  ; counter value: 911695, delta: 0
+[  902.683001] (finish_task_switch_handler) event code: 4  ; counter value: 2976082436, delta: 0
+[  902.683006] (finish_task_switch_handler) event code: 5  ; counter value: 380771, delta: 0
+[  902.683010] (finish_task_switch_handler) event code: 6  ; counter value: 2126986096, delta: 0
+[  902.683014] (finish_task_switch_handler) event code: 7  ; counter value: 850697358, delta: 0
+[  902.683018] (finish_task_switch_handler) event code: 8  ; counter value: 8513497623, delta: 0
+[  902.683022] (finish_task_switch_handler) event code: 17  ; counter value: 11145346396, delta: 5179998
+[  902.683026] (finish_task_switch_handler) event code: 18  ; counter value: 497513615, delta: 472313
+[  902.683037] (finish_task_switch_handler) event code: 19  ; counter value: 3481863819, delta: 4409062
+[  902.683048] (finish_task_switch_handler) event code: 20  ; counter value: 5325425049, delta: 6771927
+[  902.683060] (finish_task_switch_handler) event code: 21  ; counter value: 31204515, delta: 39509
+[  902.683071] (finish_task_switch_handler) event code: 25  ; counter value: 130594069, delta: 165574
+[  902.736348] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.736356] (finish_task_switch_handler) current program counter: 187650295503152
+[  902.736359] (finish_task_switch_handler) target pid is prev
+[  902.736376] (finish_task_switch_handler) event code: 1  ; counter value: 65906, delta: 50
+[  902.736386] (finish_task_switch_handler) event code: 2  ; counter value: 2238, delta: 6
+[  902.736390] (finish_task_switch_handler) event code: 3  ; counter value: 915018, delta: 3323
+[  902.736394] (finish_task_switch_handler) event code: 4  ; counter value: 2986126772, delta: 10044336
+[  902.736398] (finish_task_switch_handler) event code: 5  ; counter value: 382039, delta: 1268
+[  902.736402] (finish_task_switch_handler) event code: 6  ; counter value: 2134174797, delta: 7188701
+[  902.736405] (finish_task_switch_handler) event code: 7  ; counter value: 853577112, delta: 2879754
+[  902.736409] (finish_task_switch_handler) event code: 8  ; counter value: 8542303856, delta: 28806233
+[  902.736413] (finish_task_switch_handler) event code: 17  ; counter value: 11183295428, delta: 37949032
+[  902.736416] (finish_task_switch_handler) event code: 18  ; counter value: 499203803, delta: 1690188
+[  902.736426] (finish_task_switch_handler) event code: 19  ; counter value: 3492523742, delta: 10659923
+[  902.736436] (finish_task_switch_handler) event code: 20  ; counter value: 5341705635, delta: 16280586
+[  902.736446] (finish_task_switch_handler) event code: 21  ; counter value: 31299824, delta: 95309
+[  902.736456] (finish_task_switch_handler) event code: 25  ; counter value: 130992736, delta: 398667
+[  902.756365] (finish_task_switch_handler) target program hit (PID: 3065), reading counter values
+[  902.756373] (finish_task_switch_handler) current program counter: 187650295503172
+[  902.756376] (finish_task_switch_handler) target pid is prev
+[  902.756384] (finish_task_switch_handler) event code: 1  ; counter value: 65927, delta: 21
+[  902.756406] (finish_task_switch_handler) event code: 2  ; counter value: 2241, delta: 3
+[  902.756417] (finish_task_switch_handler) event code: 3  ; counter value: 916734, delta: 1716
+[  902.756427] (finish_task_switch_handler) event code: 4  ; counter value: 2991161112, delta: 5034340
+[  902.756437] (finish_task_switch_handler) event code: 5  ; counter value: 382462, delta: 423
+[  902.756447] (finish_task_switch_handler) event code: 6  ; counter value: 2135383977, delta: 1209180
+[  902.756457] (finish_task_switch_handler) event code: 7  ; counter value: 853577112, delta: 0
+[  902.756461] (finish_task_switch_handler) event code: 8  ; counter value: 8542303856, delta: 0
+[  902.756465] (finish_task_switch_handler) event code: 17  ; counter value: 11183295428, delta: 0
+[  902.756470] (finish_task_switch_handler) event code: 18  ; counter value: 499203803, delta: 0
+[  902.756474] (finish_task_switch_handler) event code: 19  ; counter value: 3494140865, delta: 1617123
+[  902.756478] (finish_task_switch_handler) event code: 20  ; counter value: 5346729795, delta: 5024160
+[  902.756481] (finish_task_switch_handler) event code: 21  ; counter value: 31344275, delta: 44451
+[  902.756485] (finish_task_switch_handler) event code: 25  ; counter value: 131248401, delta: 255665

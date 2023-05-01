@@ -36,6 +36,7 @@ def parse_dmesg(filename):
     pid_data = defaultdict(list)
     prev_counter_values = defaultdict(int)
     program_counter = None
+    pid = None
 
     for line in data.split('\n'):
         pid_match = re.search(pid_regex, line)
@@ -75,12 +76,19 @@ def parse_dmesg(filename):
         json.dump(pid_data, json_file, indent=4)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python parser.py <filename>")
-        sys.exit(1)
+    if len(sys.argv) == 2:
+        # parse one file by providing path in arg
+        input_filename = sys.argv[1]
+        parse_dmesg(input_filename)
+    else:
+        # parse all files in the directory
+        input_dir = "data/dmesg_dumps"
+        for filename in os.listdir(input_dir):
+            if filename.endswith(".txt"):
+                input_filename = os.path.join(input_dir, filename)
+                parse_dmesg(input_filename)
     
-    input_filename = sys.argv[1]
-    parse_dmesg(input_filename)
+    
 
 
     
