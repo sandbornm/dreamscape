@@ -47,20 +47,21 @@ static u32 event_codes[] = {
     BUS_ACCESS,
 };
 
-#define INVALID_PID (-1)
 
+#define INVALID_PID (-1)
 static int target_pid = INVALID_PID;
 static struct perf_counter_data *perf_data;
 static struct task_struct *monitored_task = NULL;
-static struct proc_dir_entry *proc_entry_pid;
-
+//static struct proc_dir_entry *proc_entry_pid;
 #define NUM_EVENTS (sizeof(event_codes) / sizeof(event_codes[0]))
 
+// store the perf_event data for all events of interest
 struct perf_counter_data {
     struct perf_event *events[NUM_EVENTS];
     u64 prev_values[NUM_EVENTS];
 };
 
+// Initialize the perf_event data for the given pid, only init counters on cpu 0 for now
 static struct perf_counter_data *init_perf_counters(pid_t pid)
 {
     struct perf_counter_data *perf_data;
@@ -88,6 +89,7 @@ static struct perf_counter_data *init_perf_counters(pid_t pid)
         attr.config = event_codes[i];  // Set the event code
         attr.exclude_kernel = 1;
         attr.inherit = 0;
+        // todo: consider adding sample_period to reduce frequency
 
         perf_data->events[i] = perf_event_create_kernel_counter(&attr, cpu, NULL, NULL, NULL);
 
@@ -131,6 +133,7 @@ static void cleanup_perf_counters(struct perf_counter_data *perf_data)
     printk(KERN_INFO " (cleanup_perf_counters) Finished cleaning up multi performance counters\n");
 }
 
+// handle when the proc file listening for new PIDs is written
 ssize_t pid_proc_write(struct file *file, const char __user *buf, size_t count, loff_t *ppos) {
     int new_pid;
     char temp[32];
@@ -176,10 +179,12 @@ ssize_t pid_proc_write(struct file *file, const char __user *buf, size_t count, 
     return count;
 }
 
+
+// called at the end of every task switch by the OS
 int finish_task_switch_handler(struct kprobe *p, struct pt_regs *regs) {
 
     u64 enabled, running, new_value, delta;
-    u64 counter_values[NUM_EVENTS];
+    //u64 counter_values[NUM_EVENTS];
     int i;
     u64 program_counter;
 
@@ -210,16 +215,20 @@ int finish_task_switch_handler(struct kprobe *p, struct pt_regs *regs) {
                 printk(KERN_ERR "(finish_task_switch_handler) perf_event_read_value failed for event code: %u\n", event_codes[i]);
                 return -EFAULT;
             } else {
-                delta = new_value - perf_data->prev_values[i];
-                printk(KERN_INFO "(finish_task_switch_handler) event code: %u  ; counter value: %llu, delta: %llu\n", event_codes[i], new_value, delta);
-                counter_values[i] = delta;
-                perf_data->prev_values[i] = new_value;
+                if (next->pid == target_pid) { // target is scheduled on cpu
+                    perf_data->prev_values[i] = new_value;
+                } else { // target is scheduled off cpu
+                    delta = new_value - perf_data->prev_values[i];
+                    printk(KERN_INFO "(finish_task_switch_handler) event code: %u  ; counter value: %llu, delta: %llu\n", event_codes[i], new_value, delta);
+                    perf_data->prev_values[i] = new_value;
+                }
             }
         }
     }
     return 0;
 }
 
+// file operations for the proc file
 static const struct file_operations pid_proc_fops = {
     .write = pid_proc_write,
 };
