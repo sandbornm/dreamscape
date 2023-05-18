@@ -1,0 +1,2 @@
+[ 2531.057331]  (pid_proc_write) new target_pid: 2287
+[ 2531.057346] get_pid_task failed

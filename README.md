@@ -105,3 +105,35 @@ CPU revision	: 4
 ```
 
 View [module commands](./module_commands.md) for instructions on running this module
+
+## Usage: 
+
+The `test_mod.sh` script takes the name of a binary under `dreamscape/test_bins/bins/arm64`; the name of a binary in this folder is sufficient. This script will run the binary on cpu core 0 and wait for it to terminate. During execution, the delta of the performance counter values for a number of hardware events will be recorded, keyed by the program counter value. Upon program termination, these counter values which were printk'd to dmesg, will be written to a text file with the name of the program by its pid indicated in the filename. Additionally, this script will write the name of the program along with its pid to the file called `pid_bin_record` in the `...monitor_v3` folder.
+
+The `data/dmesg_dumps/dmesg_parser.py` is a python script that will convert all .txt files without corresponding .json files into a file with the following structure:
+
+```
+
+ "2973": [
+        {
+            "timestamp": 401.755036,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 2387,
+            "delta": 2387,
+            "program_counter": 281473327092708
+        },
+        {
+            "timestamp": 401.755048,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 28499087,
+            "delta": 28499087,
+            "program_counter": 281473327092708
+        },
+
+```
+
+with the pid as the key and the timestamp, event name, current counter value, change from last reading, and program counter value including in the keyed dictionary.
+
+the script `data/dmesg_dumps/draw_figs_all.py` will produce html figures depicting the program counter changes in an interactive plot that can be viewed in browser. These figures are in the `figs/` directory of the dmesg\_dumps subdirectory.
+
+ 

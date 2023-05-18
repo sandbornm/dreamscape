@@ -1,0 +1,81 @@
+{
+    "2344": [
+        {
+            "timestamp": 7358.909558,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 33,
+            "delta": 33,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909568,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 1024549,
+            "delta": 1024549,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909572,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 254,
+            "delta": 254,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909575,
+            "event_name": "LD_RETIRED",
+            "counter_value": 1470123,
+            "delta": 1470123,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909579,
+            "event_name": "ST_RETIRED",
+            "counter_value": 934870,
+            "delta": 934870,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909582,
+            "event_name": "INST_RETIRED",
+            "counter_value": 12487644,
+            "delta": 12487644,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909592,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 32217407,
+            "delta": 32217407,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909602,
+            "event_name": "BR_PRED",
+            "counter_value": 1933432,
+            "delta": 1933432,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909612,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 2384868,
+            "delta": 2384868,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909622,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 56,
+            "delta": 56,
+            "program_counter": 187650114693452
+        },
+        {
+            "timestamp": 7358.909631,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 117,
+            "delta": 117,
+            "program_counter": 187650114693452
+        }
+    ]
+}

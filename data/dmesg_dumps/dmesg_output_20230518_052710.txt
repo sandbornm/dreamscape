@@ -1,0 +1,539 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.4.0-1084-raspi (buildd@bos01-arm64-009) (gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)) #95-Ubuntu SMP PREEMPT Mon Apr 24 19:07:28 UTC 2023 (Ubuntu 5.4.0-1084.95-raspi 5.4.231)
+[    0.000000] Machine model: Raspberry Pi 3 Model B Plus Rev 1.3
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] Reserved memory: created CMA memory pool at 0x0000000037400000, size 64 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 242688
+[    0.000000]   DMA zone: 3792 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 242688 pages, LIFO batch:63
+[    0.000000] percpu: Embedded 32 pages/cpu s92504 r8192 d30376 u131072
+[    0.000000] pcpu-alloc: s92504 r8192 d30376 u131072 alloc=32*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 843419
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 238896
+[    0.000000] Kernel command line:  coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 bcm2708_fb.fbwidth=720 bcm2708_fb.fbheight=480 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  elevator=deadline net.ifnames=0 console=ttyS0,115200 dwc_otg.lpm_enable=0 console=tty1 root=LABEL=writable rootfstype=ext4 rootwait fixrtc quiet splash quiet splash
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 828528K/970752K available (13820K kernel code, 1280K rwdata, 4328K rodata, 4096K init, 1079K bss, 76688K reserved, 65536K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] ftrace: allocating 39471 entries in 155 pages
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000006] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000289] Console: colour dummy device 80x25
+[    0.000316] printk: console [tty1] enabled
+[    0.000376] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.000398] pid_max: default: 32768 minimum: 301
+[    0.001009] LSM: Security Framework initializing
+[    0.001099] Yama: becoming mindful.
+[    0.001287] AppArmor: AppArmor initialized
+[    0.001690] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001722] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001900] *** VALIDATE tmpfs ***
+[    0.002962] *** VALIDATE proc ***
+[    0.003428] cgroup: Disabling memory control group subsystem
+[    0.003713] *** VALIDATE cgroup1 ***
+[    0.003729] *** VALIDATE cgroup2 ***
+[    0.005829] ASID allocator initialised with 32768 entries
+[    0.006105] rcu: Hierarchical SRCU implementation.
+[    0.008870] EFI services will not be available.
+[    0.010162] smp: Bringing up secondary CPUs ...
+[    0.011637] Detected VIPT I-cache on CPU1
+[    0.011705] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.013708] Detected VIPT I-cache on CPU2
+[    0.013757] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.015654] Detected VIPT I-cache on CPU3
+[    0.015699] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.016236] smp: Brought up 1 node, 4 CPUs
+[    0.016250] SMP: Total of 4 processors activated.
+[    0.016264] CPU features: detected: 32-bit EL0 Support
+[    0.016279] CPU features: detected: CRC32 instructions
+[    0.022797] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.022810] CPU: All CPU(s) started at EL2
+[    0.022874] alternatives: patching kernel code
+[    0.025421] devtmpfs: initialized
+[    0.043964] Enabled cp15_barrier support
+[    0.043997] Enabled setend support
+[    0.044658] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.044688] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.048602] pinctrl core: initialized pinctrl subsystem
+[    0.049574] DMI not present or invalid.
+[    0.051028] NET: Registered protocol family 16
+[    0.060513] DMA: preallocated 1024 KiB pool for atomic allocations
+[    0.060553] audit: initializing netlink subsys (disabled)
+[    0.060931] audit: type=2000 audit(0.060:1): state=initialized audit_enabled=0 res=1
+[    0.061861] cpuidle: using governor ladder
+[    0.061922] cpuidle: using governor menu
+[    0.062779] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.063365] Serial: AMBA PL011 UART driver
+[    0.066456] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+[    0.080408] raspberrypi-firmware soc:firmware: Attached to firmware from 2021-11-18 16:18, variant start
+[    0.084423] raspberrypi-firmware soc:firmware: Firmware hash is d9b293558b4cef6aabedcc53c178e7604de90788
+[    0.124907] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.124927] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.124941] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.124954] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.139947] bcm2835-dma 3f007000.dma: DMA legacy API manager, dmachans=0x1
+[    0.143695] iommu: Default domain type: Translated 
+[    0.146491] SCSI subsystem initialized
+[    0.146860] libata version 3.00 loaded.
+[    0.147147] usbcore: registered new interface driver usbfs
+[    0.147212] usbcore: registered new interface driver hub
+[    0.147308] usbcore: registered new device driver usb
+[    0.147770] pps_core: LinuxPPS API ver. 1 registered
+[    0.147782] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.147810] PTP clock support registered
+[    0.148189] EDAC MC: Ver: 3.0.0
+[    0.150170] NetLabel: Initializing
+[    0.150183] NetLabel:  domain hash size = 128
+[    0.150194] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.150303] NetLabel:  unlabeled traffic allowed by default
+[    0.151759] clocksource: Switched to clocksource arch_sys_counter
+[    0.306964] *** VALIDATE bpf ***
+[    0.307463] VFS: Disk quotas dquot_6.6.0
+[    0.307613] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.307860] *** VALIDATE ramfs ***
+[    0.307917] *** VALIDATE hugetlbfs ***
+[    0.309136] AppArmor: AppArmor Filesystem Enabled
+[    0.309414] simple-framebuffer 3eaa9000.framebuffer: framebuffer at 0x3eaa9000, 0x151800 bytes, mapped to 0x(____ptrval____)
+[    0.309433] simple-framebuffer 3eaa9000.framebuffer: format=a8r8g8b8, mode=720x480x32, linelength=2880
+[    0.310172] Console: switching to colour frame buffer device 90x30
+[    0.316004] simple-framebuffer 3eaa9000.framebuffer: fb0: simplefb registered!
+[    0.330808] thermal_sys: Registered thermal governor 'fair_share'
+[    0.330816] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.330831] thermal_sys: Registered thermal governor 'step_wise'
+[    0.330842] thermal_sys: Registered thermal governor 'user_space'
+[    0.330853] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.331831] NET: Registered protocol family 2
+[    0.332173] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.333573] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.333635] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.333780] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.333980] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.334254] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.334309] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.334680] NET: Registered protocol family 1
+[    0.334745] NET: Registered protocol family 44
+[    0.334767] PCI: CLS 0 bytes, default 64
+[    0.335160] Trying to unpack rootfs image as initramfs...
+[    1.419941] Freeing initrd memory: 29732K
+[    1.421868] hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+[    1.422051] kvm [1]: IPA Size Limit: 40 bits
+[    1.423326] kvm [1]: Hyp mode initialized successfully
+[    1.428498] Initialise system trusted keyrings
+[    1.428575] Key type blacklist registered
+[    1.428937] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    1.441044] zbud: loaded
+[    1.444642] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.446377] fuse: init (API version 7.31)
+[    1.446587] *** VALIDATE fuse ***
+[    1.446606] *** VALIDATE fuse ***
+[    1.473052] Key type asymmetric registered
+[    1.473066] Asymmetric key parser 'x509' registered
+[    1.473128] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    1.473393] io scheduler mq-deadline registered
+[    1.478978] bcm2708_fb soc:fb: FB found 1 display(s)
+[    1.484458] bcm2708_fb soc:fb: Registered framebuffer for display 0, size 720x480
+[    1.579371] Serial: 8250/16550 driver, 1 ports, IRQ sharing enabled
+[    1.582440] bcm2835-rng 3f104000.rng: hwrng registered
+[    1.583174] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+[    1.584282] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+[    1.715927] loop: module loaded
+[    1.719561] spi-bcm2835 3f204000.spi: could not get clk: -517
+[    1.722304] tun: Universal TUN/TAP device driver, 1.6
+[    1.722881] PPP generic driver version 2.4.2
+[    1.723191] usbcore: registered new interface driver lan78xx
+[    1.723259] usbcore: registered new interface driver smsc95xx
+[    1.723309] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.723344] ehci-pci: EHCI PCI platform driver
+[    1.723410] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.723434] ohci-pci: OHCI PCI platform driver
+[    1.723487] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.723710] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    1.723980] dwc_otg: FIQ enabled
+[    1.723991] dwc_otg: NAK holdoff enabled
+[    1.724001] dwc_otg: FIQ split-transaction FSM enabled
+[    1.724015] Module dwc_common_port init
+[    1.724767] mousedev: PS/2 mouse device common for all mice
+[    1.725349] i2c /dev entries driver
+[    1.728536] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    1.728860] device-mapper: uevent: version 1.0.3
+[    1.729348] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.734560] sdhci: Secure Digital Host Controller Interface driver
+[    1.734566] sdhci: Copyright(c) Pierre Ossman
+[    1.734915] mmc-bcm2835 3f300000.mmcnr: could not get clk, deferring probe
+[    1.735224] sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+[    1.735329] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.737160] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.737375] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.738292] vchiq: vchiq_init_state: slot_zero = (____ptrval____)
+[    1.741318] drop_monitor: Initializing network drop monitor service
+[    1.742128] NET: Registered protocol family 10
+[    1.769558] Segment Routing with IPv6
+[    1.769658] NET: Registered protocol family 17
+[    1.769825] Key type dns_resolver registered
+[    1.770452] registered taskstats version 1
+[    1.770495] Loading compiled-in X.509 certificates
+[    1.773088] Loaded X.509 cert 'Build time autogenerated kernel key: e43d47ed26fc4f1b19aa0ab3a7edcdd9f0895a8b'
+[    1.775303] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.777574] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.777581] blacklist: Loading compiled-in revocation X.509 certificates
+[    1.777656] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.777715] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.777783] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.777841] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.777943] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.778025] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.778085] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.778144] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.778496] Key type ._fscrypt registered
+[    1.778501] Key type .fscrypt registered
+[    1.805101] cryptd: max_cpu_qlen set to 1000
+[    1.825523] Key type big_key registered
+[    1.854379] Key type encrypted registered
+[    1.854397] AppArmor: AppArmor sha1 policy hashing enabled
+[    1.854428] ima: No TPM chip found, activating TPM-bypass!
+[    1.854483] ima: Allocated hash algorithm: sha1
+[    1.854506] ima: No architecture policies found
+[    1.854548] evm: Initialising EVM extended attributes:
+[    1.854553] evm: security.selinux
+[    1.854558] evm: security.SMACK64
+[    1.854562] evm: security.SMACK64EXEC
+[    1.854567] evm: security.SMACK64TRANSMUTE
+[    1.854571] evm: security.SMACK64MMAP
+[    1.854575] evm: security.apparmor
+[    1.854580] evm: security.ima
+[    1.854584] evm: security.capability
+[    1.854589] evm: HMAC attrs: 0x1
+[    1.861387] uart-pl011 3f201000.serial: cts_event_workaround enabled
+[    1.861473] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 66, base_baud = 0) is a PL011 rev2
+[    1.863808] printk: console [ttyS0] disabled
+[    1.863852] 3f215040.serial: ttyS0 at MMIO 0x0 (irq = 61, base_baud = 50000000) is a 16550
+[    1.869735] printk: console [ttyS0] enabled
+[    1.870243] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    1.873262] mmc-bcm2835 3f300000.mmcnr: mmc_debug:0 mmc_debug2:0
+[    1.873272] mmc-bcm2835 3f300000.mmcnr: DMA channel allocated
+[    1.896807] sdhost: log_buf @ (____ptrval____) (eee34000)
+[    1.913520] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    1.915053] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.916588] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    1.919365] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    1.943772] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+[    1.945696] of_cfs_init
+[    1.945807] of_cfs_init: OK
+[    1.969847] Freeing unused kernel memory: 4096K
+[    1.977266] Checked W+X mappings: passed, no W+X pages found
+[    1.977277] Run /init as init process
+[    1.998864] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.001271] mmc1: new high speed SDIO card at address 0001
+[    2.001823] mmc0: new high speed SDHC card at address 0001
+[    2.002564] mmcblk0: mmc0:0001 EB1QT 29.8 GiB
+[    2.004620]  mmcblk0: p1 p2
+[    2.604063] usb_phy_generic phy: phy supply vcc not found, using dummy regulator
+[    2.750600] dwc2 3f980000.usb: 3f980000.usb supply vusb_d not found, using dummy regulator
+[    2.750697] dwc2 3f980000.usb: 3f980000.usb supply vusb_a not found, using dummy regulator
+[    2.959952] dwc2 3f980000.usb: EPs: 8, dedicated fifos, 4080 entries in SPRAM
+[    2.960354] dwc2 3f980000.usb: DWC OTG Controller
+[    2.960377] dwc2 3f980000.usb: new USB bus registered, assigned bus number 1
+[    2.960434] dwc2 3f980000.usb: irq 41, io mem 0x3f980000
+[    2.960682] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    2.960690] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.960696] usb usb1: Product: DWC OTG Controller
+[    2.960703] usb usb1: Manufacturer: Linux 5.4.0-1084-raspi dwc2_hsotg
+[    2.960709] usb usb1: SerialNumber: 3f980000.usb
+[    2.961319] hub 1-0:1.0: USB hub found
+[    2.961371] hub 1-0:1.0: 1 port detected
+[    3.259771] usb 1-1: new high-speed USB device number 2 using dwc2
+[    3.467933] usb 1-1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.467941] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.468477] hub 1-1:1.0: USB hub found
+[    3.468556] hub 1-1:1.0: 4 ports detected
+[    3.755763] usb 1-1.1: new high-speed USB device number 3 using dwc2
+[    3.856160] usb 1-1.1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+[    3.856167] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.856781] hub 1-1.1:1.0: USB hub found
+[    3.856903] hub 1-1.1:1.0: 3 ports detected
+[    4.551815] usb 1-1.1.1: new high-speed USB device number 4 using dwc2
+[    4.652433] usb 1-1.1.1: New USB device found, idVendor=0424, idProduct=7800, bcdDevice= 3.00
+[    4.652444] usb 1-1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    4.919046] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): No External EEPROM. Setting MAC Speed
+[    4.936617] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): int urb period 64
+[    4.947778] raid6: neonx8   gen()  1661 MB/s
+[    4.995745] raid6: neonx8   xor()  1619 MB/s
+[    5.043776] raid6: neonx4   gen()  1651 MB/s
+[    5.091779] raid6: neonx4   xor()  1627 MB/s
+[    5.139736] raid6: neonx2   gen()  1228 MB/s
+[    5.187745] raid6: neonx2   xor()  1329 MB/s
+[    5.235734] raid6: neonx1   gen()   718 MB/s
+[    5.283753] raid6: neonx1   xor()   940 MB/s
+[    5.331772] raid6: int64x8  gen()  1303 MB/s
+[    5.379740] raid6: int64x8  xor()   883 MB/s
+[    5.427742] raid6: int64x4  gen()  1097 MB/s
+[    5.475747] raid6: int64x4  xor()   824 MB/s
+[    5.523785] raid6: int64x2  gen()   682 MB/s
+[    5.571748] raid6: int64x2  xor()   657 MB/s
+[    5.619834] raid6: int64x1  gen()   387 MB/s
+[    5.667808] raid6: int64x1  xor()   472 MB/s
+[    5.667813] raid6: using algorithm neonx8 gen() 1661 MB/s
+[    5.667818] raid6: .... xor() 1619 MB/s, rmw enabled
+[    5.667823] raid6: using neon recovery algorithm
+[    5.674490] xor: measuring software checksum speed
+[    5.711741]    8regs     :  2732.000 MB/sec
+[    5.747763] random: crng init done
+[    5.751737]    32regs    :  3132.000 MB/sec
+[    5.791738]    arm64_neon:  2629.000 MB/sec
+[    5.791744] xor: using function: 32regs (3132.000 MB/sec)
+[    5.795077] async_tx: api initialized (async)
+[    6.045617] Btrfs loaded, crc32c=crc32c-generic
+[    6.471971] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    7.508579] systemd[1]: System time before build time, advancing clock.
+[    7.596824] systemd[1]: Inserted module 'autofs4'
+[    7.696470] systemd[1]: systemd 245.4-4ubuntu3.20 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[    7.697390] systemd[1]: Detected architecture arm64.
+[    7.793096] systemd[1]: Set hostname to <ubuntu>.
+[    9.282228] systemd[1]: Created slice system-modprobe.slice.
+[    9.284376] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[    9.286060] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    9.287546] systemd[1]: Created slice User and Session Slice.
+[    9.288061] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    9.296123] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    9.296436] systemd[1]: Reached target User and Group Name Lookups.
+[    9.296524] systemd[1]: Reached target Slices.
+[    9.296603] systemd[1]: Reached target Swap.
+[    9.297043] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    9.297593] systemd[1]: Listening on LVM2 poll daemon socket.
+[    9.297934] systemd[1]: Listening on multipathd control socket.
+[    9.298416] systemd[1]: Listening on Syslog Socket.
+[    9.298862] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    9.299129] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    9.300157] systemd[1]: Listening on Journal Audit Socket.
+[    9.300680] systemd[1]: Listening on Journal Socket (/dev/log).
+[    9.301301] systemd[1]: Listening on Journal Socket.
+[    9.302030] systemd[1]: Listening on Network Service Netlink Socket.
+[    9.302571] systemd[1]: Listening on udev Control Socket.
+[    9.302958] systemd[1]: Listening on udev Kernel Socket.
+[    9.308602] systemd[1]: Mounting Huge Pages File System...
+[    9.314980] systemd[1]: Mounting POSIX Message Queue File System...
+[    9.322236] systemd[1]: Mounting Kernel Debug File System...
+[    9.329092] systemd[1]: Mounting Kernel Trace File System...
+[    9.337314] systemd[1]: Starting Journal Service...
+[    9.343956] systemd[1]: Starting Set the console keyboard layout...
+[    9.357529] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[    9.365341] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    9.372897] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[    9.380304] systemd[1]: Starting Load Kernel Module drm...
+[    9.387205] systemd[1]: Starting Load Kernel Module efi_pstore...
+[    9.394040] systemd[1]: Starting Load Kernel Module pstore_blk...
+[    9.401349] systemd[1]: Starting Load Kernel Module pstore_zone...
+[    9.408197] systemd[1]: Starting Load Kernel Module ramoops...
+[    9.408528] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[    9.414169] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[    9.414428] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    9.441597] systemd[1]: Starting Load Kernel Modules...
+[    9.448677] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    9.455594] systemd[1]: Starting udev Coldplug all Devices...
+[    9.462935] systemd[1]: Starting Uncomplicated firewall...
+[    9.472768] systemd[1]: Mounted Huge Pages File System.
+[    9.473878] systemd[1]: Mounted POSIX Message Queue File System.
+[    9.474872] systemd[1]: Mounted Kernel Debug File System.
+[    9.476011] systemd[1]: Mounted Kernel Trace File System.
+[    9.480638] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[    9.483624] systemd[1]: modprobe@chromeos_pstore.service: Succeeded.
+[    9.485590] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[    9.488297] systemd[1]: modprobe@efi_pstore.service: Succeeded.
+[    9.490097] systemd[1]: Finished Load Kernel Module efi_pstore.
+[    9.492698] systemd[1]: modprobe@pstore_blk.service: Succeeded.
+[    9.494503] systemd[1]: Finished Load Kernel Module pstore_blk.
+[    9.497193] systemd[1]: modprobe@pstore_zone.service: Succeeded.
+[    9.499334] systemd[1]: Finished Load Kernel Module pstore_zone.
+[    9.525463] systemd[1]: modprobe@drm.service: Succeeded.
+[    9.527685] systemd[1]: Finished Load Kernel Module drm.
+[    9.532964] systemd[1]: Finished Uncomplicated firewall.
+[    9.536802] IPMI message handler: version 39.2
+[    9.542413] systemd[1]: modprobe@ramoops.service: Succeeded.
+[    9.544895] systemd[1]: Finished Load Kernel Module ramoops.
+[    9.550277] ipmi device interface
+[    9.557725] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[    9.580149] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[    9.589262] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    9.600060] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[    9.600330] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[    9.607717] systemd[1]: Starting Load/Save Random Seed...
+[    9.614632] systemd[1]: Starting Create System Users...
+[    9.646943] systemd[1]: Started Journal Service.
+[    9.662471] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    9.689648] Bridge firewalling registered
+[    9.701740] systemd-journald[384]: Received client request to flush runtime journal.
+[    9.793439] systemd-journald[384]: File /var/log/journal/4da98a9427724832b3019a1fecd9df2c/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   11.320349] mc: Linux media interface: v0.10
+[   11.320661] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.321289] vc_sm_cma: module verification failed: signature and/or required key missing - tainting kernel
+[   11.322961] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+[   11.322980] [vc_sm_connected_init]: start
+[   11.328528] [vc_sm_connected_init]: installed successfully
+[   11.394572] videodev: Linux video capture interface: v2.00
+[   11.444692] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.449975] bcm2835_audio bcm2835_audio: card created with 8 channels
+[   11.563300] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.563302] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.613903] bcm2835_isp: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.618625] bcm2835-isp bcm2835-isp: bcm2835_isp_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   11.632541] bcm2835-isp bcm2835-isp: Device node output[0] registered as /dev/video13
+[   11.632974] bcm2835-isp bcm2835-isp: Device node capture[0] registered as /dev/video14
+[   11.633310] bcm2835-isp bcm2835-isp: Device node capture[1] registered as /dev/video15
+[   11.633605] bcm2835-isp bcm2835-isp: Device node stats[2] registered as /dev/video16
+[   11.633632] bcm2835-isp bcm2835-isp: Register output node 0 with media controller
+[   11.633644] bcm2835-isp bcm2835-isp: Register capture node 1 with media controller
+[   11.633661] bcm2835-isp bcm2835-isp: Register capture node 2 with media controller
+[   11.633670] bcm2835-isp bcm2835-isp: Register capture node 3 with media controller
+[   11.633837] bcm2835-isp bcm2835-isp: Loaded V4L2 bcm2835-isp
+[   11.638717] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.641736] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+[   11.652775] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+[   11.652809] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+[   11.667898] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+[   11.667951] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+[   11.677691] : bcm2835_codec_get_supported_fmts: port has more encoding than we provided space for. Some are dropped.
+[   11.695361] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+[   11.695400] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+[   11.983570] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.990224] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   12.232190] brcmfmac: F1 signature read @0x18000000=0x15264345
+[   12.242044] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   12.265380] usbcore: registered new interface driver brcmfmac
+[   12.536269] Bluetooth: Core ver 2.22
+[   12.536398] NET: Registered protocol family 31
+[   12.536404] Bluetooth: HCI device and connection manager initialized
+[   12.536425] Bluetooth: HCI socket layer initialized
+[   12.536436] Bluetooth: L2CAP socket layer initialized
+[   12.536453] Bluetooth: SCO socket layer initialized
+[   12.549388] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+[   12.566397] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Nov  1 2021 00:37:25 version 7.45.241 (1a2f2fa CY) FWID 01-703fd60
+[   13.487141] alua: device handler registered
+[   13.492991] emc: device handler registered
+[   13.498911] rdac: device handler registered
+[   15.249037] audit: type=1400 audit(1677761889.735:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=621 comm="apparmor_parser"
+[   15.258750] audit: type=1400 audit(1677761889.743:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=620 comm="apparmor_parser"
+[   15.258777] audit: type=1400 audit(1677761889.743:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=620 comm="apparmor_parser"
+[   15.258793] audit: type=1400 audit(1677761889.743:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=620 comm="apparmor_parser"
+[   15.272663] audit: type=1400 audit(1677761889.759:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=618 comm="apparmor_parser"
+[   15.272694] audit: type=1400 audit(1677761889.759:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=618 comm="apparmor_parser"
+[   15.287490] audit: type=1400 audit(1677761889.771:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=624 comm="apparmor_parser"
+[   15.287520] audit: type=1400 audit(1677761889.771:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=624 comm="apparmor_parser"
+[   15.302230] audit: type=1400 audit(1677761889.787:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=626 comm="apparmor_parser"
+[   15.309867] audit: type=1400 audit(1677761889.795:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=619 comm="apparmor_parser"
+[   20.261785] kauditd_printk_skb: 21 callbacks suppressed
+[   20.261793] audit: type=1400 audit(1684380207.924:33): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.install" pid=659 comm="apparmor_parser"
+[   20.266204] audit: type=1400 audit(1684380207.928:34): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.remove" pid=660 comm="apparmor_parser"
+[   20.271566] audit: type=1400 audit(1684380207.932:35): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.hook.configure" pid=658 comm="apparmor_parser"
+[   20.282239] audit: type=1400 audit(1684380207.944:36): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc" pid=661 comm="apparmor_parser"
+[   20.327313] audit: type=1400 audit(1684380207.988:37): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxc-to-lxd" pid=663 comm="apparmor_parser"
+[   20.330824] audit: type=1400 audit(1684380207.992:38): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.migrate" pid=665 comm="apparmor_parser"
+[   20.340546] audit: type=1400 audit(1684380208.004:39): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.lxd.lxd" pid=664 comm="apparmor_parser"
+[   25.494544] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   33.553511] capability: warning: `zerotier-one' uses 32-bit capabilities (legacy support in use)
+[   38.223540] aufs 5.4.3-20200302
+[   38.225674] aufs aufs_fill_super:918:mount[961]: no arg
+[   38.305817] overlayfs: missing 'lowerdir'
+[   46.849606] audit: type=1400 audit(1684380274.209:40): apparmor="STATUS" operation="profile_load" profile="snap.docker.dockerd" name="docker-default" pid=1097 comm="apparmor_parser"
+[   50.032892] Initializing XFRM netlink socket
+[ 7357.426337] cache_kprobe_monitor_v3: loading out-of-tree module taints kernel.
+[ 7357.427125]  (cache_kprobe_monitor_v3_init) Initializing cache_kprobe_monitor_v3
+[ 7357.428399] Kprobe registered
+[ 7358.885305]  (pid_proc_write) new target_pid: 2344
+[ 7358.885320] (init_perf_counters) kzalloc success
+[ 7358.885325] (init_perf_counters) creating perf counters
+[ 7358.885373] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[ 7358.885393] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[ 7358.885412] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[ 7358.885431] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[ 7358.885450] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[ 7358.885471] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[ 7358.885494] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[ 7358.885521] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[ 7358.885546] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[ 7358.885571] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[ 7358.885596] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25
+[ 7358.909218] (finish_task_switch_handler) target program hit (PID: 2344), reading counter values
+[ 7358.909226] (finish_task_switch_handler) current program counter: 187650114693452
+[ 7358.909229] (finish_task_switch_handler) target pid is prev
+[ 7358.909245] ------------[ cut here ]------------
+[ 7358.909261] WARNING: CPU: 0 PID: 2344 at kernel/smp.c:291 smp_call_function_single+0x1dc/0x208
+[ 7358.909264] Modules linked in: cache_kprobe_monitor_v3(OE) xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo nft_counter xt_addrtype nft_compat nf_tables nfnetlink aufs dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc videobuf2_dma_contig videobuf2_memops videobuf2_v4l2 raspberrypi_hwmon snd_bcm2835(CE) videobuf2_common snd_pcm videodev snd_timer snd vc_sm_cma(CE) mc uio_pdrv_genirq uio sch_fq_codel overlay iptable_filter ip6table_filter ip6_tables br_netfilter bridge stp llc arp_tables ipmi_devintf ramoops ipmi_msghandler reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear dwc2 udc_core spidev phy_generic
+[ 7358.909377]  crct10dif_ce aes_neon_bs aes_neon_blk crypto_simd cryptd
+[ 7358.909391] CPU: 0 PID: 2344 Comm: arm_v8_flush Tainted: G         C OE     5.4.0-1084-raspi #95-Ubuntu
+[ 7358.909394] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[ 7358.909399] pstate: 604003c5 (nZCv DAIF +PAN -UAO)
+[ 7358.909404] pc : smp_call_function_single+0x1dc/0x208
+[ 7358.909410] lr : perf_event_read+0x12c/0x250
+[ 7358.909412] sp : ffff800010c8b960
+[ 7358.909415] x29: ffff800010c8b960 x28: ffff5da475a93c00 
+[ 7358.909419] x27: ffffddaabf01a668 x26: 0000000000000000 
+[ 7358.909424] x25: ffffddaa68975000 x24: 0000000000000001 
+[ 7358.909428] x23: ffff800010c8ba48 x22: ffffddaabe48f768 
+[ 7358.909432] x21: 0000000000000000 x20: ffff5da475a93c00 
+[ 7358.909437] x19: ffff800010c8b9c0 x18: 0000000000000000 
+[ 7358.909441] x17: 0000000000000000 x16: ffffddaabe48fcb0 
+[ 7358.909446] x15: ffff5da475a94138 x14: ffffffffffffffff 
+[ 7358.909450] x13: 0000000000000000 x12: ffffddaabfb4a000 
+[ 7358.909454] x11: ffffddaabfa2e000 x10: ffffddaabfb4aa80 
+[ 7358.909459] x9 : 0000000000000000 x8 : 0000000000000004 
+[ 7358.909463] x7 : 00000000000001d7 x6 : ffffddaabfb4a000 
+[ 7358.909467] x5 : 000000000000000f x4 : 0000000000000000 
+[ 7358.909471] x3 : 0000000000000001 x2 : 0000000000000000 
+[ 7358.909475] x1 : 00000000000003c0 x0 : 0000000000000000 
+[ 7358.909479] Call trace:
+[ 7358.909484]  smp_call_function_single+0x1dc/0x208
+[ 7358.909488]  perf_event_read+0x12c/0x250
+[ 7358.909493]  __perf_event_read_value+0x40/0x100
+[ 7358.909497]  perf_event_read_value+0x34/0x60
+[ 7358.909506]  finish_task_switch_handler+0x13c/0x1d8 [cache_kprobe_monitor_v3]
+[ 7358.909513]  kprobe_breakpoint_handler+0x10c/0x1a0
+[ 7358.909519]  call_break_hook+0x84/0xa0
+[ 7358.909523]  brk_handler+0x2c/0x68
+[ 7358.909527]  do_debug_exception+0xd0/0x148
+[ 7358.909531]  el1_dbg+0x20/0xc4
+[ 7358.909535]  finish_task_switch+0x0/0x220
+[ 7358.909539]  schedule+0x4c/0xe8
+[ 7358.909544]  do_notify_resume+0x22c/0x550
+[ 7358.909547]  work_pending+0x8/0x14
+[ 7358.909550] ---[ end trace dd915688463bf9a2 ]---
+[ 7358.909558] (finish_task_switch_handler) event code: 3  ; counter value: 33, delta: 33
+[ 7358.909568] (finish_task_switch_handler) event code: 4  ; counter value: 1024549, delta: 1024549
+[ 7358.909572] (finish_task_switch_handler) event code: 5  ; counter value: 254, delta: 254
+[ 7358.909575] (finish_task_switch_handler) event code: 6  ; counter value: 1470123, delta: 1470123
+[ 7358.909579] (finish_task_switch_handler) event code: 7  ; counter value: 934870, delta: 934870
+[ 7358.909582] (finish_task_switch_handler) event code: 8  ; counter value: 12487644, delta: 12487644
+[ 7358.909592] (finish_task_switch_handler) event code: 17  ; counter value: 32217407, delta: 32217407
+[ 7358.909602] (finish_task_switch_handler) event code: 18  ; counter value: 1933432, delta: 1933432
+[ 7358.909612] (finish_task_switch_handler) event code: 19  ; counter value: 2384868, delta: 2384868
+[ 7358.909622] (finish_task_switch_handler) event code: 21  ; counter value: 56, delta: 56
+[ 7358.909631] (finish_task_switch_handler) event code: 25  ; counter value: 117, delta: 117
+[ 7403.482179]  (cleanup_perf_counters) Cleaning up multi performance counters
+[ 7403.482269]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[ 7403.482278]  (pid_proc_write) new target_pid: 2364
+[ 7403.482286] (init_perf_counters) kzalloc success
+[ 7403.482291] (init_perf_counters) creating perf counters
+[ 7403.482325] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[ 7403.482342] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[ 7403.482358] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[ 7403.482376] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[ 7403.482396] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[ 7403.482419] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[ 7403.482443] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[ 7403.482467] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[ 7403.482491] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[ 7403.482517] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[ 7403.482543] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25

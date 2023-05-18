@@ -12,3 +12,14 @@ rand_file,2913,Mon May  1 04:06:20 UTC 2023
 tmp_file_activity,2973,Mon May  1 04:06:31 UTC 2023
 onebil_memacc,3311,Mon May  1 04:54:43 UTC 2023
 onebil_memacc,22036,Thu May  4 02:55:07 UTC 2023
+arm_v8_flush,28440,Thu May  4 05:07:42 UTC 2023
+/home/ubuntu/armageddon_flush_armv8/arm_v8_long_flush_dyn,2250,Thu May 18 02:39:47 UTC 2023
+/home/ubuntu/armageddon_flush_armv8/arm_v8_long_flush_dyn,2287,Thu May 18 02:40:33 UTC 2023
+arm_v8_long_flush_dyn,2319,Thu May 18 02:41:58 UTC 2023
+arm_v8_long_flush,2335,Thu May 18 02:42:18 UTC 2023
+arm_v8_long_flush,2375,Thu May 18 02:50:22 UTC 2023
+arm_v8_long_flush,2404,Thu May 18 02:52:03 UTC 2023
+arm_v8_flush,2325,Thu May 18 05:26:04 UTC 2023
+arm_v8_flush,2344,Thu May 18 05:26:26 UTC 2023
+arm_v8_flush,2364,Thu May 18 05:27:10 UTC 2023
+armv8a_short_flush,2581,Thu May 18 05:33:06 UTC 2023

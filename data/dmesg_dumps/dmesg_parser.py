@@ -86,9 +86,9 @@ if __name__ == "__main__":
         for filename in os.listdir(input_dir):
             if filename.endswith(".txt"):
                 input_filename = os.path.join(input_dir, filename)
-                parse_dmesg(input_filename)
-    
-    
+                json_file = os.path.splitext(input_filename)[0] + ".json"
 
-
-    
+                if not os.path.exists(json_file):
+                    print(f"creating {json_file} from {input_filename}")
+                    parse_dmesg(input_filename)
+print("done")

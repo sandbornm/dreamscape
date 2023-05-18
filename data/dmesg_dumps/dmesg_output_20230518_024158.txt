@@ -1,0 +1,83 @@
+[ 2615.763292]  (pid_proc_write) new target_pid: 2319
+[ 2615.763308] (init_perf_counters) kzalloc success
+[ 2615.763313] (init_perf_counters) creating perf counters
+[ 2615.763366] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[ 2615.763389] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[ 2615.763410] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[ 2615.763428] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[ 2615.763447] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[ 2615.763470] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[ 2615.763492] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[ 2615.763520] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[ 2615.763547] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[ 2615.763573] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[ 2615.763596] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25
+[ 2615.767019] (finish_task_switch_handler) target program hit (PID: 2319), reading counter values
+[ 2615.767029] (finish_task_switch_handler) current program counter: 187650441783460
+[ 2615.767033] (finish_task_switch_handler) target pid is prev
+[ 2615.767044] (finish_task_switch_handler) event code: 3  ; counter value: 23, delta: 23
+[ 2615.767072] ------------[ cut here ]------------
+[ 2615.767100] WARNING: CPU: 0 PID: 2319 at kernel/smp.c:291 smp_call_function_single+0x1dc/0x208
+[ 2615.767105] Modules linked in: cache_kprobe_monitor_v3(OE) xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo nft_counter xt_addrtype nft_compat nf_tables nfnetlink aufs dm_multipath scsi_dh_rdac scsi_dh_emc scsi_dh_alua binfmt_misc btsdio bluetooth ecdh_generic ecc brcmfmac brcmutil cfg80211 bcm2835_codec(CE) bcm2835_v4l2(CE) bcm2835_isp(CE) v4l2_mem2mem bcm2835_mmal_vchiq(CE) videobuf2_vmalloc videobuf2_dma_contig videobuf2_memops videobuf2_v4l2 snd_bcm2835(CE) raspberrypi_hwmon videobuf2_common snd_pcm videodev snd_timer snd mc vc_sm_cma(CE) uio_pdrv_genirq uio sch_fq_codel overlay iptable_filter ip6table_filter ip6_tables br_netfilter bridge stp llc arp_tables ipmi_devintf ramoops ipmi_msghandler reed_solomon drm ip_tables x_tables autofs4 btrfs zstd_compress raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor xor_neon raid6_pq libcrc32c raid1 raid0 multipath linear crct10dif_ce dwc2 udc_core spidev
+[ 2615.767265]  phy_generic aes_neon_bs aes_neon_blk crypto_simd cryptd
+[ 2615.767283] CPU: 0 PID: 2319 Comm: arm_v8_long_flu Tainted: G         C OE     5.4.0-1084-raspi #95-Ubuntu
+[ 2615.767286] Hardware name: Raspberry Pi 3 Model B Plus Rev 1.3 (DT)
+[ 2615.767294] pstate: 604003c5 (nZCv DAIF +PAN -UAO)
+[ 2615.767299] pc : smp_call_function_single+0x1dc/0x208
+[ 2615.767309] lr : perf_event_read+0x12c/0x250
+[ 2615.767312] sp : ffff800011803960
+[ 2615.767314] x29: ffff800011803960 x28: 0000000000000017 
+[ 2615.767319] x27: 0000000000000050 x26: 0000000000000001 
+[ 2615.767323] x25: ffffa81e96929000 x24: 0000000000000001 
+[ 2615.767328] x23: ffff800011803a48 x22: ffffa81effe8f768 
+[ 2615.767338] x21: 0000000000000000 x20: ffff2df9f30abc00 
+[ 2615.767344] x19: ffff8000118039c0 x18: 0000000000000000 
+[ 2615.767350] x17: 0000000000000000 x16: ffffa81effe8fcb0 
+[ 2615.767356] x15: ffff2df9f30ac138 x14: ffffffffffffffff 
+[ 2615.767362] x13: 0000000000000000 x12: ffffa81f0154a000 
+[ 2615.767369] x11: ffffa81f0142e000 x10: ffffa81f0154aa80 
+[ 2615.767374] x9 : 0000000000000000 x8 : 0000000000000004 
+[ 2615.767381] x7 : 00000000000001d7 x6 : ffffa81f0154a000 
+[ 2615.767387] x5 : 000000000000000f x4 : 0000000000000000 
+[ 2615.767392] x3 : 0000000000000001 x2 : 0000000000000000 
+[ 2615.767399] x1 : 00000000000003c0 x0 : 0000000000000000 
+[ 2615.767404] Call trace:
+[ 2615.767413]  smp_call_function_single+0x1dc/0x208
+[ 2615.767418]  perf_event_read+0x12c/0x250
+[ 2615.767423]  __perf_event_read_value+0x40/0x100
+[ 2615.767430]  perf_event_read_value+0x34/0x60
+[ 2615.767443]  finish_task_switch_handler+0x13c/0x1d8 [cache_kprobe_monitor_v3]
+[ 2615.767453]  kprobe_breakpoint_handler+0x10c/0x1a0
+[ 2615.767462]  call_break_hook+0x84/0xa0
+[ 2615.767467]  brk_handler+0x2c/0x68
+[ 2615.767474]  do_debug_exception+0xd0/0x148
+[ 2615.767479]  el1_dbg+0x20/0xc4
+[ 2615.767487]  finish_task_switch+0x0/0x220
+[ 2615.767492]  schedule+0x4c/0xe8
+[ 2615.767500]  do_notify_resume+0x22c/0x550
+[ 2615.767505]  work_pending+0x8/0x14
+[ 2615.767510] ---[ end trace 4c45b189dafe9d09 ]---
+[ 2615.767522] (finish_task_switch_handler) event code: 4  ; counter value: 496940, delta: 496940
+[ 2615.767546] (finish_task_switch_handler) event code: 5  ; counter value: 70, delta: 70
+[ 2615.767561] (finish_task_switch_handler) event code: 6  ; counter value: 352955, delta: 352955
+[ 2615.767576] (finish_task_switch_handler) event code: 7  ; counter value: 140838, delta: 140838
+[ 2615.767587] (finish_task_switch_handler) event code: 8  ; counter value: 1544058, delta: 1544058
+[ 2615.767598] (finish_task_switch_handler) event code: 17  ; counter value: 4335985, delta: 4335985
+[ 2615.767609] (finish_task_switch_handler) event code: 18  ; counter value: 0, delta: 0
+[ 2615.767613] (finish_task_switch_handler) event code: 19  ; counter value: 0, delta: 0
+[ 2615.767619] (finish_task_switch_handler) event code: 21  ; counter value: 0, delta: 0
+[ 2615.767623] (finish_task_switch_handler) event code: 25  ; counter value: 0, delta: 0
+[ 2615.802987] (finish_task_switch_handler) target program hit (PID: 2319), reading counter values
+[ 2615.802997] (finish_task_switch_handler) current program counter: 187650441783456
+[ 2615.803000] (finish_task_switch_handler) target pid is prev
+[ 2615.803024] (finish_task_switch_handler) event code: 3  ; counter value: 108, delta: 85
+[ 2615.803035] (finish_task_switch_handler) event code: 4  ; counter value: 3496841, delta: 2999901
+[ 2615.803045] (finish_task_switch_handler) event code: 5  ; counter value: 410, delta: 340
+[ 2615.803055] (finish_task_switch_handler) event code: 6  ; counter value: 2096555, delta: 1743600
+[ 2615.803065] (finish_task_switch_handler) event code: 7  ; counter value: 805607, delta: 664769
+[ 2615.803069] (finish_task_switch_handler) event code: 8  ; counter value: 10819592, delta: 9275534
+[ 2615.803073] (finish_task_switch_handler) event code: 17  ; counter value: 34897714, delta: 30561729
+[ 2615.803076] (finish_task_switch_handler) event code: 18  ; counter value: 2363239, delta: 2363239
+[ 2615.803080] (finish_task_switch_handler) event code: 19  ; counter value: 4270708, delta: 4270708
+[ 2615.803083] (finish_task_switch_handler) event code: 21  ; counter value: 279, delta: 279
+[ 2615.803093] (finish_task_switch_handler) event code: 25  ; counter value: 520, delta: 520
