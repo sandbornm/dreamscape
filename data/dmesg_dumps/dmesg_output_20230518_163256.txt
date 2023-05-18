@@ -1,0 +1,13 @@
+[ 8868.716129] ID_AA64DFR0_EL1 = 1
+[ 8868.716138] PMUv3 is implemented.
+[43552.576499] Running in kernel space (non-interrupt context)
+[43665.969085] Exiting the module
+[43670.264294] Running in kernel space (non-interrupt context)
+[43670.264303] ran instruction 'msr pmcr_el0, x0'
+[43726.040910] Exiting the module
+[43729.541004] Running in kernel space (non-interrupt context)
+[43729.541013] ran instruction 'msr pmcr_el0, x0'
+[47349.463649]  (cleanup_perf_counters) Cleaning up multi performance counters
+[47349.463751]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[47349.463761]  (pid_proc_write) new target_pid: 8674
+[47349.463768] get_pid_task failed

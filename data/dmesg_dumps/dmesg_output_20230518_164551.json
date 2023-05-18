@@ -1,0 +1,1544 @@
+{
+    "9320": [
+        {
+            "timestamp": 48119.01638,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 546,
+            "delta": 546,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016391,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 29024918,
+            "delta": 29024918,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016401,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 3582,
+            "delta": 3582,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016411,
+            "event_name": "LD_RETIRED",
+            "counter_value": 16508383,
+            "delta": 16508383,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016421,
+            "event_name": "ST_RETIRED",
+            "counter_value": 8255143,
+            "delta": 8255143,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016431,
+            "event_name": "INST_RETIRED",
+            "counter_value": 90795140,
+            "delta": 90795140,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016441,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 4165866,
+            "delta": 4165866,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016444,
+            "event_name": "BR_PRED",
+            "counter_value": 19593906,
+            "delta": 19593906,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016448,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 29481843,
+            "delta": 29481843,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016451,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 1106,
+            "delta": 1106,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.016455,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 544,
+            "delta": 544,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48119.299339,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 1056,
+            "delta": 510,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299343,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 55468943,
+            "delta": 26444025,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299347,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 6953,
+            "delta": 3371,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.29935,
+            "event_name": "LD_RETIRED",
+            "counter_value": 32527671,
+            "delta": 16019288,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299365,
+            "event_name": "ST_RETIRED",
+            "counter_value": 16412945,
+            "delta": 8157802,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299375,
+            "event_name": "INST_RETIRED",
+            "counter_value": 180593016,
+            "delta": 89797876,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299385,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 8196568,
+            "delta": 4030702,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299394,
+            "event_name": "BR_PRED",
+            "counter_value": 37947293,
+            "delta": 18353387,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299405,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 56432596,
+            "delta": 26950753,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299414,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 2296,
+            "delta": 1190,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48119.299424,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 1382,
+            "delta": 838,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.008376,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 2384,
+            "delta": 1328,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008386,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 122910723,
+            "delta": 67441780,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.00839,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 15392,
+            "delta": 8439,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008394,
+            "event_name": "LD_RETIRED",
+            "counter_value": 71054474,
+            "delta": 38526803,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008397,
+            "event_name": "ST_RETIRED",
+            "counter_value": 35716865,
+            "delta": 19303920,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008401,
+            "event_name": "INST_RETIRED",
+            "counter_value": 395013686,
+            "delta": 214420670,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008411,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 17961976,
+            "delta": 9765408,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.008421,
+            "event_name": "BR_PRED",
+            "counter_value": 83358356,
+            "delta": 45411063,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.00843,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 124597711,
+            "delta": 68165115,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.00844,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 5041,
+            "delta": 2745,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.00845,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2310,
+            "delta": 928,
+            "program_counter": 187650650204492
+        },
+        {
+            "timestamp": 48120.180381,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 2722,
+            "delta": 338,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180385,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 139713069,
+            "delta": 16802346,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180389,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 17479,
+            "delta": 2087,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180392,
+            "event_name": "LD_RETIRED",
+            "counter_value": 80692983,
+            "delta": 9638509,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180396,
+            "event_name": "ST_RETIRED",
+            "counter_value": 40536239,
+            "delta": 4819374,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180407,
+            "event_name": "INST_RETIRED",
+            "counter_value": 445796780,
+            "delta": 50783094,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180417,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 20288646,
+            "delta": 2326670,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180427,
+            "event_name": "BR_PRED",
+            "counter_value": 94159604,
+            "delta": 10801248,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180436,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 140792267,
+            "delta": 16194556,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180446,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 5843,
+            "delta": 802,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.180455,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 2732,
+            "delta": 422,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48120.424365,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 3234,
+            "delta": 512,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424376,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 163764634,
+            "delta": 24051565,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424386,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 20335,
+            "delta": 2856,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424395,
+            "event_name": "LD_RETIRED",
+            "counter_value": 93546998,
+            "delta": 12854015,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424405,
+            "event_name": "ST_RETIRED",
+            "counter_value": 46762342,
+            "delta": 6226103,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424415,
+            "event_name": "INST_RETIRED",
+            "counter_value": 514187709,
+            "delta": 68390929,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424425,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 23477456,
+            "delta": 3188810,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424428,
+            "event_name": "BR_PRED",
+            "counter_value": 109374831,
+            "delta": 15215227,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424432,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 164215438,
+            "delta": 23423171,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424436,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 6812,
+            "delta": 969,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.424439,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3305,
+            "delta": 573,
+            "program_counter": 187650650204308
+        },
+        {
+            "timestamp": 48120.936366,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 4139,
+            "delta": 905,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936377,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 211918353,
+            "delta": 48153719,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936381,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 26309,
+            "delta": 5974,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936385,
+            "event_name": "LD_RETIRED",
+            "counter_value": 121623615,
+            "delta": 28076617,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936388,
+            "event_name": "ST_RETIRED",
+            "counter_value": 61001672,
+            "delta": 14239330,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936392,
+            "event_name": "INST_RETIRED",
+            "counter_value": 673013145,
+            "delta": 158825436,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936396,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 30723947,
+            "delta": 7246491,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936406,
+            "event_name": "BR_PRED",
+            "counter_value": 142686811,
+            "delta": 33311980,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936415,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 213619097,
+            "delta": 49403659,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936425,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 8814,
+            "delta": 2002,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48120.936434,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3925,
+            "delta": 620,
+            "program_counter": 187650650204292
+        },
+        {
+            "timestamp": 48121.00038,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 4320,
+            "delta": 181,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000397,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 219035364,
+            "delta": 7117011,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000408,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 27189,
+            "delta": 880,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000418,
+            "event_name": "LD_RETIRED",
+            "counter_value": 125217389,
+            "delta": 3593774,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000428,
+            "event_name": "ST_RETIRED",
+            "counter_value": 62604524,
+            "delta": 1602852,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000437,
+            "event_name": "INST_RETIRED",
+            "counter_value": 688433176,
+            "delta": 15420031,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000447,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 31413542,
+            "delta": 689595,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000457,
+            "event_name": "BR_PRED",
+            "counter_value": 145878560,
+            "delta": 3191749,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.00046,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 218948711,
+            "delta": 5329614,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000464,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 9013,
+            "delta": 199,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.000467,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 4517,
+            "delta": 592,
+            "program_counter": 187650650204500
+        },
+        {
+            "timestamp": 48121.224354,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 4748,
+            "delta": 428,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224358,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 240683703,
+            "delta": 21648339,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224372,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 29902,
+            "delta": 2713,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224383,
+            "event_name": "LD_RETIRED",
+            "counter_value": 137597649,
+            "delta": 12380260,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224393,
+            "event_name": "ST_RETIRED",
+            "counter_value": 68786935,
+            "delta": 6182411,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224403,
+            "event_name": "INST_RETIRED",
+            "counter_value": 756430301,
+            "delta": 67997125,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224413,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 34508577,
+            "delta": 3095035,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224423,
+            "event_name": "BR_PRED",
+            "counter_value": 160249893,
+            "delta": 14371333,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224432,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 239936672,
+            "delta": 20987961,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.224436,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 9830,
+            "delta": 817,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.22444,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 5333,
+            "delta": 816,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.448357,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 5170,
+            "delta": 422,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448361,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 261760000,
+            "delta": 21076297,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448365,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 32583,
+            "delta": 2681,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.44838,
+            "event_name": "LD_RETIRED",
+            "counter_value": 150010386,
+            "delta": 12412737,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.44839,
+            "event_name": "ST_RETIRED",
+            "counter_value": 74989975,
+            "delta": 6203040,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.4484,
+            "event_name": "INST_RETIRED",
+            "counter_value": 824645441,
+            "delta": 68215140,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448409,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 37609966,
+            "delta": 3101389,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448419,
+            "event_name": "BR_PRED",
+            "counter_value": 174659880,
+            "delta": 14409987,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448429,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 261540742,
+            "delta": 21604070,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448438,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 10705,
+            "delta": 875,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.448442,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 5901,
+            "delta": 568,
+            "program_counter": 187650650204504
+        },
+        {
+            "timestamp": 48121.736394,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 5707,
+            "delta": 537,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736404,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 288866654,
+            "delta": 27106654,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736414,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 35818,
+            "delta": 3235,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736424,
+            "event_name": "LD_RETIRED",
+            "counter_value": 164854331,
+            "delta": 14843945,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736428,
+            "event_name": "ST_RETIRED",
+            "counter_value": 82602262,
+            "delta": 7612287,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736432,
+            "event_name": "INST_RETIRED",
+            "counter_value": 910549501,
+            "delta": 85904060,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736435,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 41574697,
+            "delta": 3964731,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736439,
+            "event_name": "BR_PRED",
+            "counter_value": 193491411,
+            "delta": 18831531,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736442,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 290395650,
+            "delta": 28854908,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736452,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 12055,
+            "delta": 1350,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736462,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 6557,
+            "delta": 656,
+            "program_counter": 187650650204532
+        },
+        {
+            "timestamp": 48121.736591,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 5710,
+            "delta": 3,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736601,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 288877761,
+            "delta": 11107,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736611,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 35820,
+            "delta": 2,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736621,
+            "event_name": "LD_RETIRED",
+            "counter_value": 164861736,
+            "delta": 7405,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736624,
+            "event_name": "ST_RETIRED",
+            "counter_value": 82602262,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736628,
+            "event_name": "INST_RETIRED",
+            "counter_value": 910549501,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736631,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 41574697,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736635,
+            "event_name": "BR_PRED",
+            "counter_value": 193491411,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736639,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 290395650,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736648,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 12061,
+            "delta": 6,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.736658,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 6557,
+            "delta": 0,
+            "program_counter": 187650650204496
+        },
+        {
+            "timestamp": 48121.992425,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 6202,
+            "delta": 492,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992436,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 312858869,
+            "delta": 23981108,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.99244,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 38868,
+            "delta": 3048,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992444,
+            "event_name": "LD_RETIRED",
+            "counter_value": 179242474,
+            "delta": 14380738,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992448,
+            "event_name": "ST_RETIRED",
+            "counter_value": 89810450,
+            "delta": 7208188,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992451,
+            "event_name": "INST_RETIRED",
+            "counter_value": 989942225,
+            "delta": 79392724,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992455,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 45197273,
+            "delta": 3622576,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992465,
+            "event_name": "BR_PRED",
+            "counter_value": 209941559,
+            "delta": 16450148,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992475,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 314476783,
+            "delta": 24081133,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992484,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 13175,
+            "delta": 1114,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48121.992494,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 7269,
+            "delta": 712,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184375,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 6588,
+            "delta": 386,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184385,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 332041645,
+            "delta": 19182776,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184395,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 41197,
+            "delta": 2329,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184405,
+            "event_name": "LD_RETIRED",
+            "counter_value": 189673954,
+            "delta": 10431480,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184415,
+            "event_name": "ST_RETIRED",
+            "counter_value": 94828942,
+            "delta": 5018492,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184424,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1042939387,
+            "delta": 52997162,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184434,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 47614071,
+            "delta": 2416798,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184438,
+            "event_name": "BR_PRED",
+            "counter_value": 221568359,
+            "delta": 11626800,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184441,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 332469184,
+            "delta": 17992401,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184445,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 13863,
+            "delta": 688,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48122.184449,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 7805,
+            "delta": 536,
+            "program_counter": 187650650204304
+        },
+        {
+            "timestamp": 48123.016428,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 29595,
+            "delta": 23007,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016439,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 483220396,
+            "delta": 151178751,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016449,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 55946,
+            "delta": 14749,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016458,
+            "event_name": "LD_RETIRED",
+            "counter_value": 267487263,
+            "delta": 77813309,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016468,
+            "event_name": "ST_RETIRED",
+            "counter_value": 138718301,
+            "delta": 43889359,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016472,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1410724067,
+            "delta": 367784680,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016476,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 59045073,
+            "delta": 11431002,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.01648,
+            "event_name": "BR_PRED",
+            "counter_value": 290329210,
+            "delta": 68760851,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016483,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 486253360,
+            "delta": 153784176,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016487,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 818071,
+            "delta": 804208,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.016496,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 3200930,
+            "delta": 3193125,
+            "program_counter": 187650650204696
+        },
+        {
+            "timestamp": 48123.208404,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 42492,
+            "delta": 12897,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208408,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 543541609,
+            "delta": 60321213,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208411,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 61514,
+            "delta": 5568,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208426,
+            "event_name": "LD_RETIRED",
+            "counter_value": 299595469,
+            "delta": 32108206,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208436,
+            "event_name": "ST_RETIRED",
+            "counter_value": 157968825,
+            "delta": 19250524,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208446,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1540843458,
+            "delta": 130119391,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208455,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 61696295,
+            "delta": 2651222,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208465,
+            "event_name": "BR_PRED",
+            "counter_value": 311010684,
+            "delta": 20681474,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208475,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 542913703,
+            "delta": 56660343,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208484,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 1221863,
+            "delta": 403792,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.208488,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 4879396,
+            "delta": 1678466,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432434,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 56827,
+            "delta": 14335,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432438,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 612073572,
+            "delta": 68531963,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432441,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 67467,
+            "delta": 5953,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432445,
+            "event_name": "LD_RETIRED",
+            "counter_value": 335268394,
+            "delta": 35672925,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432459,
+            "event_name": "ST_RETIRED",
+            "counter_value": 179351878,
+            "delta": 21383053,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432469,
+            "event_name": "INST_RETIRED",
+            "counter_value": 1690414862,
+            "delta": 149571404,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432479,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 64775529,
+            "delta": 3079234,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432489,
+            "event_name": "BR_PRED",
+            "counter_value": 335830616,
+            "delta": 24819932,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432499,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 613218349,
+            "delta": 70304646,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432509,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 1740989,
+            "delta": 519126,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48123.432518,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 6917023,
+            "delta": 2037627,
+            "program_counter": 187650650204688
+        },
+        {
+            "timestamp": 48124.00844,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 97578,
+            "delta": 40751,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008444,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 789868388,
+            "delta": 177794816,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008448,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 82906,
+            "delta": 15439,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008451,
+            "event_name": "LD_RETIRED",
+            "counter_value": 424881615,
+            "delta": 89613221,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008455,
+            "event_name": "ST_RETIRED",
+            "counter_value": 233746577,
+            "delta": 54394699,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008465,
+            "event_name": "INST_RETIRED",
+            "counter_value": 2070969033,
+            "delta": 380554171,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008475,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 72650618,
+            "delta": 7875089,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008485,
+            "event_name": "BR_PRED",
+            "counter_value": 399158991,
+            "delta": 63328375,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008495,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 792605060,
+            "delta": 179386711,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008504,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 3065660,
+            "delta": 1324671,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.008514,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 12241983,
+            "delta": 5324960,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.136432,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 106014,
+            "delta": 8436,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136435,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 830842085,
+            "delta": 40973697,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136439,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 86437,
+            "delta": 3531,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136443,
+            "event_name": "LD_RETIRED",
+            "counter_value": 445521153,
+            "delta": 20639538,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136457,
+            "event_name": "ST_RETIRED",
+            "counter_value": 245446113,
+            "delta": 11699536,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136467,
+            "event_name": "INST_RETIRED",
+            "counter_value": 2152860837,
+            "delta": 81891804,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136477,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 74358407,
+            "delta": 1707789,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136487,
+            "event_name": "BR_PRED",
+            "counter_value": 412919829,
+            "delta": 13760838,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136496,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 831597880,
+            "delta": 38992820,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136506,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 3353606,
+            "delta": 287946,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.136516,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 13401065,
+            "delta": 1159082,
+            "program_counter": 187650650204324
+        },
+        {
+            "timestamp": 48124.180419,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 108658,
+            "delta": 2644,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180423,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 844514863,
+            "delta": 13672778,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180427,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 87626,
+            "delta": 1189,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.18043,
+            "event_name": "LD_RETIRED",
+            "counter_value": 452431824,
+            "delta": 6910671,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180444,
+            "event_name": "ST_RETIRED",
+            "counter_value": 249560332,
+            "delta": 4114219,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180455,
+            "event_name": "INST_RETIRED",
+            "counter_value": 2181584109,
+            "delta": 28723272,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180465,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 74951722,
+            "delta": 593315,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180475,
+            "event_name": "BR_PRED",
+            "counter_value": 417694880,
+            "delta": 4775051,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180484,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 845119857,
+            "delta": 13521977,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180494,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 3453642,
+            "delta": 100036,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.180504,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 13807695,
+            "delta": 406630,
+            "program_counter": 187650650204680
+        },
+        {
+            "timestamp": 48124.299469,
+            "event_name": "L1D_CACHE_REFILL",
+            "counter_value": 117166,
+            "delta": 8508,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.29948,
+            "event_name": "L1D_CACHE_ACCESS",
+            "counter_value": 883072263,
+            "delta": 38557400,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.29949,
+            "event_name": "L1D_TLB_REFILL",
+            "counter_value": 90794,
+            "delta": 3168,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299501,
+            "event_name": "LD_RETIRED",
+            "counter_value": 469392722,
+            "delta": 16960898,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299511,
+            "event_name": "ST_RETIRED",
+            "counter_value": 259716867,
+            "delta": 10156535,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299522,
+            "event_name": "INST_RETIRED",
+            "counter_value": 2252552787,
+            "delta": 70968678,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299532,
+            "event_name": "CPU_CYCLES",
+            "counter_value": 76465126,
+            "delta": 1513404,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299536,
+            "event_name": "BR_PRED",
+            "counter_value": 430042590,
+            "delta": 12347710,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.29954,
+            "event_name": "MEM_ACCESS",
+            "counter_value": 882071414,
+            "delta": 36951557,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299544,
+            "event_name": "L1D_CACHE_WB",
+            "counter_value": 3740657,
+            "delta": 287015,
+            "program_counter": 187650650204664
+        },
+        {
+            "timestamp": 48124.299547,
+            "event_name": "BUS_ACCESS",
+            "counter_value": 15024882,
+            "delta": 1217187,
+            "program_counter": 187650650204664
+        }
+    ]
+}

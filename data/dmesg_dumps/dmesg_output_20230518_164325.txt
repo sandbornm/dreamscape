@@ -1,0 +1,14 @@
+[47978.538260]  (pid_proc_write) new target_pid: 9149
+[47978.538276] (init_perf_counters) kzalloc success
+[47978.538281] (init_perf_counters) creating perf counters
+[47978.538330] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[47978.538350] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[47978.538367] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[47978.538392] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[47978.538412] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[47978.538433] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[47978.538455] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[47978.538483] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[47978.538508] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[47978.538532] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[47978.538556] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25

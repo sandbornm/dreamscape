@@ -22,6 +22,9 @@ echo "$binary,$pgm_pid,$(date)" >> ./pid_bin_record
 # echo to the proc file for module to start monitoring
 echo $pgm_pid | sudo tee /proc/cache_kmv3_pid
 
+wait $pgm_pid
+echo "Process $pgm_pid exited, getting data from dmesg"
+/home/ubuntu/dreamscape/data/dmesg_dumps/dmesg_dump.sh
 # make a signal to check if program finished in timeout period
 #{
 #	wait $pgm_pid
@@ -44,6 +47,4 @@ echo $pgm_pid | sudo tee /proc/cache_kmv3_pid
 #	sudo kill $pgm_pid
 #fi
 
-wait $pgm_pid
-echo "Process $pgm_pid exited, getting data from dmesg"
-/home/ubuntu/dreamscape/data/dmesg_dumps/dmesg_dump.sh
+

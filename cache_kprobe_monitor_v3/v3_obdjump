@@ -1,0 +1,542 @@
+
+cache_kprobe_monitor_v3.ko:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000000000 <finish_task_switch_handler>:
+   0:	a9b87bfd 	stp	x29, x30, [sp, #-128]!
+   4:	910003fd 	mov	x29, sp
+   8:	a90153f3 	stp	x19, x20, [sp, #16]
+   c:	a9025bf5 	stp	x21, x22, [sp, #32]
+  10:	d5384113 	mrs	x19, sp_el0
+  14:	d50320ff 	xpaclri
+  18:	90000015 	adrp	x21, 0 <finish_task_switch_handler>
+  1c:	aa0103f4 	mov	x20, x1
+  20:	aa1e03e0 	mov	x0, x30
+  24:	94000000 	bl	0 <_mcount>
+  28:	f9429e61 	ldr	x1, [x19, #1336]
+  2c:	f9003fe1 	str	x1, [sp, #120]
+  30:	d2800001 	mov	x1, #0x0                   	// #0
+  34:	b94002a0 	ldr	w0, [x21]
+  38:	d5384101 	mrs	x1, sp_el0
+  3c:	b9453021 	ldr	w1, [x1, #1328]
+  40:	f9400294 	ldr	x20, [x20]
+  44:	6b00003f 	cmp	w1, w0
+  48:	54000980 	b.eq	178 <finish_task_switch_handler+0x178>  // b.none
+  4c:	928339e1 	mov	x1, #0xffffffffffffe630    	// #-6608
+  50:	8b010294 	add	x20, x20, x1
+  54:	b9453281 	ldr	w1, [x20, #1328]
+  58:	6b01001f 	cmp	w0, w1
+  5c:	540001e0 	b.eq	98 <finish_task_switch_handler+0x98>  // b.none
+  60:	f9403fe0 	ldr	x0, [sp, #120]
+  64:	f9429e61 	ldr	x1, [x19, #1336]
+  68:	eb010000 	subs	x0, x0, x1
+  6c:	d2800001 	mov	x1, #0x0                   	// #0
+  70:	540000c1 	b.ne	88 <finish_task_switch_handler+0x88>  // b.any
+  74:	52800000 	mov	w0, #0x0                   	// #0
+  78:	a94153f3 	ldp	x19, x20, [sp, #16]
+  7c:	a9425bf5 	ldp	x21, x22, [sp, #32]
+  80:	a8c87bfd 	ldp	x29, x30, [sp], #128
+  84:	d65f03c0 	ret
+  88:	a90363f7 	stp	x23, x24, [sp, #48]
+  8c:	a9046bf9 	stp	x25, x26, [sp, #64]
+  90:	a90573fb 	stp	x27, x28, [sp, #80]
+  94:	94000000 	bl	0 <__stack_chk_fail>
+  98:	a90363f7 	stp	x23, x24, [sp, #48]
+  9c:	a9046bf9 	stp	x25, x26, [sp, #64]
+  a0:	a90573fb 	stp	x27, x28, [sp, #80]
+  a4:	90000001 	adrp	x1, 0 <finish_task_switch_handler>
+  a8:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+  ac:	91000000 	add	x0, x0, #0x0
+  b0:	f9400021 	ldr	x1, [x1]
+  b4:	b9453021 	ldr	w1, [x1, #1328]
+  b8:	94000000 	bl	0 <printk>
+  bc:	b94002a2 	ldr	w2, [x21]
+  c0:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+  c4:	d5384101 	mrs	x1, sp_el0
+  c8:	b9453023 	ldr	w3, [x1, #1328]
+  cc:	91000000 	add	x0, x0, #0x0
+  d0:	6b02007f 	cmp	w3, w2
+  d4:	9a811281 	csel	x1, x20, x1, ne  // ne = any
+  d8:	f9401421 	ldr	x1, [x1, #40]
+  dc:	f95fe021 	ldr	x1, [x1, #16320]
+  e0:	94000000 	bl	0 <printk>
+  e4:	b94002a0 	ldr	w0, [x21]
+  e8:	b9453281 	ldr	w1, [x20, #1328]
+  ec:	6b00003f 	cmp	w1, w0
+  f0:	54000501 	b.ne	190 <finish_task_switch_handler+0x190>  // b.any
+  f4:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+  f8:	91000000 	add	x0, x0, #0x0
+  fc:	94000000 	bl	0 <printk>
+ 100:	90000016 	adrp	x22, 0 <finish_task_switch_handler>
+ 104:	90000019 	adrp	x25, 0 <finish_task_switch_handler>
+ 108:	90000018 	adrp	x24, 0 <finish_task_switch_handler>
+ 10c:	90000017 	adrp	x23, 0 <finish_task_switch_handler>
+ 110:	910002d6 	add	x22, x22, #0x0
+ 114:	91000339 	add	x25, x25, #0x0
+ 118:	91000318 	add	x24, x24, #0x0
+ 11c:	910002f7 	add	x23, x23, #0x0
+ 120:	d280001a 	mov	x26, #0x0                   	// #0
+ 124:	f94006c0 	ldr	x0, [x22, #8]
+ 128:	93407f55 	sxtw	x21, w26
+ 12c:	9101a3e1 	add	x1, sp, #0x68
+ 130:	9101c3e2 	add	x2, sp, #0x70
+ 134:	f8757800 	ldr	x0, [x0, x21, lsl #3]
+ 138:	94000000 	bl	0 <perf_event_read_value>
+ 13c:	aa0003fc 	mov	x28, x0
+ 140:	b9400321 	ldr	w1, [x25]
+ 144:	b9453280 	ldr	w0, [x20, #1328]
+ 148:	6b01001f 	cmp	w0, w1
+ 14c:	540002a1 	b.ne	1a0 <finish_task_switch_handler+0x1a0>  // b.any
+ 150:	f94006c0 	ldr	x0, [x22, #8]
+ 154:	8b150c15 	add	x21, x0, x21, lsl #3
+ 158:	f9002ebc 	str	x28, [x21, #88]
+ 15c:	9100075a 	add	x26, x26, #0x1
+ 160:	f1002f5f 	cmp	x26, #0xb
+ 164:	54fffe01 	b.ne	124 <finish_task_switch_handler+0x124>  // b.any
+ 168:	a94363f7 	ldp	x23, x24, [sp, #48]
+ 16c:	a9446bf9 	ldp	x25, x26, [sp, #64]
+ 170:	a94573fb 	ldp	x27, x28, [sp, #80]
+ 174:	17ffffbb 	b	60 <finish_task_switch_handler+0x60>
+ 178:	928339e2 	mov	x2, #0xffffffffffffe630    	// #-6608
+ 17c:	8b020294 	add	x20, x20, x2
+ 180:	a90363f7 	stp	x23, x24, [sp, #48]
+ 184:	a9046bf9 	stp	x25, x26, [sp, #64]
+ 188:	a90573fb 	stp	x27, x28, [sp, #80]
+ 18c:	17ffffc6 	b	a4 <finish_task_switch_handler+0xa4>
+ 190:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+ 194:	91000000 	add	x0, x0, #0x0
+ 198:	94000000 	bl	0 <printk>
+ 19c:	17ffffd9 	b	100 <finish_task_switch_handler+0x100>
+ 1a0:	f94006c3 	ldr	x3, [x22, #8]
+ 1a4:	91002ab5 	add	x21, x21, #0xa
+ 1a8:	b87a7b01 	ldr	w1, [x24, x26, lsl #2]
+ 1ac:	aa1c03e2 	mov	x2, x28
+ 1b0:	d37df2bb 	lsl	x27, x21, #3
+ 1b4:	aa1703e0 	mov	x0, x23
+ 1b8:	8b150c75 	add	x21, x3, x21, lsl #3
+ 1bc:	f94006a3 	ldr	x3, [x21, #8]
+ 1c0:	cb030383 	sub	x3, x28, x3
+ 1c4:	94000000 	bl	0 <printk>
+ 1c8:	f94006c0 	ldr	x0, [x22, #8]
+ 1cc:	8b1b0000 	add	x0, x0, x27
+ 1d0:	f900041c 	str	x28, [x0, #8]
+ 1d4:	17ffffe2 	b	15c <finish_task_switch_handler+0x15c>
+
+00000000000001d8 <pid_proc_write>:
+ 1d8:	a9b97bfd 	stp	x29, x30, [sp, #-112]!
+ 1dc:	910003fd 	mov	x29, sp
+ 1e0:	a90153f3 	stp	x19, x20, [sp, #16]
+ 1e4:	a9025bf5 	stp	x21, x22, [sp, #32]
+ 1e8:	d5384115 	mrs	x21, sp_el0
+ 1ec:	d50320ff 	xpaclri
+ 1f0:	aa0103f4 	mov	x20, x1
+ 1f4:	aa0203f3 	mov	x19, x2
+ 1f8:	aa1e03e0 	mov	x0, x30
+ 1fc:	94000000 	bl	0 <_mcount>
+ 200:	f9429ea1 	ldr	x1, [x21, #1336]
+ 204:	f90037e1 	str	x1, [sp, #104]
+ 208:	d2800001 	mov	x1, #0x0                   	// #0
+ 20c:	f1007e7f 	cmp	x19, #0x1f
+ 210:	928002a0 	mov	x0, #0xffffffffffffffea    	// #-22
+ 214:	54000c68 	b.hi	3a0 <pid_proc_write+0x1c8>  // b.pmore
+ 218:	910123e0 	add	x0, sp, #0x48
+ 21c:	aa1303e1 	mov	x1, x19
+ 220:	52800002 	mov	w2, #0x0                   	// #0
+ 224:	94000000 	bl	0 <__check_object_size>
+ 228:	d5384100 	mrs	x0, sp_el0
+ 22c:	b9403402 	ldr	w2, [x0, #52]
+ 230:	f9400401 	ldr	x1, [x0, #8]
+ 234:	36a80ca2 	tbz	w2, #21, 3c8 <pid_proc_write+0x1f0>
+ 238:	9340de80 	sbfx	x0, x20, #0, #56
+ 23c:	8a000280 	and	x0, x20, x0
+ 240:	ab130000 	adds	x0, x0, x19
+ 244:	9a8183e1 	csel	x1, xzr, x1, hi  // hi = pmore
+ 248:	da9f3000 	csinv	x0, x0, xzr, cc  // cc = lo, ul, last
+ 24c:	fa01001f 	sbcs	xzr, x0, x1
+ 250:	9a9f87e0 	cset	x0, ls  // ls = plast
+ 254:	b4000fc0 	cbz	x0, 44c <pid_proc_write+0x274>
+ 258:	14000018 	b	2b8 <pid_proc_write+0xe0>
+ 25c:	d503201f 	nop
+ 260:	f9001bf7 	str	x23, [sp, #48]
+ 264:	d53b4236 	mrs	x22, daif
+ 268:	2a1603f7 	mov	w23, w22
+ 26c:	121902c0 	and	w0, w22, #0x80
+ 270:	34000de0 	cbz	w0, 42c <pid_proc_write+0x254>
+ 274:	94000000 	bl	0 <trace_hardirqs_off>
+ 278:	d5384100 	mrs	x0, sp_el0
+ 27c:	f9400800 	ldr	x0, [x0, #16]
+ 280:	d5382021 	mrs	x1, ttbr1_el1
+ 284:	aa0003e2 	mov	x2, x0
+ 288:	b340bc22 	bfxil	x2, x1, #0, #48
+ 28c:	d5182022 	msr	ttbr1_el1, x2
+ 290:	d5033fdf 	isb
+ 294:	d5182000 	msr	ttbr0_el1, x0
+ 298:	d5033fdf 	isb
+ 29c:	121902e0 	and	w0, w23, #0x80
+ 2a0:	34000bc0 	cbz	w0, 418 <pid_proc_write+0x240>
+ 2a4:	d51b4236 	msr	daif, x22
+ 2a8:	d503201f 	nop
+ 2ac:	94000000 	bl	0 <trace_hardirqs_off>
+ 2b0:	f9401bf7 	ldr	x23, [sp, #48]
+ 2b4:	14000006 	b	2cc <pid_proc_write+0xf4>
+ 2b8:	90000000 	adrp	x0, 0 <cpu_hwcaps>
+ 2bc:	f9400000 	ldr	x0, [x0]
+ 2c0:	721c001f 	tst	w0, #0x10
+ 2c4:	540009c0 	b.eq	3fc <pid_proc_write+0x224>  // b.none
+ 2c8:	d503201f 	nop
+ 2cc:	9340de80 	sbfx	x0, x20, #0, #56
+ 2d0:	d5384101 	mrs	x1, sp_el0
+ 2d4:	8a000280 	and	x0, x20, x0
+ 2d8:	f9400422 	ldr	x2, [x1, #8]
+ 2dc:	ea22001f 	bics	xzr, x0, x2
+ 2e0:	9a9f0281 	csel	x1, x20, xzr, eq  // eq = none
+ 2e4:	d503229f 	csdb
+ 2e8:	aa1303e2 	mov	x2, x19
+ 2ec:	910123e0 	add	x0, sp, #0x48
+ 2f0:	94000000 	bl	0 <__arch_copy_from_user>
+ 2f4:	aa0003f4 	mov	x20, x0
+ 2f8:	14000039 	b	3dc <pid_proc_write+0x204>
+ 2fc:	d503201f 	nop
+ 300:	f9001bf7 	str	x23, [sp, #48]
+ 304:	d53b4236 	mrs	x22, daif
+ 308:	2a1603f7 	mov	w23, w22
+ 30c:	121902c0 	and	w0, w22, #0x80
+ 310:	34000940 	cbz	w0, 438 <pid_proc_write+0x260>
+ 314:	94000000 	bl	0 <trace_hardirqs_off>
+ 318:	d5382020 	mrs	x0, ttbr1_el1
+ 31c:	9240bc00 	and	x0, x0, #0xffffffffffff
+ 320:	d1400401 	sub	x1, x0, #0x1, lsl #12
+ 324:	d5182001 	msr	ttbr0_el1, x1
+ 328:	d5033fdf 	isb
+ 32c:	d5182020 	msr	ttbr1_el1, x0
+ 330:	d5033fdf 	isb
+ 334:	121902e0 	and	w0, w23, #0x80
+ 338:	34000660 	cbz	w0, 404 <pid_proc_write+0x22c>
+ 33c:	d51b4236 	msr	daif, x22
+ 340:	d503201f 	nop
+ 344:	94000000 	bl	0 <trace_hardirqs_off>
+ 348:	f9401bf7 	ldr	x23, [sp, #48]
+ 34c:	b50007d4 	cbnz	x20, 444 <pid_proc_write+0x26c>
+ 350:	910123e0 	add	x0, sp, #0x48
+ 354:	90000014 	adrp	x20, 0 <finish_task_switch_handler>
+ 358:	910113e2 	add	x2, sp, #0x44
+ 35c:	90000001 	adrp	x1, 0 <finish_task_switch_handler>
+ 360:	91000021 	add	x1, x1, #0x0
+ 364:	3833681f 	strb	wzr, [x0, x19]
+ 368:	94000000 	bl	0 <sscanf>
+ 36c:	b9400280 	ldr	w0, [x20]
+ 370:	3100041f 	cmn	w0, #0x1
+ 374:	54000741 	b.ne	45c <pid_proc_write+0x284>  // b.any
+ 378:	b94047e1 	ldr	w1, [sp, #68]
+ 37c:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+ 380:	b9000281 	str	w1, [x20]
+ 384:	91000000 	add	x0, x0, #0x0
+ 388:	94000000 	bl	0 <printk>
+ 38c:	b9400280 	ldr	w0, [x20]
+ 390:	3100041f 	cmn	w0, #0x1
+ 394:	54000721 	b.ne	478 <pid_proc_write+0x2a0>  // b.any
+ 398:	aa1303e0 	mov	x0, x19
+ 39c:	d503201f 	nop
+ 3a0:	9114e2b5 	add	x21, x21, #0x538
+ 3a4:	f94037e1 	ldr	x1, [sp, #104]
+ 3a8:	f94002a2 	ldr	x2, [x21]
+ 3ac:	eb020021 	subs	x1, x1, x2
+ 3b0:	d2800002 	mov	x2, #0x0                   	// #0
+ 3b4:	54000501 	b.ne	454 <pid_proc_write+0x27c>  // b.any
+ 3b8:	a94153f3 	ldp	x19, x20, [sp, #16]
+ 3bc:	a9425bf5 	ldp	x21, x22, [sp, #32]
+ 3c0:	a8c77bfd 	ldp	x29, x30, [sp], #112
+ 3c4:	d65f03c0 	ret
+ 3c8:	f9400002 	ldr	x2, [x0]
+ 3cc:	aa1403e0 	mov	x0, x20
+ 3d0:	7206005f 	tst	w2, #0x4000000
+ 3d4:	54fff360 	b.eq	240 <pid_proc_write+0x68>  // b.none
+ 3d8:	17ffff98 	b	238 <pid_proc_write+0x60>
+ 3dc:	90000000 	adrp	x0, 0 <cpu_hwcaps>
+ 3e0:	f9400000 	ldr	x0, [x0]
+ 3e4:	721c001f 	tst	w0, #0x10
+ 3e8:	54000060 	b.eq	3f4 <pid_proc_write+0x21c>  // b.none
+ 3ec:	d503201f 	nop
+ 3f0:	17ffffd7 	b	34c <pid_proc_write+0x174>
+ 3f4:	f9001bf7 	str	x23, [sp, #48]
+ 3f8:	17ffffc3 	b	304 <pid_proc_write+0x12c>
+ 3fc:	f9001bf7 	str	x23, [sp, #48]
+ 400:	17ffff99 	b	264 <pid_proc_write+0x8c>
+ 404:	94000000 	bl	0 <trace_hardirqs_on>
+ 408:	d51b4236 	msr	daif, x22
+ 40c:	d503201f 	nop
+ 410:	f9401bf7 	ldr	x23, [sp, #48]
+ 414:	17ffffce 	b	34c <pid_proc_write+0x174>
+ 418:	94000000 	bl	0 <trace_hardirqs_on>
+ 41c:	d51b4236 	msr	daif, x22
+ 420:	d503201f 	nop
+ 424:	f9401bf7 	ldr	x23, [sp, #48]
+ 428:	17ffffa9 	b	2cc <pid_proc_write+0xf4>
+ 42c:	d2800c00 	mov	x0, #0x60                  	// #96
+ 430:	d50342df 	msr	daifset, #0x2
+ 434:	17ffff90 	b	274 <pid_proc_write+0x9c>
+ 438:	d2800c00 	mov	x0, #0x60                  	// #96
+ 43c:	d50342df 	msr	daifset, #0x2
+ 440:	17ffffb5 	b	314 <pid_proc_write+0x13c>
+ 444:	928001a0 	mov	x0, #0xfffffffffffffff2    	// #-14
+ 448:	17ffffd6 	b	3a0 <pid_proc_write+0x1c8>
+ 44c:	aa1303f4 	mov	x20, x19
+ 450:	17ffffbf 	b	34c <pid_proc_write+0x174>
+ 454:	f9001bf7 	str	x23, [sp, #48]
+ 458:	94000000 	bl	0 <__stack_chk_fail>
+ 45c:	90000016 	adrp	x22, 0 <finish_task_switch_handler>
+ 460:	910002d6 	add	x22, x22, #0x0
+ 464:	f94006c0 	ldr	x0, [x22, #8]
+ 468:	b4fff880 	cbz	x0, 378 <pid_proc_write+0x1a0>
+ 46c:	94000000 	bl	0 <finish_task_switch_handler>
+ 470:	f90006df 	str	xzr, [x22, #8]
+ 474:	17ffffc1 	b	378 <pid_proc_write+0x1a0>
+ 478:	94000000 	bl	0 <find_vpid>
+ 47c:	52800001 	mov	w1, #0x0                   	// #0
+ 480:	94000000 	bl	0 <get_pid_task>
+ 484:	90000001 	adrp	x1, 0 <finish_task_switch_handler>
+ 488:	91000036 	add	x22, x1, #0x0
+ 48c:	f9000020 	str	x0, [x1]
+ 490:	b5000100 	cbnz	x0, 4b0 <pid_proc_write+0x2d8>
+ 494:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+ 498:	91000000 	add	x0, x0, #0x0
+ 49c:	94000000 	bl	0 <printk>
+ 4a0:	12800001 	mov	w1, #0xffffffff            	// #-1
+ 4a4:	928001a0 	mov	x0, #0xfffffffffffffff2    	// #-14
+ 4a8:	b9000281 	str	w1, [x20]
+ 4ac:	17ffffbd 	b	3a0 <pid_proc_write+0x1c8>
+ 4b0:	94000000 	bl	0 <finish_task_switch_handler>
+ 4b4:	f90006c0 	str	x0, [x22, #8]
+ 4b8:	b5fff700 	cbnz	x0, 398 <pid_proc_write+0x1c0>
+ 4bc:	90000000 	adrp	x0, 0 <finish_task_switch_handler>
+ 4c0:	91000000 	add	x0, x0, #0x0
+ 4c4:	94000000 	bl	0 <printk>
+ 4c8:	12800001 	mov	w1, #0xffffffff            	// #-1
+ 4cc:	928001a0 	mov	x0, #0xfffffffffffffff2    	// #-14
+ 4d0:	b9000281 	str	w1, [x20]
+ 4d4:	17ffffb3 	b	3a0 <pid_proc_write+0x1c8>
+ 4d8:	d5384616 	mrs	x22, s3_0_c4_c6_0
+ 4dc:	521b0ac0 	eor	w0, w22, #0xe0
+ 4e0:	521b0ae0 	eor	w0, w23, #0xe0
+ 4e4:	d5184616 	msr	s3_0_c4_c6_0, x22
+ 4e8:	d5033f9f 	dsb	sy
+ 4ec:	d500409f 	msr	pan, #0x0
+ 4f0:	d5384616 	mrs	x22, s3_0_c4_c6_0
+ 4f4:	521b0ac0 	eor	w0, w22, #0xe0
+ 4f8:	521b0ae0 	eor	w0, w23, #0xe0
+ 4fc:	d5184616 	msr	s3_0_c4_c6_0, x22
+ 500:	d5033f9f 	dsb	sy
+ 504:	d500419f 	msr	pan, #0x1
+ 508:	d5184616 	msr	s3_0_c4_c6_0, x22
+ 50c:	d5033f9f 	dsb	sy
+ 510:	d5184616 	msr	s3_0_c4_c6_0, x22
+ 514:	d5033f9f 	dsb	sy
+ 518:	d5184600 	msr	s3_0_c4_c6_0, x0
+ 51c:	d5184600 	msr	s3_0_c4_c6_0, x0
+
+Disassembly of section .text.unlikely:
+
+0000000000000000 <cleanup_perf_counters>:
+   0:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+   4:	910003fd 	mov	x29, sp
+   8:	a90153f3 	stp	x19, x20, [sp, #16]
+   c:	d50320ff 	xpaclri
+  10:	aa0003f3 	mov	x19, x0
+  14:	aa1e03e0 	mov	x0, x30
+  18:	94000000 	bl	0 <_mcount>
+  1c:	90000000 	adrp	x0, 0 <cleanup_perf_counters>
+  20:	91000000 	add	x0, x0, #0x0
+  24:	94000000 	bl	0 <printk>
+  28:	b40001b3 	cbz	x19, 5c <cleanup_perf_counters+0x5c>
+  2c:	d2800014 	mov	x20, #0x0                   	// #0
+  30:	f8747a60 	ldr	x0, [x19, x20, lsl #3]
+  34:	b4000040 	cbz	x0, 3c <cleanup_perf_counters+0x3c>
+  38:	94000000 	bl	0 <perf_event_release_kernel>
+  3c:	91000694 	add	x20, x20, #0x1
+  40:	f1002e9f 	cmp	x20, #0xb
+  44:	54ffff61 	b.ne	30 <cleanup_perf_counters+0x30>  // b.any
+  48:	aa1303e0 	mov	x0, x19
+  4c:	94000000 	bl	0 <kfree>
+  50:	90000000 	adrp	x0, 0 <cleanup_perf_counters>
+  54:	91000000 	add	x0, x0, #0x0
+  58:	94000000 	bl	0 <printk>
+  5c:	a94153f3 	ldp	x19, x20, [sp, #16]
+  60:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  64:	d65f03c0 	ret
+
+0000000000000068 <init_perf_counters.isra.0>:
+  68:	a9b37bfd 	stp	x29, x30, [sp, #-208]!
+  6c:	910003fd 	mov	x29, sp
+  70:	a90153f3 	stp	x19, x20, [sp, #16]
+  74:	a9025bf5 	stp	x21, x22, [sp, #32]
+  78:	a90363f7 	stp	x23, x24, [sp, #48]
+  7c:	f90023f9 	str	x25, [sp, #64]
+  80:	d50320ff 	xpaclri
+  84:	aa1e03e0 	mov	x0, x30
+  88:	94000000 	bl	0 <_mcount>
+  8c:	d5384115 	mrs	x21, sp_el0
+  90:	90000000 	adrp	x0, 0 <kmalloc_caches>
+  94:	d5384101 	mrs	x1, sp_el0
+  98:	f9429c23 	ldr	x3, [x1, #1336]
+  9c:	f90067e3 	str	x3, [sp, #200]
+  a0:	d2800003 	mov	x3, #0x0                   	// #0
+  a4:	d280f202 	mov	x2, #0x790                 	// #1936
+  a8:	f9400000 	ldr	x0, [x0]
+  ac:	5281b801 	mov	w1, #0xdc0                 	// #3520
+  b0:	94000000 	bl	0 <kmem_cache_alloc_trace>
+  b4:	aa0003f3 	mov	x19, x0
+  b8:	b50000a0 	cbnz	x0, cc <init_perf_counters.isra.0+0x64>
+  bc:	90000000 	adrp	x0, 0 <cleanup_perf_counters>
+  c0:	91000000 	add	x0, x0, #0x0
+  c4:	94000000 	bl	0 <printk>
+  c8:	14000041 	b	1cc <init_perf_counters.isra.0+0x164>
+  cc:	90000017 	adrp	x23, 0 <cleanup_perf_counters>
+  d0:	90000016 	adrp	x22, 0 <cleanup_perf_counters>
+  d4:	d2800098 	mov	x24, #0x4                   	// #4
+  d8:	910002f7 	add	x23, x23, #0x0
+  dc:	910002d6 	add	x22, x22, #0x0
+  e0:	d2800014 	mov	x20, #0x0                   	// #0
+  e4:	f2c00e18 	movk	x24, #0x70, lsl #32
+  e8:	90000000 	adrp	x0, 0 <cleanup_perf_counters>
+  ec:	91000000 	add	x0, x0, #0x0
+  f0:	94000000 	bl	0 <printk>
+  f4:	90000000 	adrp	x0, 0 <cleanup_perf_counters>
+  f8:	91000000 	add	x0, x0, #0x0
+  fc:	94000000 	bl	0 <printk>
+ 100:	a907ffff 	stp	xzr, xzr, [sp, #120]
+ 104:	9101a3e5 	add	x5, sp, #0x68
+ 108:	b8747af9 	ldr	w25, [x23, x20, lsl #2]
+ 10c:	394203e6 	ldrb	w6, [sp, #128]
+ 110:	12800448 	mov	w8, #0xffffffdd            	// #-35
+ 114:	2a1903e7 	mov	w7, w25
+ 118:	a906ffff 	stp	xzr, xzr, [sp, #104]
+ 11c:	0a0800c6 	and	w6, w6, w8
+ 120:	321b00c6 	orr	w6, w6, #0x20
+ 124:	a9027cbf 	stp	xzr, xzr, [x5, #32]
+ 128:	910163e0 	add	x0, sp, #0x58
+ 12c:	a9037cbf 	stp	xzr, xzr, [x5, #48]
+ 130:	d2800004 	mov	x4, #0x0                   	// #0
+ 134:	d2800003 	mov	x3, #0x0                   	// #0
+ 138:	a9047cbf 	stp	xzr, xzr, [x5, #64]
+ 13c:	d2800002 	mov	x2, #0x0                   	// #0
+ 140:	52800001 	mov	w1, #0x0                   	// #0
+ 144:	a9057cbf 	stp	xzr, xzr, [x5, #80]
+ 148:	a9059ff8 	stp	x24, x7, [sp, #88]
+ 14c:	390203e6 	strb	w6, [sp, #128]
+ 150:	94000000 	bl	0 <perf_event_create_kernel_counter>
+ 154:	f8347a60 	str	x0, [x19, x20, lsl #3]
+ 158:	b140041f 	cmn	x0, #0x1, lsl #12
+ 15c:	54000249 	b.ls	1a4 <init_perf_counters.isra.0+0x13c>  // b.plast
+ 160:	b40000b4 	cbz	x20, 174 <init_perf_counters.isra.0+0x10c>
+ 164:	d1000694 	sub	x20, x20, #0x1
+ 168:	f8747a60 	ldr	x0, [x19, x20, lsl #3]
+ 16c:	94000000 	bl	0 <perf_event_release_kernel>
+ 170:	17fffffc 	b	160 <init_perf_counters.isra.0+0xf8>
+ 174:	aa1303e0 	mov	x0, x19
+ 178:	94000000 	bl	0 <kfree>
+ 17c:	d5384101 	mrs	x1, sp_el0
+ 180:	f9400c20 	ldr	x0, [x1, #24]
+ 184:	d1000400 	sub	x0, x0, #0x1
+ 188:	b9001820 	str	w0, [x1, #24]
+ 18c:	b4000060 	cbz	x0, 198 <init_perf_counters.isra.0+0x130>
+ 190:	f9400c20 	ldr	x0, [x1, #24]
+ 194:	b50001a0 	cbnz	x0, 1c8 <init_perf_counters.isra.0+0x160>
+ 198:	d2800013 	mov	x19, #0x0                   	// #0
+ 19c:	94000000 	bl	0 <preempt_schedule>
+ 1a0:	1400000b 	b	1cc <init_perf_counters.isra.0+0x164>
+ 1a4:	2a1903e1 	mov	w1, w25
+ 1a8:	aa1603e0 	mov	x0, x22
+ 1ac:	94000000 	bl	0 <printk>
+ 1b0:	91016260 	add	x0, x19, #0x58
+ 1b4:	f834781f 	str	xzr, [x0, x20, lsl #3]
+ 1b8:	91000694 	add	x20, x20, #0x1
+ 1bc:	f1002e9f 	cmp	x20, #0xb
+ 1c0:	54fffa01 	b.ne	100 <init_perf_counters.isra.0+0x98>  // b.any
+ 1c4:	14000002 	b	1cc <init_perf_counters.isra.0+0x164>
+ 1c8:	d2800013 	mov	x19, #0x0                   	// #0
+ 1cc:	9114e2b5 	add	x21, x21, #0x538
+ 1d0:	f94067e0 	ldr	x0, [sp, #200]
+ 1d4:	f94002a1 	ldr	x1, [x21]
+ 1d8:	eb010000 	subs	x0, x0, x1
+ 1dc:	d2800001 	mov	x1, #0x0                   	// #0
+ 1e0:	54000040 	b.eq	1e8 <init_perf_counters.isra.0+0x180>  // b.none
+ 1e4:	94000000 	bl	0 <__stack_chk_fail>
+ 1e8:	aa1303e0 	mov	x0, x19
+ 1ec:	a94153f3 	ldp	x19, x20, [sp, #16]
+ 1f0:	a9425bf5 	ldp	x21, x22, [sp, #32]
+ 1f4:	a94363f7 	ldp	x23, x24, [sp, #48]
+ 1f8:	f94023f9 	ldr	x25, [sp, #64]
+ 1fc:	a8cd7bfd 	ldp	x29, x30, [sp], #208
+ 200:	d65f03c0 	ret
+
+Disassembly of section .init.text:
+
+0000000000000000 <init_module>:
+   0:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+   4:	910003fd 	mov	x29, sp
+   8:	f9000bf3 	str	x19, [sp, #16]
+   c:	d50320ff 	xpaclri
+  10:	aa1e03e0 	mov	x0, x30
+  14:	94000000 	bl	0 <_mcount>
+  18:	90000003 	adrp	x3, 0 <init_module>
+  1c:	91000063 	add	x3, x3, #0x0
+  20:	9100c063 	add	x3, x3, #0x30
+  24:	d2800002 	mov	x2, #0x0                   	// #0
+  28:	52803481 	mov	w1, #0x1a4                 	// #420
+  2c:	90000000 	adrp	x0, 0 <init_module>
+  30:	91000000 	add	x0, x0, #0x0
+  34:	94000000 	bl	0 <proc_create>
+  38:	90000000 	adrp	x0, 0 <init_module>
+  3c:	91000000 	add	x0, x0, #0x0
+  40:	94000000 	bl	0 <printk>
+  44:	90000000 	adrp	x0, 0 <init_module>
+  48:	91000000 	add	x0, x0, #0x0
+  4c:	91002000 	add	x0, x0, #0x8
+  50:	94000000 	bl	0 <register_kprobe>
+  54:	2a0003f3 	mov	w19, w0
+  58:	36f800c0 	tbz	w0, #31, 70 <init_module+0x70>
+  5c:	2a1303e1 	mov	w1, w19
+  60:	90000000 	adrp	x0, 0 <init_module>
+  64:	91000000 	add	x0, x0, #0x0
+  68:	94000000 	bl	0 <printk>
+  6c:	14000005 	b	80 <init_module+0x80>
+  70:	90000000 	adrp	x0, 0 <init_module>
+  74:	52800013 	mov	w19, #0x0                   	// #0
+  78:	91000000 	add	x0, x0, #0x0
+  7c:	94000000 	bl	0 <printk>
+  80:	2a1303e0 	mov	w0, w19
+  84:	f9400bf3 	ldr	x19, [sp, #16]
+  88:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  8c:	d65f03c0 	ret
+
+Disassembly of section .exit.text:
+
+0000000000000000 <cleanup_module>:
+   0:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+   4:	d2800001 	mov	x1, #0x0                   	// #0
+   8:	90000000 	adrp	x0, 0 <cleanup_module>
+   c:	910003fd 	mov	x29, sp
+  10:	91000000 	add	x0, x0, #0x0
+  14:	f9000bf3 	str	x19, [sp, #16]
+  18:	94000000 	bl	0 <remove_proc_entry>
+  1c:	90000013 	adrp	x19, 0 <cleanup_module>
+  20:	90000000 	adrp	x0, 0 <cleanup_module>
+  24:	91000000 	add	x0, x0, #0x0
+  28:	94000000 	bl	0 <printk>
+  2c:	91000273 	add	x19, x19, #0x0
+  30:	90000000 	adrp	x0, 0 <cleanup_module>
+  34:	91000000 	add	x0, x0, #0x0
+  38:	91002000 	add	x0, x0, #0x8
+  3c:	94000000 	bl	0 <unregister_kprobe>
+  40:	90000000 	adrp	x0, 0 <cleanup_module>
+  44:	91000000 	add	x0, x0, #0x0
+  48:	94000000 	bl	0 <printk>
+  4c:	f9400660 	ldr	x0, [x19, #8]
+  50:	b4000060 	cbz	x0, 5c <cleanup_module+0x5c>
+  54:	94000000 	bl	0 <cleanup_module>
+  58:	f900067f 	str	xzr, [x19, #8]
+  5c:	f9400bf3 	ldr	x19, [sp, #16]
+  60:	a8c27bfd 	ldp	x29, x30, [sp], #32
+  64:	d65f03c0 	ret

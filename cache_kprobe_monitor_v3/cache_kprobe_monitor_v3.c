@@ -14,8 +14,8 @@
 //https://elixir.bootlin.com/linux/v5.4/source/arch/arm64/include/asm/perf_event.h
 // https://developer.arm.com/documentation/ddi0500/latest/ p.12-36
 enum event_code {
-    //L1I_CACHE_REFILL = 0x01,
-    //L1I_TLB_REFILL = 0x02,
+    L1I_CACHE_REFILL = 0x01,
+    L1I_TLB_REFILL = 0x02,
     L1D_CACHE_REFILL = 0x03,
     L1D_CACHE_ACCESS = 0x04,
     L1D_TLB_REFILL = 0x05,
@@ -25,14 +25,14 @@ enum event_code {
     CPU_CYCLES = 0x11,
     BR_PRED = 0x12,
     MEM_ACCESS = 0x13,
-    //L1I_CACHE = 0x14,
+    L1I_CACHE = 0x14,
     L1D_CACHE_WB = 0x15,
     BUS_ACCESS = 0x19,
 };
 
 static u32 event_codes[] = {
-    //L1I_CACHE_REFILL,
-    //L1I_TLB_REFILL,
+    L1I_CACHE_REFILL,
+    L1I_TLB_REFILL,
     L1D_CACHE_REFILL,
     L1D_CACHE_ACCESS,
     L1D_TLB_REFILL,
@@ -42,7 +42,7 @@ static u32 event_codes[] = {
     CPU_CYCLES,
     BR_PRED,
     MEM_ACCESS,
-    //L1I_CACHE,
+    L1I_CACHE,
     L1D_CACHE_WB,
     BUS_ACCESS,
 };

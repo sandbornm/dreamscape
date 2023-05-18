@@ -1,0 +1,4 @@
+[48529.967965]  (cleanup_perf_counters) Cleaning up multi performance counters
+[48529.968062]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[48529.968071]  (pid_proc_write) new target_pid: 9741
+[48529.968080] get_pid_task failed

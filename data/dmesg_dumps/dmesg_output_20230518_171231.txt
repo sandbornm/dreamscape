@@ -1,0 +1,44 @@
+[49696.977884]  (cache_kprobe_monitor_v3_exit) Cleaning up cache_kprobe_monitor_v3
+[49697.005634] Kprobe unregistered
+[49697.005645]  (cleanup_perf_counters) Cleaning up multi performance counters
+[49697.005726]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[49703.281360]  (cache_kprobe_monitor_v3_init) Initializing cache_kprobe_monitor_v3
+[49703.282842] Kprobe registered
+[49707.999899]  (cache_kprobe_monitor_v3_exit) Cleaning up cache_kprobe_monitor_v3
+[49708.021661] Kprobe unregistered
+[49719.772743]  (cache_kprobe_monitor_v3_init) Initializing cache_kprobe_monitor_v3
+[49719.774361] Kprobe registered
+[49724.173347]  (pid_proc_write) new target_pid: 10420
+[49724.173368] (init_perf_counters) kzalloc success
+[49724.173373] (init_perf_counters) creating perf counters
+[49724.173422] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 1
+[49724.173441] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 2
+[49724.173459] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[49724.173478] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[49724.173498] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[49724.173521] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[49724.173547] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[49724.173569] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[49724.173592] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[49724.173616] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[49724.173639] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[49724.173832] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 20
+[49724.173864] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[49724.173888] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25
+[49724.185786] (finish_task_switch_handler) target program hit (PID: 10420), reading counter values
+[49724.185794] (finish_task_switch_handler) current program counter: 187650401085576
+[49724.185797] (finish_task_switch_handler) target pid is prev
+[49724.185805] (finish_task_switch_handler) event code: 1  ; counter value: 4, delta: 4
+[49724.185809] (finish_task_switch_handler) event code: 2  ; counter value: 3, delta: 3
+[49724.185812] (finish_task_switch_handler) event code: 3  ; counter value: 35, delta: 35
+[49724.185816] (finish_task_switch_handler) event code: 4  ; counter value: 1634427, delta: 1634427
+[49724.185833] (finish_task_switch_handler) event code: 5  ; counter value: 258, delta: 258
+[49724.185843] (finish_task_switch_handler) event code: 6  ; counter value: 1088105, delta: 1088105
+[49724.185853] (finish_task_switch_handler) event code: 7  ; counter value: 541722, delta: 541722
+[49724.185863] (finish_task_switch_handler) event code: 8  ; counter value: 4088167, delta: 4088167
+[49724.185873] (finish_task_switch_handler) event code: 17  ; counter value: 168377, delta: 168377
+[49724.185882] (finish_task_switch_handler) event code: 18  ; counter value: 371571, delta: 371571
+[49724.185892] (finish_task_switch_handler) event code: 19  ; counter value: 0, delta: 0
+[49724.185896] (finish_task_switch_handler) event code: 20  ; counter value: 0, delta: 0
+[49724.185899] (finish_task_switch_handler) event code: 21  ; counter value: 0, delta: 0
+[49724.185903] (finish_task_switch_handler) event code: 25  ; counter value: 0, delta: 0

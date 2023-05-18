@@ -1,0 +1,30 @@
+[48423.883354]  (cleanup_perf_counters) Cleaning up multi performance counters
+[48423.883458]  (cleanup_perf_counters) Finished cleaning up multi performance counters
+[48423.883468]  (pid_proc_write) new target_pid: 9658
+[48423.883478] (init_perf_counters) kzalloc success
+[48423.883482] (init_perf_counters) creating perf counters
+[48423.883517] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 3
+[48423.883535] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 4
+[48423.883553] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 5
+[48423.883571] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 6
+[48423.883592] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 7
+[48423.883615] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 8
+[48423.883644] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 17
+[48423.883671] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 18
+[48423.883697] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 19
+[48423.883723] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 21
+[48423.883747] (init_perf_counters) perf_event_create_kernel_counter succeeded for event code 25
+[48424.098733] (finish_task_switch_handler) target program hit (PID: 9658), reading counter values
+[48424.098742] (finish_task_switch_handler) current program counter: 281473016193512
+[48424.098744] (finish_task_switch_handler) target pid is prev
+[48424.098763] (finish_task_switch_handler) event code: 3  ; counter value: 3105, delta: 3105
+[48424.098774] (finish_task_switch_handler) event code: 4  ; counter value: 71120, delta: 71120
+[48424.098784] (finish_task_switch_handler) event code: 5  ; counter value: 150, delta: 150
+[48424.098793] (finish_task_switch_handler) event code: 6  ; counter value: 40086, delta: 40086
+[48424.098803] (finish_task_switch_handler) event code: 7  ; counter value: 1517, delta: 1517
+[48424.098807] (finish_task_switch_handler) event code: 8  ; counter value: 12534, delta: 12534
+[48424.098810] (finish_task_switch_handler) event code: 17  ; counter value: 5533, delta: 5533
+[48424.098814] (finish_task_switch_handler) event code: 18  ; counter value: 8100, delta: 8100
+[48424.098817] (finish_task_switch_handler) event code: 19  ; counter value: 17708, delta: 17708
+[48424.098821] (finish_task_switch_handler) event code: 21  ; counter value: 3973, delta: 3973
+[48424.098830] (finish_task_switch_handler) event code: 25  ; counter value: 15398, delta: 15398

@@ -82,7 +82,7 @@ if __name__ == "__main__":
         parse_dmesg(input_filename)
     else:
         # parse all files in the directory
-        input_dir = "data/dmesg_dumps"
+        input_dir = "/home/ubuntu/dreamscape/data/dmesg_dumps"
         for filename in os.listdir(input_dir):
             if filename.endswith(".txt"):
                 input_filename = os.path.join(input_dir, filename)
